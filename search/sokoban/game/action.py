@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.enums import EDirection, ETile
 from game.board import Board
 from typing import List, Tuple

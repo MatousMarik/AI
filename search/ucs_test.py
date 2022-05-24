@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from ucs import UCS
 from search_templates import Problem
 from problems import Empty, Graph, Line, Grid

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.controllers import PacManControllerBase
 from game.pacman_core import Game, DM
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tic_tac_toe.tic_tac_toe import TicTacToe
 from minimax_templates import GameUI, Strategy
 import pygame as pg

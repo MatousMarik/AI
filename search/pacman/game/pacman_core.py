@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from enum import Enum, auto, IntEnum
 from typing import List, Optional, Tuple, Callable, Union
 from game.maze import Maze, Node, Coords

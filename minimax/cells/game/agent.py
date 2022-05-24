@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.cells import Game, Transfer
 from typing import Union, List
 from abc import ABC, abstractmethod

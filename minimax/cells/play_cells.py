@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from time import perf_counter
 from game.cells import Game
 from game.agent import Agent

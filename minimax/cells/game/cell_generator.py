@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from random import Random
 from typing import Tuple, List, Union, Iterable, Optional
 from math import sqrt, ceil

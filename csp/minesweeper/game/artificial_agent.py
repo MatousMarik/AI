@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.minesweeper import Board, Action, ActionFactory
 from random import Random
 from time import perf_counter

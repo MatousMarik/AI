@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.board import Board
 from game.action import Action, Move
 from game.enums import EDirection

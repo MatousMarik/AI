@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.minesweeper import *
 from game.artificial_agent import ArtificialAgent
 import sys

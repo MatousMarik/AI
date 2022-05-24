@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import game.controllers as gc
 from game.pacman_core import Game
 from argparse import ArgumentParser, Namespace

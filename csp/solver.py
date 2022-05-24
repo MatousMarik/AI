@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from csp_templates import Constraint, BooleanCSP
 from typing import List, Optional
 

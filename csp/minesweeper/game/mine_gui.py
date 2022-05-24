@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.minesweeper import Board, Action, ActionFactory
 import pygame as pg
 from os.path import dirname

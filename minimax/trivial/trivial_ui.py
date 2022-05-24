@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from trivial.trivial import TrivialGame
 from typing import Optional
 

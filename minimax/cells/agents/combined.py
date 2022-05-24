@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.agent import Agent
 from game.cells import *
 

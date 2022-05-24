@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from collections import namedtuple, deque
 from enum import Enum
 from typing import Optional, Tuple, Deque

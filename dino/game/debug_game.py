@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.dino import *
 from typing import Optional, Union, Tuple, Deque, List
 from collections import deque

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from math import floor
 from csp_templates import Constraint, BooleanCSP
 

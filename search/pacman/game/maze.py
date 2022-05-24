@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import List
 from collections import namedtuple
 from os.path import dirname

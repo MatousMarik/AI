@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from collections import deque
 from typing import Deque, Set, List, Optional
 

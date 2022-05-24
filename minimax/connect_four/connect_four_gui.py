@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from connect_four.connect_four import ConnectFour
 from minimax_templates import GameUI, Strategy
 import pygame as pg

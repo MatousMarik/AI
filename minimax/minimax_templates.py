@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import Optional, Union
 from random import Random
 from abc import ABC, abstractmethod

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from argparse import ArgumentParser, ArgumentError
 import re
 from time import perf_counter as time_counter

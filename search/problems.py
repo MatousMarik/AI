@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from search_templates import Problem, HeuristicProblem, Optimal
 from collections import namedtuple
 import random

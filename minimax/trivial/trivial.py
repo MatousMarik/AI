@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import List
 from minimax_templates import HeuristicGame, Strategy
 

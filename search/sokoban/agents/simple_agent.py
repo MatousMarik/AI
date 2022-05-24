@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.action import *
 from game.board import *
 from game.enums import *

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.dino import Game, DinoMove, Coords
 from game.agent import Agent
 from argparse import ArgumentParser, Namespace

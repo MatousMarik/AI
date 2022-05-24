@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from typing import Tuple, Optional, List, Sequence
 from game.enums import EDirection, ETile
 from collections import namedtuple

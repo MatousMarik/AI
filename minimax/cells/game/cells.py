@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from math import ceil, floor
 from typing import List, Tuple, Union, Optional
 from random import Random

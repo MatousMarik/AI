@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from copy import deepcopy
 from typing import List, Optional
 from random import Random

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.dino import *
 from game.debug_game import DebugGame
 from game.agent import Agent

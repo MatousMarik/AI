@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from game.action import Action, Move
 from game.board import Board
 from game.artificial_agent import ArtificialAgent
