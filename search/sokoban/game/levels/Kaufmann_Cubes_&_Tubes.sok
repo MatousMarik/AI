@@ -1,0 +1,368 @@
+Date of Last Change: 
+
+Set:       Cubes & Tubes
+Copyright: © Doreen & Rainer Kaufmann
+Email:     lemming@digitaldream.de
+Homepage:  http://www.doreen-und-rainer.de
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This is our second collection of Sokoban Levels.
+
+Have fun playing, D&R.
+
+
+1
+#############
+#############
+##         ##
+## ### ### ##
+## #   # # ##
+## # $.$ # ##
+##   .@.   ##
+## # $.$ # ##
+## # #   # ##
+## ### ### ##
+##         ##
+#############
+#############
+Title: Enter the Cube
+Author: Doreen & Rainer Kaufmann
+
+2
+#############
+#############
+##    #    ##
+## ## # ## ##
+## #  @  # ##
+## # .$. # ##
+##   $#$   ##
+## # .$. # ##
+## #     # ##
+## ## # ## ##
+##    #    ##
+#############
+#############
+Title: Cross Cube
+Author: Doreen & Rainer Kaufmann
+
+3
+#############
+#           #
+# #### #### #
+# #       # #
+# # $ . $ # #
+# #  .$.  # #
+#   .$@$.   #
+# #  .$.  # #
+# # $ . $ # #
+# #       # #
+# #### #### #
+#           #
+#############
+Title: Ice Cube
+Author: Doreen & Rainer Kaufmann
+
+4
+#############
+#  ######   #
+#           #
+#  ## $### ##
+## .#   #. ##
+#   # $ #   #
+# #   #   # #
+#   # $ #   #
+## .# @ #. ##
+## ###$###  #
+#           #
+#   ######  #
+#############
+Title: Cubicolor
+Author: Doreen & Rainer Kaufmann
+
+5
+#############
+##. # # # .##
+#.  $   $  .#
+#  .#   #.  #
+##$###$###$##
+#   #   #   #
+##  $ @ $  ##
+#   #   #   #
+##$###$###$##
+#  .#   #.  #
+#.  $   $  .#
+##. # # # .##
+#############
+Title: Cubular Cells
+Author: Doreen & Rainer Kaufmann
+
+6
+#############
+#  #     #  #
+#  # #$# #  #
+#           #
+## # # # # ##
+## # #.# # ##
+## # #.# # ##
+## # #.# # ##
+## # #.# # ##
+## # #.# # ##
+##$#$###$#$##
+##    @    ##
+#############
+Title: Tubular Balls
+Author: Doreen & Rainer Kaufmann
+
+7
+#############
+#           #
+# $#$ # $#$ #
+# $       $ #
+### # # # ###
+# # #.#.# # #
+# # #.#.# # #
+# # #.#.# # #
+# # #.#.# # #
+# # #.#.# # #
+# #$#$#$#$# #
+#     @     #
+#############
+Title: Tubular Balls II
+Author: Doreen & Rainer Kaufmann
+
+8
+#############
+#           #
+# $#$# #$#$ #
+#  $     $  #
+##$# $ $ #$##
+#  #.#.#.#  #
+#  #.#.#.#  #
+#  #.#.#.#  #
+#  #.#.#.#  #
+#  #.#.#.#  #
+##$#$#$#$#$##
+#     @     #
+#############
+Title: Tubular Balls III
+Author: Doreen & Rainer Kaufmann
+
+9
+#############
+#           #
+# # # # # # #
+# $ $ $ $ $ #
+# # #.#.# # #
+# # #.#.# # #
+###.# # #.###
+# # #.#.# # #
+# # #.#.# # #
+# $ $ $ $ $ #
+# # # # # # #
+#     @     #
+#############
+Title: Tubular World
+Author: Doreen & Rainer Kaufmann
+
+10
+#############
+#           #
+# # # # # # #
+# $ $ $ $ $ #
+# #.#.#.#.# #
+# $ #.#.# $ #
+### #.#.# ###
+# $ #.#.# $ #
+# #.#.#.#.# #
+# $ $ $ $ $ #
+# # # # # # #
+#     @     #
+#############
+Title: Tubular World II
+Author: Doreen & Rainer Kaufmann
+
+11
+#############
+#           #
+# # # # # # #
+# $ $ $ $ $ #
+# #.#.#.#.# #
+# $.#.#.#.$ #
+### $ # $ ###
+# $.#.#.#.$ #
+# #.#.#.#.# #
+# $ $ $ $ $ #
+# # # # # # #
+#     @     #
+#############
+Title: Tubular World III
+Author: Doreen & Rainer Kaufmann
+
+12
+#############
+#           #
+# #$# # #$# #
+# $       $ #
+# # # # # # #
+#.# $ $ $ #.#
+#.# # # # #.#
+#.# $ $ $ #.#
+#.# # # # #.#
+#.# # # # #.#
+#.#$#$#$#$#.#
+#.#   @   #.#
+#############
+Title: Tube Or Not Tube
+Author: Doreen & Rainer Kaufmann
+
+13
+#############
+#.#   #   #.#
+#.# # $ # #.#
+#.# $ # $ #.#
+#.#$# # #$#.#
+#     #     #
+#$#$ $@$ $#$#
+#     #     #
+#.#$# # #$#.#
+#.# $ # $ #.#
+#.# # $ # #.#
+#.#   #   #.#
+#############
+Title: Tube Up Your Life
+Author: Doreen & Rainer Kaufmann
+
+14
+#############
+#.  $   $  .#
+#.# # $   #.#
+#.# $ $ $ #.#
+#.# #######.#
+#    $ #    #
+# #$ #@# $# #
+#    # $    #
+#.####### #.#
+#.# $ $ $ #.#
+#.#   $ # #.#
+#.  $   $  .#
+#############
+Title: Cube De Loop
+Author: Doreen & Rainer Kaufmann
+
+15
+#############
+# . .   . . #
+#.###$#$###.#
+# #   #   # #
+#.# $ $ $ #.#
+# $   #   $ #
+# ##$###$## #
+# $   #   $ #
+#.# $ $ $ #.#
+# #   #   # #
+#.###$#$###.#
+# . . @ . . #
+#############
+Title: Cross Cube II
+Author: Doreen & Rainer Kaufmann
+
+16
+#############
+# ...   ... #
+#.#$#$#$#$#.#
+#.$   #   $.#
+#.# $ $ $ #.#
+# $   #   $ #
+# ##$###$## #
+# $   #   $ #
+#.# $ $ $ #.#
+#.$   #   $.#
+#.#$#$#$#$#.#
+# ... @ ... #
+#############
+Title: Cross Cube III
+Author: Doreen & Rainer Kaufmann
+
+17
+#############
+#    ...    #
+# # ##### # #
+#   $ # $   #
+# #$  $  $# #
+#.#   #   #.#
+#.##$###$##.#
+#.#   #   #.#
+# #$  $@ $# #
+#   $ # $   #
+# # ##### # #
+#    ...    #
+#############
+Title: Hyper Cube
+Author: Doreen & Rainer Kaufmann
+
+18
+#############
+#   ..$..   #
+# # ##### # #
+#   $ # $   #
+#.#$  $  $#.#
+#.#   #   #.#
+#$##$###$##$#
+#.#   #   #.#
+#.#$  $@ $#.#
+#   $ # $   #
+# # ##### # #
+#   ..$..   #
+#############
+Title: Hyper Cube II
+Author: Doreen & Rainer Kaufmann
+
+19
+#############
+##... $ ...##
+#.### #$###.#
+#.#   $   #.#
+#.# $   $ #.#
+# $  $$$    #
+#$#$ $@$ $#$#
+#    $$$  $ #
+#.# $   $ #.#
+#.#   $   #.#
+#.###$# ###.#
+##... $ ...##
+#############
+Title: Flake Cube
+Author: Doreen & Rainer Kaufmann
+
+20
+#############
+###   #   ###
+#  $  #  $  #
+#  $  #  $  #
+##$#$###$#$##
+## $  #  $ ##
+## $  #  $ ##
+## ##   ## ##
+#  ### ### ##
+#  ..# #..  #
+#. .. @ .. .#
+#.   # #   .#
+#############
+Title: Hell Cube
+Author: Doreen & Rainer Kaufmann

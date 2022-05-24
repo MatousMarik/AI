@@ -1,0 +1,6 @@
+The work is licensed under CC-BY-SA 4.0
+
+Retail URL to the original work: https://github.com/kefik/Sokoban4J
+
+Read more about CC-BY-SA 4.0 here:
+https://creativecommons.org/licenses/by-sa/4.0

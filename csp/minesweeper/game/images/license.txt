@@ -1,0 +1,10 @@
+Based on:
+https://opengameart.org/content/minesweeper-tile-set
+
+Copyright/Attribution Notice: by Eugene Loza :)
+
+All assets in this package are licensed CC-BY 3.0
+
+Read more about CC-BY 3.0 here:
+
+https://creativecommons.org/licenses/by/3.0/

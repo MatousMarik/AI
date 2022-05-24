@@ -1,0 +1,651 @@
+Date of Last Change: 
+
+Set:       Dimitri & Yorick
+Copyright: © Jacques Duthen
+Email:     sokobania@bigfoot.com
+Homepage:  http://perso.club-internet.fr/duthen/SOKOBAN-HTML/sokoban-jd.html
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+[jack] 960812
+"Dimitri & Yorick" Collection
+This is a series of simple sokoban puzzles for (my) kids.
+The levels are best for kids ages 4-10 or real beginners!
+
+1
+######
+#   .#
+# $$@#
+#  #.#
+######
+Title: Push right (04)
+Author: Jacques Duthen
+
+2
+######
+#   .#
+# $$.#
+# $@.#
+######
+Title: Push right (05)
+Author: Jacques Duthen
+
+3
+#######
+#    .#
+#  $$.#
+#  # @#
+#######
+Title: Push right (02)
+Author: Jacques Duthen
+
+4
+########
+#     .#
+#   $$@#
+#  #  .#
+########
+Title: Push right (01)
+Author: Jacques Duthen
+
+5
+########
+#     .#
+#  $$ @#
+#  #  .#
+########
+Title: Push right (03)
+Author: Jacques Duthen
+
+6
+########
+#   #  #
+#     .#
+# $$  @#
+# #   .#
+########
+Title: Push right (06)
+Author: Jacques Duthen
+
+7
+######
+#   .#
+# $$@#
+#  # #
+#.   #
+######
+Title: 4x4 (02)
+Author: Jacques Duthen
+
+8
+######
+#   .#
+# $$+#
+#  # #
+#    #
+######
+Title: 4x4 (01)
+Author: Jacques Duthen
+
+9
+######
+#   .#
+# $$@#
+#  # #
+# .  #
+######
+Title: 4x4 (04)
+Author: Jacques Duthen
+
+10
+ #####
+##@ .#
+# $$.#
+#    #
+######
+Title: Push right (07)
+Author: Jacques Duthen
+
+11
+#######
+#     #
+#  $$ #
+# $ $@#
+#..####
+#..#
+####
+Title: Push down (01)
+Author: Jacques Duthen
+
+12
+######
+# @ .#
+# $$ #
+#  # #
+#   .#
+######
+Title:  4x4 (05)
+Author: Jacques Duthen
+
+13
+#######
+#  $ .#
+#  @$ #
+#  #$.#
+#  . ##
+######
+Title: 5x4 (01)
+Author: Jacques Duthen
+
+14
+######
+# @ .#
+# $$ #
+#  #.#
+#    #
+######
+Title: 4x4 (03)
+Author: Jacques Duthen
+
+15
+######
+# @ .#
+# $$ #
+#  # #
+##.  #
+ #####
+Title: 4x4 (06)
+Author: Jacques Duthen
+
+16
+######
+#   .#
+# $$ #
+# @###
+##.#
+ ###
+Title: Push down (02)
+Author: Jacques Duthen
+
+17
+#######
+#    .#
+# $$#.#
+# $@ .#
+#     #
+#######
+Title: 5x4 (02)
+Author: Jacques Duthen
+
+18
+#######
+#     #
+#    .#
+#@$$$.#
+#  # .#
+#######
+Title: Push right (09)
+Author: Jacques Duthen
+
+19
+#######
+#    .#
+#@$$$.#
+#   #.#
+#######
+Title: Push right (10)
+Author: Jacques Duthen
+
+20
+######
+# @$.#
+#    #
+# $#.#
+#    #
+######
+Title: 4x4 (07)
+Author: Jacques Duthen
+
+21
+########
+#   # .#
+#   $$@#
+####   #
+   #  .#
+   #####
+Title: Gun (01)
+Author: Jacques Duthen
+
+22
+########
+#   # .#
+#   $$+#
+####   #
+   #   #
+   #####
+Title: Gun (02)
+Author: Jacques Duthen
+
+23
+ #####
+##  .#
+# $$ #
+# @.##
+#####
+Title: 4x3 (01)
+Author: Jacques Duthen
+
+24
+ #####
+##  .#
+# $$@#
+# .  #
+######
+Title: 4x3 (02)
+Author: Jacques Duthen
+
+25
+ ####
+ #  #
+##  ###
+#    .#
+# $$ @#
+# #  .#
+#######
+Title: Push right (12)
+Author: Jacques Duthen
+
+26
+ #######
+##    .#
+#   $$@#
+#   # .#
+########
+Title: Push right (11)
+Author: Jacques Duthen
+
+27
+  ####
+ ##  ###
+##     #
+#  @$$.#
+#   # .#
+########
+Title: Push right (13)
+Author: Jacques Duthen
+
+28
+######
+#.  .#
+# $$ #
+#$ # #
+#@  .#
+######
+Title: 4x4 (08)
+Author: Jacques Duthen
+
+29
+######
+#.  .#
+# $$ #
+#$ # #
+#@ . #
+######
+Title: 4x4 (09)
+Author: Jacques Duthen
+
+30
+ #####
+ #   #
+##  .#
+# $$ #
+# .@##
+#####
+Title: 4x4 (10)
+Author: Jacques Duthen
+
+31
+#########
+#   #  .#
+#   $$ @#
+####   .#
+   #  ###
+   ####
+Title: Gun (03)
+Author: Jacques Duthen
+
+32
+########
+#   # .#
+#   $$@#
+####  .#
+   #  ##
+   #  #
+   ####
+Title: Gun (04)
+Author: Jacques Duthen
+
+33
+########
+#   # .#
+#   $$.##
+####   @#
+   # ## #
+   #    #
+   ######
+Title: Gun (05)
+Author: Jacques Duthen
+
+34
+########
+#   # .#
+#   $$.#
+####  @#
+   ##  #
+    ####
+Title: Gun (06)
+Author: Jacques Duthen
+
+35
+######
+# @$.#
+# $$.#
+#  #.#
+#    #
+######
+Title: 4x4 (11)
+Author: Jacques Duthen
+
+36
+########
+#   # .#
+#   $$@#
+####  .#
+   ##  #
+    #  #
+    ####
+Title: Gun (07)
+Author: Jacques Duthen
+
+37
+########
+#     .#
+# @$$$.#
+#  #  .#
+########
+Title: Push right (08)
+Author: Jacques Duthen
+
+38
+#######
+#    .#
+# $$  #
+###@# #
+  #  .#
+  #####
+Title: Gun (08)
+Author: Jacques Duthen
+
+39
+########
+#   # .#
+#   $$@#
+####  .#
+   #   #
+   #####
+Title: Gun (09)
+Author: Jacques Duthen
+
+40
+########
+#   # .#
+#   $$@#
+###   .#
+  ######
+Title: Gun (10)
+Author: Jacques Duthen
+
+41
+########
+#   # .#
+#   $$.#
+####  @#
+   #  ##
+   ####
+Title: Gun (11)
+Author: Jacques Duthen
+
+42
+#####
+#   ###
+#..$$.#
+# $$@ #
+#   .##
+######
+Title: 5x4 (03)
+Author: Jacques Duthen
+
+43
+#####
+#   ###
+#..$$.#
+# $$@ #
+##  .##
+ #####
+Title: 5x4 (04)
+Author: Jacques Duthen
+
+44
+########
+#   # .#
+#   $$.#
+#  #  @#
+#    ###
+######
+Title: Push right (14)
+Author: Jacques Duthen
+
+45
+#######
+#  # .#
+#  $$.#
+# #  @#
+#    ##
+######
+Title: Push right (15)
+Author: Jacques Duthen
+
+46
+####
+#  ####
+#  # .#
+#  $$.#
+##   @#
+ #  ###
+ ####
+Title: Gun (12)
+Author: Jacques Duthen
+
+47
+    ####
+##### .#
+#   $$.#
+# #   @#
+#   ####
+#####
+Title: Push right (16)
+Author: Jacques Duthen
+
+48
+#######
+#     #
+# +$# #
+# **  #
+# *   #
+#######
+Title: 5x4 (05)
+Author: Jacques Duthen
+
+49
+#######
+#     #
+#     #
+#  #  #
+#$$$$$#
+#..+..#
+#######
+Title: 5x5 (01)
+Author: Jacques Duthen
+
+50
+########
+#..... #
+#$ ##$ #
+# $##  #
+#  $@$ #
+#     ##
+#######
+Title: 6x5 (01)
+Author: Jacques Duthen
+
+51
+########
+#......#
+# $##$ #
+#  ##  #
+# $$@$$#
+#      #
+#   #  #
+########
+Title: 6x6 (01)
+Author: Jacques Duthen
+
+52
+####
+# @#
+# $##
+# $.#
+# $.#
+# $.#
+###.#
+  ###
+Title: Push right (17)
+Author: Jacques Duthen
+
+53
+#######
+#. ...#
+# $ # #
+#$#$$@#
+#    ##
+#   ##
+#####
+Title: 5x5 (02)
+Author: Jacques Duthen
+
+54
+      ####
+      #  ###
+#######    #
+# $ *. *.$@#
+#     #    #
+############
+Title: Two rooms (01)
+Author: Jacques Duthen
+
+55
+##### #####
+#  @# #   #
+# $$### $ #
+# ..   .  #
+###########
+Title: Two rooms 3x3 (02)
+Author: Jacques Duthen
+
+56
+        #####
+#########   #
+#  ......$  #
+#   #$###   #
+### $@$ #   #
+  # $ $ #   #
+  #     #####
+  #######
+Title: Key (01)
+Author: Jacques Duthen
+
+57
+       #####
+########   #
+# ......$  #
+#  #$###   #
+## $@$ #   #
+ # $ $ #   #
+ #     #####
+ #######
+Title: Key (02)
+Author: Jacques Duthen
+
+58
+  #####
+  #.  #
+###   #
+# $*$ #
+#   ###
+#@ .#
+#####
+Title: Two rooms 3x3 (01)
+Author: Jacques Duthen
+
+59
+#######
+#.   .#
+# # $ #
+#@$$# #
+#   $ #
+#. # .#
+#######
+Title: 5x5 (03)
+Author: Jacques Duthen
+
+60
+ ######
+##   .#
+#.  $ #
+#$#$# #
+#@  $ #
+#.  #.#
+#######
+Title: 5x5 (04)
+Author: Jacques Duthen
+
+61
+######
+#    #
+#  $ ####
+# $$ #  ##
+# # ##$  #
+#...  .. #
+####### ##
+#   ##   #
+#@$   .$ #
+#   ##   #
+#   ######
+#####
+Title: Four rooms (01)
+Author: Jacques Duthen

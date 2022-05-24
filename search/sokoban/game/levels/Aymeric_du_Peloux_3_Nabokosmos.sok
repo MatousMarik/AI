@@ -1,0 +1,655 @@
+Date of Last Change: 
+
+Set:       Nabokosmos
+Copyright: © Aymeric du Peloux
+Email:     aymeric.du-peloux@gadz.org
+Homepage:  http://membres.lycos.fr/nabokos
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+ #####
+ #   ##
+## * .##
+# $$*  #
+#  * . #
+## @ ###
+ #####
+Title: Nabokosmos 1
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+2
+  ####
+###  ###
+#   *$ #
+# #  # #
+#   ** #
+###  #@#
+  # ** #
+  #  # #
+  # *. #
+  #  ###
+  ####
+Title: Nabokosmos 2
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+3
+######
+#    #
+# ##$###
+# . *  #
+##  * +#
+ #  $  #
+ # #*###
+ #   #
+ #####
+Title: Nabokosmos 3
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+4
+    ####
+#####  ##
+# .@.$. #
+# # $   #
+# ##$####
+#   $  ##
+### .   ##
+  ###    #
+    ##   #
+     #####
+Title: Nabokosmos 4
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7
+Comment-End:
+
+5
+    ####
+  ###  #
+  #    #
+###  # #
+# *$ **##
+# # +#  #
+#  #    #
+##    ###
+ ######
+Title: Nabokosmos 5
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7
+Comment-End:
+
+6
+  ######
+###    #
+#  *##.#
+# #.  .#
+# $ $  #
+##$#$#@#
+ #    .#
+ #######
+Title: Nabokosmos 6
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+7
+ ####
+ #  ###
+ # *$ #
+ #  # #
+## ** #
+#   #@#
+#  ** #
+#   # #
+## *. #
+ #  ###
+ ####
+Title: Nabokosmos 7
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+8
+  ####
+###  #
+# .* ##
+# #   #
+#@**  #
+# #   #
+# $* ##
+###  #
+  ####
+Title: Nabokosmos 8
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+9
+  ####
+###  ####
+# $     #
+# . *#  #
+###.@#$##
+# . *#  #
+# $     #
+######  #
+     ####
+Title: Nabokosmos 9
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+10
+ ####
+ #  ######
+ #       #
+## # #.$ #
+#  * ## ##
+# ** # @#
+###   * #
+  ####  #
+     ####
+Title: Nabokosmos 10
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+11
+   #####
+####   #
+#      #
+#  ##.##
+## #@  #
+ #..$  #
+## #$###
+#   $ #
+# #   #
+#   ###
+#####
+Title: Nabokosmos 11
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4.5
+Comment-End:
+
+12
+  #####
+###   #
+#   # ##
+#  **+ #
+## * $*##
+ # # #  #
+ #      #
+ ###  ###
+   ####
+Title: Nabokosmos 12
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+13
+####  ####
+#  ####  #
+#        #
+#  ####  #
+##@##. $##
+#  #.$* #
+#      ##
+#  #  ##
+#######
+Title: Nabokosmos 13
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4.5
+Comment-End:
+
+14
+ #######
+##  #  ##
+# .$*$. #
+#   #   #
+##  *  ##
+ #@ *  #
+ #######
+Title: Nabokosmos 14
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+15
+ #######
+##  #  ##
+#  **$. #
+#   #   #
+##  *  ##
+ #  * @#
+ #######
+Title: Nabokosmos 15
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+16
+ ####
+ #  #
+ #. ##
+ #$@ #
+## * #
+#  * #
+#  * #
+## * #
+ #  ##
+ ####
+Title: Nabokosmos 16
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7
+Comment-End:
+
+17
+ ######
+ #  @ ##
+## #   #
+# .*.*.#
+#  $ $ #
+#####$ #
+    #  #
+    ####
+Title: Nabokosmos 17
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+8
+ #######
+##  @  ##
+#  ###  #
+# # . # #
+# #$. $ #
+# $   ###
+###$. #
+  # . #
+  #####
+Title: Nabokosmos 18
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+19
+  #####
+  #+ .###
+  #     #
+  ## $  #
+ ###$####
+## $   #
+#  . * #
+#   #  #
+########
+Title: Nabokosmos 19
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5.5
+Comment-End:
+
+20
+ #####
+ #   #
+##*# #####
+# * $ *  #
+#   . @  #
+###  #*###
+  ##   #
+   #####
+Title: Nabokosmos 20
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+21
+  #####
+ ##   #
+##  #.##
+# @ $  #
+# * *  ###
+##*#*#   #
+ #       #
+ ##  #####
+  ####
+Title: Nabokosmos 21
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+22
+#####
+#   #####
+# #   $ ##
+#.$.$..@ #
+#### #$  #
+   #   ###
+   #####
+Title: Nabokosmos 22
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+23
+   ####
+ ### @##
+##   * ##
+#  ##*  #
+#    *  #
+##  #$# #
+ #   .  #
+ #  #####
+ ####
+Title: Nabokosmos 23
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+24
+#####
+#   ####
+#    $ #
+## ##* ##
+#  #..  #
+#    $$ #
+#  #@.###
+#######
+Title: Nabokosmos 24
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+25
+##### ####
+#   # #  #
+#  $###@ #
+## $  $  #
+ # ....$ #
+ ##  #  ##
+  #######
+Title: Nabokosmos 25
+Author: Aymeric du Peloux
+Comment:
+& François Marques
+
+difficulté: 7
+Comment-End:
+
+26
+    #####
+#####   #
+#       #
+#  ..# ##
+##$# *  #
+ # +#*  #
+ #$ $  ##
+ #  ####
+ ####
+Title: Nabokosmos 26
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+27
+ #######
+ #  #  ###
+ #$   $  #
+ # .#**  #
+## #@ # ##
+#  ..#. #
+# $   $ #
+######  #
+     ####
+Title: Nabokosmos 27
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:
+
+28
+ ####
+ #  #####
+ #      #
+ # * *  #
+##$# # ##
+# . *#* #
+#       #
+####@ ###
+   ####
+Title: Nabokosmos 28
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+29
+ ####
+ # @##
+## . ###
+# $$$. #
+#..$.# #
+# $ $  #
+## .  ##
+ ######
+Title: Nabokosmos 29
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+30
+ #######
+ #     #
+ # .$. #
+##$. $##
+#  *  #
+# $.$##
+##@. #
+ #####
+Title: Nabokosmos 30
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+31
+ #####
+ #   ##
+##* ..##
+#   #  #
+# *    #
+# * # ##
+##  $$#
+ ### @#
+   ####
+Title: Nabokosmos 31
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7
+Comment-End:
+
+32
+  #######
+ ##  #  #
+##   $$ #
+#  #.#  #
+#  .+. ##
+#  #.#$##
+## $  $ #
+ ####   #
+    #####
+Title: Nabokosmos 32
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+33
+#####
+#   ###
+#     #
+## #. ###
+#@***$* #
+#       #
+#  #  ###
+#######
+Title: Nabokosmos 33
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+34
+  ####
+ ##  ###
+## ..  #
+#  *   #
+# $$ ###
+## *.#
+ # $ #
+ # * #
+ # @##
+ ####
+Title: Nabokosmos 34
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:
+
+35
+   #####
+ ###   #
+##   #@##
+# . *$. #
+# # $   #
+# #$#$###
+#  .. #
+#######
+Title: Nabokosmos 35
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+36
+   ####
+####  #
+# . * #
+#@# * #
+#   * ##
+##$**  #
+ #     #
+ ###  ##
+   ####
+Title: Nabokosmos 36
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+37
+ ####
+ #  ####
+ #   * ##
+## #  $.##
+#  #$.#  #
+#  $  $@ #
+#  #..#  #
+##########
+Title: Nabokosmos 37
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+38
+  #####
+  #   #
+### . ##
+#  *$* ##
+# # * * #
+#    * @#
+###  ####
+  ####
+Title: Nabokosmos 38
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+39
+  ####
+  #  #
+  #* #
+###  ###
+# .*   #
+# #$ # #
+#  @** #
+##   ###
+ #  ##
+ ####
+Title: Nabokosmos 39
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+40
+   #####
+ ###   #
+##     #
+# *** ##
+#  *@ #
+# .*$##
+##   #
+ ##  #
+  ####
+Title: Nabokosmos 40
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:

@@ -1,0 +1,368 @@
+Date of Last Change: 
+
+Set:       Bagatelle
+Copyright: © David Holland
+Email:     david@clickfest88.freeserve.co.uk
+Homepage:  http://www.clickfest88.freeserve.co.uk/
+
+Archives:  http://web.archive.org/web/*/http://clickfest88.freeserve.co.uk/
+           http://web.archive.org/web/20040806173323/www.clickfest88.freeserve.co.uk/bagatelle/index.html
+           http://web.archive.org/web/20040821220407/www.clickfest88.freeserve.co.uk/bagatelle/bagatelle.txt
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The bagatelle Sokoban levels by David Holland
+
+Original release date: October 2001
+
+Author's note:
+Bagatelle is a French word for a trinket, from the Italian for a conjuror's trick. The
+collection contains fairly simple puzzles (of less difficulty than my previous collection
+maelstrom) of various sizes. Some of the small puzzles are easier versions of puzzles in
+my other collections. Others are my take on some classical Sokoban themes (goals in a
+line, in a cross shape, objects outside goal room for tricky start and finish). The
+problems posed by each puzzle are of a fairly straightforward kind, but are nevertheless
+quite varied. The puzzles are in roughly ascending order of difficulty.
+
+These levels may be distributed freely as long as this copyright message is retained.
+
+
+1
+   ####
+   #  #
+####$.######
+#   $.$ #  #
+# $  +     #
+####$*###* #
+#### .### ##
+#   #.  # #
+#       # #
+#### #  # ##
+   # ####  #
+   #       #
+   #  ######
+   ####
+Title: small2
+Author: David Holland
+
+
+2
+   ########   #####
+  ##   #  #####   #
+ ##    #  $       #
+ #  # ##   ##### ###
+##. . .## ##  $    #
+#   #      #@ $  # #
+#   ..####  ####$# #
+######## ## $      #
+          #####   ##
+              #####
+Title: two piece7
+Author: David Holland
+
+
+3
+#############
+#     #     #
+# *.*$#$*.* #
+# .$. @..$. #
+# *.* # *.* #
+# $ $ # $.$ #
+### ##### ###
+# $.$ # $.$ #
+# *.* # $.$ #
+# .$.. ..$  #
+# *.*$#$$ $ #
+#     #     #
+#############
+Title: four block1
+Author: David Holland
+
+
+4
+####
+#  #######
+# $$ $ $ ##
+#  $@$ #  #
+## #*#  # #
+#  *.   # #
+# $#.#. # #
+#   .. #  #
+### *..  ##
+  ########
+Title: small cross9
+Author: David Holland
+
+
+5
+###################
+##               ##
+ ##  $ $.$.$ $  ##
+  ##  $.$.$.$  ##
+   ## .$.$.$. ##
+    ## .$.$. ##
+     ## .$. ##
+      ## . ##
+       ##@##
+      ## . ##
+     ## .$. ##
+    ## .$.$. ##
+   ## .$.$.$. ##
+  ##  $.$.$.$  ##
+ ##  $ $.$.$ $  ##
+##               ##
+###################
+Title: bowtie3
+Author: David Holland
+
+
+6
+     #######
+     #     #
+    ##.*$# #
+    #  ..$ #
+#####$# $###
+# $   # .#
+# #* *  $#
+#@ .. #  #
+###   ####
+  #####
+Title: teapot3
+Author: David Holland
+
+
+7
+  #########
+ ##   #   ##
+##  # # #  ##
+#  # $.$ #  #
+# #  * .  # #
+#   .#*# $  #
+###.$#@#$.###
+#  $.###.$  #
+# #  . . .# #
+#  #  $  #  #
+##  #$#$#  ##
+ ##   #   ##
+  #########
+Title: boxin10
+Author: David Holland
+
+
+8
+####
+#  #####
+# $#...###
+#    $$$ #####
+# $#.*.  .#  #
+#@ # $ .*.#$ #
+##### $$$    #
+    ## ...#$ #
+     ######  #
+          ####
+Title: slinky5
+Author: David Holland
+
+
+9
+        ####
+   ######  #####
+#### .. $$ #   #
+#    *$ #    $ #
+#  # .## .## ###
+## #*.##$### #
+ #     @     #
+## ###$##.*# ##
+#  ##. ##. #  #
+#     # $* $  #
+#  # $$ .. ####
+####  ######
+   ####
+Title: fizzgig1
+Author: David Holland
+
+
+10
+ ####
+ #  #######
+ #   $@#  #
+ # #.#$   #
+ # #* .#$ #
+## #. *  ##
+#  .#$# ##
+#       #
+####   ##
+   #####
+Title: diode1
+Author: David Holland
+
+
+11
+        ######
+    #####    ####
+ #### $  $##   @###
+## $  $ # $ ### $ ##
+#  $ #$## # ### $  #
+# #$.............. #
+#  $ ### #$####   ##
+##   # $  $ # ##  #
+ #####      #  ####
+     ########
+Title: line7
+Author: David Holland
+
+
+12
+#####
+#   #####
+#       #
+##$# .$ #
+#. * #$##
+#.$.$  #
+#.$.. ##
+#$ ####
+#@ #
+####
+Title: handsaw1
+Author: David Holland
+
+
+13
+#################
+#    ....    #  #
+# #.  $@$.**.   #
+# #. * #$#   #$ #
+#   #. #  ####  #
+#####$##      $ #
+    #  ## ####  #
+    ## $ $ # ####
+     #  $  #
+     ##    #
+      ######
+Title: raygun1
+Author: David Holland
+
+
+14
+########
+#      ##
+# @ # . #
+# $ $.$ #
+##.#$#$##
+#  . .  #
+# *$# . #
+##     ##
+ #######
+Title: seesaw8
+Author: David Holland
+
+
+15
+ ########
+ #   #  #
+## #$# $#
+#       #
+#  #*# $##
+#  ..*   #
+####.### #
+#  ..* $ #
+#@ #.#  ##
+# $    $#
+#  ###  #
+#### ####
+Title: tree12
+Author: David Holland
+
+
+16
+####  ####
+#  ####  #
+# .    . #
+#  ####$ #
+## #    ##
+## .$*# ##
+# *#$ #  #
+#@$    . #
+#  ####  #
+####  ####
+Title: torch1
+Author: David Holland
+
+
+17
+  #########
+  #@   #  ####
+  # $  # $$  #
+  #  $ $  #  #
+  ##$ #.#   ####
+  ## ##.###    #
+  #  *......#  #
+  #  ##.##### ###
+#### ##.##  # $ #
+#    $   #$   # #
+# #  ##  $  #   #
+# ########  #####
+#        # ##
+########   #
+       #####
+Title: cross7
+Author: David Holland
+
+
+18
+   ####
+ ###  #
+ #@$. ##
+ #$* . #
+##  .  #
+# $*$* #
+#   . ##
+###  ##
+  ####
+Title: moebius1
+Author: David Holland
+
+
+19
+     #####
+  ####   #
+  #  # $ #
+  #. .@*######
+ ##..*.. #   #
+##  #*#    # #
+#  ##.# $$#  #
+# # $.    # ##
+#   ## # $   #
+###### $ $ $ #
+     #  ######
+     ####
+Title: fork7
+Author: David Holland
+
+
+20
+########
+#  #   #
+#  * . #
+# .$*$ #
+## * . #
+# *$*  #
+# @ #  #
+########
+Title: shuffle2
+Author: David Holland

@@ -1,0 +1,702 @@
+Date of Last Change: 
+
+Set:       The Warehouse Volume I - Vertical Mobility
+Copyright: © Rick Sladkey
+Email:     rick.sladkey@gmail.com
+Homepage:  http://home.comcast.net/~jrsladkey/sokoban/index.htm
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+These levels are Copyright 2009 by Rick Sladkey <rick.sladkey@gmail.com>
+
+
+1
+  ####
+### @#
+#    #
+# .#.###
+# $    #
+##*#*# #
+# $    #
+#   ####
+#####
+Title: Level 1
+Author: Rick Sladkey
+
+2
+####
+#@ #
+#  #####
+#  $   #
+#****..#
+#  $   #
+# ## ###
+#    #
+######
+Title: Level 2
+Author: Rick Sladkey
+
+3
+ #####
+ # . #
+##$. #
+# $.$##
+# $.$ #
+#  .$ #
+## . @#
+ ######
+Title: Level 3
+Author: Rick Sladkey
+
+4
+  ####
+###@ #
+#    #
+# $$$###
+##$.$  #
+ #.....#
+##$.   #
+# $ ####
+#   #
+#####
+Title: Level 4
+Author: Rick Sladkey
+
+5
+  #####
+  #   #
+###$. #
+#  $.###
+# #$.  #
+#    # #
+## @#  #
+ ##   ##
+  #####
+Title: Level 5
+Author: Rick Sladkey
+
+6
+ #####
+ #   ##
+ # #  ##
+ #  #@ #
+###$.  #
+#  .$###
+# #$. ##
+#   #  #
+#    # #
+###    #
+  ######
+Title: Level 6
+Author: Rick Sladkey
+
+7
+ ####
+##  ####
+# @$$  #
+# $ .*.#
+##$.   #
+ # * ###
+ # . #
+ #####
+Title: Level 7
+Author: Rick Sladkey
+
+8
+   #####
+ ###   #
+ #  .# #
+ #  *  #
+###$#$##
+#   * #
+#   . #
+### @ #
+  #####
+Title: Level 8
+Author: Rick Sladkey
+
+9
+  #####
+ ##   ##
+ # .#  ##
+ # * #  #
+##$@$   #
+#  * #  #
+#  . ####
+###  #
+  ####
+Title: Level 9
+Author: Rick Sladkey
+
+10
+   #####
+ ###   #
+## $ #$##
+# $ ... #
+# # @ # #
+# ... $ #
+##$# $ ##
+ #   ###
+ #####
+Title: Level 10
+Author: Rick Sladkey
+
+11
+   #####
+ ###   #
+##  .# #
+#   *  #
+#  #*###
+##  $ #
+ ## @ #
+  #   #
+  #####
+Title: Level 11
+Author: Rick Sladkey
+
+12
+   ####
+ ###  #
+ # .  #
+ # $  #
+###*# #
+#  $  #
+#@ . ##
+#  ###
+####
+Title: Level 12
+Author: Rick Sladkey
+
+13
+  ####
+###  #
+#    ###
+# ##   #
+#  +*# #
+#  #   #
+## ** ##
+ # #  #
+ # $* #
+ ###  #
+   ####
+Title: Level 13
+Author: Rick Sladkey
+
+14
+   #####
+ ###   #
+ #  *  #
+ # #. ##
+## $* #
+#  #. #
+#  $* #
+#  #  #
+####@ #
+   ####
+Title: Level 14
+Author: Rick Sladkey
+
+15
+  ####
+###  #
+# @* ###
+# #.   #
+# $* # #
+# #. # #
+# $* # #
+# #. # #
+# $*   #
+###  ###
+  ####
+Title: Level 15
+Author: Rick Sladkey
+
+16
+  ####
+###  ##
+# @$  #
+#.#.  #
+# $*  #
+# #. ##
+# $* #
+#.#. #
+# $$ #
+###  #
+  ####
+Title: Level 16
+Author: Rick Sladkey
+
+17
+   ####
+   #  #
+####  ##
+#  $$  #
+# #$.# #
+# #..  #
+#@   ###
+######
+Title: Level 17
+Author: Rick Sladkey
+
+18
+  #####
+  #   #
+### # #
+#  $  ##
+# .*.  #
+###$##@#
+  #    #
+  ######
+Title: Level 18
+Author: Rick Sladkey
+
+19
+   ####
+ ###  #
+##    ##
+# $# . #
+#@ $.# #
+###.$  #
+ #. #$##
+ #    #
+ #   ##
+ #####
+Title: Level 19
+Author: Rick Sladkey
+
+20
+ #####
+ #   #
+## #$##
+#   $ ###
+# ..*.. #
+### $   #
+  ##$# ##
+   #@  #
+   #####
+Title: Level 20
+Author: Rick Sladkey
+
+21
+ #####
+ # @ #
+ # # ##
+## *  #
+#  .$ #
+# $.$##
+##$. #
+ # * #
+ # * #
+ # . #
+ #####
+Title: Level 21
+Author: Rick Sladkey
+
+22
+ ####
+ #@ #####
+ #  $   #
+ # *$*  #
+##..*..##
+#  *$* #
+#   $  #
+#####  #
+    ####
+Title: Level 22
+Author: Rick Sladkey
+
+23
+  #####
+  #   #
+  # # #
+  #   #
+### ####
+#   $  #
+# #$*.@#
+#   .###
+###  #
+  ####
+Title: Level 23
+Author: Rick Sladkey
+
+24
+  ####
+  #  #
+###  #
+#  * ##
+#@.#$ #
+## *  #
+#  #  #
+#    ##
+#  ###
+####
+Title: Level 24
+Author: Rick Sladkey
+
+25
+  #####
+ ## @ #
+ #  # ##
+##.$.  #
+# $#$  #
+# .$.###
+# #   #
+#     #
+#   ###
+#####
+Title: Level 25
+Author: Rick Sladkey
+
+26
+   ######
+  ##    #
+  #  #@ #
+###$.$  #
+#  .#. ##
+#  $.$##
+## ## #
+ #    #
+ ######
+Title: Level 26
+Author: Rick Sladkey
+
+27
+  #####
+ ##   #
+##.$. #
+# $@$##
+# .$.#
+##   #
+ ##  #
+  ####
+Title: Level 27
+Author: Rick Sladkey
+
+28
+ ####
+ #  ##
+ #   ##
+##$.$ #
+# .@. #
+# $.$##
+##   #
+ #####
+Title: Level 28
+Author: Rick Sladkey
+
+29
+#####
+#   ##
+#    #
+## # ##
+#  $* #
+#  *. #
+###  ##
+  #@ #
+  ####
+Title: Level 29
+Author: Rick Sladkey
+
+30
+ ######
+ #    ##
+## ##  #
+#@$$ # #
+# $ .  #
+###.. ##
+ #  # #
+ #    #
+ #  ###
+ ####
+Title: Level 30
+Author: Rick Sladkey
+
+31
+ ######
+ #    #
+ # #  #
+ # *  #
+###*# ##
+# $.$  #
+#  . # #
+###@   #
+  ######
+Title: Level 31
+Author: Rick Sladkey
+
+32
+#####
+#   ##
+#  * ###
+## * @ #
+ # *   #
+ #$.$###
+ # . #
+ #####
+Title: Level 32
+Author: Rick Sladkey
+
+33
+  ####
+ ##  #
+ # * #
+ # * #
+ #@* #
+## * #
+# $.$##
+#  .  #
+#  #  #
+####  #
+   ####
+Title: Level 33
+Author: Rick Sladkey
+
+34
+#######
+#     #
+# #*# #
+#     #
+###@####
+# * .  #
+#   $  #
+#  #####
+#  #
+####
+Title: Level 34
+Author: Rick Sladkey
+
+35
+  #####
+ ##   #
+ # @#*##
+ #   * #
+###*#  #
+#  .  ##
+#   $##
+#  # #
+##   #
+ #####
+Title: Level 35
+Author: Rick Sladkey
+
+36
+ ####
+ #  ####
+## *   #
+#  *#  #
+#@# $.##
+# *   #
+# #*  #
+#   ###
+#####
+Title: Level 36
+Author: Rick Sladkey
+
+37
+    ####
+  ###  #
+ ##   *#
+ # @#* #
+##  *  ##
+#  *#$  #
+# *  .# #
+#####   #
+    #####
+Title: Level 37
+Author: Rick Sladkey
+
+38
+  #####
+###  @#
+#  $# #
+# .$. #
+##.$. #
+## $###
+#   #
+#   #
+#####
+Title: Level 38
+Author: Rick Sladkey
+
+39
+  #####
+  #   #
+###$# #
+# .$. #
+#  * ###
+# .$.  ##
+###$#   #
+ # @    #
+ #   ####
+ #####
+Title: Level 39
+Author: Rick Sladkey
+
+40
+   #####
+   #   #
+ ###$# #
+ # .$. #
+ # #* ###
+##  *   #
+#  .$.  #
+#  #$#  #
+##  @####
+ #####
+Title: Level 40
+Author: Rick Sladkey
+
+41
+  #####
+ ##   #
+ #  # #
+##.$. #
+# $*$ #
+# .$.##
+###  #
+  #@ #
+  #  #
+  ####
+Title: Level 41
+Author: Rick Sladkey
+
+42
+     ####
+ #####  #
+##  # @ #
+#  $.$  #
+#  .*. ##
+###$.$##
+  #   #
+  #  ##
+  ####
+Title: Level 42
+Author: Rick Sladkey
+
+43
+######
+#   @##
+#   * #
+### * ###
+ ###$   #
+ #  . # #
+ #   #  #
+ ###   ##
+   #####
+Title: Level 43
+Author: Rick Sladkey
+
+44
+  ####
+###  #
+# *  #
+#@*  #
+##*# ##
+# $   #
+# .## #
+#     #
+#  ####
+####
+Title: Level 44
+Author: Rick Sladkey
+
+45
+     ####
+######  #
+#     @ #
+# # *   #
+#  #*####
+##  * #
+ ## * ##
+  # $  #
+  # .  #
+  ###  #
+    ####
+Title: Level 45
+Author: Rick Sladkey
+
+46
+   ####
+  ##  #
+  # * #
+  #@* #
+  # * #
+ ###* ###
+##  *   #
+#  #$   #
+#   . ###
+#  #  #
+#######
+Title: Level 46
+Author: Rick Sladkey
+
+47
+   ####
+   #  ###
+   #    #
+   # .# #
+####$.$ #
+# @ $.$##
+# # #. #
+#   #  #
+########
+Title: Level 47
+Author: Rick Sladkey
+
+48
+   ####
+   #  ###
+ ### .  #
+ #  $.$ #
+##@##*###
+#   $.$ #
+#    .  #
+##   ####
+ #####
+Title: Level 48
+Author: Rick Sladkey
+
+49
+  ####
+  #  ##
+ ## . #
+## $.$###
+#  #*   #
+# #@* # #
+# #$.$  #
+#   .####
+##   #
+ ##  #
+  ####
+Title: Level 49
+Author: Rick Sladkey
+
+50
+#####  ####
+#   ####  #
+# $    $$ #
+##$# ###  #
+ # #...  ##
+## #.#.# #
+#@  ...# #
+#  ### #$##
+# $$    $ #
+#  ####   #
+####  #####
+Title: Level 50
+Author: Rick Sladkey

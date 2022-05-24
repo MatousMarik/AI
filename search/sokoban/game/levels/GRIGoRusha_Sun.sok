@@ -1,0 +1,164 @@
+Date of Last Change: 
+
+Set:       GRIGoRusha Sun
+Copyright: © Evgeny Grigoriev (GRIGoRusha)
+Email:     grigr@yandex.ru
+Homepage:  http://grigr.narod.ru/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+     ######
+   ### * @#
+  ##  * $ #
+###  * #  #
+#   . *  ##
+# #***##  #
+#   *     #
+########  #
+       ####
+Title: JigSaw
+Author: GRIGoRusha
+Comment:
+01.07.06
+Comment-End:
+
+2
+    #####
+    #   ##
+#####$   #
+# $ $ $  #
+# .$ $@# #
+##..$ ## #
+##.# $   #
+# ..#$ ###
+# ...$.#
+########
+Title: The Drift
+Author: GRIGoRusha
+
+3
+######
+#    #####
+# ##$$ $@#
+# #   $  #
+#...#$ $ #
+## .  #  #
+ #..  $ ##
+ #.##$###
+ #.   #
+ ######
+Title: Query Mark
+Author: GRIGoRusha
+
+4
+   #####
+ ###   ##
+ # ...  #
+## *.*# #
+#  #*.$ #
+#  $ $ ##
+# $ @#$#
+## ### #
+ #     #
+ #######
+Title: Kenya House
+Author: GRIGoRusha
+
+5
+    ####
+#####  ###
+# $   ...##
+#@$ $$.#$ #
+##$## ... #
+## ##  #  #
+#  ###### ##
+#     $    #
+#  #####   #
+####   #####
+Title: Zikozavr
+Author: GRIGoRusha
+
+6
+  ######
+###    #
+#   ## ####
+# # $@$   #
+# #$...$# #
+# # *** # #
+#  $...$# #
+##  ##    #
+ #####  ###
+     ####
+Title: Opened Heart
+Author: GRIGoRusha
+
+7
+  #####
+  # . #
+ ##$.$#
+ #  . #
+##.$.@###
+# .$#$  #
+# .$.$  #
+## $  ###
+ ###  #
+   ####
+Title: Everest
+Author: GRIGoRusha
+
+8
+#####
+#   #####
+#.#$    #
+#.# $$$ #
+#.# $ @##
+#.# $#$#
+#..    #
+#.. $# #
+####   #
+   #####
+Title: Unopened Room
+Author: GRIGoRusha
+
+9
+    ####
+#####  ####
+# $ $ $   #
+# ..  #   #
+##.. $#####
+ #.. $   #
+ #.#$#$$@#
+ #.  #   #
+ #########
+Title: Open Air
+Author: GRIGoRusha
+
+10
+     ####
+    ##  #
+#####   #
+# $ $ $ #
+# ..#  ##
+##$.*.$#
+ # .*  #
+ #$ +###
+ #   #
+ #####
+Title: The Tornado
+Author: GRIGoRusha

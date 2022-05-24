@@ -1,0 +1,357 @@
+Date of Last Change: 
+
+Set:       Flatland
+Copyright: © Edwin Abbot
+Email:     edwin.abbot@googlemail.com
+Homepage:  
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+In every beginning think of the end
+...
+The end crowns the work
+
+
+1
+#####
+#   ###
+# @   ####
+##$##$$  #
+# ....   #
+#  .$$ $ #
+###. #####
+  #  #
+  ####
+Title: Level 1
+Author: Edwin Abbot
+Comment:
+What man has done man can do
+Comment-End:
+
+2
+#######
+# $.. #
+#  ...#
+### ..###
+  #$$#  #
+  #     #
+###$##  #
+#  $ $ ##
+#@$    #
+#####  #
+    ####
+Title: Level 2
+Author: Edwin Abbot
+Comment:
+As the man sows, so shall he reap
+Comment-End:
+
+3
+ #########
+ #  #    #
+ #$ $ $  #
+##   ### ##
+# $ $.$@$.#
+#   # ... #
+#  ###. ###
+#### #. #
+     #  #
+     ####
+Title: Level 3
+Author: Edwin Abbot
+Comment:
+No bees, no honey. No work, no money
+Comment-End:
+
+4
+   ######
+   #    ###
+ ###.##$$@#
+ # $. $   #
+## #.#$ ###
+#  ...$ #
+#   . $ #
+#########
+Title: Level 4
+Author: Edwin Abbot
+Comment:
+Idleness rusts the mind
+Comment-End:
+
+5
+######
+# ...#####
+# #$$$   #
+#....$@# #
+#$$#.$## ##
+#    $    #
+#   ###   #
+##### #####
+Title: Level 5
+Author: Edwin Abbot
+Comment:
+They are rich who have true friends
+Comment-End:
+
+6
+   ####
+####  #
+#..$ $#
+# .$ @#
+# .# $###
+# .$ $  #
+# .##   #
+#########
+Title: Level 6
+Author: Edwin Abbot
+Comment:
+Measure thrice and cut once
+Comment-End:
+
+7
+    ####
+ ####  ##
+##   $  #
+# $ $ @ #
+#  $## ##
+##$.*.$#
+ # .*. #
+ ## .  #
+  # .###
+  ####
+Title: Level 7
+Author: Edwin Abbot
+Comment:
+Busiest men find the most time
+Comment-End:
+
+8
+   ####
+   # .###
+   # ...#
+ ### $..#
+##  $#$.#
+#  $ #  #
+# $ $ $ #
+#@ ###  #
+#### ####
+Title: Level 8
+Author: Edwin Abbot
+Comment:
+Every man has his hobby-horse
+Comment-End:
+
+9
+####
+#  #####
+#... ..#
+# .*.* #
+# #$#$##
+#  $ $ #
+#$ $ @ #
+#  $  ##
+##  ###
+ ####
+Title: Level 9
+Author: Edwin Abbot
+Comment:
+Every medal has two sides
+Comment-End:
+
+10
+#####
+#   ###
+#   @ #
+##$##$###
+#  *..  #
+#  ***  #
+### # ###
+#   # ##
+#      #
+####   #
+   #####
+Title: Level 10
+Author: Edwin Abbot
+Comment:
+The biggest fools have the best luck
+Comment-End:
+
+11
+  ######
+  #    #
+### ## #
+#  $ $ #
+# #    #
+# # *. #
+#.****##
+# $ #.@#
+###    #
+  ###  #
+    ####
+Title: Level 11
+Author: Edwin Abbot
+Comment:
+Love cannot be forced
+Comment-End:
+
+12
+  ####
+### @###
+#   *  #
+# #$* $##
+#  *.*. #
+##  * # #
+ #  *   #
+ ##  ####
+  ####
+Title: Level 12
+Author: Edwin Abbot
+Comment:
+Speech is silver, silence is gold
+Comment-End:
+
+13
+  ####
+###  #
+# $.@###
+# #$ $ #
+# #.$  #
+# .$.$##
+##... #
+ #  $##
+ #   #
+ #####
+Title: Level 13
+Author: Edwin Abbot
+Comment:
+Nothing must be done hastily but killing of fleas
+Comment-End:
+
+14
+#####
+#   #####
+#  $@$  #
+##$ *.#.##
+ # *#.*. #
+### ..$  #
+#  $ $   #
+#   ######
+#####
+Title: Level 14
+Author: Edwin Abbot
+Comment:
+Sink or swim!
+Comment-End:
+
+15
+  #####
+ ##...##
+ # *.* #
+ #$ .#@##
+ # $##  #
+##  $   #
+#  $ $  #
+#   #  ##
+########
+Title: Level 15
+Author: Edwin Abbot
+Comment:
+Truth comes out of the mouths of babes and sucklings
+Comment-End:
+
+16
+  ####
+ ##  ##
+ #  $ ###
+## *.*  #
+# $ * * #
+# #+.*# #
+#   $   #
+###  ####
+  ####
+Title: Level 16
+Author: Edwin Abbot
+Comment:
+No one knows what he can do till he tries
+Comment-End:
+
+17
+ #######
+##     ####
+#    $ # +#
+# $ #$#.*.#
+## $#  $. #
+ #  $ $ .##
+ #   ##..#
+ ##  #####
+  ####
+Title: Level 17
+Author: Edwin Abbot
+Comment:
+No man is born wise or learned
+Comment-End:
+
+18
+    #####
+#####   #
+#   #$#.#
+#    $..#
+## # $..##
+#  # # . #
+#  $ $ $ #
+#### @####
+   ####
+Title: Level 18
+Author: Edwin Abbot
+Comment:
+A little help is worth a deal of pity
+Comment-End:
+
+19
+####
+#  ####
+#  $  ##
+# $.$  #
+# @#$  #
+#.*.*.##
+# $.$ #
+## . ##
+ ##  #
+  ####
+Title: Level 19
+Author: Edwin Abbot
+Comment:
+It is love that makes the world go around
+Comment-End:
+
+20
+##### #####
+#   ###   #
+#    $    #
+## #*#*# ##
+ # #...   #
+ # # $.#  #
+ #$###.#$##
+ #@  $   #
+ ####   ##
+    #####
+Title: Level 20
+Author: Edwin Abbot
+Comment:
+Last, but not least
+Comment-End:

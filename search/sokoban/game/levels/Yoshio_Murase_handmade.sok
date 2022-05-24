@@ -1,0 +1,725 @@
+Date of Last Change: 
+
+Set:       Handmade
+Copyright: © Yoshio Murase
+Email:     mrs@y.email.ne.jp
+Homepage:  http://www.ne.jp/asahi/ai/yoshio/sokoban/index.html
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+###################
+#   ...  @  ...   #
+# $$$  #####  $$$ #
+##   ###   ###   ##
+ ##  #       ##  #
+  ####        ####
+Title: Handmade 1
+Author: Yoshio Murase
+
+2
+  ####
+###  ##
+#   $ #
+# #.#@#
+# #$ .#
+#  .$ #
+##   ##
+ #####
+Title: Handmade 2
+Author: Yoshio Murase
+
+3
+  #####
+###   #
+# $ # ##
+# $.$. #
+# ##.  #
+#  @ ###
+######
+Title: Handmade 3
+Author: Yoshio Murase
+
+4
+  #####
+###   ###
+# . $ . #
+# #.$.# #
+# $ # $ #
+### @ ###
+  #####
+Title: Handmade 4
+Author: Yoshio Murase
+
+5
+  #####
+  #   ###
+###.#   #
+# $.$ # #
+# #* $  #
+#@ . ####
+######
+Title: Handmade 5
+Author: Yoshio Murase
+
+6
+  #####
+  #   ##
+###$   ##
+#  .$.$ #
+# #.#.# #
+#  *$*  #
+###   ###
+  # @ #
+  #####
+Title: Handmade 6
+Author: Yoshio Murase
+
+7
+  #####
+  #   #
+### #$#
+#  .$.###
+# #$+$  #
+#  .$ # #
+### #.  #
+  #   ###
+  #####
+Title: Handmade 7
+Author: Yoshio Murase
+
+8
+###########
+#@$   ....##
+# $$$$#....#
+# $  $..***##
+##   # ##.. #
+# $$$#  ##  #
+#    ## #  ##
+#  $$ #    #
+#     ###  #
+####### ####
+Title: Handmade 8
+Author: Yoshio Murase
+
+9
+ ######
+##    ##
+#  ##  #
+# #  # #
+#.  .#$##
+# # * $ #
+# # * $@#
+#  .. $ #
+#########
+Title: Handmade 9
+Author: Yoshio Murase
+
+10
+####
+#  ####
+#     ###
+#  #$ . #
+## #.#$ #
+#  # @* #
+#   *  ##
+####  ##
+   ####
+Title: Handmade 10
+Author: Yoshio Murase
+
+11
+  #####
+###   ##
+#  . * #
+# .$.#@#
+## # $ #
+ # $ # #
+ ###   #
+   #####
+Title: Handmade 11
+Author: Yoshio Murase
+
+12
+   #####
+   #   #
+   #. $#
+   # $ #
+####.. ##
+# $ **  #
+# .  @$ #
+#########
+Title: Handmade 12
+Author: Yoshio Murase
+
+13
+     #########
+     #...  . #
+  #### #.#.  #
+###    ......#
+#   $ $ $#..##
+# $####..####
+#  $   ###  ##
+# $$$ $ $ $@ #
+#  $ $ $ $ $ #
+##          ##
+ ############
+Title: Handmade 13
+Author: Yoshio Murase
+
+14
+    ######
+#####    ###
+#    .##.  ##
+# .$##   #  #
+##$$ #  $   #
+# .  ##$#$ ##
+#  @ .  . ##
+###########
+Title: Handmade 14
+Author: Yoshio Murase
+
+15
+ #####
+ #   #
+ #. $#
+ # $ #
+##.. ##
+# **$ #
+#  @  #
+#######
+Title: Handmade 15
+Author: Yoshio Murase
+
+16
+######
+#    #
+# .* ###
+# .$.$ #
+## $  @#
+ ####  #
+    ####
+Title: Handmade 16
+Author: Yoshio Murase
+
+17
+    #####
+ ####   #
+ #.##. $#
+##$#  $ #
+# *  .. ##
+#   #**$ #
+##### @  #
+    ######
+Title: Handmade 17
+Author: Yoshio Murase
+
+18
+ ####
+ #  ######
+ # $## @ ###
+##. ##  .  #
+# .    $.$ #
+# *$ #$#.###
+###  #   #
+  ########
+Title: Handmade 18
+Author: Yoshio Murase & Masato Hiramatsu
+
+19
+ ####
+##@ ####
+# $* * #
+#  * # #
+#  *   #
+# #*.  #
+#   #  #
+########
+Title: Handmade 19
+Author: Yoshio Murase
+
+20
+  #####
+ ##   ##
+ #  $..##
+##$ #.$.#
+#   #...#
+# $###$ #
+#  $ $ ##
+##@    #
+ #######
+Title: Handmade 20
+Author: Yoshio Murase
+
+21
+    ####
+#####  #
+# $ .  #
+#   *$ #
+###..$ #
+ ###@###
+ # $. ###
+ # $*.  #
+ #  . $ #
+ #  #####
+ ####
+Title: Handmade 21
+Author: Yoshio Murase
+
+22
+  #####
+  #   ####
+###$   $ #
+#  $ #   #
+# # .## ##
+#.**.##$#
+# @ .   #
+#########
+Title: Handmade 22
+Author: Yoshio Murase
+
+23
+#########
+#  @ .  #
+#  .#*$ #
+# $. .$ #
+##$.##$ #
+ #  ##  #
+ ########
+Title: Handmade 23
+Author: Yoshio Murase
+
+24
+  #####
+  # @ #
+### # ###
+# $$#$$ #
+# .. .  #
+##  #.$##
+ #   . #
+ #######
+Title: Handmade 24
+Author: Yoshio Murase
+
+25
+#####
+#   ##
+# *$ ##
+#@ *  ##
+# .#$  #
+## ...$##
+ ### $* #
+   #    #
+   ######
+Title: Handmade 25
+Author: Yoshio Murase
+
+26
+  ####
+###  ##
+# ..  ###
+# *.*   #
+#@$$.$$ #
+#  ##   #
+#########
+Title: Handmade 26
+Author: Yoshio Murase
+
+27
+########
+#      #
+# $$#$ #
+# $.*  #
+## ...##
+ ##.$##
+##... ##
+#  *.$ #
+# $#$$ #
+#  @   #
+########
+Title: Handmade 27
+Author: Yoshio Murase
+
+28
+  #####
+###   #
+# $$.$#
+# . . #
+# # # #
+# ..* ##
+###@$$ #
+  #    #
+  ######
+Title: Handmade 28
+Author: Yoshio Murase
+
+29
+  ######
+  #    #
+###$$  #
+# $ #$ #
+# $ #  #
+# $ @# ##
+# $#.*. #
+#  $* #.#
+##  . #.#
+ ###... #
+   #    #
+   ######
+Title: Handmade 29
+Author: Yoshio Murase
+
+30
+  #####
+ ## @ ##
+ # .$. #
+ # * * #
+ #$ #.*#
+##  #  ##
+# $.$.$ #
+#   #   #
+#########
+Title: Handmade 30
+Author: Yoshio Murase
+
+31
+  ####
+  #  #
+  #. #
+  # $#
+  #. #
+### $###
+#  .$  ##
+# # $$  #
+# .##. @#
+## *  $##
+ #  .  #
+ #######
+Title: Handmade 31
+Author: Yoshio Murase
+
+32
+  #####
+###   ###
+#  $..$ #
+# # ##  #
+# # ##@##
+#  $..$#
+### #$ #
+  # . .#
+  #$# .#
+  #  $ #
+  ###  #
+    ####
+Title: Handmade 32
+Author: Yoshio Murase
+
+33
+    ####
+ ####  ###
+ #  $  $ #
+ #$..$ . ###
+## #.##..  #
+#  ..$@$ $ #
+# $ . #. ###
+####$  $ #
+   #  ####
+   ####
+Title: Handmade 33
+Author: Yoshio Murase
+
+34
+   ######
+ ###    ##
+ # $$$$  #
+ #  *..* #
+ #  $. $.#
+## $#.$#.##
+#  $. $.  #
+# $$*$#.# #
+#  .... # #
+#######  @#
+      #####
+Title: Handmade 34
+Author: Yoshio Murase
+
+35
+  #####
+  # @ ##
+###$$$ ###
+#  .# .  #
+# #.# .# #
+#  . #.# #
+# *$$$   #
+###  # ###
+  ##   #
+   #####
+Title: Handmade 35
+Author: Yoshio Murase
+
+36
+  #####
+ ## .@##
+ #  *  #
+ # $*$ #
+ #..#..#
+##$ . $##
+# $ # $ #
+#   #   #
+#########
+Title: Handmade 36
+Author: Yoshio Murase & Masato Hiramatsu
+
+37
+  ####
+  #  ###
+### $  ##
+# $...$ #
+# ##. # #
+#  .$.# #
+# $#. $ #
+## #$##@#
+ #      #
+ ########
+Title: Handmade 37
+Author: Yoshio Murase
+
+38
+  ######
+###  . ###
+# $.$$$  #
+# # #. # #
+# @. . # #
+#### $   #
+   #$.####
+   #  #
+   ####
+Title: Handmade 38
+Author: Yoshio Murase
+
+39
+ #####
+##  @###
+#  **  #
+# #  # #
+# #*$  #
+# #  #.#
+#  *$. #
+###   ##
+  #####
+Title: Handmade 39
+Author: Yoshio Murase
+
+40
+  #####
+  #   ##
+###$.@ #
+#  $.  #
+# # * ##
+#   ###
+#####
+Title: Handmade 40
+Author: Yoshio Murase
+
+41
+ ##########
+ #        #
+ # ##$# # #
+ # .....# #
+###$$$$$  #
+#  * .@*###
+#  $$$$$  #
+# # ...## #
+#  .#. .# #
+### #$#   #
+  #   #####
+  #####
+Title: Handmade 41
+Author: Yoshio Murase
+
+42
+  #######
+  #     #
+### ### #
+#  *$  .#
+#  * $#.#
+## *@$ .#
+ #$$* . #
+ # # .###
+ # ## #
+ #    #
+ ######
+Title: Handmade 42
+Author: Yoshio Murase
+
+43
+ #####
+##   ###
+# .... #
+# #. # #
+# $$$$ #
+# $.@$###
+# $$$$  #
+##$..$# #
+ # .. # #
+ #.##.  #
+ #    ###
+ ######
+Title: Handmade 43
+Author: Yoshio Murase
+
+44
+   ####
+####  #
+# .$* ##
+#   $  #
+# .# . #
+# *#$@##
+##    #
+ ######
+Title: Handmade 44
+Author: Yoshio Murase
+
+45
+  ###
+  #.#
+ ##$###
+## *  #
+# *  *##
+# *  * #
+#  **  #
+# *   ##
+## @ ##
+ #####
+Title: Handmade 45
+Author: Yoshio Murase
+
+46
+ #####
+##  ######
+#  $ $   #
+#    #.  #
+##@#### ##
+ #   #. ##
+## # #$$ #
+# ** # ..#
+#  *## $$#
+##    .. #
+ #####   #
+     #####
+Title: Handmade 46
+Author: Yoshio Murase
+
+47
+   #####
+   #   #
+####.. #
+#      #
+#******#
+#      #
+# $$####
+# @ #
+#####
+Title: Handmade 47
+Author: Yoshio Murase
+
+48
+  #####
+  #   #
+###$# ###
+#   #.@ #
+#   *.# #
+#   # # #
+###$#   #
+  #   ###
+  #####
+Title: Handmade 48
+Author: Yoshio Murase
+
+49
+########
+#   *  #
+# * .  #
+# *** ##
+# $ * #
+## @  #
+ ######
+Title: Handmade 49
+Author: Yoshio Murase
+
+50
+#########
+#   .   #
+# ##$## #
+# # *   #
+# # *@# #
+# # $ # #
+# # ### #
+#   .   #
+#########
+Title: Handmade 50
+Author: Yoshio Murase
+
+51
+###########
+#    *    #
+#@# * . # #
+# #*****# #
+# # $ * # #
+#    *    #
+######  ###
+     ####
+Title: Handmade 51
+Author: Yoshio Murase
+
+52
+######
+#    #
+#    #
+##$ ###
+# $   #
+#.***.#
+#  @  #
+#######
+Title: Handmade 52
+Author: Yoshio Murase
+
+53
+ #####
+##   #
+#  # ###
+# * $  #
+#. * #@#
+# * *  #
+## *  ##
+ ######
+Title: Handmade 53
+Author: Yoshio Murase
+
+54
+  #####
+  # @ #
+### * ###
+#  ...  #
+# ##$## #
+# $   $ #
+###   ###
+  #   #
+  #####
+Title: Handmade 54
+Author: Yoshio Murase

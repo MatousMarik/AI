@@ -1,0 +1,219 @@
+Date of Last Change: 
+
+Set:       dh1
+Copyright: © David Holland
+Email:     david@clickfest88.freeserve.co.uk
+Homepage:  http://www.clickfest88.freeserve.co.uk/
+
+Archives:  http://web.archive.org/web/*/http://clickfest88.freeserve.co.uk/
+           http://web.archive.org/web/20040606032319/www.clickfest88.freeserve.co.uk/dh1/index.html
+           http://web.archive.org/web/20040529083926/www.clickfest88.freeserve.co.uk/dh1/dh1.txt
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The dh1 Sokoban levels by David Holland
+
+Original release date: October 2000
+
+Author's note:
+I have experimented with computer-generation for several of the smaller puzzles hence the
+"co-authorship" with sokgen (a computer program of mine). If you like the puzzles email
+me and if you have stylistic criticisms direct them to sokgen :-)
+
+For those interested in the programming: sokgen uses exhaustive search of a puzzle space
+(backwards from a solved position). This can only be achieved for (very) small puzzles
+(about 100,000 "nodes" is the limit for my computer system, where a "node" represents a
+single legal push and movements of the man are not represented for brevity).
+For the co-authored puzzles, I designed the maze and placed the goals, and sokgen
+generated start positions of stones and (usually) push-minimal solutions at the largest
+push-depth possible.
+
+These levels may be distributed freely as long as this copyright message is retained.
+
+
+1
+       ##
+     ##  ###
+   ## $ $   #
+  #   #..#$ #
+  # $$#*.#  #
+  #   ....$ #
+  # # .#.#  #
+ # $##$#.#$ #
+ # @$    .$ #
+  #  #  ##  #
+   #####  ##
+Title: Spade
+Author: David Holland
+
+
+2
+    ####
+####   #
+#@$  # #
+# $$$  #
+##.#.  #
+#  ..# #
+#  #.* #
+# $.$ #
+ ##   #
+ ######
+Title: ninevah
+Author: David Holland + sokgen
+
+
+3
+    ###
+   #  @###
+  #  #$$  #
+ ##.#   # #
+#  $#.#$  #
+#   ...  #
+ ##$#.#$ #
+  #     #
+   ##   #
+     ####
+Title: CrissCross
+Author: David Holland + sokgen
+
+
+4
+    ##    ###
+####  ####   #
+# $  $     $ ###
+# #   # ### #   #
+#  $   $ # $$ $ #
+ ##  ## $@$     #
+  #$ ##  # $$ $$ #
+  #    $  ## ##  #
+ ### #$##  ...# #
+ #  ..*.*..##.# #
+ # #..*.....*.# #
+ #   ########   #
+  ###        ###
+Title: Carousel
+Author: David Holland
+
+
+5
+   ##
+  #  #
+  #  #  #####
+  #  # #..   #
+  # ####..##$##
+  #  $ $.*     #
+  # #$ #*.# $# #
+ ##$#  #..#  # #
+#   #$ #*.# $# #
+# # #  $..#  # #
+# #$#$ #..$  #  #
+#   #  #..#   # #
+# #@# $#*.#$# # #
+#  $#  #..#   # #
+ #   $ $ $ ###  #
+  ###   #      #
+     ### ######
+Title: Pattern-oster
+Author: David Holland
+
+
+6
+ ### ####
+#   ##   # ###
+# $   $ $ #   #
+# $ #  .$ #   #
+ ##  ##.#  $ #
+# ##$##.###. #
+#   *.......$#
+#    ##.##   #
+##$####.#####
+#  $ # . #   #
+#  #  **$    #
+#  $ # @ # $ #
+# $   ### #  #
+ ##   #   ###
+   ###
+Title: Saturnine
+Author: David Holland
+
+
+7
+   ###
+###   #
+# $*@.###
+# # *$  #
+# #. .# #
+# #$* $ #
+#    .###
+###   #
+   ###
+Title: briefcase alt 23
+Author: David Holland + sokgen
+
+
+8
+       ###
+##### #   ###
+#   ## $ $  #
+# # ##    # #
+# #..$ $ ## #
+#  .$# $#   #
+###..# $ @$ #
+  #**# $ # ##
+  #..#   # #
+  #..##### ##
+  #.*#   $  #
+  #..# $    #
+  ##.### #####
+  # $      $ #
+  #   ####   #
+  #####  #####
+Title: Salamandar v3
+Author: David Holland
+
+
+9
+  ####
+ #    #
+ #. * #
+# . $  #
+# #**# #
+#  *+* #
+ # $$ #
+ #    #
+  ####
+Title: Abstract
+Author: David Holland
+
+
+10
+ ##
+#  ######
+#        #
+#  ###$# #
+ #.# # . #
+ # # #$* #
+ #.### + #
+ # $ #$* #
+ # #   . #
+ #.####* #
+#  $ $ * #
+#       ##
+ ########
+Title: Storm (in a teacup) v6
+Author: David Holland

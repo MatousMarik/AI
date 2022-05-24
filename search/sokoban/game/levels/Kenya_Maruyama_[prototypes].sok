@@ -1,0 +1,143 @@
+Date of Last Change: 
+
+Set:       Kenya Maruyama [prototypes]
+Copyright: © Kenya Maruyama
+Email:     rmckenyam@hotmail.com
+Homepage:  http://www.geocities.co.jp/Playtown-Domino/7999/soko/skrmc_a.htm
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+    ####
+  ###  #
+  #    ###
+  # $    #
+  #$$###@#
+  #......#
+###$$# ###
+#   $  #
+#   #  #
+########
+Title: Origin (1a)
+Author: kenyam
+Comment:
+earlier version
+Comment-End:
+
+2
+    ######
+    #    #
+ ####$## ###
+ #  $ .. $ #
+## ##@..$# #
+#   $ *. # #
+#   ###    #
+##### ######
+Title: minus-plus (2a)
+Author: kenyam
+Comment:
+earlier version
+Comment-End:
+
+5
+   #######
+   #     ###
+ ### #$#   #
+ #   $ ### #
+## # $ @$  #
+# .*.#$$ ###
+# ...  ###
+##.* ###
+ #####
+Title: Dance In The Hall (5a)
+Author: kenyam
+
+9
+   ########
+  ##      ###
+ ## $ #  $  #
+## *.* .*.$ #
+# $.*.@*.* ##
+#  $  # $ ##
+###      ##
+  ########
+Title: Checker I (9a)
+Author: kenyam
+Comment:
+earlier version
+Comment-End:
+
+15
+      #####
+    ###   ##
+    # $ $  #
+   ## $ $# #
+   #  # $  #
+   # @$ $$##
+####    # #
+#  ### ## #
+#   ..    #
+#  #..#####
+#   ..  #
+## #..  #
+ #     ##
+ ####  #
+    ####
+Title: Double Detour (15a)
+Author: kenyam
+
+15
+         #####
+       ###   ##
+       # $ $  #
+      ## $ $# #
+      #  # $  #
+   #### @$ $$##
+   #  #    # #
+   #  ### ## #
+   #         #
+  ##  ########
+  #   #
+### # ##
+#  ....#
+# #....#
+# #  ###
+#    #
+##   #
+ #####
+Title: Double Detour (15b)
+Author: kenyam
+Comment:
+revised 03/05/11
+Comment-End:
+
+18
+####
+#..#####
+#..    #
+#.*  #$#
+##$#   #
+ #@$  $##
+ ##$#   #
+  #     #
+  #######
+Title: Waltz I (18a)
+Author: kenyam
+Comment:
+prototyp
+Comment-End:

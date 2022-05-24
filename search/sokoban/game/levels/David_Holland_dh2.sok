@@ -1,0 +1,228 @@
+Date of Last Change: 
+
+Set:       dh2
+Copyright: © David Holland
+Email:     david@clickfest88.freeserve.co.uk
+Homepage:  http://www.clickfest88.freeserve.co.uk/
+
+Archives:  http://web.archive.org/web/*/http://clickfest88.freeserve.co.uk/
+           http://web.archive.org/web/20040606033328/www.clickfest88.freeserve.co.uk/dh2/index.html
+           http://web.archive.org/web/20040619181519/www.clickfest88.freeserve.co.uk/dh2/dh2.txt
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The dh2 Sokoban levels by David Holland
+
+Original release date: June 2001
+
+Author's note:
+There are no computer-generated levels as I am trying to evolve a puzzle-making style,
+and so experimenting with as many different forms as possible. Some of the puzzles are
+very, or slightly, symmetrical as a stylistic device (in this I am influenced by
+David W. Skinner's excellent Sasquatch puzzle sets at his Sokoban page).
+Others are completely unsymmetrical and the style is in the variations alone.
+
+These levels may be distributed freely as long as this copyright message is retained.
+
+
+1
+      #####
+     #     #
+    #  # #  #
+   #  #   #  #
+   # #  *  # #
+  #  # * * #  #
+ #  ##$.#.$##  #
+#  # $  #  $ #  #
+# # *  *.* .* # #
+#  $ ##. .## $  #
+# # *. *.*  * # #
+#  # $  #  $ #  #
+ #  ##$.#.$##  #
+  #  # * * #  #
+   # #  *  # #
+   #  # @ #  #
+    #  # #  #
+     #     #
+      #####
+Title: Egg
+Author: David Holland
+
+
+2
+      #####
+      #   #
+####### # #
+#    $ $ $#
+# # ..... #
+#  $.$$$.$#
+### .@# . #
+  #$.$$$.$##
+  # .....  #
+  #$ $ $   #
+  # # ######
+  #   #
+  #####
+Title: Square version 3
+Author: David Holland
+
+
+3
+ #### ####
+##  ###  ##
+#    #  . #
+#   * *   #
+## * $ * ##
+ ## *@* ##
+## * * * ##
+#   * *   #
+#    #    #
+##  ###  ##
+ #### ####
+Title: clover version 4
+Author: David Holland
+
+
+4
+          ####
+       ####  ######
+       #  # .##   #
+       #  $  #  # #
+ #######.*.**#$## #
+ #        #     # ##
+## ##$##### $  $#  #
+#  # . *  ####  ## #
+# ##$* *$ #   #  # #
+# #  .....$@$    # #
+# #   ##  ######## #
+# ##  ##  #        #
+#  ######## ########
+##          #
+ ############
+Title: prefab #5
+Author: David Holland
+
+
+5
+ #####   #####
+ #   #####   #
+##     *     ##
+# **##$.$##** #
+#  . # * # .  #
+# ** #$.$# ** #
+##   # . #   ##
+ ### ## ## ###
+  #  ## ##  #
+  #    $    #
+  #### @ ####
+     #####
+Title: Figure eight
+Author: David Holland
+
+
+6
+         #####
+      ####   #
+   ####    # #
+####  $ # $  ##
+#   .#.$.$.$. #
+# # $.$.$.$.# #
+#  $.$.$.#.$.$##
+##  $.#.$.$.$  #
+ # #.$.$ $.$.# #
+ #  $.$.$.#.$  ##
+ ##$.$.#.$.$.$  #
+  # #.$.$.$.$ # #
+  # .$.$.$.#.   #
+  ##  $ # $  ####
+   # #  @ ####
+   #   ####
+   #####
+Title: Skewsymmetric pattern #6
+Author: David Holland
+
+
+7
+###############
+#   #     #   #
+#  . * *@*  . #
+##$##  *$ ##$##
+#    #   # $  #
+#  #*#####.#  #
+# $* #   # .$ #
+##   #*.$#   ##
+ ###     * ###
+ #  . * * $. #
+ # ## ###.## #
+ #    # #    #
+ ###### ######
+Title: Butterfly #3
+Author: David Holland
+
+
+8
+ ##### #####
+##   ###   ######
+#  #  ##      $ ##
+# $$   ##*###  $ ##
+#  # $ #...  #  $ ##
+# $# # # *$# ##  $ #
+#    $ #...#   #$  #
+##  #####.## $    ##
+# .#...##.### ##  #
+# *.*....*.. $#####
+# .#. .##.### #####
+## # ####.#       #
+## $  ###*#$#$$ $ #
+#  ##   $@$    ## #
+# $ $ #$### # $   #
+#     #     ##    #
+###################
+Title: Crossed Swords version 10
+Author: David Holland
+
+
+9
+#########
+#   #   ####
+#    * ..$ #
+###$## # $ ##
+  #  $  #  @##
+  ##   .###  ###
+   ####    # $ #
+      #$.#*    #
+     ## * . ####
+     # $.*.##
+     #     #
+     #######
+Title: interlocked goals
+Author: David Holland
+
+
+10
+ ############
+### .*.*.$  ##
+#   * $ * $  ##
+#  $.$.*.*.$  #
+# $ * *@* * $ #
+#  $.*.*.$.$  #
+##  $ * $ *   #
+ ##  $.*.*. ###
+  ###########
+Title: Meshed Squares
+Author: David Holland

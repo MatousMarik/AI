@@ -1,0 +1,347 @@
+Date of Last Change: 
+
+Set:       Picokosmos
+Copyright: © Aymeric du Peloux
+Email:     aymeric.du-peloux@gadz.org
+Homepage:  http://membres.lycos.fr/nabokos
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+ #####
+ #   ####
+ #      #
+### **# #
+#  #* *@#
+#   * ###
+#  ##  #
+##     #
+ #.$#  #
+ #  ####
+ ####
+Title: Picokosmos 1
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.75
+Comment-End:
+
+2
+       #####
+     ###   #
+    ## . # #
+   ##  $$  #
+  ## *$. ###
+ ## $  ###
+## .$. #
+#  @ ###
+#  . #
+######
+Title: Picokosmos 2
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+3
+   ####
+   #  #
+####  ###
+#  *$*  #
+#  *@*# #
+## .**  #
+## #   ##
+#    ###
+#   ##
+#####
+Title: Picokosmos 3
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:
+
+4
+   ####
+ ###  ##
+## * * #
+#  * * ##
+#  * *  #
+#  $ * @#
+###. ####
+  #  #
+  ####
+Title: Picokosmos 4
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9.5
+Comment-End:
+
+5
+   #####
+ ###   ##
+##   #  ##
+#  * * * #
+#+  $ *  #
+#### * ###
+   #  ##
+   ####
+Title: Picokosmos 5
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+6
+  ####
+ ##  ###
+##  .  #
+# $.$.$##
+# .$.$. #
+##$ #.$ #
+ #  @  ##
+ #######
+Title: Picokosmos 6
+Author: Aymeric du Peloux
+Comment:
+difficulté: 10
+Comment-End:
+
+7
+   #####
+####   ##
+#  * *  #
+#  . *  #
+##$.$*$##
+ # . *@#
+ #   ###
+ #####
+Title: Picokosmos 7
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9.5
+Comment-End:
+
+8
+    ####
+   ##  #
+ ###   ####
+## * * *  #
+#  * * $  #
+#  * # * ##
+## . ##@ #
+ #  ######
+ ####
+Title: Picokosmos 8
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:
+
+9
+ ####
+ #  ###
+##    ####
+#  * *   #
+# $#*#*  #
+## * *   #
+ #  + * ##
+ ###  ###
+   ####
+Title: Picokosmos 9
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9.5
+Comment-End:
+
+10
+ ####
+##  ####
+#      ##
+# **@** #
+##  #   #
+ # **$ ##
+ #  *  #
+ ## . ##
+  ##  #
+   ####
+Title: Picokosmos 10
+Author: Aymeric du Peloux
+Comment:
+difficulté: 10
+Comment-End:
+
+11
+    ####
+    #  ###
+  ###    #
+### ** * #
+#  . *$@##
+#  ***  #
+##    ###
+ ###  #
+   ####
+Title: Picokosmos 11
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9.5
+Comment-End:
+
+12
+ #####
+ # + #
+ #$.$#
+ # * #
+ # * #
+ # * ##
+## *  #
+#  *  #
+#    ##
+##  ##
+ ####
+Title: Picokosmos 12
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9.75
+Comment-End:
+
+13
+        #####
+##### ###   #
+#   ###     #
+# * * # * +##
+##     $* ##
+ #  *## * #
+ ##  ##  ##
+  ########
+Title: Picokosmos 13
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:
+
+14
+  #######
+ ##  #  #
+ #      #
+## # #  #
+#  *** ##
+#@#*  $#
+#  *** #
+### .  #
+  ###  #
+    ####
+Title: Picokosmos 14
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9.25
+Comment-End:
+
+15
+  ####
+ ##  ##
+ #@ $ #
+## .* ###
+# $$*.* #
+# #.. # #
+#   $   #
+###  ####
+  ####
+Title: Picokosmos 15
+Author: Aymeric du Peloux
+Comment:
+difficulté: 10
+Comment-End:
+
+16
+ ######
+ #    #
+## * .##
+# *$*  ##
+#@ * *  #
+##* *   #
+ #   ####
+ #####
+Title: Picokosmos 16
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:
+
+17
+ #####
+ # + #
+ #$.$#
+ # * #
+ # * #
+## * #
+#  * ##
+#  *  #
+#  *  #
+###  ##
+  ####
+Title: Picokosmos 17
+Author: Aymeric du Peloux
+Comment:
+difficulté: 10
+Comment-End:
+
+18
+ ########
+ #   #  #
+##.     #
+# ***** #
+#   * * #
+## #$  ##
+ #  @###
+ #####
+Title: Picokosmos 18
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9.5
+Comment-End:
+
+19
+  ####
+  #  ####
+  #    @##
+ ##** ** #
+##  **.  #
+# $  # ###
+#      #
+########
+Title: Picokosmos 19
+Author: Aymeric du Peloux
+Comment:
+difficulté: 10
+Comment-End:
+
+20
+  ####
+ ##  #
+##   ###
+#  *** #
+#  *@# #
+## **. #
+ #     #
+ # #$###
+ #   #
+ #####
+Title: Picokosmos 20
+Author: Aymeric du Peloux
+Comment:
+difficulté: 10
+Comment-End:

@@ -1,0 +1,809 @@
+Date of Last Change: 
+
+Set:       Sasquatch, arranged
+Copyright: © York Shen
+Email:     linashen@ms28.hinet.net
+Homepage:  
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Arrangements of David W. Skinner's levels
+They are published with David W. Skinner's permission
+original level page: http://users.bentonrea.com/~sasquatch/sokoban/
+
+2
+    #####
+   ## . #
+  ## $. #
+ ## $   #
+## $+ ###
+# $  ##
+#.* ##
+#   #
+#####
+Title: Sasquatch 2a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+5
+  ###########
+  #    #    #
+### $ $#$ $ ###
+# #$ $ # $ $# #
+# $  ..#..  $ #
+#  $.*.#.*.$  #
+# $ .. . .. $ #
+######.@.######
+# $ .. . .. $ #
+#  $.*.#.*.$  #
+# $  ..#..  $ #
+# #$ $ # $ $# #
+### $ $#$ $ ###
+  #    #    #
+  ###########
+Title: Sasquatch 5a
+Author: David W. Skinner, York Shen
+Comment:
+added 3 boxes
+Comment-End:
+
+8
+    #######
+    #     ##
+##### ###  #
+#       #  ##
+#@$****.##$ #
+#  #    ## .#
+##  ##  # $ #
+ ##  ####.$.#
+  ##        #
+   ######  ##
+        ####
+Title: Sasquatch 8a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+9
+#########
+#...    #
+#. .$.  #
+## ###  #
+ #  $  ##
+ # $$$##
+ #  $@#
+ #  ###
+ ####
+Title: Sasquatch 9a
+Author: David W. Skinner, GRIGoRusha
+Comment:
+added 1 box
+Comment-End:
+
+10
+      ######
+      #    #
+      # @  ###
+####  #.$$   #
+#  ####..#.#*#####
+# $ $ ##.*.*     #
+#    ....*.#$$   #
+###### ##*## #####
+     #  $    #
+     #### ####
+       #  #
+       #  #####
+     ### $    #
+     #  $ $   #
+     # #$# ####
+     #     #
+     #######
+Title: Sasquatch 10c
+Author: David W. Skinner, GRIGoRusha
+Comment:
+added 5 boxes
+Comment-End:
+
+22
+   ##### ####
+   #@ .###  ###
+####  $$ $    #
+#   # . . ##  #
+#  $ # .$. ## #
+## . .$ $$  # #
+ # #  ###.  # #
+ # #### ##### #
+ #       #    #
+ ####### # ####
+       # .$ #
+       ##   #
+        #####
+Title: Sasquatch 22a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+23
+     #######
+######     ######
+#  ....$#$.. .  #
+#  $ $ $.  $ $  #
+###$####@####$###
+#  $ $  .  $ $  #
+#  . ..$#$.. .  #
+######     ######
+     #######
+Title: Sasquatch 23a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+26
+          ####
+###########  #
+#  $ $ $ $   #
+#  # # # # #$#
+##. . . . . .#
+ #$#$#$#$# #$####
+ #. . . . . .   #
+ #$# # # # # @  #
+ #   $.$.$.$  ###
+ #  ###########
+ ####
+Title: Sasquatch 26a
+Author: David W. Skinner, York Shen
+Comment:
+added 3 boxes
+Comment-End:
+
+27
+      ########
+ ######      ##########
+## $     ###          ##
+# $ $ ## #  #########  #
+#  $  #              # #
+# $ $ # #  ######### # #
+#  $  #  # #. . . .  # #
+# $$$ # #    ... . .## #
+#  $  # # # . . . . #  #
+##$ $## #  #### # #   ##
+ #   #@ #       #  ####
+ ######  #####  #  #
+      ##     #  #  #
+       #####  ##  ##
+           ##    ##
+            ######
+Title: Sasquatch 27a
+Author: David W. Skinner, GRIGoRusha
+Comment:
+added 1 box
+Comment-End:
+
+28
+       ######
+       #    ###
+   ##### $ $  #
+####   #.#    #
+#  $ #$#.##$#####
+# $$...#.$      #
+#  $.#.#.#####  ####
+##  ....... @#     #
+ ####$ #.### #$###$##
+   # $  *  #  $ $ $ #
+   # $ ###          #
+   #   # ############
+   #####
+Title: Sasquatch 28a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+34
+            #####
+            # ..########
+            # ......#  #
+            #.. ##$$  $#
+         #####.##   $  #
+         #  ....# $ $$$#
+#####    #  .. .#$     #
+#   #    # ##.###  $$ $###
+#   ###  # ##.#  $  #    #
+# @   #### #  # # ###$$# #
+#             #  $    $  #
+#   ####      ### ####$$##
+#  ##  ####     #       #
+#  #      ##    ######  #
+####       ##     # # $ #
+            ##    # #   #
+             ###### #####
+Title: Sasquatch 34a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+36
+               #####
+   ####        #   ######
+   #  #        # $    $ #
+   #  ####     #  $##$  ###
+   #     #########  # $ $ #
+   #     ...........# $ $ #
+ ###### ##....@###  # $$  #
+ #    # #####.## #$## $ $ #
+ #            #  #      $ #
+#### #  ##### #  # $$  #  #
+#    # #      #  ###   ####
+#      #  #   #    #####
+#   #     #####
+#####     #
+    #######
+Title: Sasquatch 36a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+37
+  #####       #########
+  #   #       #       #
+### #$### ##### # # # #####
+# $. .  # #    .$.$.$.    #
+# # #$#$### # # # # # # #$#
+#  . . . .$ $ $ $ $ $. .  #
+###$#$# #$###########$# #$#
+  #  . . .#         #  .  #
+  ###$# #$#######   #$# #$###
+    #  . .$.$.$.#   #. . .  #
+    #$#$# # # # #####$# #$# #
+    #  . . . .$. .$. . . .  #
+    ### # # # # # # # # # # #
+      # $ $.$.$.$.$.$.$.$.$ #
+      ##### # # #############
+          #  @  #
+          #######
+Title: Sasquatch 37a
+Author: David W. Skinner
+Comment:
+added 12 boxes
+Comment-End:
+
+38
+                      ####
+  ####         ########  #
+###@ ##        #      #  #
+#     #        # ###.$$$ #
+# ....##########   #  #..#
+# . #  ## $   $ $# #  #..#
+### #     $  $$$ # # $ $ #
+  # ...# $  $$   # #  # .#
+  #  ..# $   $ $ # # ##  #
+  ##...#  $ $$ $ #$# #####
+   #   ## $  $ $   # #
+   ### ######  ### # ###
+   # .   #  #### . $ . #
+  ##   . #     # #.#.# #
+  #  .   #     #   #   #
+  # . ####     #########
+  #  ##
+  ####
+Title: Sasquatch 38a
+Author: David W. Skinner, York Shen
+Comment:
+added 2 boxes
+Comment-End:
+
+39
+   ####           #####
+   #  #######  ####   #
+   # @  $   ####   $$ #
+   #  ###.#    #  $$  #
+ ###.## $ #$ #    #  ##
+ #  ..# $ ...#$###  ##
+ # $ ...$##.##     ##
+ ##.###$ *..   $$ ##
+  #.  #...### $ $ #
+  #  $...## ## #  #
+ ## ######   #   ##
+##   ##      #####
+# $$  #
+#   $ #
+### $ #
+  #  ##
+  ####
+Title: Sasquatch 39a
+Author: David W. Skinner
+Comment:
+added 2 boxes
+Comment-End:
+
+40
+     #######
+#### #     #
+#  ### $$$ #
+# .....$  #####
+#  ..# $  #  @#
+###$##$#### # # ####
+ #.*....*  $$ ###  #####
+ # ..#####  ##   $ $   #
+ #....*.... #  $$  # $ #
+ ########## #$$ ## #   #
+    # $.###        $  ##
+    #       $###$# #  #
+    ##### $ $    $ ####
+        ####    ####
+           ######
+Title: Sasquatch 40a
+Author: David W. Skinner
+Comment:
+added 2 boxes
+Comment-End:
+
+41
+   #####
+   #   #
+   #   #
+####$ $###
+#  $...$ #
+#   .@.  #
+#  $...$ #
+####$ $###
+   #   #
+   #####
+Title: Sasquatch 41a
+Author: David W. Skinner, York Shen
+Comment:
+added 2 walls
+Comment-End:
+
+41
+  #####
+  #   #
+  #   #
+###$ $###
+# $...$ #
+#  .@.  #
+# $...$ #
+###$ $###
+  #   #
+  #####
+Title: Sasquatch 41b
+Author: David W. Skinner, York Shen
+Comment:
+added 5 walls
+Comment-End:
+
+41
+  #####
+  #   #
+###$ $###
+# $...$ #
+#  .@.  #
+# $...$ #
+###$ $###
+  #   #
+  #####
+Title: Sasquatch 41c
+Author: David W. Skinner, York Shen
+Comment:
+added 8 walls
+Comment-End:
+
+41
+  #####
+  #   #
+  #   #
+###$ $###
+# $.+.$ #
+#  .*.  #
+# $...$ #
+###$ $###
+  #   #
+  #####
+Title: Sasquatch 41d
+Author: David W. Skinner, Marek Letrab
+Comment:
+added 5 walls, 1 box
+Comment-End:
+
+41
+  #####
+  #   #
+  #   #
+###$ $###
+# $.*.$ #
+#  .+.  #
+# $...$ #
+###$ $###
+  #   #
+  #####
+Title: Sasquatch 41e
+Author: David W. Skinner, Marek Letrab
+Comment:
+added 5 walls, 1 box
+Comment-End:
+
+41
+   #####
+   #   #
+   #   #
+ ###$.$###
+## $.*.$ #
+#   .+.  #
+#  $.*.$ #
+####$ $###
+   #   #
+   #####
+Title: Sasquatch 41f
+Author: David W. Skinner, Marek Letrab
+Comment:
+added 3 walls, 2 boxes
+Comment-End:
+
+41
+   #####
+   #   #
+   #   #
+ ###$.$###
+## $.*.$ #
+#  ..@.  #
+#  $.*.$ #
+####$ $###
+   #   #
+   #####
+Title: Sasquatch 41g
+Author: David W. Skinner, Marek Letrab
+Comment:
+added 3 walls, 2 boxes
+Comment-End:
+
+42
+####
+#  ######
+#       ####
+# $ $   #  #####
+##### ###    $ #
+ #  #   $  #   #
+ #      ##$#####
+ # $###  # ...#
+ ## #@#$ ##.#.#
+ #    #   #...#
+ # $ ##$$$#...#####
+ ### #    #...    #
+  #  #  $ $ * # # #
+  # $### ###### # #
+  #             # #
+  #############   #
+              #####
+Title: Sasquatch 42a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box, deleted 1 wall
+Comment-End:
+
+44
+ #############
+##       #   ###
+#  $ $$$$$ $   #
+### $   $  ### #
+  # $ $ $### # #
+  ##   $ ##  # ###
+   ####   ####   #
+      ##       # ###
+   #### $ ####     #
+   #@ $   # #  #.# #####
+   # $ $ ## #  .....   #
+   # $$ ##  ####.....  #
+  ## $  #     #..#.##  #
+  # $ $ ##    #......  #
+  #  $ $ #    # ....# ##
+  ##  $  #    ## ##.# #
+   #    ##     #      #
+   ######      ########
+Title: Sasquatch 44a
+Author: David W. Skinner, York Shen
+Comment:
+added 2 boxes
+Comment-End:
+
+45
+  ####      ########
+  #  ########   #  #
+  #    $  ## $  $  #
+  #  $ #       $   ####
+  ###  #  # #####$#   #
+#####  ###  ####  #   #
+#   # $  $$## .. ##$$ #
+#  $$   # $          ##
+##  # $##..####$#$####
+### #  ##*.###..#..#
+#   ###....#  .***.###
+#   #  *.### #  #.*  #
+##$$#  *.##@ #  #    #
+ #     *. ####  ###  #
+ ######   #  #       #
+      #####  ##    ###
+              #  ###
+              ####
+Title: Sasquatch 45a
+Author: David W. Skinner, York Shen
+Comment:
+changed wall position, added 6 boxes
+Comment-End:
+
+46
+      #### ###################
+  #####  ###            .$   #
+###  $.$      #####$####   # #
+#    $.  #### #     .   ### .#
+#  $ $.###  # # #### #  $.# $#
+###  $.#    # # #  #  # $ #  #
+  ######    # #$ $ ##   #. # #
+        ##### #.#* .#  ### # #
+        #   # ### ###   #    #
+        #     .#  #   #$$*  ##
+       ###.## ## ## #  .#. ##
+       #  .$ .# $.$.## ### #
+       # #.####     # $.   ##
+       # $$   ### ###   ##  ##
+       # #   . $@$  #######. #
+       # ### ####.#        $ #
+       #     #  ###########  #
+       #######            ####
+Title: Sasquatch 46a
+Author: David W. Skinner, York Shen
+Comment:
+added 2 box
+Comment-End:
+
+47
+#########
+#       #    ######
+#   $   ######    ###
+# #$#$$$ $  # $     #
+# $   $@$  $ $ $ $$ #
+# $ $# $ #     $$$  #
+# $  $  ######   #####
+##    ###....##### ..#
+ ###$$# $$$$ #...* ..#
+  #         ##.  #.. #
+  #  #  #$###....##*##
+  #   ##..$. ....    #
+  ### .*   .#....#   #
+    ##################
+Title: Sasquatch 47a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box, deleted 1 wall
+Comment-End:
+
+48
+   #### ####
+  ##  # #  #  #######
+###   ###$ ## #     ###
+#  $      $ ###       #
+# $ $ ###$   #  #     #
+### ### #    #   #    #
+#  $ #  ## ###    # ###
+#    $   # #@        #
+# $# # ### ###   #   #
+#  $ # # $ $ #  #. # #
+##   #    $  # #.    #
+ ##  # #   ####..  ###
+  ## # #  ####..*.##
+ ### # #### #..*.##
+ #          $.*.##
+ ############..##
+            ####
+Title: Sasquatch 48a
+Author: David W. Skinner, York Shen
+Comment:
+added 2 boxes
+Comment-End:
+
+49
+ #########################
+ #  #  #  #  #  #  #  #  #
+ # $#$ # $#$ # $#$ # $#$ #
+ #  #  #  #  #  #  #  #  #
+ ## # ### # ### # ### # ##
+ #  #  #  #  #  #  #  #  #
+ #     #  @  #     #     #
+## ### # ### # ### # ### ##
+#   #  #  #  #  #  #  #   #
+# $ #     #  $  #     # $ #
+##  # ### # ### # ### #  ##
+ #  .  . . ..... . .  .  #
+ #########################
+Title: Sasquatch 49a
+Author: David W. Skinner, York Shen
+Comment:
+added 3 boxes
+Comment-End:
+
+49
+ #########################
+ #  #  #  #  #  #  #  #  #
+ # $#$ # $#$ # $#$ # $#$ #
+ #  #  #  #  #  #  #  #  #
+ ## # ### # ### # ### # ##
+ #  #  #  #  #  #  #  #  #
+ #  $  #  $  #  $  #  $  #
+## ### # ### # ### # ### ##
+#   #  #  #  #  #  #  #   #
+# $ #  $  #  $  #  $  # $ #
+##  # ### # ### # ### #  ##
+ #  . .......+....... .  #
+ #########################
+Title: Sasquatch 49b
+Author: David W. Skinner, York Shen
+Comment:
+added 9 boxes
+Comment-End:
+
+50
+ #########################
+## # # # # # # # # # # # ##
+#   .$ .  . $.  . $.  .$  #
+## $# #$# # # #$# # #$#  ##
+#  .  . $  $.  .  .$ .  . #
+## #$# # # # #$#$ $# #$# ##
+# .   . .$ .$ .$ . $.  .  #
+## $#$# # # #@# # # #$#$ ##
+#  .  .$ . $. $. $.  .  . #
+## #$# #$ $#$# # # # #$# ##
+# .  . $.  .  .$  $ .  .  #
+##  #$# # #$# # # #$# #$ ##
+#  $.  .$ .  .$ .  . $.   #
+## # # # # # # # # # # # ##
+ #########################
+Title: Sasquatch 50a
+Author: David W. Skinner, York Shen
+Comment:
+added 8 boxes
+Comment-End:
+
+50
+ #########################
+## # # # # # # # # # # # ##
+#   .$ .  . $.  . $.  .$  #
+## $# #$# # # #$# # #$#  ##
+#  .  . $  $.  .  .$ .  . #
+## #$# # # # #$#$ $###$# ##
+# .   . .$ .$ .$ . $.  .  #
+## $#$# # ###@# # # #$#$ ##
+#  .  .$ . $. $. $.  .  . #
+## #$# #$ $#$# # # # #$# ##
+# .  . $.  .  .$  $ .  .  #
+## ##$# # #$# # # #$# #$ ##
+#  $.  .$ .  .$ .  . $.   #
+## # # # # # # # # # # # ##
+ #########################
+Title: Sasquatch 50b
+Author: David W. Skinner, York Shen, Marek Letrab
+Comment:
+added 8 boxes
+added 3 walls - M.L.
+Comment-End:
+
+50
+ #########################
+## # # # # # # # # # # # ##
+# . .$ .  . $.  . $.  .$. #
+## $# #$# # # #$# # #$#$ ##
+#  .  . $  $.  .  .$ .  . #
+## #$# # # # #$#$ $#$#$# ##
+# .   . .$ .$ .$ . $.  .  #
+## $#$# # #$#@# # # #$#$ ##
+#  .  .$ . $. $. $.  .  . #
+## #$# #$ $#$# # # # #$# ##
+# .  . $.  .  .$  $ .  .  #
+## $#$# # #$# # # #$# #$ ##
+# .$.  .$ .  .$ .  . $. . #
+## # # # # # # # # # # # ##
+ #########################
+Title: Sasquatch 50c
+Author: David W. Skinner, York Shen, Marek Letrab
+Comment:
+added 8 boxes
+added 3 walls - M.L.
+changed 3 walls to 3 boxes, added 1 box
+Comment-End:
+
+50
+ #########################
+## # # # # # # # # # # # ##
+# . .$ .  . $.  . $.  .$  #
+## $# #$# # # #$# # #$#$ ##
+#  .  . $. $.  .  .$ .  . #
+## #$# # # # #$#$ $#$#$# ##
+# .   . .$ .$ .$ . $.  .  #
+## $#$# # #$#@# # # #$#$ ##
+#  .  .$ . $. $. $.  .  . #
+## #$# #$ $#$# # # # #$# ##
+# .  . $.  .  .$ .$ .  .  #
+## $#$# # #$# # # #$# #$ ##
+#  $.  .$ .  .$ .  . $. . #
+## # # # # # # # # # # # ##
+ #########################
+Title: Sasquatch 50d
+Author: David W. Skinner, York Shen, Marek Letrab
+Comment:
+added 8 boxes
+added 3 walls - M.L.
+changed 3 walls to 3 boxes, added 1 box
+changed target position
+Comment-End:
+
+50
+ #########################
+## # # # # # # # # # # # ##
+# . .$ .  . $.  . $.  .$. #
+## $# #$# # # #$# # #$#$ ##
+#  .  . $. $.  .  .$ .  . #
+## #$# # # # #$#$ $#$#$# ##
+# .  .  .$ .$ .$ . $.  .  #
+## $#$# # #$#@#$# # #$#$ ##
+#  .  .$ . $. $. $.  .  . #
+## #$#$#$ $#$# # # # #$# ##
+# .  . $.  .  .$ .$ .  .  #
+## $#$# # #$# # # #$# #$ ##
+# .$.  .$ .  .$ .  . $. . #
+## # # # # # # # # # # # ##
+ #########################
+Title: Sasquatch 50e
+Author: David W. Skinner, York Shen, Marek Letrab
+Comment:
+added 8 boxes
+added 3 walls - M.L.
+changed 3 walls to 3 boxes, added 1 box
+changed target position
+added 2 boxes
+Comment-End:
+
+50
+ #########################
+## # # # # # # # # # # # ##
+# . .$ .  . $.  . $.  .$. #
+## $# #$# # # #$# # #$#$ ##
+# ..  . $. $.  .  .$ .  . #
+## #$# # # # #$#$ $#$#$# ##
+# .  .  .$ .$ .$ . $.  .  #
+## $#$# #$#$#@#$#$# #$#$ ##
+#  .  .$ . $. $. $.  .  . #
+## #$#$#$ $#$# # # # #$# ##
+# .  . $.  .  .$ .$ .  .. #
+## $#$# # #$# # # #$# #$ ##
+# .$.  .$ .  .$ .  . $. . #
+## # # # # # # # # # # # ##
+ #########################
+Title: Sasquatch 50f
+Author: David W. Skinner, York Shen, Marek Letrab
+Comment:
+added 8 boxes
+added 3 walls - M.L.
+changed 3 walls to 3 boxes, added 1 box
+changed target position
+added 4 boxes
+Comment-End:

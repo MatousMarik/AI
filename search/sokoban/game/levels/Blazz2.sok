@@ -1,0 +1,263 @@
+Date of Last Change: 
+
+Set:       Blazz2
+Copyright: © Blaz Nikolic
+Email:     blaz.nikolic@gmail.com
+Homepage:
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+My 2nd level set :)
+
+
+1
+ ####
+##  ##
+# $  #
+#@$$ ##
+# $   #
+### # #
+ # .. #
+ # .. #
+ ######
+Title: Level 1
+Author: Blaz Nikolic
+
+2
+   ####
+####  #
+#  *  #
+#     #
+#**** #
+#  $ ##
+##@. #
+ #####
+Title: Level 2
+Author: Blaz Nikolic
+
+3
+ #######
+##     ##
+#  .$.  #
+# #$*$#@#
+# #.$.  #
+#  # ####
+##   #
+ #####
+Title: Level 3
+Author: Blaz Nikolic
+
+4
+     ######
+     #    ###
+######..... #
+#         # #
+#  ####  ## #
+## ######## #
+ # #### @ # #
+ #    $$$$$ #
+ #  #     ###
+ #######  #
+       ####
+Title: Level 4
+Author: Blaz Nikolic
+
+5
+  #######
+  #    @##
+### ###  #
+# * . *  #
+# #$#$# ##
+# . . .  #
+# $$##   #
+###    ###
+  ######
+Title: Level 5
+Author: Blaz Nikolic
+
+6
+#########
+#       ##
+# #####  ##
+# #    #  #
+# # #. $$ #
+# #$$. # ##
+# #@.*.# #
+#  $$. # #
+### #.#  #
+  #     ##
+  #######
+Title: Level 6
+Author: Blaz Nikolic
+
+7
+ #######
+ #. .  #
+##. ## ####
+#... $ #  #
+# $ ##$ $ #
+###.#  $  #
+  # #  $ ###
+  # #### $ #
+  #@       #
+  #  #######
+  ####
+Title: Level 7
+Author: Blaz Nikolic
+
+8
+ ##########
+##  #     #
+#@ $$ $## ##
+# $ $ $    ###
+##$   ## ....#
+ # ######### #
+ # #####     #
+##  #  # #####
+# .....#  ###
+#   #  $$   #
+#####  #    #
+    #########
+Title: Level 8
+Author: Blaz Nikolic
+
+9
+    ########
+  ###      #
+  #@  #$#$ #
+  # ###    #
+ ## # $$#$##
+ #  #     #
+## ###*# ##
+#  *.... #
+#   # . ##
+###   ###
+  #####
+Title: Level 9
+Author: Blaz Nikolic
+
+10
+##### #####
+#  .###   #
+# #.... # #
+# #....$  #
+# ####$$$##
+# #    $ #
+#   $$## #
+####  ## #
+   #$$ # #
+   #    @#
+   #######
+Title: Level 10
+Author: Blaz Nikolic
+
+11
+ #### #####
+ #  ###   #
+ #      $ #
+ # ## #$ ##
+## .#$#  #
+#  .*.# ##
+# $.#@$ #
+#...#$#$#
+# $.    #
+#########
+Title: Level 11
+Author: Blaz Nikolic
+
+12
+ ########
+ #      #
+ # # ## #
+## $**  #
+#  #..@##
+#  $*.$#
+#  #   #
+########
+Title: Level 12
+Author: Blaz Nikolic
+
+13
+     #####
+######   #
+# $. $   #
+# #.#.## #
+# #... # ##
+# # #.$   #
+# #  $ ## #
+# ##$#$   #
+#@  $  ####
+###   ##
+  #####
+Title: Level 13
+Author: Blaz Nikolic
+
+14
+  #######
+###  @  #
+# $$$$$$###
+#    $    #
+#  ##.# . #
+# ##..*$*##
+#  # **  #
+##  .*. ##
+ ###.*. #
+   ######
+Title: Level 14
+Author: Blaz Nikolic
+
+15
+  ####
+  #  #
+###* ####
+#  $  $ #
+# .$. # #
+#@# # # #
+# .$.   #
+#########
+Title: Level 15
+Author: Blaz Nikolic
+
+16
+##############
+#   $     .  #
+#  *..###.*. #
+##$ . $@$$.$ #
+ #  $ # #   ##
+ ###.## ##.##
+   # $   $ #
+   ###   ###
+     #####
+Title: Level 16
+Author: Blaz Nikolic
+
+17
+ ####
+ #  ######
+ #   $   ###
+ #  #$##.  #
+##$## # .# #
+#  ##  $*  #
+#.  # #@*  #
+#.*.  # $ ##
+#. .###$$ #
+### #   ###
+  #   ###
+  #####
+Title: Level 17
+Author: Blaz Nikolic

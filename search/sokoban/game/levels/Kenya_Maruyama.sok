@@ -1,0 +1,859 @@
+Date of Last Change: 
+
+Set:       Kenya Maruyama
+Copyright: © Kenya Maruyama
+Email:     rmckenyam@hotmail.com
+Homepage:  http://www.geocities.co.jp/Playtown-Domino/7999/soko/skrmc_a.htm
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+    ####
+  ###  #
+  #    ###
+  # $    #
+  #$$###@#
+  #......#
+###$$## ##
+#   $    #
+#   ##   #
+##########
+Title: Origin
+Author: kenyam
+Comment:
+I've created some dull levels 
+when I was young (in the 1980s).
+This was the 1st level I created since that time, 
+with mature thought. :-)
+Comment-End:
+
+2
+   ######
+   #    #
+ ### ##$###
+ #   .*@$ #
+##$#$..$# #
+#    .. # #
+#   ##    #
+###########
+Title: minus-plus
+Author: kenyam
+Comment:
+This re-revised version won't be made 
+without valuable advice from hir and monry. 
+Thx.
+Comment-End:
+
+3
+####      ####
+#  ########  #
+# $ $ #    $ #
+#   #   #    #
+## ####### ###
+#.*.*.. $    #
+#.*...*   $  #
+#@######## ###
+# $ $ #      #
+#   #   #  $ #
+#  ########  #
+####      ####
+Title: H is 8th
+Author: kenyam
+Comment:
+Made with thinking much of flow 
+than difficulty.
+But actually this looks dull 
+in my current view.
+Comment-End:
+
+4
+##########
+#...##   #
+#.*.$    #
+#.*.  #$##
+#$# #$   #
+# #   $$ #
+# #### $##
+#@      ##
+##########
+Title: Go Ahead !
+Author: kenyam
+Comment:
+I don't like this now. 
+WIll be updated later, parhaps... 
+Comment-End:
+
+5
+   ######
+   #    ##
+ ### #   #
+ #   $$# #
+## # $@$ #
+# .* #$###
+# ...  #
+###. ###
+  ####
+Title: Dance In The Hall
+Author: kenyam
+Comment:
+The flow may look strange.
+Basically, I don't like the goal in bad shape 
+because I believe we still have many ways of 
+creating more excellent and difficult levels 
+without setting the goal in such odd layouts.
+To mitigate the poor appearance of this level, 
+I set the boxes in the same shape of the goal.
+Comment-End:
+
+6
+###########
+#   #  #  #
+#   $  $  #
+##$##.##  #
+#  # . # ##
+#  *...*  #
+#  # . #  #
+##$##.##$##
+#   $ $   #
+#   #@#   #
+###########
+Title: Cross I
+Author: kenyam
+Comment:
+My 1st thought was to create the goal 
+in the cross shape.
+(But no religious intention in the design.)
+You may find two major ways of solution.
+Right or Left ? Fine if you can find both.
+Comment-End:
+
+7
+  ###########
+  #         #
+  #   $# ## #
+ ####     $ #
+## $  #####$#
+#  #$ *.*.*.#
+# ## #......#
+# #  $ $ $ $#
+# # # ####@ #
+#     #  ####
+#######
+Title: Conveyor Belt
+Author: kenyam
+Comment:
+This is one of the levels I'd like to revise
+
+I don't like the design except the goal area.
+Not difficult. Enjoy the flow only.
+Comment-End:
+
+8
+   ####       ####
+   #  ###   ###  #
+   #    #####    #
+   #  #   @   #  #
+  ### # ##### # ###
+  #  *.*  #  *.*  #
+  # $.*.$ # $.*.$ #
+##### # ##### # #####
+#  #  #  # #  #  .  #
+# $#  $  # #  $  #$ #
+#  .  #  # #  #  #  #
+########## ##########
+Title: Double Vision
+Author: kenyam
+Comment:
+I had one clear concept in creating this, - 
+we can create more difficult levels 
+by restricting the player's position 
+at the stage clear time.
+Please try this to find the way.
+Comment-End:
+
+9
+   #######
+  ##     ###
+ ## $   $  #
+## *.*.*.$ #
+# $.*.*.* ##
+#  $ # $ ##
+###  @  ##
+  #######
+Title: Checker I
+Author: kenyam
+Comment:
+Looks better if a lower pillar were gone...
+Comment-End:
+
+10
+###########
+#    #    #
+# # $.$ # #
+#  $#.#$  #
+##$.....$##
+#  $#.#$  #
+# # $.$ # #
+#    +    #
+###########
+Title: Cross II
+Author: kenyam
+Comment:
+Must be easier than you expected.
+Comment-End:
+
+11
+   ######
+   #    #
+ ### ##$###
+ #   .*@$ #
+## # #*$# #
+#    .. # #
+#   ##    #
+###########
+Title: minus-plus zero
+Author: kenyam
+Comment:
+Another version of SetA #2, 'minus-plus' 
+The number of boxes(-1) and Difficulty(+1) 
+makes zero. That's the title.
+Comment-End:
+
+12
+#########
+#   #   ##
+#   $    #
+##$### #$#
+ # #...# #
+ #  .$*# #
+ # #...$ ##
+ #$# ###  #
+ #  @  $  #
+ ##  ###  #
+  #### ####
+Title: back and forth
+Author: kenyam
+Comment:
+Tried to make it more difficult, but failed...
+Anyway, this is yet a relatively difficult one 
+among my SetA works.
+Comment-End:
+
+13
+  ######
+  #    ###
+### #.*$ #
+# $  *.  #
+#@$  *. ##
+###  #  #
+  #######
+Title: one more push
+Author: kenyam
+Comment:
+Need to walk around 
+
+with taking care of death.
+Comment-End:
+
+14
+###########
+#         #
+# ### ### #
+# #     # #
+#  *****  #
+###.....###
+#  $$$$$  #
+# ## # ## #
+#    @    #
+###########
+Title: one line above
+Author: kenyam
+Comment:
+You may find redundancy in this level.
+It's intentional to keep symmetry.
+Comment-End:
+
+15
+         #####
+       ###   ##
+       # $@$  #
+      ## $ $# #
+      #  # $  #
+   ####  $$$ ##
+   #  #    # #
+   #  ### ## #
+   #         #
+  ##  ########
+  #   #
+### # ##
+#  ....#
+# #....#
+# #  ###
+#    #
+##   #
+ #####
+Title: Double Detour
+Author: kenyam
+Comment:
+This appears old-style
+boxes are apart 
+from the goal area at the start time.
+Usually, such old levels were easy or dull.
+In this meaning, it's not old-style, 
+but classic in another meaning.
+Pls try this, if little time to play all.
+Comment-End:
+
+16
+  ####
+  #  #####
+###      #
+#   *.## #
+# $#*. #$##
+# $ ..  $@#
+#  ####   #
+####  #####
+Title: Retrogression
+Author: kenyam
+Comment:
+This essence was found when I was trying to 
+create a goal area for the other level.
+Enjoy the flow.
+Comment-End:
+
+17
+   ####
+####  #
+#  #  ####
+# $$$@$  #
+#  #...# ##
+## $***$  #
+ #  ...   #
+ ###   ####
+   #####
+Title: Compact Composition I
+Author: kenyam
+Comment:
+Not fully satisfied with this design.
+Hope to add a little more difficulty 
+by revising the upper part.
+Comment-End:
+
+18
+  ####
+###..#####
+#  ..    #
+# #.*  # #
+# ##$# $$##
+#      $  #
+#######$# #
+      #@  #
+      #####
+Title: Waltz I
+Author: kenyam
+Comment:
+Made as a sample expressing one of my ideas.
+I may utilize the idea around the left two boxes 
+for my future original level.
+Comment-End:
+
+19
+ #########
+ #   #   #
+##$ $#$ $##
+# .*.@.*.##
+#    #    #
+# .*.#.*. #
+##$ $#$ $##
+ #   #   #
+ #########
+Title: Trespass
+Author: kenyam
+Comment:
+The left part was made first.
+Then the right part was created 
+to implement two of my ideas.
+One idea is what the title shows, 
+while the other is no-name 
+but is well applied to SetA #24, 'Turtle'.
+Comment-End:
+
+20
+    ####     ####
+    #  #     #  #
+  ###  ### ###  ###
+ ##      ###      ##
+ #  #..#  #  #..#  #
+ # $$**$$ # $$**$$ #
+ ##  ..  ###  ..  ##
+ ####  #  @  ###  #
+ #  ###     #  ####
+##      ###      ##
+# $$**$$ # $$**$$ #
+#  #..#  #  #..#  #
+##  ..  ###  ..  ##
+ ###  ### ###  ###
+   #  #     #  #
+   ####     ####
+Title: Inspiration
+Author: kenyam
+Comment:
+Inspired by Level #266 from Sokoban Perfect.
+The left two would be more difficult than the right.
+Comment-End:
+
+21
+ ####
+ #  ####
+ #  $  ##
+ # *.*  #
+##$.*.$ ##
+#  *.*#  #
+#  #$    #
+#  #@ #  #
+##########
+Title: Compact Composition II
+Author: kenyam
+Comment:
+I'm still worrying that easier ways 
+of solution may exist.
+Comment-End:
+
+22
+  #####   #####
+  #   #   #   #
+###   #####   ###
+# $*.*$ # $*.*$ #
+#  . .  #  . .  #
+##$*.*$## $*.*$ #
+ #      @ #   ###
+ ##############
+Title: Maru-o brothers
+Author: kenyam
+Comment:
+The concept is the same as SetA #8.
+Where you clear the level is important.
+Comment-End:
+
+23
+######
+#    #####
+# ##..   #
+# # ..## #
+# #$*. # #
+# $@$    #
+##$$ # ###
+ # ### #
+ #     #
+ #######
+Title: LL
+Author: kenyam
+Comment:
+L-shaped wall is attractive 
+because it can be a factor of 
+interesting solution in many cases.
+Comment-End:
+
+24
+    ############
+    #          #
+##### ######## ####
+#   #...  #  ...  #
+# # $.*.$ # $.*.$ #
+#   $#$#$ @ $#$#$##
+####      #      #
+   ###############
+Title: Turtle
+Author: kenyam
+Comment:
+One idea was effectively implemented 
+and all the phases look very good.
+Pls try this also, if little time to play all.
+Comment-End:
+
+25
+ ####   ####
+ #  #   #  #
+## $#####$ ##
+#  $  #  $  #
+#  *. # .*# #
+# #*. # .*  #
+#  *.###.*  #
+# #*. # .*# #
+#  $  #  $  #
+## $#####$ ##
+ #    @    #
+ ###########
+Title: Two-fold
+Author: kenyam
+Comment:
+The left part was made with six boxes first.
+Actually, I don't like this so much 
+because no new ideas are included in it.
+Comment-End:
+
+26
+      ####
+      #  #
+#######  ####
+#  ##       #
+#     #.... #
+#  ##    # ##
+##$#   #   #
+#    # #####
+#  $$$ #
+###@ ###
+  ####
+Title: CR I
+Author: kenyam
+Comment:
+Took much time to create (the goal area especially)
+
+Hard to do a good work with a small number of boxes.
+One good thing is that I could find some new ideas 
+while I was creating this. :-)
+Comment-End:
+
+27
+      ####
+#######  #
+#        #
+# $*****.#
+###      ###
+  #  ####  ##
+  ##        #
+   #.*****$ #
+   ##     @##
+    ####  ##
+       ####
+Title: Pelican
+Author: kenyam
+Comment:
+Good if we have the power 
+to push multiple boxes at a time...
+Comment-End:
+
+28
+########
+#   #  #
+#     $##
+## ##   #
+#  .. # #
+#@$.*$# #
+#####   #
+    #####
+Title: CR II
+Author: kenyam
+Comment:
+A good number of steps...
+Comment-End:
+
+29
+ #####
+##   #
+#  $.###
+# $.$. #
+# .$.$ #
+###.$# #
+  #   @#
+  ######
+Title: Checker II
+Author: kenyam
+Comment:
+Tiny size would be fine 
+to understand the solution 
+for scattered goal.
+Comment-End:
+
+30
+   #####
+####   #
+# $  # #
+#@****.##
+#       ###
+##### # $ #
+   ##****.#
+   #      #
+   # # # ##
+   #     #
+   #######
+Title: Waterfowl
+Author: kenyam
+Comment:
+Looks another version of 'Pelican' (SetA #27)
+Originally, the upper part was created 
+for the goal area of 'CR I' (SetA #26).
+Comment-End:
+
+31
+  #####
+  #   #
+###   #####
+#  # $#@  #
+#   .*.$# #
+# $ .*. $ #
+###  #  ###
+  ####  #
+     ####
+Title: some more pushes
+Author: kenyam
+Comment:
+Smells like 'one more push' (SetA #13) 
+and 'Retrogression' (SetA #16).
+Comment-End:
+
+32
+########
+#  #@  #
+# $.$# #
+#  .$  #
+##$.$###
+ # . #
+ # . #
+ #####
+Title: Resurrection
+Author: kenyam
+Comment:
+Sokoban returns on a new platform, 
+Japanese cell phone ! (as a Java app)
+This was created around the announcement date.
+Comment-End:
+
+33
+ ######
+##    ##
+#  #$$ ##
+# .... @##
+# $$  #  ###
+###  #  $  #
+  ### ..*. #
+    #  $$  #
+    ####  ##
+       ####
+Title: mini dinosaur
+Author: kenyam
+Comment:
+Released on April, 4.
+That's why the goal is double four ?!
+Comment-End:
+
+34
+############
+#  #   #   ###
+#  $$# # #$$ #
+# .....@.....#
+## $$$## $$$ #
+ #    ##  #  #
+ #############
+Title: Trespass Reloaded
+Author: kenyam
+Comment:
+Yes, the next will come ...
+Comment-End:
+
+35
+  #####
+  #   ##
+  # #  #
+  # .$ #
+###$.$##
+#  $.@ #
+#  $.# #
+### .  #
+  ######
+Title: Bulbul
+Author: kenyam
+Comment:
+Got tired of creating this sort of levels...
+(Made this while SetA #34 was being created.)
+Comment-End:
+
+36
+########
+#   #  #
+#@$$# $###
+##       #
+ #  #    ######
+ ##  $ # #    #
+  #  ##       #
+  #####  #.. ##
+      ##  .. #
+       ###  ##
+         ####
+Title: Mini Detour
+Author: kenyam
+Comment:
+Tiny version of Double Detour (SetA #15), 
+or CR I (SetA #26)
+Comment-End:
+
+37
+#### ####
+#  ###  #
+#  $ $$ #
+#.......#
+##$$ $$ #
+ # @#   #
+ ########
+Title: The tragedy of W
+Author: kenyam
+Comment:
+WARNING: The tragedy is approaching fast.
+Comment-End:
+
+38
+   #####
+ ###   #
+ #     #
+ #  # ##
+### # ###
+# $$$$$@#
+# ..... #
+## ## ###
+#     #
+#   ###
+#####
+Title: one line below
+Author: kenyam
+Comment:
+Think a way, get away.
+Comment-End:
+
+39
+   ######
+  ##    #
+ ##     #
+ # *** ##
+ # *+* #
+## ***$#
+#      #
+#    ###
+######
+Title: Compact Composition III
+Author: kenyam
+Comment:
+Beat away the fear of confined spaces.
+Comment-End:
+
+40
+#####
+#   ##
+#    #
+## # ##
+#  .* #
+#  .* ##
+## **$@#
+ #   $ #
+ #  ####
+ ####
+Title: Gyruss
+Author: kenyam
+Comment:
+Originally, the goal area of Mini Detour (SetA #36) 
+was created as a single level like this.
+This is an extended version, more difficult. 
+Comment-End:
+
+41
+##########
+#   ##   #
+#        #
+##$#$## ##
+#  ..## #
+# $*.$@ #
+###.. ###
+  # $ #
+  #  ##
+  ####
+Title: Indigestion
+Author: kenyam
+Comment:
+The right part might be revised later.
+Comment-End:
+
+42
+  ####
+  #  #
+###  ####
+#  $$$  #
+#  ...  #
+###...###
+  #$$$#
+  # @ #
+  #####
+Title: Pincer Movement
+Author: kenyam
+Comment:
+Alias, 'Mannerism'
+Comment-End:
+
+43
+ ######
+ #    ####
+ #$##    #
+## $ ### ##
+#   $..   #
+# ###*.   #
+#  #@.* ###
+##   # $#
+ #####  #
+     ####
+Title: O6 (Ou-siks)
+Author: kenyam
+Comment:
+What a wonderful wander!
+Comment-End:
+
+44
+#####
+#   ########
+#   .. $   #
+## #*.$$@#$#
+#   *.#    ##
+# #$*.##    ##
+#   #####    #
+#####   ##   #
+         #####
+
+Title: Superfluity
+Author: kenyam
+Comment:
+A trick at the right-bottom is called
+as "JABARA-KUZUSHI" in Japan.
+Comment-End:
+
+45
+ ####
+## @#
+#   ####
+# *.*  #
+# * $  #
+##**## #
+# * $  #
+# *.*  #
+# #  ###
+#    #
+###  #
+  ####
+
+Title: K2E
+Author: kenyam
+Comment:
+Determined the title at first.
+Then made this level.
+Comment-End:

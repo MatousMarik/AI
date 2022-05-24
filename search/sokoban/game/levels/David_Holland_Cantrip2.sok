@@ -1,0 +1,223 @@
+Date of Last Change: 
+
+Set:       Cantrip2
+Copyright: © David Holland
+Email:     david@clickfest88.freeserve.co.uk
+Homepage:  http://www.clickfest88.freeserve.co.uk/
+
+Archives:  http://web.archive.org/web/*/http://clickfest88.freeserve.co.uk/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+unfinished Sokoban collection by David Holland
+
+Original release date: July 09 2002
+
+
+
+1
+   ####
+  ##  #
+  # . #
+  #   ##
+#### . #####
+#  # #   $@#
+# $  * #$$ #
+#  . #$.. ##
+##*# . $ ##
+ #   #####
+ #####
+Title: triplet2
+Author: David Holland
+
+
+2
+###########
+#    .  $@#
+#  *# #*  #
+##  *.. ###
+ #$ #.#$ #
+ #  $.$  #
+ #  ###  #
+ #### ####
+Title: face1
+Author: David Holland
+
+
+3
+  #####
+ ##   #
+ #  #$###
+ # . *  #
+ # ..*  #
+###. .# #
+#@$$$ $ #
+#   #####
+#####
+Title: aitch11
+Author: David Holland
+
+
+4
+    #####
+ ####   #
+ # $@*  ####
+## ### ##  #
+# $.#  #.  #
+#    $ $   #
+# .* #. ** #
+###  #   ###
+  ########
+Title: engine1
+Author: David Holland
+
+
+5
+   #####
+   #   #
+####$$ ###
+# $ .# * #
+#  #. .  #
+#  . *#$ #
+##. #.$@##
+ ##$   ##
+  #   ##
+  #####
+Title: eightpin14
+Author: David Holland
+
+
+6
+ ##########
+##   ##  .#
+# $  ##*#.##
+#  $   .*. #
+#   $ #.$. #
+### $ #*#  #
+  ###$#   ##
+    #  # ##
+    ## @ #
+     #####
+Title: Area52
+Author: David Holland
+
+
+7
+   #####
+####   ##
+#  #$   #
+# . .$. #
+# .$* * #
+## .*.$##
+ # $#$ #
+ ## @  #
+  ######
+Title: trident4
+Author: David Holland
+
+
+8
+      #####
+#######   #
+#  #@$    #
+# . *$#$$ #
+# *.  #  ##
+##  # $ ##
+ ##.**# .#
+  #.     #
+  ##  #  #
+   #######
+Title: crosstwist27
+Author: David Holland
+
+
+9
+   #####
+  ##   ####
+ ##  #$$  #
+ #  #   *@#
+ # ##.#$###
+##  ... ###
+#  .#*#   #
+#   $ $ # #
+#### .  $ #
+   ###  ###
+     ####
+Title: meshcross1
+Author: David Holland
+
+
+10
+#####
+#   ####
+#    $ #
+##  $# ##
+ # #..* ##
+ #.*. # @#
+ ##$# *$##
+  #   $. ##
+  ##   $. #
+   ####   #
+      #####
+Title: rugby15
+Author: David Holland
+
+
+11
+##########
+#   #@   #
+#   ***# ###
+## #.*.#$  #
+ # # *.    #
+ #  #.### ##
+ #  #     #
+ #  $ $#  #
+ #### $ ###
+    #   #
+    #####
+Title: hinge10
+Author: David Holland
+
+
+12
+##########
+#   ##   ##
+#    $    #
+##$## ... #
+#  $ #*#.##
+#    *+#.#
+#  $$##  #
+#  #  #$ #
+####   $ #
+   # .####
+   ####
+Title: anaconda15
+Author: David Holland
+
+
+13
+ ########
+ #      #
+##$* * $#
+# $. .#.#
+#@$.#. .#
+##$*$*  #
+ #      #
+ ########
+Title: footy6
+Author: David Holland

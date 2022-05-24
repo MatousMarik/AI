@@ -1,0 +1,186 @@
+﻿Date of Last Change: 
+
+Set:       Sven Egevad 20
+Copyright: © Sven Egevad
+Email:     sven.egevad@telia.com
+Homepage:  http://egevad.nu/sven/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1901
+#######
+#  ...#
+# *#####
+# *  * #
+# *  # #
+# #  # #
+# ##*# ####
+# #   $   ###
+# *       * #
+# $###*###$ #
+#     @     #
+#############
+Title: SE 1901
+Author: Sven Egevad
+
+1902
+#######
+#  *  ####
+#  $ $ $ #
+#+#......#
+# $$ $ $ #
+#  *  ####
+#######
+Title: SE 1902
+Author: Sven Egevad
+
+1903
+     #######
+     #  *  #
+  #### # # ####
+###   * $ *   ###
+#  * * #.# * *  #
+# $ *  .#.  * $ #
+#  * # #+# # *  #
+###   * $ *   ###
+  #### # # ####
+     #  *  #
+     #######
+Title: SE 1903
+Author: Sven Egevad
+
+1904
+    #######
+#####  .  #####
+#  ## *.* ##  #
+#    #*.*#    #
+# $$$#...#$$$ #
+## $ #.#.# $ ##
+ #     *     #
+ ##### @ #####
+     #####
+Title: SE 1904
+Author: Sven Egevad
+
+1905
+      ####
+   ####  ##
+ ###  $   #
+## $  $ #$##
+#  #$#..$  #
+#   ....#  #
+##$$..#..$$##
+ #  #....   #
+ #  $..#$#  #
+ ##$#*$  $ ##
+  #   $  ###
+  ## @####
+   ####
+Title: SE 1905
+Author: Sven Egevad
+
+1906
+  ####   ####
+###  #####  ###
+#  * $ # $ *  #
+# #.* .#. *.# #
+#  # $ # $ #  #
+##  #* # *#  ##
+ ## #   * # ##
+  #    *  @ #
+ ## # *   # ##
+##  #* # *#  ##
+#  # $ # $ #  #
+# #.* .#. *.# #
+#  * $ # $ *  #
+###  #####  ###
+  ####   ####
+Title: SE 1906
+Author: Sven Egevad
+
+1907
+     ####
+######  #
+#@    .*#
+# $$$#..#
+#    #.*#
+# $$$#..#
+#    #.*#
+# $$$#..#
+#    #.*#
+# $$$#..#
+#    ##*##
+#  #$  . #
+#    # # #
+######   #
+     #####
+Title: SE 1907
+Author: Sven Egevad
+
+1908
+#####
+#   ######
+# $ #    #
+# #****# #
+#        #
+### ***#+#
+  #  #   #
+  #  #####
+  ####
+Title: SE 1908
+Author: Sven Egevad
+
+1909
+   #######
+ ###  *  ###
+##   #@#   ##
+#  #.....#  #
+# $ $$$$$ $ #
+### #.#.# ###
+  # #   # #
+  #   #   #
+  ###   ###
+    #####
+Title: SE 1909
+Author: Sven Egevad
+
+1910
+#######
+#     #
+# ***.#
+# *   #
+# * ###
+# *   #
+# $*  #
+#  $* #
+### * #
+  # + #
+  #####
+Title: SE 1910
+Author: Sven Egevad
+
+1911
+ ########
+##  *   ###
+# $ $$$ $ #
+#....*...+#
+# $ $.$ $ #
+###   *  ##
+  ########
+Title: SE 1911
+Author: Sven Egevad

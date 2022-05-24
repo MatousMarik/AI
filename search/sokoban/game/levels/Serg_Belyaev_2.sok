@@ -1,0 +1,1184 @@
+Date of Last Change: 
+
+Set:       Serg Belyaev 2
+Copyright: © Serg Belyaev
+Email:     svb@sandy.ru
+Homepage:  http://svb-sokoban.narod.ru/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+101
+     ####
+ #####. #
+##+ ##  ###
+#  $    $ #
+#  $*.*   #
+####   ####
+   #####
+Title: svb 101
+Author: Serg Belyaev
+
+102
+     ####
+ #####..#
+##+ ##$ ###
+# $$ $ $  #
+#   ..*   #
+####   ####
+   #####
+Title: svb 102
+Author: Serg Belyaev
+
+103
+      ####
+  ### #..#
+###.###  ###
+#+$     $  #
+# $ $.**$  #
+#####   ####
+    #####
+Title: svb 103
+Author: Serg Belyaev
+
+104
+      ####
+  #####  #
+###  ## $####
+# ........$@#
+# $$ $ $ $  #
+##   # $#####
+ #####  #
+     ####
+Title: svb 104
+Author: Serg Belyaev
+
+105
+ #########
+##. ...$ ##
+# $ *..   ###
+#   $### $@ #
+##$  # # $  #
+ #  ## #  ###
+ ####  ####
+Title: svb 105
+Author: Serg Belyaev
+
+106
+#####
+#...#####
+#.   #@ #
+#   $$$ #
+###   $ #
+  #  ####
+  ####
+Title: svb 106
+Author: Serg Belyaev
+
+107
+ ####
+##  ####
+#    $@#
+#  .*. #
+##.# $##
+#.$$  #
+#    ##
+######
+Title: svb 107
+Author: Serg Belyaev
+
+108
+  ####
+###  ###
+#   $  #
+#  $   #
+##*##..#
+#@$ $  #
+#  ..###
+######
+Title: svb 108
+Author: Serg Belyaev
+
+109
+ #####
+##   ###
+#  # $@#
+# $$ $$#
+#..##..#
+#      #
+#  *.###
+######
+Title: svb 109
+Author: Serg Belyaev
+
+110
+ #####
+##   ###
+#  #$$@#
+#  . $ #
+#..###.#
+#$   $ #
+#  .####
+#####
+Title: svb 110
+Author: Serg Belyaev
+
+111
+  ######
+ ##.*..#
+##@$  .#
+# $#$.##
+#  # $ #
+# $    #
+###  ###
+  ####
+Title: svb 111
+Author: Serg Belyaev
+
+112
+#######
+#+....#
+###$ ###
+#   $  #
+#   $  #
+# $# $ #
+#  #   #
+########
+Title: svb 112
+Author: Serg Belyaev
+
+113
+########
+#@     #
+#   $$ #
+#####  #
+#...#$ #
+##.$$  #
+#..  $ #
+########
+Title: svb 113
+Author: Serg Belyaev
+
+114
+ #####
+##+  ##
+# $   #
+#  ** #
+###  ##
+  #  #
+  ####
+Title: svb 114
+Author: Serg Belyaev
+
+115
+######
+#+.  ##
+# $ $ #
+# $*. #
+###  ##
+  #  #
+  ####
+Title: svb 115
+Author: Serg Belyaev
+
+116
+#######
+#.  *+#
+# $ $ #
+# .*$ #
+##  ###
+ #  #
+ ####
+Title: svb 116
+Author: Serg Belyaev
+
+117
+#######
+#.. *+#
+# $ $ #
+#  *$ #
+##  ###
+ #  #
+ ####
+Title: svb 117
+Author: Serg Belyaev
+
+118
+######
+#@$ .##
+# $$  #
+## $  #
+# $ #.#
+#.  ..#
+#######
+Title: svb 118
+Author: Serg Belyaev
+
+119
+#######
+#.    #
+# #   #
+#  *. #
+###$$##
+  #@ #
+  ####
+Title: svb 119
+Author: Serg Belyaev
+
+120
+#######
+#.    #
+# # $$#
+#$$.. #
+#+#$ .#
+###  ##
+  ####
+Title: svb 120
+Author: Serg Belyaev
+
+121
+  #####
+###@  #
+#  *  #
+# $ *.#
+###  ##
+  #  #
+  ####
+Title: svb 121
+Author: Serg Belyaev
+
+122
+  #####
+###@  #
+# .$  #
+#  $..#
+### $##
+  #  #
+  ####
+Title: svb 122
+Author: Serg Belyaev
+
+123
+  #####
+###@  #
+#  $. #
+#  $. #
+## $ ##
+ ## .#
+  ####
+Title: svb 123
+Author: Serg Belyaev
+
+124
+ ####
+## .###
+#  $  #
+#.    #
+###$*##
+  #@ #
+  ####
+Title: svb 124
+Author: Serg Belyaev
+
+125
+  #####
+###@ .#
+#. $  #
+#   $ #
+### *##
+  #  #
+  ####
+Title: svb 125
+Author: Serg Belyaev
+
+126
+#######
+#+$. .#
+#.$ $ #
+# $$  #
+### .##
+  #  #
+  ####
+Title: svb 126
+Author: Serg Belyaev
+
+127
+    ####
+    #  #
+  ###  ##
+  #  .$ ###
+###$.# .  #
+#@ $.#$.  #
+# $   .$###
+#####   #
+    #####
+Title: svb 127
+Author: Serg Belyaev
+
+128
+    ####
+    #  #
+  ###  ##
+  #@$.  ###
+### .# *$ #
+#  $*# .  #
+#    $. ###
+#####.$ #
+    #####
+Title: svb 128
+Author: Serg Belyaev
+
+129
+#########
+#.$+$   #
+# #$# # #
+#.      #
+# #$#.# #
+# # ..  #
+#$#$### #
+#       #
+#########
+Title: svb 129
+Author: Serg Belyaev
+
+130
+#########
+#.  .   #
+# # # # #
+# $   # #
+# ### #.#
+#   $ $ #
+# # ###$#
+#.    $+#
+#########
+Title: svb 130
+Author: Serg Belyaev
+
+131
+#########
+#+$ .  .#
+#$#$# # #
+#     # #
+# ###$#.#
+#   $   #
+# # ### #
+#.    $.#
+#########
+Title: svb 131
+Author: Serg Belyaev
+
+132
+#########
+#+$ .   #
+#$#$#$# #
+# $   # #
+# ### #.#
+#       #
+#$# # # #
+#.  .  .#
+#########
+Title: svb 132
+Author: Serg Belyaev
+
+133
+ ########
+##@$.  .#
+#.#$#$# #
+#     $ #
+# # # # #
+#.$    .#
+#########
+Title: svb 133
+Author: Serg Belyaev
+
+134
+  ####
+  #@ #
+### $###
+#  $ . #
+#  *.* #
+#  #  ##
+####  #
+   ####
+Title: svb 134
+Author: Serg Belyaev
+
+135
+ ####
+##+ ###
+# $ $ #
+# $.* #
+#     #
+### .##
+  ####
+Title: svb 135
+Author: Serg Belyaev
+
+136
+#######
+#.$   #
+# $. .#
+#. $$##
+###@ #
+  #  #
+  ####
+Title: svb 136
+Author: Serg Belyaev
+
+137
+#######
+#  .  #
+#.$  .#
+#  *  #
+###$$##
+  #@ #
+  ####
+Title: svb 137
+Author: Serg Belyaev
+
+138
+ #####
+ #@  ###
+##$#$  #
+#..*.  #
+#   .$ #
+### #$##
+  #   #
+  #####
+Title: svb 138
+Author: Serg Belyaev
+
+139
+  #####
+  #   ###
+### #   #
+#....*$.#
+#  $ $  #
+####$#$##
+   #@  #
+   #####
+Title: svb 139
+Author: Serg Belyaev
+
+140
+ #####
+ #   #####
+## #   . #
+# *.* $# #
+#     .$ #
+###$#$####
+  #+  #
+  #####
+Title: svb 140
+Author: Serg Belyaev
+
+141
+ #####
+ #.@ #####
+## #$   .#
+# *$. $# #
+#    $.$ #
+### # ####
+  #.  #
+  #####
+Title: svb 141
+Author: Serg Belyaev
+
+142
+ #####
+ #.  #####
+## #$@$ .#
+# * .$$# #
+#.   $   #
+####.# ###
+   #   #
+   #####
+Title: svb 142
+Author: Serg Belyaev
+
+143
+   ######
+   # .  #
+####$$@$##
+#   ..#  #
+#   * *  #
+#####. $ #
+    ######
+Title: svb 143
+Author: Serg Belyaev
+
+144
+  ######
+  # .@ #
+### *$$##
+#   .#  #
+#   * $ #
+####.   #
+   ######
+Title: svb 144
+Author: Serg Belyaev
+
+145
+######
+# .$@#
+#$ * #
+#.$  #
+#  . #
+######
+Title: svb 145
+Author: Serg Belyaev
+
+146
+######
+# .$+#
+# $$$#
+#    #
+#. . #
+######
+Title: svb 146
+Author: Serg Belyaev
+
+147
+ ########
+##@     #
+# $###$ #
+# $     #
+#...*## #
+####    #
+   ######
+Title: svb 147
+Author: Serg Belyaev
+
+148
+#########
+#@  #   #
+# #$$ #.##
+# $ #.$  #
+##   .   #
+ #  #. ###
+ #######
+Title: svb 148
+Author: Serg Belyaev
+
+149
+###########
+# * .$.$+ #
+#  . . *  #
+# $$# ##  #
+###     $ #
+  ## .$####
+   #   #
+   #####
+Title: svb 149
+Author: Serg Belyaev
+
+150
+###########
+# . . * *@#
+#  .$* .$ #
+#   # ##  #
+### $ $   #
+  ##$. ####
+   #   #
+   #####
+Title: svb 150
+Author: Serg Belyaev
+
+151
+###########
+# . . * *@#
+#  .$* .$ #
+#   # ##  #
+### $   $ #
+  ##$. ####
+   #   #
+   #####
+Title: svb 151
+Author: Serg Belyaev
+
+152
+###########
+# . . . * #
+#  .$* .  #
+# $$# ##  #
+###@$ $   #
+  ##$. ####
+   #   #
+   #####
+Title: svb 152
+Author: Serg Belyaev
+
+153
+###########
+# . . . * #
+#  .$* .  #
+# $$# ##  #
+###@$   $ #
+  ##$. ####
+   #   #
+   #####
+Title: svb 153
+Author: Serg Belyaev
+
+154
+###########
+# .$. .$. #
+#  * . .  #
+# $ # ##  #
+###     $ #
+  ##$*$####
+   #@  #
+   #####
+Title: svb 154
+Author: Serg Belyaev
+
+155
+###########
+# . . . *@#
+#  .$*$.$ #
+#   #.##$ #
+## $    $ #
+ ###   ####
+   #####
+Title: svb 155
+Author: Serg Belyaev
+
+156
+############
+#@. . . .  #
+# $ # ## $ #
+###    $ $.#
+  ##$$ #####
+   #  .#
+   #####
+Title: svb 156
+Author: Serg Belyaev
+
+157
+############
+#@. . . .  #
+# $ #$# #$ #
+###  .$   ##
+  ##$  #  #
+   #   ####
+   #####
+Title: svb 157
+Author: Serg Belyaev
+
+158
+############
+#@. . . .  #
+# $ # #$#  #
+### $    $##
+  ##   #  #
+   ########
+Title: svb 158
+Author: Serg Belyaev
+
+159
+#########
+#@...   #
+# # ##  #
+# $  $ ##
+### $  #
+  ##  ##
+   ####
+Title: svb 159
+Author: Serg Belyaev
+
+160
+########
+#  ##  ####
+# ..$$  $ #
+#   # .#. #
+###$ $@ .##
+  #   #  #
+  ########
+Title: svb 160
+Author: Serg Belyaev
+
+161
+ ##########
+##  .##   #
+#   .*+$$ #
+#   #*##  #
+# $  *    #
+####   ####
+   #####
+Title: svb 161
+Author: Serg Belyaev
+
+162
+ #######
+##     ##
+#  #.#  ##
+#  ... $@#
+##$#.# $ #
+ # $  $###
+ #     #
+ #######
+Title: svb 162
+Author: Serg Belyaev
+
+163
+  #######
+###  .  ###
+# $ #.#$$ #
+#  $...   #
+### #.# ###
+  #    $$@#
+  ##  #   #
+   ########
+Title: svb 163
+Author: Serg Belyaev
+
+164
+#########
+#@  #   #
+# # $ #$##
+#   #. * #
+## $   . #
+ #  #. ###
+ #######
+Title: svb 164
+Author: Serg Belyaev
+
+165
+#########
+#@ ##   #
+# $ $ #$##
+# # #. * #
+#        #
+## .#. ###
+ #######
+Title: svb 165
+Author: Serg Belyaev
+
+166
+ ########
+##+##   #
+# $ . # ##
+#  $# $. #
+# #.$$   #
+#  .#  ###
+########
+Title: svb 166
+Author: Serg Belyaev
+
+167
+  #######
+  #  . .#
+###.  # ##
+#   #  $@#
+# # $ $$ #
+#   #. ###
+########
+Title: svb 167
+Author: Serg Belyaev
+
+168
+ #######
+##@ .$ ##
+#  *    #
+#$ ###* #
+#  #   .#
+# *$ #$.#
+#  ## * #
+#.# $ # #
+#..  $  #
+#########
+Title: svb 168
+Author: Serg Belyaev
+
+169
+#########
+#.  .   #
+# #$#$# #
+#   $ # #
+# ### #.#
+#  $@$  #
+# # # #$#
+#.  .  .#
+#########
+Title: svb 169
+Author: Serg Belyaev
+
+170
+ #######
+##  .$@##
+# $*  $ #
+#  ###. #
+#$ #   .#
+# .$ #$.#
+#  ## * #
+#*# $ # #
+#..     #
+#########
+Title: svb 170
+Author: Serg Belyaev
+
+171
+#######
+#     #
+# # # ##
+# $.#  #
+##$ .  #
+ #@* ###
+ ##  #
+  ####
+Title: svb 171
+Author: Serg Belyaev
+
+172
+#######
+#@    #
+# ##$$##
+#  ..$ #
+##$ #  #
+ #   ..#
+ #######
+Title: svb 172
+Author: Serg Belyaev
+
+173
+#######
+#@    #
+# ##$$##
+# $..  #
+##$ #$ #
+#.   ..#
+########
+Title: svb 173
+Author: Serg Belyaev
+
+174
+########
+#.     #
+## #$$ #
+ # . .##
+ #$$#  #
+ #@$ ..#
+ #######
+Title: svb 174
+Author: Serg Belyaev
+
+175
+########
+#.     #
+# $# $ #
+#   # ##
+##$ $ .#
+ #+$. .#
+ #######
+Title: svb 175
+Author: Serg Belyaev
+
+176
+#####
+#@  #####
+# # . $ #
+#   #$# #
+###     #
+# $ $####
+#... #
+######
+Title: svb 176
+Author: Serg Belyaev
+
+177
+ ######
+ #@$ .####
+ # # $ $ #
+ # $ # # #
+####..   #
+#   ..####
+# #$#   #
+# $   # #
+####.   #
+   ######
+Title: svb 177
+Author: Serg Belyaev
+
+178
+ #####
+ #@  #####
+ # #$#   #
+ # $.  # #
+###$#.   #
+#   .# ###
+# #$ .  #
+#   # # #
+#####   #
+    #####
+Title: svb 178
+Author: Serg Belyaev
+
+179
+#####
+#   #####
+# # #   #
+# $ #$# #
+##   .  #
+ # ..$###
+ #$##@#
+ #   .#
+ ######
+Title: svb 179
+Author: Serg Belyaev
+
+180
+############
+#.  . ...$@#
+#  $ $   $ #
+##### ###$##
+    #     #
+    #######
+Title: svb 180
+Author: Serg Belyaev
+
+181
+#############
+#.   .$   $+#
+#  .$ . * * #
+### ###$##$##
+  #        #
+  ##########
+Title: svb 181
+Author: Serg Belyaev
+
+182
+#######
+#   $.#
+# $   #
+#*. $##
+#+#  #
+######
+Title: svb 182
+Author: Serg Belyaev
+
+183
+#######
+#.$   #
+#     #
+##$#.##
+#@$.  #
+# $  .#
+#######
+Title: svb 183
+Author: Serg Belyaev
+
+184
+###########
+#  . . .  #
+# @$ $ $$ #
+##### ##  #
+##### ######
+#  ## ###  #
+# $ . * $  #
+# . $.  .  #
+############
+Title: svb 184
+Author: Serg Belyaev
+
+185
+###### ####
+#    ###  #
+#         ##
+#..#.#$#$$@#
+##..*#     #
+ ##* #######
+  #   $ $ #
+  #       #
+  #########
+Title: svb 185
+Author: Serg Belyaev
+
+186
+#######
+#  #  #
+# $+$ #
+# *$* #
+# # # #
+# ... #
+### $ #
+  #   #
+  #####
+Title: svb 186
+Author: Serg Belyaev
+
+187
+   ####
+####  #
+#  .$ #
+# $*  ###
+# #@# $ #
+# .*.   #
+###   ###
+  #####
+Title: svb 187
+Author: Serg Belyaev
+
+188
+  #####
+###   ###
+# $$.$$@#
+# $. *  #
+# # # # #
+# ....* #
+#### $###
+   #   #
+   #   #
+   #####
+Title: svb 188
+Author: Serg Belyaev
+
+189
+   #####
+   #   ###
+####*.$  #
+#@ $ * $ #
+#   .. ###
+####   #
+   #####
+Title: svb 189
+Author: Serg Belyaev
+
+190
+   #####
+   # . ###
+#### $   #
+#+$ .. $.#
+# $ $$####
+###  .#
+  #####
+Title: svb 190
+Author: Serg Belyaev
+
+191
+########
+#+     #
+# $*$  #
+#*.# .##
+#   $ #
+####  #
+   ####
+Title: svb 191
+Author: Serg Belyaev
+
+192
+ #######
+##     ####
+#@$  $$   #
+# $#. # * #
+#  $$ #  ##
+####.....#
+   #######
+Title: svb 192
+Author: Serg Belyaev
+
+193
+ #######
+##     ####
+#@$ $ $ $ #
+# $#* # . #
+# $   .  ##
+####...*.#
+   #######
+Title: svb 193
+Author: Serg Belyaev
+
+194
+  #####
+ ##@  ####
+## .     #
+#  #.# $ #
+# $  * * #
+#####  ###
+    ####
+Title: svb 194
+Author: Serg Belyaev
+
+195
+  #####
+ ##   ####
+## . *   #
+#   # #$ #
+#    *@* #
+#####  ###
+    ####
+Title: svb 195
+Author: Serg Belyaev
+
+196
+    #####
+#####   #
+#       #
+#    # ##
+##$#.#  #
+ # ..*  #
+ #$#.# ##
+ #@$ #  #
+ #$     #
+ #  #####
+ ####
+Title: svb 196
+Author: Serg Belyaev
+
+197
+    ######
+#####.   #
+#   # $$ #
+# $ .  $##
+###.#.$@#
+ #  . ###
+ #    #
+ ######
+Title: svb 197
+Author: Serg Belyaev
+
+198
+   #####
+  ##   ###
+###.$#   #
+#   *..  #
+# $$#$.###
+###@  ##
+  #####
+Title: svb 198
+Author: Serg Belyaev
+
+199
+   ####
+   #@ ####
+####$. . #
+#   $ .$ #
+# .$  ####
+###   #
+  #####
+Title: svb 199
+Author: Serg Belyaev
+
+200
+   #####
+   #   ###
+####* .$@#
+# .  $$  #
+#  **. ###
+###    #
+  ######
+Title: svb 200
+Author: Serg Belyaev

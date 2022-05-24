@@ -1,0 +1,1511 @@
+ate of Last Change: 
+
+Set:       Microban III
+Copyright: © David W Skinner, Grandview, Washington, USA
+Email:     sasquatch@bentonrea.com
+Homepage:  http://users.bentonrea.com/~sasquatch/sokoban/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+released December 2009
+ 
+In addition to new Microban puzzles, this set incorporates those which
+I had created for Aymeric Du Peloux's LOMA project.
+For more info see Aymeric's LOMA page.
+http://membres.lycos.fr/nabokos/loma.html
+
+
+1
+####
+#  #
+#  #
+#  #####
+#.$$ $@#
+#  . . #
+#  #####
+####
+Title: Level 1
+Author: David W. Skinner
+
+2
+  ####
+###  #
+# $.@##
+#  *  #
+#  *  #
+#######
+Title: Level 2
+Author: David W. Skinner
+
+3
+#######
+#     #
+# .$  #
+##.$###
+#  @  #
+# .$# #
+#     #
+#######
+Title: Level 3
+Author: David W. Skinner
+
+4
+######
+#  @ #
+# #$ #
+# .*.#
+###$ #
+#  * #
+#    #
+###  #
+  ####
+Title: Level 4
+Author: David W. Skinner
+
+5
+######
+#    #####
+#   $ $  #
+###$...@ #
+  #  #####
+  ####
+Title: Level 5
+Author: David W. Skinner
+
+6
+########
+#  #  ##
+# *#$.##
+# * $. #
+# @    #
+#   ####
+########
+Title: Level 6
+Author: David W. Skinner
+
+7
+ ####
+ #  #####
+ #$   $ #
+ # .#.  #
+## ### ##
+# $.#. #
+# @   $#
+#####  #
+    ####
+Title: Level 7
+Author: David W. Skinner
+
+8
+################
+#  #  #  #  #  #
+#  .  #  #  #  #
+# $#  *  #  #  #
+#  #  # @*  #$ #
+#  #  #  #  .  #
+#  #  #  #  #  #
+################
+Title: Level 8
+Author: David W. Skinner
+
+9
+  ####
+ ##  #########
+ #           #
+ #  ##### ## ##
+### ## # .$.$ #
+# $@$  #      #
+# . .  ########
+########
+Title: Level 9
+Author: David W. Skinner
+
+10
+########
+#      #
+# $.#..##
+##$.$$@ #
+# $.#   #
+#   #####
+#####
+Title: Level 10
+Author: David W. Skinner
+
+11
+####### #####
+#   ..###   #
+#  ##.#     #
+# @##$# $  ##
+#      $ ###
+#  #  #  #
+#######  #
+      ####
+Title: Level 11
+Author: David W. Skinner
+
+12
+####
+#  ####
+#...  #
+#.##  ##
+#  $ $ #
+###$ $ #
+  #@   #
+  ######
+Title: Level 12
+Author: David W. Skinner
+
+13
+ ####
+ #  ###
+ # *  #
+ # *#@#
+## *  #
+#  .$##
+#    #
+######
+Title: Level 13
+Author: David W. Skinner
+
+14
+########
+#    @ #
+# $  $ #
+## ## ##
+# $# $#
+#  .. #
+## .. #
+ ######
+Title: Level 14
+Author: David W. Skinner
+
+15
+####
+# @####
+#     ##
+# .#.  #
+##$$$$ #
+# . .###
+#    #
+######
+Title: Level 15
+Author: David W. Skinner
+
+16
+   ####
+ ###@ #
+ #    ##
+##$#.. #
+#  $ # #
+# # $  #
+# ..#$##
+##    #
+ #  ###
+ ####
+Title: Level 16
+Author: David W. Skinner
+
+17
+######
+#   ###
+#   ####
+## $ * ##
+##$#... #
+# $   @ #
+#   ##  #
+#########
+Title: Level 17
+Author: David W. Skinner
+
+18
+########
+#   .  #
+# $ #  ##
+# ** ** #
+##  # $ #
+ #  . @ #
+ ########
+Title: Level 18
+Author: David W. Skinner
+
+19
+######
+#    ##
+#.$$. ##
+# .$$. ##
+## .$$. #
+ ## .$$.#
+  ## @  #
+   ######
+Title: Level 19
+Author: David W. Skinner
+
+20
+    ####
+ ####  ##
+ #  # * ##
+##.$#  * ##
+#   @ * * #
+#   #  *  #
+######    #
+    ###  ##
+      ####
+Title: Level 20
+Author: David W. Skinner
+
+21
+    #####
+   ##   #
+   #  @ #
+#### # ##
+#. .  . #
+#  ###  #
+## $ $ ##
+ #  $ ##
+ ###  #
+   ####
+Title: Level 21
+Author: David W. Skinner
+
+22
+##### #####
+#   ###   #
+#    ##   #
+##    $$ ##
+ #  #  $ #
+ ###  #  #
+   # @####
+   #    #
+ ### ## #
+ #    # #
+ #.. .# #
+ ## ### #
+  #     #
+  #######
+Title: Level 22
+Author: David W. Skinner
+
+23
+    ####
+    #  ###
+    #  . #
+    #  $ #
+    ## ########
+ #####   ##   #
+ #  #  *      #
+##.$# *@* #$.##
+#      *  #  #
+#   ##   #####
+######## ##
+     # $  #
+     # .  #
+     ###  #
+       ####
+Title: Level 23
+Author: David W. Skinner
+
+24
+    ####
+    #  ###
+    #  . #
+    #  $ #
+    ## ########
+ #####  ###   #
+ #  ## *      #
+##.$# * * #$.##
+#      * ##  #
+#   ###  #####
+######## ##
+     # $  #
+     # .@ #
+     ###  #
+       ####
+Title: Level 24
+Author: David W. Skinner
+
+25
+#####
+#   ##
+# #  #
+# #$.###
+#  .$  #
+# #$.# #
+# #.$# #
+#  $. @#
+###.$# #
+  #  # #
+  ##   #
+   #####
+Title: Level 25
+Author: David W. Skinner
+
+26
+  #####
+  #   #
+  #.# #######
+  # $       #
+  #.# ### # #
+ ##  #   $$ #
+ ##.# #   ###
+##      ###
+#  @ ####
+#   ##
+#####
+Title: Level 26
+Author: David W. Skinner
+
+27
+     ####
+###### .#
+#      .#
+#  #$#@.#####
+## #   . #  #
+ #  ###  $$ #
+ # #   ##$  #
+ #         ##
+ #  ########
+ ####
+Title: Level 27
+Author: David W. Skinner
+
+28
+####  ####
+#  ####  #
+# $$  $$ #
+# .$..$. #
+## .  . ##
+ ## @  ##
+  ######
+Title: Level 28
+Author: David W. Skinner
+
+29
+       #####
+ #######   #
+##   ..# $ #
+# $ $..# $ #
+# $ #..$ $ #
+# $ #..   ##
+# @ #######
+#####
+Title: Level 29
+Author: David W. Skinner
+
+30
+###########
+#  *.*.*  #
+#   $+$   #
+### ### ###
+  #  $   #
+  #  #   #
+  #  #####
+  ####
+Title: Level 30
+Author: David W. Skinner
+
+31
+       ####
+  ###### .#
+###       #
+#  $$ # ..#
+# $  #  .##
+#  $$# #.###
+###  #     #
+  #    # # #
+  ##### @  #
+      #   ##
+      #####
+Title: Level 31
+Author: David W. Skinner
+
+32
+############
+#   .#  #  #
+#   .#    $###
+# @#.# $#  $ ##
+#   .   # $   ##
+#  ##### ##    #
+####   ##    # #
+        # #  # #
+        #  ##  #
+        ##    ##
+         ######
+Title: Level 32
+Author: David W. Skinner
+
+33
+           #######
+          ##     #
+         ##  ### #
+         #  $ $  ##
+         # $ $ $  #
+ #########  ###   #
+ # . . . # ## #####
+##        @  $ #
+#  . . . # #   #
+# ######## #####
+#          #
+############
+Title: Level 33
+Author: David W. Skinner
+
+34
+  #####
+### @ ###
+# $$$$$ #
+# ..... #
+#   #   #
+#########
+    #
+Title: Level 34
+Author: David W. Skinner
+
+35
+####
+#   ###
+# .$. #
+# $*  #
+ #  *$ #
+ # .$. #
+ ###  @#
+    ####
+Title: Level 35
+Author: David W. Skinner
+
+36
+###########
+#   #     #
+#  .$ ##  #
+# #.$##.. #
+# ##   $$##
+#  #   #  #
+##$$   ## #
+# ..##$.# #
+#  ## $.  #
+#   @ #   #
+###########
+Title: Level 36
+Author: David W. Skinner
+
+37
+####
+#  #
+#  #
+#  #######
+#.$$ $ $@#
+#  . . . #
+#  #######
+####
+Title: Level 37
+Author: David W. Skinner
+
+38
+####
+# @#
+#  ###
+#.$$ #
+#  . #
+#  #####
+#.$$ $ #
+#  . . #
+#  #####
+####
+Title: Level 38
+Author: David W. Skinner
+
+39
+      ####
+     ##  #
+   ### @ #
+   #  $  #
+   #    ##
+  ### ###
+### $$ #
+# .....#
+#   $$ #
+# # #  #
+#   ####
+#####
+Title: Level 39
+Author: David W. Skinner
+
+40
+   ########
+   #   #  #
+   #      #
+ #####$## #
+ #   # ## #
+ #   #  #.#
+ ##  $  #.#
+  #  #  #.#
+  #$#####.#
+### #  ## #
+#        @#
+# $##  #  #
+#      ####
+########
+Title: Level 40
+Author: David W. Skinner
+
+41
+#########
+#   ##  #
+#@#$    #
+#  $$## ##
+##    # ##
+###$##.  #
+  #  #. .#
+  ##  .###
+   #    #
+   ##   #
+   ######
+Title: Level 41
+Author: David W. Skinner
+
+42
+#####
+#   #######
+#   ...   #
+## $ $ $  #
+######@####
+#  $ $ $ ##
+#   ...  #
+#######  #
+      #  #
+      ####
+Title: Level 42
+Author: David W. Skinner
+
+43
+   ####
+   #  #
+   #  ##
+  ##$. ####
+### $.$$  #
+#  ..@..  #
+#  $$.$ ###
+#### .$##
+   ##  #
+    #  #
+    ####
+Title: Level 43
+Author: David W. Skinner
+
+44
+  ####
+###  ###
+#      #
+# $ $ $#
+#*.*.*.#
+# $ $ $#
+#*.*.*.#
+# @    #
+########
+Title: Level 44
+Author: David W. Skinner
+
+45
+  ######
+  #  ####
+  # $ $ ##
+### #.#.###
+#     #   #
+# # #.#.# #
+# # $ $ # #
+#  #  # # #
+##  #   # #
+ ##  ###  #
+  ##  @  ##
+   #######
+Title: Level 45
+Author: David W. Skinner
+
+46
+#####    #####
+#  #######   #
+# $ #####  $ #
+#  $ ###  $ ##
+##  $ #  $ ###
+ ##  .... ###
+ ### .##.####
+ ####.##. ###
+ ### ....  ##
+### $  # $  ##
+## $  ### $  #
+# $  ##### $ #
+#@  #######  #
+#####    #####
+Title: Level 46
+Author: David W. Skinner
+
+47
+    #######
+  ####   ####
+#### $ # $ ####
+#  #  $ $  #  #
+#      #      #
+#* ######### *#
+#  ....@....  #
+#* ######### *#
+#      #      #
+#  #  $ $  #  #
+#### $ # $ ####
+  ####   ####
+    #######
+Title: Level 47
+Author: David W. Skinner
+
+48
+########
+# @ #  ##
+#  *#$.##
+## * $. #
+##      #
+ ###   ##
+  #######
+Title: Level 48
+Author: David W. Skinner
+
+49
+  ######
+  ##  ##
+###   ##
+#  .*$ #
+#  *.$@#
+##   ###
+##  ##
+######
+Title: Level 49
+Author: David W. Skinner
+
+50
+  ######
+ ###  ##
+###   ##
+#  .*$ #
+#  *.$@#
+##   ###
+ ##  # #
+  ######
+Title: Level 50
+Author: David W. Skinner
+
+51
+    #####
+ ####   #
+ #   $  #
+##  #$###
+# * .  #
+#  * #@#
+### .  #
+  #  ###
+  ####
+Title: Level 51
+Author: David W. Skinner
+
+52
+    #####
+ ####   #
+ #   $  #
+##  #$###
+# * .  #
+#  * #@#
+##  *  #
+ # . ###
+ ##  #
+  ####
+Title: Level 52
+Author: David W. Skinner
+
+53
+    #####
+ ####   #
+ #   $  #
+##  #$###
+# * .  #
+#  * #@#
+##  *  #
+ # * .##
+ ##   #
+  #####
+Title: Level 53
+Author: David W. Skinner
+
+54
+####
+#  ######
+#       ####
+# $ $   #  #####
+##### ###    $ #
+   #     $ #   #
+   #  @  #$#####
+   ##### #  .#
+      #  ###.#
+      #   ...#
+      #####  #
+          ####
+Title: Level 54
+Author: David W. Skinner
+
+55
+##### #####
+#   ###   #
+# #. #  # #
+#  $.$ $. #
+##  $.$. ##
+ ##$.@.$##
+## .$.$  ##
+# .$ $.$  #
+# #  # .# #
+#   ###   #
+##### #####
+Title: Level 55
+Author: David W. Skinner
+
+56
+   #####
+   #   #
+  ## .$##
+####$. ####
+# $ $.$$  #
+# ...@... #
+#  $$.$ $ #
+#### .$####
+  ##$. ##
+   #   #
+   #####
+Title: Level 56
+Author: David W. Skinner
+
+57
+  #########
+  #       #
+### # # # ###
+#  $.$.$.$  #
+# #.$.$.$.# #
+#  $.# #.$  #
+# #.$ @ $.# #
+#  $.# #.$  #
+# #.$.$.$.# #
+#  $.$.$.$  #
+### # # # ###
+  #       #
+  #########
+Title: Level 57
+Author: David W. Skinner
+
+58
+###############
+#             #
+# # # # # # # #
+#  $.$.$.$.$  #
+# #.$.$.$.$.# #
+#  $.$.$.$.$  #
+# #.$.$.$.$.# #
+#  $.$.@.$.$  #
+# #.$.$.$.$.# #
+#  $.$.$.$.$  #
+# #.$.$.$.$.# #
+#  $.$.$.$.$  #
+# # # # # # # #
+#             #
+###############
+Title: Level 58
+Author: David W. Skinner
+
+59
+#################
+#               #
+#.$.$.######### #
+#$.$.$          #
+#.$.$.######### #
+#$.$.$          #
+#.$.$.######### #
+#       $       #
+# ############# #
+#       @       #
+#################
+Title: Level 59
+Author: David W. Skinner
+
+60
+  #####
+ ##   ##
+### #  #
+###$.# #
+#  $.#@#
+# #$.# #
+# #    #
+#  # ###
+##   ##
+ #####
+Title: Level 60
+Author: David W. Skinner
+Comment:
+'LOMA 1a'
+Comment-End:
+
+61
+########
+#      #
+# #$.@ #
+#  $.###
+# #$.#
+#   ##
+#####
+Title: Level 61
+Author: David W. Skinner
+Comment:
+'LOMA 1b'
+Comment-End:
+
+62
+#####
+#   ####
+#  $.  #
+## $.  #
+ ##$.###
+  #@ #
+  ####
+Title: Level 62
+Author: David W. Skinner
+Comment:
+'LOMA 1c'
+Comment-End:
+
+63
+  ####
+  #  #
+  #  #
+###$.#
+#  $.##
+# #$. #
+#   @ #
+#######
+Title: Level 63
+Author: David W. Skinner
+Comment:
+'LOMA 1d'
+Comment-End:
+
+64
+##### ####
+#   ###  #
+#    ##@ #
+##    #$.#
+ ##    $.#
+# ##  #$.#
+## ## #  #
+### ######
+Title: Level 64
+Author: David W. Skinner
+Comment:
+'LOMA 1e'
+Comment-End:
+
+65
+#####
+#   ####
+# #$.  #
+#  .$#@#
+###$.  #
+  #  ###
+  #  #
+  ####
+Title: Level 65
+Author: David W. Skinner
+Comment:
+'LOMA 2a'
+Comment-End:
+
+66
+  ######
+###    #
+#   ## #
+# #$.  #
+#@#.$###
+# #$.##
+#     #
+###   #
+  #####
+Title: Level 66
+Author: David W. Skinner
+Comment:
+'LOMA 2b'
+Comment-End:
+
+67
+  ######
+###    #
+#  $.# #
+#@#.$  #
+# #$.###
+#    #
+######
+Title: Level 67
+Author: David W. Skinner
+Comment:
+'LOMA 2c'
+Comment-End:
+
+68
+   #####
+####   #
+#  $.# #
+#@#.$  #
+# #$.###
+# #  #
+#    #
+######
+Title: Level 68
+Author: David W. Skinner
+Comment:
+'LOMA 2d'
+Comment-End:
+
+69
+  ####
+ ##  #
+ # . #
+ # * #
+## *###
+#  $ #
+#  @ #
+#  ###
+####
+Title: Level 69
+Author: David W. Skinner
+Comment:
+'LOMA 3a'
+Comment-End:
+
+70
+####
+#  ####
+#     #
+#  .# #
+###*# ##
+ #@*   #
+ # $   #
+ ###  ##
+   ####
+Title: Level 70
+Author: David W. Skinner
+Comment:
+'LOMA 3b'
+Comment-End:
+
+71
+ #####
+ # . #
+ # * #
+## * #
+#  * #
+# @$ #
+#  ###
+####
+Title: Level 71
+Author: David W. Skinner
+Comment:
+'LOMA 3c'
+Comment-End:
+
+72
+######
+# .  #
+# *# #
+#@*  #
+# * ##
+##$  #
+#    #
+# # ##
+#   #
+#####
+Title: Level 72
+Author: David W. Skinner
+Comment:
+'LOMA 3d'
+Comment-End:
+
+73
+###### #
+#   ## #
+#  . #
+#  $ ###
+## * @ #
+###$ # #
+  #.#  #
+# #   ##
+# ######
+Title: Level 73
+Author: David W. Skinner
+Comment:
+'LOMA 4a'
+Comment-End:
+
+74
+#####
+#   ##
+# #. ###
+#  $ @ #
+###*   #
+#  $ ###
+# #.##
+#   #
+#####
+Title: Level 74
+Author: David W. Skinner
+Comment:
+'LOMA 4b'
+Comment-End:
+
+75
+#####
+#   #
+# . #
+# $ #
+##* ##
+# $  #
+# . @#
+###  #
+  ####
+Title: Level 75
+Author: David W. Skinner
+Comment:
+'LOMA 4c'
+Comment-End:
+
+76
+ ######
+ ###  #
+ # . @#
+ # $  #
+###* ##
+#  $ ##
+# #. #
+#   ##
+##  ##
+######
+Title: Level 76
+Author: David W. Skinner
+Comment:
+'LOMA 4d'
+Comment-End:
+
+77
+ ####
+ #  #
+ #  #
+ #  ####
+###$$  #
+#  $.  #
+# #..###
+# @# #
+##   #
+######
+Title: Level 77
+Author: David W. Skinner
+Comment:
+'LOMA 5a'
+Comment-End:
+
+78
+#####
+#  @####
+# #$$  #
+#  $.# #
+###..  #
+  ##   #
+   #####
+Title: Level 78
+Author: David W. Skinner
+Comment:
+'LOMA 5b'
+Comment-End:
+
+79
+   ####
+#### @#
+#  $$ ##
+# #$.  #
+#  ..# #
+####   #
+   #####
+Title: Level 79
+Author: David W. Skinner
+Comment:
+'LOMA 5c'
+Comment-End:
+
+80
+ #####
+ #   #
+ # # #
+ # @ #
+##$$###
+# $.  #
+# ..# #
+###   #
+  #####
+Title: Level 80
+Author: David W. Skinner
+Comment:
+'LOMA 5d'
+Comment-End:
+
+81
+  #####
+  ##  #
+###   #
+#  $  #
+# .*.##
+## $ #
+###@ #
+  ####
+Title: Level 81
+Author: David W. Skinner
+Comment:
+'LOMA 6a'
+Comment-End:
+
+82
+  ####
+ ##  #
+###$ #
+# .*.#
+# #$ #
+#  @ #
+#   ##
+#####
+Title: Level 82
+Author: David W. Skinner
+Comment:
+'LOMA 6b'
+Comment-End:
+
+83
+   #####
+   #   ##
+ ### #  #
+##  $ # #
+#  .*.  #
+# # $  ##
+#  #@###
+##   #
+ #####
+Title: Level 83
+Author: David W. Skinner
+Comment:
+'LOMA 6c'
+Comment-End:
+
+84
+### #####
+#####   #
+### $ # #
+# @.*.  #
+# # $ ###
+#   #####
+##### ###
+Title: Level 84
+Author: David W. Skinner
+Comment:
+'LOMA 6d'
+Comment-End:
+
+85
+#####
+#   ##
+#  $ ##
+##$*. ##
+ # .@  #
+ #  #  #
+#####  #
+##  ####
+Title: Level 85
+Author: David W. Skinner
+Comment:
+'LOMA 7a'
+Comment-End:
+
+86
+#####
+#   ####
+# #@$  #
+#  $*. #
+####. ##
+ #    #
+ #   ##
+ #####
+Title: Level 86
+Author: David W. Skinner
+Comment:
+'LOMA 7b'
+Comment-End:
+
+87
+  ########
+  #      #
+### #### #
+#  @$  # #
+#  $*. # #
+#  #.### #
+#  #     #
+##########
+Title: Level 87
+Author: David W. Skinner
+Comment:
+'LOMA 7c'
+Comment-End:
+
+88
+  ####
+  #  #####
+  #      #
+### ###  #
+# @$  #  #
+# $*. # ##
+###.### #
+ #      #
+ #   #  #
+ ########
+Title: Level 88
+Author: David W. Skinner
+Comment:
+'LOMA 7d'
+Comment-End:
+
+89
+  #####
+ ##   #
+###   #
+#  * ##
+# .@$##
+#  * ##
+##  ##
+#####
+Title: Level 89
+Author: David W. Skinner
+Comment:
+'LOMA 8a'
+Comment-End:
+
+90
+ ####
+ #  ##
+## * ##
+# .@$ #
+#  *  #
+#  #  #
+#######
+Title: Level 90
+Author: David W. Skinner
+Comment:
+'LOMA 8b'
+Comment-End:
+
+91
+  #####
+ ##   #
+## *  #
+# .@$##
+#  *  #
+###   #
+#######
+Title: Level 91
+Author: David W. Skinner
+Comment:
+'LOMA 8c'
+Comment-End:
+
+92
+ #####
+ #   ##
+## #  ##
+# * #  #
+#.@$ # #
+# *  # #
+###    #
+  #  ###
+  ####
+Title: Level 92
+Author: David W. Skinner
+Comment:
+'LOMA 8d'
+Comment-End:
+
+93
+  ####
+  #  #
+###  ###
+## $*  #
+#  *. @#
+#   ####
+#  ##
+#####
+Title: Level 93
+Author: David W. Skinner
+Comment:
+'LOMA 9a'
+Comment-End:
+
+94
+#####
+#   #####
+#   #   #
+## $*@  #
+ # *.  ##
+ #  ####
+ ####
+Title: Level 94
+Author: David W. Skinner
+Comment:
+'LOMA 9b'
+Comment-End:
+
+95
+  ####
+  #@ #
+  #  ##
+###$* ##
+#  *.  #
+#      #
+#####  #
+    ####
+Title: Level 95
+Author: David W. Skinner
+Comment:
+'LOMA 9c'
+Comment-End:
+
+96
+     ####
+######  #
+#  ##   #
+#   $*  #
+#  #*. ##
+##  @ ##
+ #  ###
+ ####
+Title: Level 96
+Author: David W. Skinner
+Comment:
+'LOMA 9d'
+Comment-End:
+
+97
+#### ###
+#@ ### #
+# $$ ###
+# $ .  #
+## ..  #
+ #######
+Title: Level 97
+Author: David W. Skinner
+Comment:
+'LOMA 10a'
+Comment-End:
+
+98
+####
+#  #
+#@ ###
+# $$ ##
+# $ . #
+###.. #
+ #   ##
+ #   #
+ #####
+Title: Level 98
+Author: David W. Skinner
+Comment:
+'LOMA 10b'
+Comment-End:
+
+99
+######
+#    #
+#    #
+## $$##
+ # $@.#
+ ## ..#
+  #####
+Title: Level 99
+Author: David W. Skinner
+Comment:
+'LOMA 10c'
+Comment-End:
+
+100
+  #####
+###   #
+# $$# #
+# $@. #
+#  .. #
+#######
+Title: Level 100
+Author: David W. Skinner
+Comment:
+'LOMA 10d'
+Comment-End:
+
+101
+     #####     #####     #####     #####
+     #   #######   #######   #######   ####
+     # # #  #### # #  #### # #  #### # #  ##
+     #       ###       ###       ###       ##
+    #### #    #### #    #### #    #### #    ##
+#######   #    ##   #    ##   #    ##   #    #
+#   ###    #    #    #    #    #    #    # $ #
+# # #  #    #    #    #    #    #    #    #  #
+#       #    #    #    #    #    #    #    ###
+### #    #    #    #    #    #    #    #    ##
+ #   #    #    #    #    #    #    #    #    #
+ #    #    #    #    #    #    #    #    #   #
+ ##    #    #    #    #    #    #    #    # ###
+ ###    #    #    #    #    #    #    #       #
+ ####    #    #    #    #    #    #    #  # # #
+######    #    #    #    #    #    #    ###   #
+#   ###    #    #    #    #    #    #    ######
+# # #  #    #    #    #    #    #    #    ####
+#       #    #    #    #    #    #    #    ###
+### #    #    #    #    #    #    #    #    ##
+ #   #    #    #    #    #    #    #    #    #
+ #    #    #    #    #    #    #    #    #   #
+ ##    #    #    #    #    #    #    #    # ###
+ ###    #    #    #    #    #    #    #       #
+ ####    #    #    #    #    #    #    #  # # #
+######    #    #    #    #    #    #    ###   #
+#   ###    #    #    #    #    #    #    ######
+# # #  #    #    #    #    #    #    #    ####
+#       #    #    #    #    #    #    #    ###
+### #    #    #    #    #    #    #    #    ##
+ #   #    #    #    #    #    #    #    #    #
+ #    #    #    #    #    #    #    #    #   #
+ ##    #    #    #    #    #    #    #    # ###
+ ###    #    #    #    #    #    #    #       #
+ #  #    #    #    #    #    #    #    #  # # #
+ # . #    #    #    #    #    #    #    ###   #
+ #  @ #   ##    #   ##    #   ##    #   #######
+ ##    # ####    # ####    # ####    # ####
+  ##       ###       ###       ###       #
+   ##  # # ####  # # ####  # # ####  # # #
+    ####   #######   #######   #######   #
+       #####     #####     #####     #####
+Title: Level 101
+Author: David W. Skinner

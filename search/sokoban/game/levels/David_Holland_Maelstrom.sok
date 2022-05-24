@@ -1,0 +1,438 @@
+Date of Last Change: 
+
+Set:       Maelstrom
+Copyright: © David Holland
+Email:     david@clickfest88.freeserve.co.uk
+Homepage:  http://www.clickfest88.freeserve.co.uk/
+
+Archives:  http://web.archive.org/web/*/http://clickfest88.freeserve.co.uk/
+           http://web.archive.org/web/20040806182433/www.clickfest88.freeserve.co.uk/maelstrom/index.html
+           http://web.archive.org/web/20040903055025/www.clickfest88.freeserve.co.uk/maelstrom/maelstrm.txt
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The maelstrom Sokoban levels by David Holland
+
+Original release date: August 2001
+
+The word Maelstrom means a powerful whirlpool, named after one off the coast of Norway.
+
+Author's note:
+The collection ranges from the pretty small (5 objects, 8x9 squares) through the mid-sized
+(13 objects, 15x11 squares) right up to the large (one puzzle with 57 objects 23x24
+squares). Just browse for the kind of challenge you like. The puzzles are in rough order
+of difficulty. I designed the maze layout and goals for all the puzzles, and many but not
+all of the small puzzles use computer-generated start positions. A few of the puzzles
+feature unexpected twists within lengthy solutions and require substantial imagination,
+and the others I hope are at least interesting. A fully-featured Sokoban player (with drag
+and drop movement of objects, mouse movement of the man, ability to keep your place if you
+quit and return to the puzzle another time) is strongly recommended for the medium to
+larger puzzles, though not strictly necessary.
+
+Note on computer-generation of the puzzle maelstrom.16: the first draft was designed
+without computer help. But the computer found a much shorter solution which didn't use the
+key idea in my original solution which I had intended. However, it also found a deeper
+start position (namely maelstrom.16) and a solution for it which DID use the key idea I
+had found! This shows pretty well the secondary role of a computer generator like my
+program sokgen: it may not help you if you haven't already play-tested a draft of your
+puzzle to see that it contains some interesting variations. But if you have found
+something interesting by play-testing, it can help you by finding an optimal solution and
+suggesting deeper start positions which may even work better than your originals by
+"forcing" your intended key positions and variations (in the sense of making them
+necessary for a push-optimal solution). In this case, it saved me the extra play-testing
+work that would have been needed to spot that my original solution wasn't optimal and how
+to change the start position to force the key idea.
+
+These levels may be distributed freely as long as this copyright message is retained.
+
+
+1
+ #######
+ #     ###
+ # .* .  #
+ #.## #$$#
+##*#.    ##
+# $ . .#  #
+# . ##$   #
+###$ $@$ ##
+  #   ####
+  #####
+Title: Maelstrom 1
+Author: David Holland
+
+
+2
+    #########
+    #   #   #
+    #  . $. #
+    ##$### ##
+#####   #   #####
+#  ##$.*$..$##  #
+#     . # .  $  #
+# $#  $ # $  #. #
+## ##.#####.## ##
+# .# $  #  $ #$ #
+#  $  .$#$.   . #
+#  ##$..@..$##  #
+#####   #   #####
+    ## ###$##
+    #  $ .  #
+    #   #   #
+    #########
+Title: Maelstrom 2
+Author: David Holland
+
+
+3
+#### ######
+#  ###    #
+#  #   ...#
+#  #  #...#
+## ##$ #  #
+ # $   #  #
+##@$## # ##
+# $$      #
+#  $ ## $ #
+## #$####$###
+#...*.  $ $ #
+#  .  #     #
+#############
+Title: Maelstrom 3
+Author: David Holland
+
+
+4
+ ###########
+ #         ####
+## #######    #####
+# $#  #  ####     ##
+#    $$ .#  # $$$  #
+#  #  # *#.$  $  # #
+##  #  #.#.#  #$   #
+#  $#.*....## $   ##
+#  $  #....@# $ ###
+## $$$#.... # ###
+###   #######  #
+  ##         $ #
+   ##########  #
+            ####
+Title: Maelstrom 4
+Author: David Holland
+
+
+5
+        ####
+  #######  #
+  #       $#
+  # *####. #
+  # .   #.$#
+####$#$.#. ####
+#  $ #  $     #
+# ##.#  ####* #
+# # .#### @   #
+# #  $     #  #
+#    ##    ####
+############
+Title: Maelstrom 5
+Author: David Holland
+
+
+6
+   #######
+ ###  #  ##
+## $    $@#
+# $ $ #.# #
+# ## #..# #
+# #   . # #
+# #   *.$ #
+# ## ######
+#    #
+######
+Title: Maelstrom 6
+Author: David Holland
+
+
+7
+#################
+#     #   #     #
+# .$.$. .  $.$. #
+## *#$## ##$#. ##
+ #      $.#  $ #
+ ## ###*.*# # ##
+ #  #.* $ * #  #
+ # * $.$@$.$ * #
+ #  # * $ *.#  #
+ ## # #*.*### ##
+ # $  #.$      #
+## .#$## ##$#* ##
+# .$.$  . .$.$. #
+#     #   #     #
+#################
+Title: Maelstrom 7
+Author: David Holland
+
+
+8
+       ####
+ #######  #
+ #  ##  $ ##
+ # $    $  #
+ # ###$#$# ####
+## ##  .$..#  #
+#   #  .$.    #
+# $  # #####$ #
+##$  #$...    #
+ #@. .$..* ####
+ ###########
+Title: Maelstrom 8
+Author: David Holland
+
+
+9
+########
+#      ##
+#  # ** #
+#   $ . #
+##$#$#.##
+#  *@$. #
+# . #.$ #
+##     ##
+ #######
+Title: Maelstrom 9
+Author: David Holland
+
+
+10
+          ####
+###########  #
+#   #   # $  #
+#  $   $ $ $ #
+##$ #*## ## ##
+ # $#.*.*.*  #
+ ##  ..*..#  #
+ # $#*+*.*#$ #
+ #  #..*..  ##
+ #  *.*.*.#$ #
+ ## ## ##*# $##
+ # $ $ $   $  #
+ #  $ #   #   #
+ #  ###########
+ ####
+Title: Maelstrom 10
+Author: David Holland
+
+
+11
+  ####
+  #@ #####
+###$$*   #
+# * $ *# #
+# #. $ . #
+#   .. ###
+#####  #
+    ####
+Title: Maelstrom 11
+Author: David Holland
+
+
+12
+     ####
+     #  #
+     # $######
+     #  #    #
+     #.$#$## ##########
+     #.   ..   $      #
+     #.$#$**$#   #$#$ #
+######  # .. #$ $ $  ##
+#      ##$..$#   $   #
+# ####### .. ######$###
+#   $ $ $$.#$$ $ $    #
+# #...*...$..*....*.# #
+# #...*.#....#..*.*.# #
+# # $ $ $ **$$ $  $ # #
+# ####### #. ######## #
+# #     #$*.$##       #
+# #@$ $ # .. #  #######
+# ####$ #$..$#$.#
+#  $ $    ##   .#
+# $    $#    #$.#
+######  ######  #
+     ####    #$ #
+             #  #
+             ####
+Title: Maelstrom 12
+Author: David Holland
+
+
+13
+  #####
+  #  @###
+### #$  #
+# $* .  #
+# . .*# #
+## ## $ #
+ #    ###
+ ######
+Title: Maelstrom 13
+Author: David Holland
+
+
+14
+###################
+#      #          #
+# $ $    @$ $ $ $ #
+###$#  $#.#$  #$###
+  #  #  #.#  #  #
+  ##  ###.###  ##
+   ##  ##.##  ##
+    ##.. . ..##
+    ##..$.$..##
+   ##  ##.##  ##
+  ##  ###.###  ##
+  #  #  #.#  #  #
+###$#  $#.#$  #$###
+# $ $    ..   $ $ #
+#      #   #      #
+###################
+Title: Maelstrom 14
+Author: David Holland
+
+
+15
+ #######  #### ####
+ #  #  #  #  ###  #
+ # $$  #### $ $   #
+ #  #$ #  # $  $  #
+ ## #@    #   ## ##
+  # #$ #$ #   $  #
+  # #  # ## $ #  #
+ ## #### ####$####
+ #   $ # #     #
+ #  # .* ..$#  #
+### # .  $. # ##
+# .* ##   ##  * #
+# ..* ##### $.. #
+##...$     ..*. #
+ #  .###### ## ##
+ ######   #    #
+          ######
+Title: Maelstrom 15
+Author: David Holland
+
+
+16
+    ####
+ ####  #
+ #  #  ##
+ #  *.  ###
+ # .*.#   #
+###$.$$ # #
+#@$...##  #
+# #$# $  ##
+#   #  ###
+#### $ #
+   #   #
+   #####
+Title: Maelstrom 16
+Author: David Holland
+
+
+17
+    ####
+   ##  ########
+  ##   $  #   #
+  #   $ .  .  #
+### # $ *#$#$##
+# $ ####  ... #
+# # #   #$##  #
+# #.# *   #  ###
+# .* # * *  #  #
+##$ .#$.$.#.@  #
+#  #. .$. #$** #
+#  *.###  # . ##
+# $$ $ #### . #
+##   #    #*$$#
+ ##    ##     #
+  #############
+Title: Maelstrom 17
+Author: David Holland
+
+
+18
+   ####
+####  ####
+# $ .. $ #
+# # ** # #
+# # .* # #
+#  $.*   #
+### ##$###
+  #   @#
+  ######
+Title: Maelstrom 18
+Author: David Holland
+
+
+19
+  ####
+  #  #####
+ ##$ #   #### #####
+## $   $  $ ###   #
+# $   #*#   ## $  #
+#   ###+###    # ##
+## # ......# $ $ ##
+ # # *****.. # $  #
+##  #*.*.*## $ $  #
+#  $#..*..#### #  #
+#     ###  ###  ###
+### $   $$      #
+  #######  ######
+        #### ####
+Title: Maelstrom 19
+Author: David Holland
+
+
+20
+          ####
+   ########  #
+ ###  # $ $$ #
+ # $ $$   #  ####
+ #    $ ##  ##  #
+ ###  #  #   $$ #
+   # #.. ##  #  #
+ ### #.+.. #   ##
+##.. $ $ #$. $  #
+# .. #### . ### #
+# ** .   .$. $  #
+#  ##############
+####
+Title: Maelstrom 20
+Author: David Holland
+
+
+9a
+########
+#      ##
+#  # ** #
+#   $   #
+##*#*# ##
+#  *@*  #
+#   #.* #
+##     ##
+ #######
+Title: Maelstrom 9 variant
+Author: Aymeric du Peloux

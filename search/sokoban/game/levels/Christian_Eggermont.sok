@@ -1,0 +1,137 @@
+Date of Last Change: 
+
+Set:       Christian Eggermont
+Copyright: Christian Eggermont
+Email:     c.e.j.eggermont@tue.nl
+Homepage:  http://www.win.tue.nl/~ceggermo/puzzels/sokoban/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows о we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The levels below were created by me a long time ago when i had just finished solving all
+levels i could find (several hundreds, especially the ones from MacSokoban and xsokoban
+were great!). I now think the levels i created are to large and (probably to) difficult.
+I do not remember exactly how to solve them anymore, though i still have some notes from
+over a decade ago бн So be warned!
+
+PS. you are free to copy and adjust them as long as you attribute them to me, i.e.
+'Christian Eggermont' (and include your own name if you adjust them of course).
+
+
+1
+       ####
+      ##  ###
+  #####  $  #
+###  #  $ # #
+#        #  #
+# #  ##  $ ##
+# ## ###  $ ##
+#  #  ###  $ #
+##   $ ###@# #
+ ###  $ ..*# #
+   ##. $.....#
+    ##########
+Title: eenvoudig bedoeld
+Author: Christian Eggermont
+
+2
+  #####
+  #   #   #########
+  # $ #####.. #...#
+ ###  $...........#
+ #    ##.........###
+ #  $#  ####*####  #
+ ##$ # $         $ ##
+  # # $ $##   ##$   #
+ ## #  $ ### ### $$ #
+ #   #  $ ##### $  ##
+ #  $ #  $ ### $  ##
+##$$   #  $ # $  ##
+#   $#  #  $ $  ##
+#        # # # ##
+######## $     #
+       #### @ ##
+          #####
+Title: hart
+Author: Christian Eggermont
+
+3
+    ###########
+   ##  #  #   #
+  ##  $  $$ $ #
+ ##  $ #  # ###
+##  $ # # ...##
+#  $ #   #....##
+# # $  #  .....#
+#  #  $ # #. ..#
+##  # #   ##..##
+ ## $  #$ #####
+ ##  $$ $    #
+ # $$  # #   #
+ #@   $  #####
+ ####  ###
+    ####
+Title: trappen
+Author: Christian Eggermont
+
+4
+             ####
+         #####  #####
+      #### @ ...# ..#
+      #   .*.# .....#
+   ####$$#.**.#. . .#
+ ###  $   #..*.#....#
+ #   $  $ ##...#....#
+## #$$$ ##### ####..#
+#    # #  $ $ $   #.#
+# #    # $  $ $ $ #.#
+#     ##  $ $ $$ $###
+######## $  $ $ $   #
+       # $  $ $ $   #
+       # $$ $ $   ###
+       #  $$ $ ####
+       #       #
+       #########
+Title: vol
+Author: Christian Eggermont
+
+5
+   ############# #########
+   #@      #   ###  #    ##
+   #  $ $$ # #$#  $   $   #
+  ###  $ $ $   $ $#$#$#$# #
+  #  #$$   $ # #  $       #
+  #    $ $  #  #$   #######
+  # $######## ...#.## .. #
+ ### #..  #..#.## .  .$#$#
+ #... ... ...#.. $.$##.. ##
+ # .##.......#.###.   # . #
+ # . ##.....# ...#...$..  #
+ ##. # #...## $######### ##
+ # . #  #*###            #
+ #...#      ##$########  #
+ ## #  ##$#  $ $   #  ####
+###$   $     # $ $ #
+#   ####  ###  $$ $###
+# $     ## $ $ $ $   #
+#  #$$  # $  $ $ $   #
+# $$  $ # $  $ $   ###
+#  $  ## $ $  $ ####
+##  ####        #
+ ####  ##########
+Title: voor Els
+Author: Christian Eggermont

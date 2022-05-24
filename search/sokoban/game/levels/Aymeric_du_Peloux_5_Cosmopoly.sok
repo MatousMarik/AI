@@ -1,0 +1,371 @@
+Date of Last Change: 
+
+Set:       Cosmopoly
+Copyright: © Aymeric du Peloux
+Email:     aymeric.du-peloux@gadz.org
+Homepage:  http://membres.lycos.fr/nabokos
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+ ####
+ #  ####
+ #     #
+## #.  #
+# * #*##
+# $  * #
+# # @  #
+#   ####
+#####
+Title: MINICOSMOS 28 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5.5
+Comment-End:
+
+2
+  #####
+###@  #
+# $*#$##
+# #  . #
+# . $# #
+## #.  #
+ #    ##
+ ###  #
+   ####
+Title: MICROCOSMOS 31 var.
+Author: Aymeric du Peloux et David Holland
+Comment:
+difficulté: 7
+Comment-End:
+
+3
+  ####
+  #  #
+  #  #
+### *###
+#      #
+# .*** #
+## $  ##
+ ##* ##
+  #@  #
+  # # #
+  #   #
+  #####
+Title: NABOKOSMOS 39 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+4
+#####
+#   ####
+#  $$  #
+##.@ . #
+ #. #.##
+ # $$ #
+ #  ###
+ ####
+Title: For ban 1
+Author: Aymeric du Peloux & François Marques
+Comment:
+difficulté: 5.5
+Comment-End:
+
+5
+#####
+#. .#####
+#  .    #
+##$$@$  #
+## ######
+#  $ ##
+#   . #
+###   #
+  #####
+Title: For ban 15
+Author: Aymeric du Peloux et François Marques
+Comment:
+difficulté: 6.5
+Comment-End:
+
+6
+  ####
+ ##  #
+ #   ####
+##$ ..*.#
+# $  #$ #
+#    #@ #
+#########
+Title: Align that
+Author: Aymeric du Peloux et François Marques
+Comment:
+difficulté: 6
+Comment-End:
+
+7
+ #####
+##   #
+#  # ###
+# # *  #
+# #  #@#
+#   *  #
+### *$##
+  # . #
+  #####
+Title: NABOKOSMOS 18 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7
+Comment-End:
+
+8
+  ########
+  #   #  #
+  # . $. #
+ ###$##  #
+ #.. ##$##
+## $*$   #
+#  * #   #
+#  @.#####
+##   #
+ #####
+Title: MICROCOSMOS 26 var.
+Author: Aymeric du Peloux et Howard Abed
+Comment:
+difficulté: 7
+Comment-End:
+
+9
+       ####
+######## @#
+#  $ $ $ $#
+# #*.  .# ##
+#    . #.  #
+##$### .   #
+ #     #####
+ #######
+Title: MICROCOSMOS 37 var.
+Author: Aymeric du Peloux et Evgeny Grigoriev
+Comment:
+difficulté: 8.75
+Comment-End:
+
+10
+ #######
+ #  #  #
+ #$.@.$#
+ # .#. #
+##$.#.$##
+# $   $ #
+#   #   #
+#########
+Title: MICROCOSMOS 18 var.
+Author: Aymeric du Peloux et Masato Hiramatsu
+Comment:
+difficulté: 6.5
+Comment-End:
+
+11
+#####
+#   ####
+#  $.$ ##
+##$#@#  #
+ # ...  #
+##$#.# ##
+#   $   #
+#   #   #
+#########
+Title: NABOKOSMOS 32 var.
+Author: Aymeric du Peloux et Evgeny Grigoriev
+Comment:
+difficulté: 7
+Comment-End:
+
+12
+ #####
+##  .#
+# $#.##
+#     #
+##$   #
+#  #*##
+# @  #
+#  ###
+####
+Title: MICROCOSMOS 10 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4.75
+Comment-End:
+
+13
+  #####
+###   ##
+# .. . #
+# $$ # #
+## #$$ #
+ #.@  ##
+ ###  #
+   ####
+Title: MICROCOSMOS 39 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+14
+  #####
+###   #
+#   #.##
+#  *$@ #
+## * **##
+ # # #  #
+ #      #
+ ###  ###
+   ####
+Title: NABOKOSMOS 12 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+15
+########
+#   #  #
+#      #
+## #.$.#
+#  $@###
+# #$*.#
+# # # #
+#     #
+##   ##
+ #####
+Title: MINICOSMOS 30 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+16
+     #####
+   ###   #
+  ## * # #
+ ##      #
+## * * ###
+#   $###
+#  + #
+######
+Title: PICOKOSMOS 02 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+17
+     ####
+######  #
+#@ $. $ #
+# $ .$  #
+### . ###
+  # . #
+  #####
+Title: MICROCOSMOS 01 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+18
+   ####
+ ###  ##
+## *   #
+#  ##  ##
+#@$*    #
+## .# # #
+ # *    #
+ #  #####
+ ####
+Title: NABOKOSMOS 23 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+19
+      ####
+     ## .#
+    ##   #
+   ## ...#
+#### $$ ##
+# @$   ##
+#  $  ##
+#   ###
+#####
+Title: MICROCOSMOS 28 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7
+Comment-End:
+
+20
+  #####
+  #   ###
+### # $ #
+# $* .# #
+# # +   #
+#  *#.###
+## $  #
+ #  ###
+ ####
+Title: MICROCOSMOS 21 var.
+Author: Aymeric du Peloux
+Comment:
+difficulté: 9
+Comment-End:
+
+21
+     ####
+  ####@ #
+  #.* $ #
+###   # ##
+#    #.. #
+#    $ $ #
+####  ####
+   ####
+Title: MICROCOSMOS 25 var.
+Author: Brian Damgaard (with YASgen) et Aymeric du Peloux
+Comment:
+difficulté: 
+Comment-End:
+
+22
+  ####
+ ##  #
+## $ ###
+# $@*  #
+#  * #.#
+##* *  #
+ # . . #
+ # #$###
+ #   #
+ #####
+Title: PICOKOSMOS 20 var.
+Author: Evgeny Grigoriev (GRIGoRusha) et Aymeric du Peloux
+Comment:
+difficulté: 
+Comment-End:

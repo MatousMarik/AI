@@ -1,0 +1,1987 @@
+Date of Last Change: 
+
+Set:       Microban II
+Copyright: © David W Skinner, Grandview, Washington, USA
+Email:     sasquatch@bentonrea.com
+Homepage:  http://users.bentonrea.com/~sasquatch/sokoban/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+135 puzzles, released April 2002
+Like Microban, this set is for beginners and children.
+Most of the puzzles are small and illustrate a particular concept.
+At the end of the set are four "mega" puzzles which are fun to watch
+on programs which can handle oversize levels and allow
+"automated extended pushes".
+
+1
+####
+#  #
+#  #
+#  ###
+#.$$@#
+#  . #
+#  ###
+####
+Title: Microban II - 1
+Author: David W Skinner
+
+2
+ #####
+ #   #
+##.# #
+#  @ #
+#  $ #
+# #*##
+#   #
+#####
+Title: Microban II - 2
+Author: David W Skinner
+
+3
+   ####
+####  #
+#  #  #
+# . . #
+# @$$ #
+# # ###
+#   #
+#####
+Title: Microban II - 3
+Author: David W Skinner
+
+4
+ #####
+## @ ####
+#  #  . ##
+# #      #
+# $$ #.  #
+##    ####
+ ##   #
+  #####
+Title: Microban II - 4
+Author: David W Skinner
+
+5
+######
+#    #
+# $$ ###
+### @  #
+  #  . #
+  ## .##
+   ####
+Title: Microban II - 5
+Author: David W Skinner
+
+6
+   ####
+####  #
+#@.*  #
+#  #  ###
+####  $ #
+   #  # #
+   ##   #
+    #####
+Title: Microban II - 6
+Author: David W Skinner
+
+7
+  #####
+###   #
+#  $# #
+#  .$ #
+## ##.#
+ #   @#
+ ######
+Title: Microban II - 7
+Author: David W Skinner
+
+8
+########
+#   @  #
+#   *  #
+###.$###
+  # * #
+  #   #
+  #####
+Title: Microban II - 8
+Author: David W Skinner
+
+9
+######
+#    #
+# #$@#
+# .*.#
+# #$ #
+#    #
+######
+Title: Microban II - 9
+Author: David W Skinner
+
+10
+#####
+#   #
+#   ###
+#$$$@ #
+#...  #
+#######
+Title: Microban II - 10
+Author: David W Skinner
+
+11
+######
+#.#  #
+#@$$ #
+#..$ #
+##   #
+ #####
+Title: Microban II - 11
+Author: David W Skinner
+
+12
+ #######
+ #  #  #
+ #  #$ #
+##  .*+#
+#   #$ #
+#   #  #
+##  ####
+ #  #
+ ####
+Title: Microban II - 12
+Author: David W Skinner
+
+13
+#####
+#   ###
+#     #
+#     #
+###.###
+# $*$ #
+#  +  #
+#######
+Title: Microban II - 13
+Author: David W Skinner
+
+14
+ ####
+##  ###
+# .$  #
+#@.$  #
+# .$ ##
+##  ##
+ ####
+Title: Microban II - 14
+Author: David W Skinner
+
+15
+####
+#  ####
+#  #  #
+#.$**@#
+##    #
+ #   ##
+ #####
+Title: Microban II - 15
+Author: David W Skinner
+
+16
+    ####
+  ###  #
+  # $$ #
+ ## #  #
+## .#$@#
+#      #
+# ..####
+#####
+Title: Microban II - 16
+Author: David W Skinner
+
+17
+ #####
+ #   #
+ #$#@#
+## $ #
+#   ##
+#.*. #
+#    #
+######
+Title: Microban II - 17
+Author: David W Skinner
+
+18
+ #####
+ #   ##
+ #$#@ #
+ # $  #
+##  ###
+# $.  #
+#. .  #
+#######
+Title: Microban II - 18
+Author: David W Skinner
+
+19
+#######
+#     #
+# $$$.#
+## #@.#
+ # # .#
+ #  # #
+ ##   #
+  #####
+Title: Microban II - 19
+Author: David W Skinner
+
+20
+ ####
+ #  ###
+ #$   #
+ # .# #
+##*.  #
+# $ ###
+# @ #
+#####
+Title: Microban II - 20
+Author: David W Skinner
+
+21
+    ####
+ ####  #
+ #. .  ##
+ #  # @ #
+ ## #   #
+ ## ##  #
+ # $  ###
+ #  $ #
+ # # ##
+ #   #
+ #####
+Title: Microban II - 21
+Author: David W Skinner
+
+22
+ #########
+ #    #  #
+ # $ $   #
+ ## ###  #
+### # #@###
+#   ###   #
+# # . .   #
+#   #######
+#####
+Title: Microban II - 22
+Author: David W Skinner
+
+23
+ ##### #####
+ #   ###   #
+ #@$  ##.. #
+###$#      #
+#   ## ##  #
+#       ####
+#   #   #
+#########
+Title: Microban II - 23
+Author: David W Skinner
+
+24
+     #####
+######   #
+#   ## # #
+# $@$    #
+### ### ###
+#         ##
+#   ### .. #
+#####    # #
+    # #  # #
+    #  ##  #
+    ##    ##
+     ######
+Title: Microban II - 24
+Author: David W Skinner
+
+25
+ #####
+##   ##
+# .$. #
+# $#$ #
+# .$. #
+#    ##
+## @##
+ ####
+Title: Microban II - 25
+Author: David W Skinner
+
+26
+########
+#      #
+# ###$ #
+# #  $ #
+# #.*$@#
+# #.#  #
+#  .#  #
+########
+Title: Microban II - 26
+Author: David W Skinner
+
+27
+#######
+#  +  #
+# *$* #
+#. # .#
+#  #  #
+#  #  #
+#  #  #
+# $#$ #
+#  #  #
+#######
+Title: Microban II - 27
+Author: David W Skinner
+
+28
+  #######
+  #     #
+### ### #
+# ..*   #
+#  $$@ ##
+####  ##
+   #  #
+   ####
+Title: Microban II - 28
+Author: David W Skinner
+
+29
+######
+#    #
+# ##$###
+# # $  #
+# @.*. #
+##     #
+ #  ####
+ ####
+Title: Microban II - 29
+Author: David W Skinner
+
+30
+         #####
+         #   #
+########## # #
+#.     #  $  #
+#.  @  #    ##
+#.# #######  #
+#         $$ #
+##  #####    #
+ ####   ######
+Title: Microban II - 30
+Author: David W Skinner
+
+31
+  ########
+  #  #   #
+  #  $   #
+  #  ##$##
+#### ##  #
+# @...#$ #
+#        #
+######  ##
+     ####
+Title: Microban II - 31
+Author: David W Skinner
+
+32
+########
+#      #
+#    # #
+###..$.#
+  # #$##
+  #  @ #
+  ## $ #
+   # # #
+   #   #
+   #####
+Title: Microban II - 32
+Author: David W Skinner
+
+33
+### #######
+## ####   #
+# ## ...# #
+ ###$   # #
+##  $$### #
+## @      #
+###########
+Title: Microban II - 33
+Author: David W Skinner
+
+34
+#####
+#   ####
+#  .#  #
+## ..  ##
+ # ## @ #
+ # #    #
+ # $ ####
+ # $##
+ # $ #
+ #   #
+ #####
+Title: Microban II - 34
+Author: David W Skinner
+
+35
+ ##########
+ #  ##    ##
+ #     ##  #
+ # # $#  # #
+ # #  @ $# #
+ # #  #$   #
+ # ###  ####
+## .   ##
+#  .####
+#  .#
+#####
+Title: Microban II - 35
+Author: David W Skinner
+
+36
+    ######
+    #    ##
+ #### ##  #
+##      # #
+# @$**. # #
+#   # ##  #
+#####    ##
+    ######
+Title: Microban II - 36
+Author: David W Skinner
+
+37
+ #####
+ #   #
+## # ##
+# $   ##
+#  $#. #
+## $ . #
+ #  #. #
+ #### @#
+    #  #
+    ####
+Title: Microban II - 37
+Author: David W Skinner
+
+38
+  ######
+  #    #
+### ## #
+# ...  #
+#  $ ###
+# #$##
+#  $ #
+#  @ #
+######
+Title: Microban II - 38
+Author: David W Skinner
+
+39
+ ######
+##    #
+#  ## #
+#@# $ #
+#  *..#
+## #$###
+ #     #
+ ###   #
+   #####
+Title: Microban II - 39
+Author: David W Skinner
+
+40
+ #####
+ #   #
+## . #
+#  * #
+# # ##
+#  $ #
+## * #
+ # @ #
+ #####
+Title: Microban II - 40
+Author: David W Skinner
+
+41
+#####
+#   ####
+# # .  #
+# #$.  #
+# @$*# #
+####   #
+   #####
+Title: Microban II - 41
+Author: David W Skinner
+
+42
+ #######
+ #     ###
+## ###$  #
+#  .. $  #
+#  .##$ ##
+### # @##
+  #   ##
+  #####
+Title: Microban II - 42
+Author: David W Skinner
+
+43
+     ####
+     # @##
+###### $ ##
+#  . # $  #
+#      $# #
+## ..#    #
+ ##  ######
+  ####
+Title: Microban II - 43
+Author: David W Skinner
+
+44
+    ####
+ ####  ###
+ #     $ #
+ #  $$ # #
+ # # @#  #
+## ####  ##
+#  ...    #
+# ### #   #
+#     #####
+#######
+
+Title: Microban II - 44
+Author: David W Skinner
+
+45
+   ###  #####
+#### ####   #
+#  ###      #
+# ..  $$$$  #
+# ..  # @#  #
+#############
+      #  #
+Title: Microban II - 45
+Author: David W Skinner
+
+46
+########
+#  #   #
+#      #
+#  ## ###
+## ##   ####
+ # ## $$$@ #
+## ## #    #
+# . . . ####
+#   #####
+#####
+Title: Microban II - 46
+Author: David W Skinner
+
+47
+######
+#    ###
+# $ @  #
+#  ### #
+# $$ $ #
+#     ###
+### ##  #
+# ....  #
+#       #
+#  ######
+####
+Title: Microban II - 47
+Author: David W Skinner
+
+48
+     #####
+ #####   #
+##  +  # #
+# $$.$$  #
+#  #.# ###
+##  .  #
+ #######
+Title: Microban II - 48
+Author: David W Skinner
+
+49
+ #####
+##   #
+#    #
+# .$.##
+##$#$ #
+ #.$. #
+ #    #
+ # @ ##
+ #####
+Title: Microban II - 49
+Author: David W Skinner
+
+50
+ ########
+ #  #   #
+##  #$  #
+# .*@*. #
+#  $#  ##
+#   #  #
+########
+Title: Microban II - 50
+Author: David W Skinner
+
+51
+########
+#  $.  #
+#  $.  #
+###  ###
+#  $.  #
+#@ $.  #
+########
+Title: Microban II - 51
+Author: David W Skinner
+
+52
+   ####
+   #  #
+   #$ #
+   #  #
+####@###
+#  $   #
+#  ..* #
+#   #  #
+########
+Title: Microban II - 52
+Author: David W Skinner
+
+53
+ ######
+ #    #
+ #. ..##
+###$ @ #
+# $  $ #
+#   ####
+#####
+Title: Microban II - 53
+Author: David W Skinner
+
+54
+     #####
+    ##   #
+    #  # #
+    #  @ #
+    #    #
+  #####.###
+  #    .  #
+### #$#.  #
+#  $$  ####
+# #    #
+#   ####
+#####
+Title: Microban II - 54
+Author: David W Skinner
+
+55
+   ####
+ ###  ##
+ # $ $ #
+ #   # #
+ ##$   #
+  #  # #
+  ## # #
+  #. # #
+  #.## #
+###.## ##
+#       #
+#   @   #
+#########
+Title: Microban II - 55
+Author: David W Skinner
+
+56
+   #####
+  ##   #
+### .# #
+#  $*$@#
+#   .# #
+### #  #
+  #   ##
+  #####
+Title: Microban II - 56
+Author: David W Skinner
+
+57
+   #####
+ ###   #
+##     #
+# **$ ##
+#  * .#
+### #@#
+  #   #
+  #####
+Title: Microban II - 57
+Author: David W Skinner
+
+58
+    ####
+ ####  ##
+ #    $ #
+ # #  # #
+## #$$$@#
+# ..  ###
+# .. ##
+###  #
+  ####
+Title: Microban II - 58
+Author: David W Skinner
+
+59
+ ######
+ #    ###
+ # $  $ #
+ ##$# # #
+### #@# ##
+# . . .  #
+#   ##   #
+##########
+
+Title: Microban II - 59
+Author: David W Skinner
+
+60
+ #######    #####
+ #     ######   #
+##      @ ...   #
+#  ########## ###
+# $  $   $     #
+#  #   #   #   #
+################
+Title: Microban II - 60
+Author: David W Skinner
+
+61
+#####
+#   #
+#   ######
+#$$$$ $ @#
+#.....   #
+##########
+Title: Microban II - 61
+Author: David W Skinner
+
+62
+   ####
+   #  ###
+   # .  #
+   #$.@ #
+#### .$ #
+#  $$.###
+#     #
+#######
+Title: Microban II - 62
+Author: David W Skinner
+
+63
+#####
+#   #####
+#   $ $ ###
+## $    $ ##
+ ###### .. #
+     #. . @#
+     #     #
+     ###  ##
+       ####
+Title: Microban II - 63
+Author: David W Skinner
+
+64
+#########
+#  ##   ##
+# $ $$*@ #
+#  # . # #
+## #. .  #
+ #   #####
+ #####
+Title: Microban II - 64
+Author: David W Skinner
+
+65
+######
+#    #
+# ## ##
+# # * ##
+# #@*  ##
+# # *   #
+# # * $ #
+# ## #.##
+#    ###
+######
+Title: Microban II - 65
+Author: David W Skinner
+
+66
+     #####
+     #   #
+     # # #
+     #   #
+#######$ #
+#    $..$#####
+# # $.  .#   #
+#   #.  .$ # #
+#####$..$    #
+    # $#######
+    #   #
+    # # #
+    # @ #
+    #####
+Title: Microban II - 66
+Author: David W Skinner
+
+67
+   ####
+  ##  ##
+ ## *  ##
+## $ .$ ##
+#  . @ * #
+# *   .  #
+## $. $ ##
+ ##  * ##
+  ##  ##
+   ####
+Title: Microban II - 67
+Author: David W Skinner
+
+68
+     #
+    #.#
+   # $ #
+  #     #
+ #  ***  #
+#.$ *@* $.#
+ #  ***  #
+  #     #
+   # $ #
+    #.#
+     #
+Title: Microban II - 68
+Author: David W Skinner
+
+69
+#######
+# . . #
+#.$$$.#
+# $@$ #
+#.$$$.#
+# . . #
+#######
+Title: Microban II - 69
+Author: David W Skinner
+
+70
+########
+#  #   #
+#  #.. #
+# $$$$$#
+#  #...#
+#  #   #
+#  @   #
+########
+Title: Microban II - 70
+Author: David W Skinner
+
+71
+########
+#   #  #
+# $.$. #
+##.  $ #
+# $  .##
+# .$.$ #
+#  #  @#
+########
+Title: Microban II - 71
+Author: David W Skinner
+
+72
+#########
+#       #
+# *$*$* #
+# $...$ #
+# *. .* #
+# $...$ #
+# *$*$* #
+#      @#
+#########
+Title: Microban II - 72
+Author: David W Skinner
+
+73
+#########
+#       #
+# .$.$. #
+# $.$.$ #
+# .$@$. #
+# $.$.$ #
+# .$.$. #
+#       #
+#########
+Title: Microban II - 73
+Author: David W Skinner
+
+74
+#########
+#       #
+# $.$.$ #
+# .$.$. #
+##$.@.$##
+# .$.$. #
+# $.$.$ #
+#       #
+#########
+Title: Microban II - 74
+Author: David W Skinner
+
+75
+#########
+#   #   #
+# .$.$. #
+# $.$.$ #
+##.$@$.##
+# $.$.$ #
+# .$.$. #
+#   #   #
+#########
+Title: Microban II - 75
+Author: David W Skinner
+
+76
+ ######
+ #  . ###
+## $.   #
+#  $*$$ #
+#..*@*..#
+# $$*$  #
+#   .$ ##
+### .  #
+  ######
+Title: Microban II - 76
+Author: David W Skinner
+
+77
+  #####
+  #   ###
+ ## #   ###
+ #  .$#   #
+## #$.$.# #
+#  $.@.$  #
+# #.$.$# ##
+#   #$.  #
+###   # ##
+  ###   #
+    #####
+Title: Microban II - 77
+Author: David W Skinner
+
+78
+ #######
+##     ##
+#  $.$  #
+# $#.#$ #
+##..@.. #
+# $#.#$ #
+#  $.$  #
+#   #  ##
+########
+Title: Microban II - 78
+Author: David W Skinner
+
+79
+    ####
+ ####  #
+ #     #
+##.# # ##
+#@$ $#  #
+# .$    #
+##.$##  #
+ #. #####
+ ####
+Title: Microban II - 79
+Author: David W Skinner
+
+80
+ #### #####
+##  ###   #
+#  . #  $ #
+# . .$ $ ##
+###*## # #
+  #  # @ #
+  #  #####
+  #  #
+  ####
+Title: Microban II - 80
+Author: David W Skinner
+
+81
+ #######
+ #  #  ###
+ #  #  . ###
+ #   $ # @ #
+ ## # $ $  #
+  # ##..####
+  #  #  #
+### ### ###
+#     $   #
+#   ###.  #
+##### #####
+Title: Microban II - 81
+Author: David W Skinner
+
+82
+ ##########
+ #        #
+ #.####   #
+##.$ @ $$ #
+# .*.$ #  #
+# ### ## ##
+#        #
+##########
+Title: Microban II - 82
+Author: David W Skinner
+
+83
+###### ####
+# .  ###  #
+#      @  ##
+#....# $#  #
+###### $   #
+     ##$ $ #
+      #   ##
+      # $##
+      #  #
+      ####
+Title: Microban II - 83
+Author: David W Skinner
+
+84
+########
+#  ##  #
+#  ..  #
+# .  . #
+### ####
+ #    ##
+ # $$@ #
+ ### $ #
+###  # #
+#    $ #
+#    ###
+######
+Title: Microban II - 84
+Author: David W Skinner
+
+85
+        ####
+        #  #
+      ###  #
+     ##    #
+     #  #$###
+     # $ $  #
+     ##$    #
+#######  ####
+#     #  ##
+#  @  ##  #
+#  #  ....#
+#    ######
+######
+Title: Microban II - 85
+Author: David W Skinner
+
+86
+  #####
+ ##   #
+ #  # #
+##    #
+#  $ ####
+#  $$#. #
+###$    #
+  #  #  #
+  ####. #
+   #@#. ##
+   #  .  #
+   #     #
+   #######
+Title: Microban II - 86
+Author: David W Skinner
+
+87
+     ####
+     #  ###
+    ## .  ##
+    #. .   #
+    #.  #@ #
+    ## ##  #
+   ##  #####
+  ## $ #
+ ## $  #
+## $  ##
+# $  ##
+#   ##
+#####
+Title: Microban II - 87
+Author: David W Skinner
+
+88
+ ######
+ #. . #
+ #  *.##
+###$ @ #
+# $  $ #
+#   ####
+#####
+Title: Microban II - 88
+Author: David W Skinner
+
+89
+########
+#      #
+# #.#  #
+#  *   #
+##$*$ ##
+#  *@##
+# #.##
+#   #
+#####
+Title: Microban II - 89
+Author: David W Skinner
+
+90
+ #####
+ #   #
+ #   ##
+ #$*$ #
+##. . #
+# .@.##
+# $*$#
+##   #
+ #   #
+ #####
+Title: Microban II - 90
+Author: David W Skinner
+
+91
+  ####
+  #  #
+  #  #
+  #  ###
+###$ $ ##
+#  $@$  #
+#   #   #
+###### ##
+  ## . .#
+  #  . .#
+  #     #
+  #  ####
+  ####
+Title: Microban II - 91
+Author: David W Skinner
+
+92
+ ######    ####
+ # @  ######  #
+ #  #   $     #
+## ....# $ #  #
+#   ## ## $  ##
+#      ### $ #
+######## ##  #
+          ####
+Title: Microban II - 92
+Author: David W Skinner
+
+93
+    ####
+  ###  #
+ ## .  #
+##     #
+# .$. ##
+# $ ###
+# .$####
+###    #
+ ##$#  #
+ #  #  #
+ #  @ ##
+ ###  #
+   ####
+Title: Microban II - 93
+Author: David W Skinner
+
+94
+       ######
+    ####    ###
+    #    ##   #
+ #### ###..## ####
+ #  #$$     #    #
+##  $ $ #... @ # #
+#  #  $ ##### #  #
+#    ####  #    ##
+##   #     #   ##
+ #####     #####
+Title: Microban II - 94
+Author: David W Skinner
+
+95
+#############
+#       #   #
+#    ## #   #
+## ### $ $ ##
+#@...# $$$ #
+#          #
+##..########
+ ####
+Title: Microban II - 95
+Author: David W Skinner
+
+96
+     ####
+     #  #
+ #####  #
+ #  $ $ #
+ # .#  ###
+ # .#$$  ##
+## .#     #
+#  *###@  #
+#        ##
+## .######
+ ####
+Title: Microban II - 96
+Author: David W Skinner
+
+97
+#####    #####
+#   ######   #
+#          # #
+## ####### # #
+ # #     # # #
+ # #$$ ..... #
+## #   #######
+#  #$#@#
+# $ $  #
+#  #  ##
+####  #
+   ####
+Title: Microban II - 97
+Author: David W Skinner
+
+98
+#####
+#   ###
+# # $ ###
+# # $   #
+# #.$##@#
+# #.$   #
+#  .#####
+## .  #
+ #    #
+ ######
+Title: Microban II - 98
+Author: David W Skinner
+
+99
+  #####
+  #   #
+  #   #
+  #  ###
+###. # #####
+#  . ###   #
+#  . # $   #
+# #.## $ $ #
+#  . @  $$##
+##  ###   #
+ #### #####
+Title: Microban II - 99
+Author: David W Skinner
+
+100
+ #######
+ #     ##
+ # ###  ####
+ #   ##    #
+ #  $ #### #
+####$ .....#
+#  #  #### #
+####$$#    #
+ #  $ # ####
+ #  @ # #
+ # #### #
+ #      #
+ ########
+Title: Microban II - 100
+Author: David W Skinner
+
+101
+  #####
+### . #
+#  . $##
+#  $$. ###
+### .$$@ #
+  ##$ .  #
+   # . ###
+   #####
+Title: Microban II - 101
+Author: David W Skinner
+
+102
+   ####
+  ##  #
+  #   #####
+  #       #
+  #   #   #
+  ##    .##
+   #####.#
+  ######.###
+  #     .  #
+###  #$#.  #
+#  $$ $ ####
+#   $ @ #
+###  ####
+  ####
+Title: Microban II - 102
+Author: David W Skinner
+
+103
+  ##########
+  #   #    #
+### ... .# #
+#    ## ## #
+#    ##  # #
+###  #@  # #
+ ##  ##  # ###
+  ##### $#$  #
+   ## # $    #
+    ### $##  #
+     ##  #####
+      ####
+Title: Microban II - 103
+Author: David W Skinner
+
+104
+   ######
+####    #
+#    ## ##
+# ##     #
+# #  #   #
+#  $$#$$ #
+###$ $ $##
+ ##     ##
+ ####@####
+ #  . .. #
+ # .. .  #
+ # .##   #
+ #####   #
+     #####
+Title: Microban II - 104
+Author: David W Skinner
+
+105
+ ####
+ #  ###
+##    ##
+#  * . #
+# *$*$ #
+## .$. #
+ #@  ###
+ #####
+Title: Microban II - 105
+Author: David W Skinner
+
+106
+  ####
+###  #
+#  . ##
+# #*  #
+# $.#@#
+##$.# #
+#  $  #
+#   ###
+#  ##
+####
+Title: Microban II - 106
+Author: David W Skinner
+
+107
+  ####
+ ##  ####
+ #  $$  #
+ # #  # #
+ # $ $# #
+ # #  # #
+ #@#  # #
+## #$#  #
+# .....##
+#   ####
+#####
+Title: Microban II - 107
+Author: David W Skinner
+
+108
+   ####
+   #  #
+  ## $###
+  #  .  ###
+### .$.   #
+# $.$@$.$ #
+#   .$. ###
+###  .  #
+  ###$ ##
+    #  #
+    ####
+Title: Microban II - 108
+Author: David W Skinner
+
+109
+ #####
+ # . #####
+ #$ $$ $ #
+ # .. . .#
+##$   .$ #
+# $.   $##
+#. . .. #
+#@$ $$ $#
+##### . #
+    #####
+Title: Microban II - 109
+Author: David W Skinner
+
+110
+  ########
+  #  #   #
+###... . #
+#    # ###
+# @    #
+###  # ##
+  ### $ #
+  ## $  #
+### $  ##
+#  $  ####
+#    #   #
+#  ##    #
+#       ##
+##  #  ##
+ ####  #
+    ####
+Title: Microban II - 110
+Author: David W Skinner
+
+111
+  ####
+  #  #
+###  ##
+#  $ .# ####
+#  $#.###  #
+#  $ .#    #
+#####.# $  #
+  ###.#$#@ #
+  #  .  $  #
+  #   ###  #
+  ##  # ####
+   ####
+Title: Microban II - 111
+Author: David W Skinner
+
+112
+#########
+#   #   #
+# $...$ #
+# $*@*$ #
+# $...$ #
+#   #   #
+#########
+Title: Microban II - 112
+Author: David W Skinner
+
+113
+###########
+#         #
+#  * . *  #
+##*$*@*$*##
+#  * . *  #
+#    #    #
+###########
+Title: Microban II - 113
+Author: David W Skinner
+
+114
+      #####
+    ###   #
+    #   # #
+    # #   #
+##### $ $#####
+#   ## # #   #
+# # $ ... $# ##
+#    #.@.#    #
+## #$ ... $ # #
+ #   # # ##   #
+ #####$ $ #####
+    #   # #
+    # #   #
+    #   ###
+    #####
+Title: Microban II - 114
+Author: David W Skinner
+
+115
+      #
+     # #
+    #   #
+   # .$. #
+  # .$.$. #
+ # .$ $ $. #
+#  $.$@$.$  #
+ # .$ $ $. #
+  # .$.$. #
+   # .$. #
+    #   #
+     # #
+      #
+Title: Microban II - 115
+Author: David W Skinner
+
+116
+########
+#  #   #
+#      #
+#  ## ##########
+## ##  #       #
+ # ##  #       #
+ # ##  $ $ $ $ #
+## ### #######@#
+#    . . . .   #
+#   ############
+#####
+Title: Microban II - 116
+Author: David W Skinner
+
+117
+       ####
+ #######  #
+##   ##   #
+#    #  $ #
+# # ##$  ##
+# #   $ ##
+#@# .#$ ##
+#  ..  ##
+###. ###
+  #  #
+  ####
+Title: Microban II - 117
+Author: David W Skinner
+
+118
+     #####
+     #   ##
+######  $ ##
+#    ##  $ ##
+#     ##  $ #
+#...#  ##   #
+#   @  ##$  #
+#...# ## $ ##
+##### # $  #
+    #     ##
+    #  ####
+    ####
+Title: Microban II - 118
+Author: David W Skinner
+
+119
+ #######
+ #     ###
+ # ###.  #
+ # # . # #
+## #...  #
+#@   .####
+#  #  #
+## #####
+# $$   ##
+#  $$   #
+### $$  #
+  #     #
+  ##   ##
+   #####
+Title: Microban II - 119
+Author: David W Skinner
+
+120
+#### ####
+#  ###  ######
+#  #         #
+####$  $## # #
+ #   #   # $ ##
+###    ## $$  #
+#  ## $   #   #
+# @ #  ########
+#     ##     #
+#......# ######
+#      ###    #
+######## ######
+Title: Microban II - 120
+Author: David W Skinner
+
+121
+   #######
+  ## .   #
+ ##  .   #
+ # $*.# ##
+ # # .  #
+## # . ##
+#  ### #
+# #   @##
+# $$$#  #
+#     # #
+###   # #
+  #$##  #
+  #    ##
+  ######
+Title: Microban II - 121
+Author: David W Skinner
+
+122
+   ####
+ ###  ##
+ #     #
+##*  # #
+# *$*. #
+#  @  ##
+#######
+Title: Microban II - 122
+Author: David W Skinner
+
+123
+  #####
+###   ####
+#   $  $ #
+# $##  $ #
+##     # #
+ ##### # ###
+     # ... #
+     ##.   #
+      ## @##
+       #  #
+       ####
+Title: Microban II - 123
+Author: David W Skinner
+
+124
+#########
+#   #   #
+# $ * $ #
+#..# #..#
+# $ # $ #
+# .$@$. #
+# $ # $ #
+#..# #..#
+# $ * $ #
+#   #   #
+#########
+Title: Microban II - 124
+Author: David W Skinner
+
+125
+     ##########
+     #        ##
+ ##### #### $  #
+ #.. #     #   #
+ #   .  # $  # #
+ #.. #### # $  #
+ ## ##  # $$#  #
+  # #   ##    ##
+###@###  ######
+#     #
+#     #
+#  #  #
+####  #
+   ####
+Title: Microban II - 125
+Author: David W Skinner
+
+126
+ #######
+ #     #
+ # $$  #
+ #  $###
+ # #  #
+ # #$ #
+ # #  #
+## ## ##
+#    ..#######
+#@###...     #
+#   #.#### $ #
+### #.# $ $$ #
+  #  .    #  #
+  #########  #
+          ####
+Title: Microban II - 126
+Author: David W Skinner
+
+127
+#####
+#@  ######
+#  $ #   #
+#.*.*. $ #
+#  $ #####
+##   #
+ #####
+Title: Microban II - 127
+Author: David W Skinner
+
+128
+   #######
+  ##     ##
+###  ###  #
+#   #   # #
+#@$***. # #
+##      # #
+ #### ##  #
+    #    ##
+    ######
+Title: Microban II - 128
+Author: David W Skinner
+
+129
+       ####
+########  #
+#     $   #
+#  ##.##  #
+##$##  . ##
+ #  . $# ##
+ # ###.#  #
+ # ### @  #
+ #   $ ####
+ #  ####
+ ####
+Title: Microban II - 129
+Author: David W Skinner
+
+130
+            ####
+           ##  ###
+          ##  @  #
+         ##  *$ .#
+        ##  **  ##
+       ##  **  ##
+      ##  **  ##
+     ##  **  ##
+    ##  **  ##
+   ##  **  ##
+  ##  **  ##
+ ##  **  ##
+##  **  ##
+#  **  ##
+# **  ##
+#  ####
+####
+Title: Microban II - 130
+Author: David W Skinner
+
+131
+            ####
+          ###  ###
+         ##.$.   #
+        ##.$.$$. #
+       ##.$.$$.$##
+      ##.$.$$.$.#
+     ##.$.$$.$.##
+    ##.$.$$.$.##
+   ##.$.$$.$.##
+  ##.$.$$.$.##
+ ##.$.$$.$.##
+##.$.$$.$.##
+#.$.$$.$.##
+## $$.$.##
+ #@  $.##
+ ####.##
+    ###
+Title: Microban II - 131
+Author: David W Skinner
+
+132
+                  #####
+            ##### #   #
+            #   ### # #
+      ##### # #       #
+##### #   # #   #### ##
+#   ### # # ### #  # #
+# #    @  #   # #  # ###
+#   ####$###### ####   #
+### #  # .      #    # #
+  # #  #  ##  #    #   #
+ ## #####  ##    # #####
+ #         ##  ### #
+ # # ### #  #####  # #####
+ #   # #    # #    # #   #
+ ##### #  #####  # ### # #
+       # ###  ##         #
+   ##### #    ##  ##### ##
+   #   #    #  ##  #  # #
+   # #    #        #  # ###
+   #   #### ###### ####   #
+   ### #  # #   #       # #
+     # #  # ### # # ###   #
+    ## ####   # #   # #####
+    #       # # #####
+    # # ###   #
+    #   # #####
+    #####
+Title: Microban II - 132
+Author: David W Skinner
+Comment:
+'The Mixer'
+Comment-End:
+
+133
+     ##### ##################
+    #     #                  #
+   #  #  #  ################  #
+  #  #  #  #                #  #
+ #  #  #  #  ##############  #  #
+#  #  #  #  #              #  #  #
+# #  #  #  #  ############  #  # #
+# # #  #  #  #            #  #   #
+# # # #  #  #  ##########  #  #  #
+# # # # #  #  #          #  #  # #
+# # # # # #  #  ########  #  #  #
+# # # # # # #  #        #  #  #  #
+# # # # # # # #  ######  #  #  # #
+# # # # # # # # #      #  #  # # #
+# # # # # # # # # ####  #  # # # #
+# # # # # # # #       #  # # # # #
+# # # # # # #   ## ##  # # # # # #
+# # # # # #  ## ##   # # # # # # #
+# # # # #  #    @.$# # # # # # # #
+# # # #  #  #### # # # # # # # # #
+# # #  #  #      # # # # # # # # #
+# #  #  #  ######  # # # # # # # #
+#  #  #  #        #  # # # # # # #
+ #  #  #  ########  #  # # # # # #
+# #  #  #          #  #  # # # # #
+#  #  #  ##########  #  #  # # # #
+#   #  #            #  #  #  # # #
+# #  #  ############  #  #  #  # #
+#  #  #              #  #  #  #  #
+ #  #  ##############  #  #  #  #
+  #  #                #  #  #  #
+   #  ################  #  #  #
+    #                  #     #
+     ################## #####
+Title: Microban II - 133
+Author: David W Skinner
+Comment:
+'Pulsar'
+Comment-End:
+
+134
+            ##### # #####
+           ##   ######  ##
+          # #           # #
+         ##### #######  ####
+        ##   #  #   ## ##  ##
+       # #      # # #      # #
+      ##### ##  ## ##   #  ####
+     ##   #  ####   ##### ##  ##
+    # #      # #     # #      # #
+   ##### ##  ##  #    ##   #  ####
+  ##   #  ####   # #   ##### ##  ##
+ # #      # #    # #    # #      # #
+##### ##  ##     # # #   ##   #  ####
+#   #  ####   ## #   #    ##### ##  #
+#      # #         # # #   # #      #
+## ##  ##   ######   # #    ##   #  #
+## #####           # #       ##### ##
+ # #  #   ### # ## # # #####  #  # #
+## # #            @            # # ##
+ # #  #  ##### # # ## # ###   #  # #
+## #####       # #           ##### ##
+#  #   ##    # #   ######   ##  ## ##
+#      # #   # # #         # #      #
+#  ## #####    #   # ##   ####  #   #
+####  #   ##   # # #     ##  ## #####
+ # #      # #    # #    # #      # #
+  ##  ## #####   # #   ####  #   ##
+   ####  #   ##    #  ##  ## #####
+    # #      # #     # #      # #
+     ##  ## #####   ####  #   ##
+      ####  #   ## ##  ## #####
+       # #      #   #      # #
+        ##  ## ## # #  #   ##
+         ####  ## # ## #####
+          # #   $ # .   # #
+           ##  ######   ##
+            ##### # #####
+Title: Microban II - 134
+Author: David W Skinner
+Comment:
+'Stargate'
+Comment-End:
+
+135
+          ####
+          #  #          ####
+      #####  #          #  #         ####
+      #   #  #      #####  #         #  #
+      #     ####    #   #  #     #####  #
+      ####     #    #     ####   #   #  #
+         # #   #   #####     #   #     ####
+         # #####   #   # #   #  #####     #
+     ##### ##  #####     #####  #   # #   #
+     #   # ##  #  #####     #####     #####
+     #     ##  #  #  ## #   #  #####     ####
+     ####     ##  #  ## #####  #  ## #   #  #
+       #  ##     ##  ## #####  #  ## #####  #
+       #  #  ##     ###       ##  ## #####  #
+       #  #  #  ##       ###     ###       ####
+       ####  #  #  ##### ##  ##       ###     #
+         #####  #  ##### ##  #  ##### ##  #   #
+         #  #####  #   # ##  #  ##### ##  #####
+     #####  #  #####     #####  #   # ##  #
+     #   #  #  #  #####     #####     #####
+    ##     #####  #   # #   #  #####     #
+    #####     #####     #####  #  #  #   #
+    #  ## #   #  #####     #####  #  #####
+#####  ## #####  #  ## #   #  #####  #
+#   #  ## #####  #  ## #####  #  #####
+#     ###       ##  ## #####  #  #  ####
+####       ###     ###       ##  #  #  #
+  #  ##### ##  ##       ###     ##  #  #
+  #  ##### ##  #  ##### ##  ##     ##  #
+  #  #   # ##  #  ##### ##  #  ##     ####
+  ####     #####  #   # ##  #  #  ##     #
+    #####     #####     #####  #  ## #   #
+    #   # #   #  #####     #####  ## #####
+    #     #####  #   # #   #   ##### #
+    ####     #   #     #####   #   # #
+      #  #   #   ####     #    #     ####
+      #  #####     # $#   #    ####     #
+      #  #         # .#####      #  #   #
+      ####         # @#          #  #####
+                   ####          #  #
+                                 ####
+Title: Microban II - 135
+Author: David W Skinner
+Comment:
+'Fractal'
+Comment-End:

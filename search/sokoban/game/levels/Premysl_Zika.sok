@@ -1,0 +1,4867 @@
+Date of Last Change: 
+
+Set:       Premysl Zika
+Copyright: © Premysl Zika
+Email:     premyslzika@centrum.cz
+Homepage:  http://www.zusbreznice.cz/rozvrhy-zika-premysl-sokoban.cz
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+   #####
+   #   ###
+   # #   #
+   #   # #
+   #     #
+   ## #####
+    # ##  # #####
+    # ##  ###   #
+    # ##        #
+    # ### ### ###
+    # ###  ## #
+    #      ## #
+    #+$### ## #
+###### #      #
+#   ## #   #  #
+# # ##  #######
+#       #
+#####  ##
+    ####
+Author: Premysl Zika
+Title: Level 1
+Serial number: pz087
+Date: 2010
+
+2
+                 #######
+#####            #  #  #    ####
+#   ##############     ######  #
+#                   #          #
+### ########  #####   #####  # ##
+#   #   #  ####  #######  ####  #
+#   # # #                       #
+##      # #######################
+ # ## ### #   #  ##  #  #  #  ##
+ #    #   #                    #
+####  ##   #  ######## ######  #
+#   # #  # # #   #  #  #   ##  #
+#     #    # # # #  #    #   ###
+## #  ###    #      ## # # # ##
+#  ###   #    ## # #  #    #  #
+#        ###  # .#    #  # ## #
+#  #### #   ###$## #   # #    #
+###   # # #    @ #   # #    # #
+ #  # # #    ##  ##    ###  # #
+## #  # #### #  #  #  ### ### #
+#    ## #  # #      # # #   # #
+# #     #     #  #  #       # #
+#   ##     #  #### ##  ###  # #
+####   ####  #   #  ##  # ### #
+#         #      #  #      ## #
+# ### #   ##  ####  #  #    # ###
+#     #########  ####  ##       #
+#######             ######  #   #
+                         ########
+Author: Premysl Zika
+Title: Level 2
+Serial number: pz049
+Date: 2009
+
+3
+ ####
+ #  #
+##$.#
+#   #
+# # #
+#.$@#
+#   #
+#####
+Author: Premysl Zika
+Title: Level 3
+Serial number: pz096
+Date: 2010
+
+4
+##### #####
+#   # #   #
+# # ### # #
+#  $.@.$  #
+#   ###   #
+##### #####
+Author: Premysl Zika
+Title: Level 4
+Serial number: pz052
+Date: 2010
+
+5
+  ############
+###  #   #   #
+# $      $  @#
+# #.##########
+#  .#
+#####
+Author: Premysl Zika
+Title: Level 5
+Serial number: pz060
+Date: 2010
+
+6
+    ####
+    #  ####
+    #     #
+##### ##  #
+#   #  # ##
+#. $   # ######
+###### #   $@.#
+    ## #  #   #
+    #  ## #####
+    #     #
+    ####  #
+       ####
+Author: Premysl Zika
+Title: Level 6
+Serial number: pz094
+Date: 2010
+
+7
+  ####
+###  ##
+#.$   #
+# ##  #
+# ## #####
+# #      #
+#@#      #
+# ##### ##
+# #####  #
+#.$      #
+######  ##
+     ####
+Author: Premysl Zika
+Title: Level 7
+Serial number: pz187
+Date: 2011
+
+8
+#####
+#   #
+# #$#
+#.  #
+#.#$##
+# #  #
+# @  #
+#  ###
+#  #
+####
+Author: Premysl Zika
+Title: Level 8
+Serial number: pz137
+Date: 2011
+
+9
+#####
+#   #
+# #$#
+#.. #
+## $#
+ #  ##
+ # @ #
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 9
+Serial number: pz054
+Date: 2010
+
+10
+#######
+#     #
+# $   #
+##$## ##
+ # ..  #
+ #@    #
+ #######
+Author: Premysl Zika
+Title: Level 10
+Serial number: pz058
+Date: 2010
+
+11
+  #####
+  #   #
+### $ #
+#   $ #
+# ## ####
+#..    @#
+###     #
+  #######
+Author: Premysl Zika
+Title: Level 11
+Serial number: pz059
+Date: 2010
+
+12
+  #####
+###   #
+#@$ $ #
+# # ###
+#..  #
+###  #
+  # ##
+  #  #
+  #  #
+  #  #
+  ####
+Author: Premysl Zika
+Title: Level 12
+Serial number: pz053
+Date: 2010
+
+13
+#########
+#   #   #
+# $   $@#
+### #####
+ ## .#
+ #   #
+ #  .#
+ #####
+Author: Premysl Zika
+Title: Level 13
+Serial number: pz061
+Date: 2010
+
+14
+#####
+#   #
+# # ###
+# #   #
+# #*# #
+# #+# #
+# #$# #
+#   # #
+###   #
+  #####
+Author: Premysl Zika
+Title: Level 14
+Serial number: pz064
+Date: 2010
+
+15
+#######
+#..   #
+# $ $ #
+####@ #
+   ####
+Author: Premysl Zika
+Title: Level 15
+Serial number: pz066
+Date: 2010
+
+16
+#####
+#   ###
+# #$  #
+#   #@#
+## .. #
+ #$# ##
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 16
+Serial number: pz065
+Date: 2010
+
+17
+ #####
+ #   ###
+## #.$@#
+#    # #
+# # .  #
+# $ # ##
+###   #
+  #####
+Author: Premysl Zika
+Title: Level 17
+Serial number: pz088
+Date: 2010
+
+18
+       #####
+ #### ##   #
+ #  ### $  #
+##$  ..   ##
+#@ # ######
+#    #
+###  #
+  ####
+Author: Premysl Zika
+Title: Level 18
+Serial number: pz090
+Date: 2010
+
+19
+ #######
+##     #
+# . .  #
+# #$# ##
+#  $  #
+# @  ##
+######
+Author: Premysl Zika
+Title: Level 19
+Serial number: pz091
+Date: 2010
+
+20
+  ####
+### .#
+# $ .#
+# @$ #
+##  ##
+ ####
+Author: Premysl Zika
+Title: Level 20
+Serial number: pz162
+Date: 2011
+
+21
+      ########
+      #   #  ##
+####  # @     #
+#  #####$###  #
+#          # ##
+#  #########  #
+## #.    #.   #
+#  ### #   #  #
+#    $  #######
+##  #   #
+ ########
+Author: Premysl Zika
+Title: Level 21
+Serial number: pz173
+Date: 2011
+
+22
+ ######
+ #    #####
+ # ## #   #
+ # # @    #
+ # #.. #$##
+##$#####  #
+#         #
+#   ####  #
+#####  ####
+Author: Premysl Zika
+Title: Level 22
+Serial number: pz178
+Date: 2011
+
+23
+####
+#  ########
+#         #####
+#  ######.#.  #
+##$##  #      #
+#      #   # ##
+#   #  ##### #
+##### ##  ## #
+   #      ## #
+   #   #  ##$##
+   ##### ###  #
+      #       #
+      # @ ##  #
+      #########
+Author: Premysl Zika
+Title: Level 23
+Serial number: pz177
+Date: 2011
+
+24
+###########
+#    ##   #
+#..@$   # #
+#    #    #
+###### ####
+    #   #
+    #   #
+    # $ #
+    #   #
+    #####
+Author: Premysl Zika
+Title: Level 24
+Serial number: pz240
+Date: 2011
+
+25
+#######
+# .   #
+#@  * #
+#### ##
+ #    #
+ #  $ #
+ ### ##
+ #   #
+ # # #
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 25
+Serial number: pz241
+Date: 2011
+
+26
+  #####
+  #  @#
+### # #
+#..$  #
+# $ ###
+### #
+#   #
+# # #
+#   #
+#####
+Author: Premysl Zika
+Title: Level 26
+Serial number: pz188
+Date: 2011
+
+27
+######
+#    #
+#  # #
+#. # ##
+# $ $@#
+#. ####
+####
+Author: Premysl Zika
+Title: Level 27
+Serial number: pz062
+Date: 2010
+
+28
+######
+#..  ##
+# $$  #
+###@# #
+ #    #
+ #   ##
+ #####
+Author: Premysl Zika
+Title: Level 28
+Serial number: pz089
+Date: 2010
+
+29
+   #######
+   # @   #
+   #. .  ##
+##### ##  #
+#   $ $ # #
+#   #     #
+###########
+Author: Premysl Zika
+Title: Level 29
+Serial number: pz092
+Date: 2010
+
+30
+ ####
+ #  ######
+ #       #
+ # ####  #
+ # #@ $ ##
+ # #  # #
+## #  # #
+#  ##*# #
+#    .# #
+####    #
+   ###  #
+     ####
+Author: Premysl Zika
+Title: Level 30
+Serial number: pz093
+Date: 2010
+
+31
+   ####
+   #@ #
+   #$ #
+   #  #
+#### ###
+# .. $ #
+#      #
+#  #####
+####
+Author: Premysl Zika
+Title: Level 31
+Serial number: pz095
+Date: 2010
+
+32
+#####
+#. @#
+#.#$###
+#   $ #
+#   # #
+###   #
+  #####
+Author: Premysl Zika
+Title: Level 32
+Serial number: pz163
+Date: 2011
+
+33
+######
+#@.. ##
+#  #$ #
+## $  #
+ #   ##
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 33
+Serial number: pz164
+Date: 2011
+
+34
+######
+#@ . #
+#  # ###
+##  $  #
+ #. $  #
+ #######
+Author: Premysl Zika
+Title: Level 34
+Serial number: pz165
+Date: 2011
+
+35
+ ####
+ #  ###
+##$.  #
+# $@# #
+# #.# #
+#     #
+#######
+Author: Premysl Zika
+Title: Level 35
+Serial number: pz166
+Date: 2011
+
+36
+#####
+#  .#
+# # ####
+# $    #
+##   $ #
+ ####+##
+    ###
+Author: Premysl Zika
+Title: Level 36
+Serial number: pz186
+Date: 2011
+
+37
+    ###
+#####@#
+#  .#$#
+# #.  ##
+#  $   #
+#### # #
+   #   #
+   #####
+Author: Premysl Zika
+Title: Level 37
+Serial number: pz189
+Date: 2011
+
+38
+ ####
+ #  #
+ #$ #
+ # .#####
+ #$     #
+ # .##  #
+## ### ##
+#      #
+# @ #  #
+########
+Author: Premysl Zika
+Title: Level 38
+Serial number: pz067
+Date: 2010
+
+39
+########
+#   #  #
+# @    #
+####$..#
+ #   ###
+ # $  #
+ ## # #
+ #  # #
+ #    #
+ #  ###
+ ####
+Author: Premysl Zika
+Title: Level 39
+Serial number: pz192
+Date: 2011
+
+40
+    #######
+    #  #  #
+    #    $#
+#####. ##@##
+#   ## ##$ #
+#.         #
+#####  #####
+    ####
+Author: Premysl Zika
+Title: Level 40
+Serial number: pz051
+Date: 2010
+
+41
+########
+#      #
+# #### #
+# #  # #
+#   @# #
+###  # #
+###$## #
+# $  # #
+# . .  #
+########
+Author: Premysl Zika
+Title: Level 41
+Serial number: pz068
+Date: 2010
+
+42
+#########
+#. . .  #
+# $ $ $ #
+######@ #
+     ####
+Author: Premysl Zika
+Title: Level 42
+Serial number: pz069
+Date: 2010
+
+43
+#####
+#  @###
+# #$  #
+# $ # #
+##  $ #
+ #. ###
+ #.  #
+ #.# #
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 43
+Serial number: pz074
+Date: 2010
+
+44
+#####
+#   #
+# # #
+#   #
+##$ #
+ #  #
+ #$.##
+ # ..#
+ #$# #
+ # @ #
+ #####
+Author: Premysl Zika
+Title: Level 44
+Serial number: pz075
+Date: 2010
+
+45
+   ####
+   #@ #
+  ##  #
+  #   #
+###$$ #
+#   $ #
+# ## ######
+#...      #
+###       #
+  #########
+Author: Premysl Zika
+Title: Level 45
+Serial number: pz077
+Date: 2010
+
+46
+ #####
+ #   ###
+##$#.$ #
+#    # #
+# #  . #
+# @.#$##
+###   #
+  #####
+Author: Premysl Zika
+Title: Level 46
+Serial number: pz073
+Date: 2010
+
+47
+ #####
+ #   ###
+## #.$@#
+# .  # #
+# # .$ #
+# $ # ##
+###   #
+  #####
+Author: Premysl Zika
+Title: Level 47
+Serial number: pz098
+Date: 2010
+
+48
+  ####
+###  #
+#.*. ##
+#@# $ #
+# $   #
+###  ##
+  #  #
+  ####
+Author: Premysl Zika
+Title: Level 48
+Serial number: pz185
+Date: 2011
+
+49
+########
+# ...  #
+# $@$  #
+##$#####
+#      #
+#      #
+#####  #
+    ####
+Author: Premysl Zika
+Title: Level 49
+Serial number: pz194
+Date: 2011
+
+50
+ ####
+ #  #
+ #$ #
+ #  #
+ #$.#
+ # .#####
+ #$     #
+ # .##  #
+## ### ##
+#      #
+# @ #  #
+########
+Author: Premysl Zika
+Title: Level 50
+Serial number: pz070
+Date: 2010
+
+51
+####
+#  ####
+# $   #
+#   # #
+#  $  #
+##$####
+#  .#
+#.@ #
+# . #
+#####
+Author: Premysl Zika
+Title: Level 51
+Serial number: pz099
+Date: 2010
+
+52
+ #####
+ #   #
+## # ############
+#    ##    #    #
+# # $...   $ $@ #
+#    ##    #    #
+#################
+Author: Premysl Zika
+Title: Level 52
+Serial number: pz100
+Date: 2010
+
+53
+########
+#      #
+#  . * #
+## ## ##
+ #@$  #
+ #$##.#
+ #    #
+ ######
+Author: Premysl Zika
+Title: Level 53
+Serial number: pz101
+Date: 2010
+
+54
+ ####
+ #  #######
+ #        #
+ # #####  #
+ # # $ $ ##
+ # #   # #
+ # # @ # #
+ # #   # #
+## #   # #
+#  ###$# #
+#     .# #
+##### .. #
+    ###  #
+      ####
+Author: Premysl Zika
+Title: Level 54
+Serial number: pz107
+Date: 2010
+
+55
+#####  ####
+#   ####  #
+#         #
+##$#####  #
+ #  ...# ##
+ #  #### ##
+ #$ $     #
+ #@ ###   #
+ #### #####
+Author: Premysl Zika
+Title: Level 55
+Serial number: pz111
+Date: 2010
+
+56
+ #####
+ #   #
+##.#$###
+#  $ $ #
+# .  # #
+## @ . #
+ #######
+Author: Premysl Zika
+Title: Level 56
+Serial number: pz144
+Date: 2011
+
+57
+  #######
+ ## .#  ##
+##  $    #
+# . .##  #
+#  #### ##
+#  @# # ##
+#  ####  #
+# $ $    #
+###     ##
+  #######
+Author: Premysl Zika
+Title: Level 57
+Serial number: pz171
+Date: 2011
+
+58
+  ####
+  #  ###
+###$   #
+#  $$  #
+# ## # #
+#  ... #
+### @ ##
+  #####
+Author: Premysl Zika
+Title: Level 58
+Serial number: pz174
+Date: 2011
+
+59
+########
+# ...  ##
+# $@$ $ #
+##### # #
+   #    #
+   #   ##
+   #####
+Author: Premysl Zika
+Title: Level 59
+Serial number: pz105
+Date: 2010
+
+60
+   #######
+   #    .#
+   # $  .##
+#####$##. #
+#    $@ # #
+#   #     #
+###########
+Author: Premysl Zika
+Title: Level 60
+Serial number: pz106
+Date: 2010
+
+61
+ ####  ####
+##  ####  ####
+#      #     #
+#    $ #$##$.#
+##### ## ## .#
+   #  ##  ##.#
+   #    @    #
+   ##  ####  #
+    ####  ####
+Author: Premysl Zika
+Title: Level 61
+Serial number: pz138
+Date: 2011
+
+62
+####
+#@ ###
+# .  #
+#  # ###
+##. $. #
+ # $$  #
+ #  ####
+ ####
+Author: Premysl Zika
+Title: Level 62
+Serial number: pz167
+Date: 2011
+
+63
+     ###
+######+#
+#   ##*#
+# #$  .##
+#       #
+####$## #
+  #  ## #
+  #     #
+  #  ####
+  ####
+Author: Premysl Zika
+Title: Level 63
+Serial number: pz190
+Date: 2011
+
+64
+#######
+#  .#@#
+# #.#$#
+# #.  ##
+#  $$  #
+#### # #
+  #  # #
+  #  # #
+  #  # #
+  ##   #
+   #####
+Author: Premysl Zika
+Title: Level 64
+Serial number: pz191
+Date: 2011
+
+65
+########
+#      #
+# #### #
+# #  # #
+#    # #
+###  # #
+  #$## #
+  #  # #
+  # @# #
+  #  # #
+###$## #
+# $  # #
+# ...  #
+########
+Author: Premysl Zika
+Title: Level 65
+Serial number: pz072
+Date: 2010
+
+66
+ #######
+##@    #
+#  ### ##
+#  * .  #
+# $ ##$ #
+## .   ##
+ #######
+Author: Premysl Zika
+Title: Level 66
+Serial number: pz023
+Date: ~ 1990-1995
+
+67
+    ########
+    # .... #
+##### $$@$ #
+#   ## #######
+#      $     #
+#####   ##   #
+    ###  #####
+      #  #
+      #  #
+      ####
+Author: Premysl Zika
+Title: Level 67
+Serial number: pz195
+Date: 2011
+
+68
+##########
+#@ ....  #
+#  $  $  #
+# $####$ #
+#  #  #  #
+####  ####
+Author: Premysl Zika
+Title: Level 68
+Serial number: pz120
+Date: 2010
+
+69
+#####  ####
+#   ####  #
+#         #
+##$#####  #
+ #  #### ##
+ #$....# #
+ #  #### ##
+ #     $$@#
+ #  ###   #
+ #### #####
+Author: Premysl Zika
+Title: Level 69
+Serial number: pz119
+Date: 2010
+
+70
+##########
+#   #    #
+# $ $  ..#
+# ### ####
+#    .#
+#####.###
+    #$$@#
+    #   #
+    #####
+Author: Premysl Zika
+Title: Level 70
+Serial number: pz115
+Date: 2010
+
+71
+  ####
+###  #
+#    #
+#  $ #
+## # ##
+# $$$ #
+#     #
+### ###
+# .  #
+# . .#
+# #@ #
+# .  #
+######
+Author: Premysl Zika
+Title: Level 71
+Serial number: pz150
+Date: 2011
+
+72
+   ####
+ ###  #
+ #    #
+ # #  #
+##$#$###
+# $ $  #
+#      #
+## #####
+#  .#
+#.  #
+#   #
+#. .#
+# @ #
+#####
+Author: Premysl Zika
+Title: Level 72
+Serial number: pz158
+Date: 2011
+
+73
+#######
+#  #  #
+#     #
+#  #  #
+##$#$###
+# $ $  #
+#      #
+### ####
+ #  .#
+ #.  #
+ #  .#
+ #.  #
+ # @ #
+ #####
+Author: Premysl Zika
+Title: Level 73
+Serial number: pz159
+Date: 2011
+
+74
+ ####
+ #@ #
+ #$ ##
+ #   #
+##$$ #
+# $  #
+# # ##
+#..  #
+##.  #
+ # . #
+ #####
+Author: Premysl Zika
+Title: Level 74
+Serial number: pz123
+Date: 2010
+
+75
+      ####
+      #  #
+      #  #
+      #  #
+    #### ##
+   ##  #  #
+   #      #
+   #  ## ######
+#####$ # ##   #
+#.* $  #  ..$ #
+# @ ## #  #####
+#####  ## ##
+    #      #
+    ####   #
+       #####
+Author: Premysl Zika
+Title: Level 75
+Serial number: pz024
+Date: ~ 1990-1995
+
+76
+####   ####
+#  #####  #
+#    @    #
+#  ..  .. #
+#####$#####
+  # $   #
+  # $ $ #
+  #     #
+  #######
+Author: Premysl Zika
+Title: Level 76
+Serial number: pz145
+Date: 2011
+
+77
+  #####
+  #   ##
+###$   #
+#  $$$ #
+# ## # #
+#  ... #
+### @.##
+  #####
+Author: Premysl Zika
+Title: Level 77
+Serial number: pz175
+Date: 2011
+
+78
+       ####
+########  #
+#         #
+#.######  #
+#.#### # ##
+#.#  # # #
+#.  $### #
+# #   ## #
+# $ # ## #
+##    ## #
+ ##  ###$##
+  ##  $   #
+   #  # @ #
+   ########
+Author: Premysl Zika
+Title: Level 78
+Serial number: pz081
+Date: 2010
+
+79
+  ####
+###@ ##
+#  $$.#
+# #  $##
+#..*#  #
+##     #
+ #  ####
+ ####
+Author: Premysl Zika
+Title: Level 79
+Serial number: pz168
+Date: 2011
+
+80
+#####
+#   ####
+#.#$ $ #
+# $ .#@#
+#    $ #
+##.#.###
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 80
+Serial number: pz172
+Date: 2011
+
+81
+   #####
+   #   ##
+####    ##
+#   $$$$ #
+# ###  # #
+# ### ## #
+#...    .#
+#### @ ###
+   #####
+Author: Premysl Zika
+Title: Level 81
+Serial number: pz234
+Date: 2011
+
+82
+     ####
+######  #
+#  $   @#
+#  # ## ##
+## #..   #
+ #  ..##$#
+ #$## ## ##
+ #    $   #
+ #  ###   #
+ #### #####
+Author: Premysl Zika
+Title: Level 82
+Serial number: pz208
+Date: 2011
+
+83
+  #####
+  #   #
+###.#$###
+# $   . #
+# # * # #
+# . @ $ #
+###$#.###
+  #   #
+  #####
+Author: Premysl Zika
+Title: Level 83
+Serial number: pz169
+Date: 2011
+
+84
+   #######
+####@    #
+#   .### #
+# # #    ##
+# # $ $#. #
+# #  *  # #
+# .#$ $ # #
+##    # # ###
+ # ###.     #
+ #     ##   #
+ ############
+Author: Premysl Zika
+Title: Level 84
+Serial number: pz021
+Date: ~ 1990-1995
+
+85
+########
+#     @#
+# $ $  #
+#  $ $ #
+##$## ##
+#  .. #
+# ... #
+#######
+Author: Premysl Zika
+Title: Level 85
+Serial number: pz082
+Date: 2010
+
+86
+########
+#      #
+# $ $$ #
+# $ $  #
+### ####
+#   . #
+# # $@#
+# . . #
+#   # #
+# . . #
+# .   #
+#######
+Author: Premysl Zika
+Title: Level 86
+Serial number: pz151
+Date: 2011
+
+87
+ #########
+ #   #   #
+## # # # ##
+# $ $$$ $ #
+#    @    #
+##### #####
+   #. .#
+   # . #
+   #.. #
+   #####
+Author: Premysl Zika
+Title: Level 87
+Serial number: pz153
+Date: 2011
+
+88
+######### #####
+#   #...###   #
+#..  $ $      #
+#####@ # $$$ ##
+    #####   ##
+        ##  #
+         ####
+Author: Premysl Zika
+Title: Level 88
+Serial number: pz193
+Date: 2011
+
+89
+    ####
+    #  #
+   ##  #
+####   ###
+#  $$$$$ #
+# ## # # #
+#  ..... #
+###  @ ###
+  ######
+Author: Premysl Zika
+Title: Level 89
+Serial number: pz176
+Date: 2011
+
+90
+    ######
+    #    #
+#####$ $ ##
+#   $ $ $ #
+# #### ## #
+#....    .#
+##### @ ###
+    #####
+Author: Premysl Zika
+Title: Level 90
+Serial number: pz235
+Date: 2011
+
+91
+  #####
+  #   #
+### # ###
+#  * $  #
+# #*$.# #
+# .   + #
+####$# ##
+   #   #
+   #####
+Author: Premysl Zika
+Title: Level 91
+Serial number: pz140
+Date: 2011
+
+92
+ #####
+ #   #
+##$# #####
+# .$   $ #
+# # ...#@#
+#    * $ #
+###  #####
+  ####
+Author: Premysl Zika
+Title: Level 92
+Serial number: pz179
+Date: 2011
+
+93
+ #####
+ #   #
+##$# #####
+#      $ #
+# #....#@#
+# . $  $ #
+##$## ####
+ #    #
+ ######
+Author: Premysl Zika
+Title: Level 93
+Serial number: pz180
+Date: 2011
+
+94
+ #####
+ #   #
+##$# #####
+# .$   $ #
+# # ...#@#
+#    * $ #
+####  ####
+   ####
+Author: Premysl Zika
+Title: Level 94
+Serial number: pz181
+Date: 2011
+
+95
+ ######
+ #    #
+##$## ####
+# . $  $ #
+# #....#@#
+#    $ $ #
+######  ##
+     ####
+Author: Premysl Zika
+Title: Level 95
+Serial number: pz182
+Date: 2011
+
+96
+ #####
+ # @ #
+##$#*####
+#     $ #
+# #.  # #
+# $.  . #
+##$#.####
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 96
+Serial number: pz236
+Date: 2011
+
+97
+#######
+#     #
+# $ $ #
+#..##$#
+#+*## ##
+#..$ $ #
+#      #
+########
+Author: Premysl Zika
+Title: Level 97
+Serial number: pz130
+Date: 2010
+
+98
+########
+#      #
+# $.$  #
+#..##$ #
+##$## ##
+#..* $@#
+#      #
+########
+Author: Premysl Zika
+Title: Level 98
+Serial number: pz131
+Date: 2010
+
+99
+ #####
+##   ######
+#     ##  ##
+# $@$ $ ...#
+#     ###. #
+##   #  $.###
+ ##### #$.  #
+     #   #  #
+     # # $ ##
+     #     #
+     #######
+Author: Premysl Zika
+Title: Level 99
+Serial number: pz196
+Date: 2011
+
+100
+ ####
+ #  #
+ #$ #
+ #  #
+ #$ #
+ #  #
+ #$.#
+ # .#
+ #$.#####
+ # .#   #
+ #$.    #
+ # .## ##
+##$### #
+#      #
+# @ #  #
+########
+Author: Premysl Zika
+Title: Level 100
+Serial number: pz083
+Date: 2010
+
+101
+  #####
+###   ###
+#   # $ #
+# #   # #
+#   .   #
+####.####
+ # $.$ #
+ # #.# #
+ # $.$@#
+ # #*# #
+ #     #
+ #######
+Author: Premysl Zika
+Title: Level 101
+Serial number: pz132
+Date: 2010
+
+102
+  ########
+  #  #   #
+  #    # #
+  #  $ $ #
+  ## #   #
+ ### #####
+ # $ $ #####
+ # #$#     #
+ # #.##### #
+## #.#   # #
+#  #.. $@# #
+# # ..#### #
+#   #      #
+############
+Author: Premysl Zika
+Title: Level 102
+Serial number: pz004
+Date: ~ 1990-1995
+
+103
+ ####
+ #  #########
+ #          #
+ # #######  #
+ # #     # ##
+ # #   $ # #
+ # # ##$## #
+ # # # @ # #
+ # # # # # #
+ # # #   # #
+ # # #   # #
+ # # #   # #  #####
+ # #.### # # ##   #
+ # #.    # ### $  #
+ # ##### # ## $  ##
+ # #     # # $  ##
+ # #  #    $   ##
+## ## ###  #####
+#  ##   ####
+# ....# #
+#####   #
+    #####
+Author: Premysl Zika
+Title: Level 103
+Serial number: pz135
+Date: 2010
+
+
+ #######
+ #     #
+##$### ####
+#  $    $ #
+# #....*#@#
+# .  $  $ #
+###  ######
+  ####
+Author: Premysl Zika
+Title: Level 104
+Serial number: pz183
+Date: 2011
+
+
+ #######
+ #     #
+##$### ###
+# .$   $ #
+# #...*#@#
+# . $  $ #
+###   ####
+  #####
+Author: Premysl Zika
+Title: Level 105
+Serial number: pz184
+Date: 2011
+
+
+#########
+#   ##  #
+#   $ $ #
+##$## # ##
+ # # ..  #
+ # #..## #
+## #..   #
+#  # ### ##
+#  $   $$ #
+#  ####  @#
+####  #####
+Author: Premysl Zika
+Title: Level 106
+Serial number: pz229
+Date: 2011
+
+
+  #####
+  #@  ###
+  #     #
+  ### # #
+  #.  # #
+  #. .# #
+  #. .# #
+  #. .# #
+  #. .# #
+###. .# #
+#  # #  #
+# $$$$$ #
+# $   $ #
+# $$$ $ #
+#       #
+#########
+Author: Premysl Zika
+Title: Level 107
+Serial number: pz009
+Date: ~ 1990-1995
+
+
+ #####
+ # @ #
+ #$.$#
+ # . #
+ #$.$#
+ # . #
+##$.$#
+#  . #
+#  .$##
+## #  #
+ #    #
+ #  ###
+ ####
+Author: Premysl Zika
+Title: Level 108
+Serial number: pz139
+Date: 2011
+
+
+ #####
+ # + #
+ #$.$#
+ # . #
+ #$.$#
+ # . #
+ #$.$#
+ # . #
+##$.$##
+#  .  #
+# $.$ #
+## # ##
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 109
+Serial number: pz147
+Date: 2011
+
+
+ #####
+ #   ###
+## #   ###
+#    #   ###        #######
+# # $  #   #        #     #
+#   # $  # #        # $ $ #
+###   # $  ##########     #
+  ###   #  $....+....$ $  #
+    ###   #$#########     #
+      ###   #       #######
+        #####
+Author: Premysl Zika
+Title: Level 110
+Serial number: pz152
+Date: 2011
+
+
+    ####
+#####  #
+#    $ #
+# $  $ #
+## # # ##
+# $ $$  #
+#       #
+###$#####
+## @####
+#      #
+# .#. .#
+#. .  ##
+#  #.  #
+#     .#
+########
+Author: Premysl Zika
+Title: Level 111
+Serial number: pz154
+Date: 2011
+
+
+  #####
+  #   #
+  #.$.#
+### # ###
+# $ * $ #
+#   *   #
+### * ###
+  # * #
+  # + #
+  #####
+Author: Premysl Zika
+Title: Level 112
+Serial number: pz170
+Date: 2011
+
+
+########
+#   #  #  #######
+#      #  #     #
+## ##  #### $$$ #
+ # ## ##  # $   #
+ # #    @ # $   #
+## #   #  #  # ##
+#  #####$#####  #
+#  $      ......#
+#  #####  ### .##
+####   #### ####
+Author: Premysl Zika
+Title: Level 113
+Serial number: pz160
+Date: 2011
+
+
+  ##########
+  #  #  #  #
+  #   $    #
+  #  #  #  #    ######
+#### #  #$#######    ##
+#  $  $   ......*@$#  #
+#   ####  ####### $ # #
+#####  ####     #     #
+                #######
+Author: Premysl Zika
+Title: Level 114
+Serial number: pz161
+Date: 2011
+
+
+  #######
+  #     #
+  # # # #
+  #     #
+##### #####
+#   #$#   #
+# $ $+$ $ #
+# ###*### #
+# #  .  # #
+# # $.$ # #
+# #  .  # #
+# ###.### #
+# ###.### #
+#    .    #
+###########
+Author: Premysl Zika
+Title: Level 115
+Serial number: pz149
+Date: 2011
+
+
+     #####
+ #####   #
+ # .   . #
+##$#$# # #
+# $. . # #
+# #$#@ $ #
+#   .$  ##
+## .$.#$#
+ #$#. . #
+ #   ####
+ #####
+Author: Premysl Zika
+Title: Level 116
+Serial number: pz141
+Date: 2011
+
+
+#####
+#   #####
+# # #. .#
+# .   #$#
+# $ #.$ #
+# #$.#$ ###
+#  $  .$. #
+###. #.$#@#
+  ##   $  #
+   #  #####
+   ####
+Author: Premysl Zika
+Title: Level 117
+Serial number: pz143
+Date: 2011
+
+
+#############
+#  .    #   ###
+#  .#  .#   $ #
+# #  . ##$$ $ #
+# . .#    $$  #
+#  #  $.#$  $ #
+#  . .# #     #
+#   #   ###$###
+#  .    # #@#
+######### ###
+Author: Premysl Zika
+Title: Level 118
+Serial number: pz146
+Date: 2011
+
+
+###################
+#              #  #
+# ######### #     #
+# #         ##$# ##
+# #  $ $ $ #...# #
+# # $######....# #
+# ##    $ #....# ##
+# # $  $ $ #.. #  #
+# #  #    $ #$### #
+# #  #  #     $@# #
+# ###########$### #
+#                 #
+###################
+Author: Premysl Zika
+Title: Level 119
+Serial number: pz003
+Date: ~ 1990-1995
+
+
+#######    #######
+#     ##  ##  #  ##
+# $ $  ## #   $...#
+# $ $   ###  ###. #
+# $ $ $  ### # #.##
+##  $ $   ## # #.#
+ ## $ $ $  #   #.#
+## #  $    $   #.#
+#   # $ $  #  ##.#
+# $  #  $ #@## $.#
+# $$ ##  #   #  .#
+# $ $  ##  $  ##.##
+#   $ $  ## ###.. #
+###  $$ $........ #
+  ##     #........#
+   ################
+Author: Premysl Zika
+Title: Level 120
+Serial number: pz008
+Date: ~ 1990-1995
+
+
+######        ####
+#    # ###### #  #
+#    ###    ###  ##
+#  $ #...##       #
+##$  #...   #.... #
+#  $ #...    ....##
+#   ##### ###....#
+##$#  ##    #######
+# $    #  $       #
+# $ #  ## $$$$$ $ #
+#  ## # $   $ $$$ #
+# $## #  ## # #   #
+#  #  ## #  #  #$ #
+# $#     #     #  #
+# @#  #  #  #  ####
+################
+Author: Premysl Zika
+Title: Level 121
+Serial number: pz022
+Date: ~ 1990-1995
+
+
+###################
+#        @#       #
+# ### ######### # #
+# #  $ $  $   $ $ #
+# #    ##   $$# # #
+# # $#  $   # # # #
+# #   #$   #  # # #
+# # $$  # *..$# # #
+# #     #  #. # # #
+# ##########.## # #
+# #.......... # # #
+# ########## $  # #
+#          ###  # #
+##########   #### #
+         ###      #
+           ########
+Author: Premysl Zika
+Title: Level 122
+Serial number: pz002
+Date: ~ 1990-1995
+
+
+#########
+#       #
+# $ $   #
+#  $ $  ###########
+###### ##         #
+#@   $ $  ####### #
+# #### ####     # #
+# #  $ $    ### # #
+# # ## ##### .. # #
+# # ## #  #. #.## #
+# # ##$$.......## #
+# # #   ### ##    #
+# #   #  #    #####
+# ###### #  $ #
+#        #    #
+###############
+Author: Premysl Zika
+Title: Level 123
+Serial number: pz005
+Date: ~ 1990-1995
+
+
+###########
+#         #
+# #$#$#$  #
+#         #
+######## ################
+#      $ $              #
+# ###### ############## #
+# #    # #            # #
+# ###### # ########## # #
+# #    $ $ # #..   .# # #
+# # #### #####..   .# # #
+# #   @# #   #... ..# # #
+# # #### # # #### ### # #
+# # #  $ $ #      #   # #
+# # # ## ########$  ### #
+# # # ## ######    #### #
+# # # ##$        #      #
+# # # #   ###### ########
+# # #   #  #   # #
+# # ###### #   # #
+# #        #   # #
+# ############## #
+#                #
+##################
+Author: Premysl Zika
+Title: Level 124
+Serial number: pz026
+Date: ~ 2000-2002
+
+
+##################
+# ...............#
+# .######.#########
+## #    $         #
+ # #   ##  # # #  #
+## ############# ##
+#    #           #
+# $$ $ $ $ $ $ $ #
+## ############ ###
+#@ #   #  ##  # $ #
+#      #  $   # $ #
+#####$##  ### #   #
+   #  ###$##  ##$##
+   #  $    #  $   #
+   #  ##   #  #   #
+   ################
+Author: Premysl Zika
+Title: Level 125
+Serial number: pz019
+Date: ~ 1990-1995
+
+
+###################
+#@#   #     #     #
+# $  $ $ $#$ #  $ #
+# # # ##    $ #   #
+# # *  # $#  $ #  #
+# #$** #$  #  $$ ##
+# # ...#  $ #  $ ##
+# ####.#     #  $ #
+# #....#####  #   #
+# #....# #  ## # ##
+# #...* $    #    #
+# #....#  #  # $  #
+# ###.####  ##  $ #
+#      ..#  $ #$$ #
+#   #    #  #     #
+###################
+Author: Premysl Zika
+Title: Level 126
+Serial number: pz001
+Date: ~ 1990-1995
+
+
+#########
+#       ######
+#@$$$$$      ######
+#      $$$$$      ######
+#######     $$$$$      ###########
+      ######     $$$$$ ..........#
+           ######     $*********.#
+                ###### ..........#
+                     #############
+Author: Premysl Zika
+Title: Level 127
+Serial number: pz045
+Date: 2009
+
+
+##########
+#        #######
+#@$$$$$$       #######
+#       $$$$$$       #######
+########      $$$$$$       ############
+       #######      $$$$$$............#
+             #######      $**********.#
+                   #######............#
+                         ##############
+Author: Premysl Zika
+Title: Level 128
+Serial number: pz046
+Date: 2009
+
+
+#####           #####
+#   #           #   #
+# $ #           # $ #
+# $ ##         ## $ #
+#  $ #         # $  #
+## $ ##       ## $ ##
+ #  $ #       # $  #
+ ## $ ##     ## $ ##
+  #  $ #     # $  #
+  #  $ ##   ## $  #
+  ##  $ #   # $  ##
+   #  $ ## ## $  #
+   ##  $ # # $  ##
+    ## $ ### $ ##
+     # .* # *. #
+     ##.*.#.*.##
+      #..*@*..#
+      ##.*$*.##
+       #.* *.#
+       #.* *.#
+       #.* *.#
+       #.* *.#
+       #.* *.#
+       #.*.*.#
+       #######
+Author: Premysl Zika
+Title: Level 129
+Serial number: pz042
+Date: 2009
+
+
+ ######       ######
+ #.   ##     ##   .#
+ ##  . ##   ## .  ##
+  ## $  ## ##  $ ##
+   ## $. ### .$ ##
+    ## $  #  $ ##
+     ## . # . ##
+      ##$###$##
+     ##   #   ##
+    ##  .$@$.  ##
+   ## .$ ### $. ##
+  ##  $ ## ## $  ##
+ ## .$ ##   ## $. ##
+##    ##     ##    ##
+#.   ##       ##   .#
+######         ######
+Author: Premysl Zika
+Title: Level 130
+Serial number: pz136
+Date: 2011
+
+
+                         ##########
+   ##########            #        ##
+   #        ############## ### $$$ ##
+ ###   ####.$.$.$.$.$.$.$.$ #       ##
+## $ $   ##                 # $$$$$  ##
+# $ $ $ $ ###################         ##
+#  $ $ $  # #  ###########  #  $$$$$$  #
+# $ $ $ $ # #  $            ##         #
+#  $ $ $  # #  ############ ### $$$$$$ #
+# $ $ $ $ # ## # #  #######  ###       #
+#         #  # ###           ####  .####
+#####.######## ##  ##########   ###.#
+    #.#  #  ##$##               # #.#
+    #.#  #  $   ##############$## #.#
+    #.####  #   #    #   #####  # #.#
+    #.#  ##$##### ####       $  # #.#
+    #.#  $   #    #  ##$######  ###.#
+    #.#  #   #  ###  #  ########  #.#
+    #.##$########    #            #.#
+   ##.#           ##$############ #.##
+   # .############# @###########  #. #
+   # ..............*.*.............. #
+   ##  ###########################  ##
+    ####                         ####
+Author: Premysl Zika
+Title: Level 131
+Serial number: pz027
+Date: ~ 2000-2002
+
+
+                 #######
+#####            #  #  #    ####
+#   ##############     ######  #
+#                   #          #
+### ########  #####   #####  # ##
+#   #   #  ####  #######  ####  #
+#   # # #                       #
+##      # #######################
+ # ## ### #   #  ##  #  #  #  ##
+ #    #   #                    #
+####  ##   # ######### ######  #
+#   # #  # # #   #. #  #   ##  #
+#     #    # # # #. #  $ #   ###
+## #  ###    #..... ## # # # ##
+#  ###   #    ##.#.# @#    #  #
+#        ###  # .#    #  # ## #
+#  #### #   ###$## #   # #  $ #
+###   # # #   $  #   # #    # #
+ #  # # #   $##  ##    ###  # #
+## #  # #### #  #  #  ### ### #
+#  $ ## #  # #      # # #   # #
+# #   $ #     #  #  #       # #
+#   ##   $ #  #### ##  ###  # #
+####   ####  #   #  ##  # ### #
+#    $    #      #  #      ## #
+# ### #   ##  ####  #  #    #$###
+#     #########  ####  ##       #
+#######             ######  #   #
+                         ########
+Author: Premysl Zika
+Title: Level 132
+Serial number: pz050
+Date: 2009
+
+
+     ####
+######  #
+#    $  #
+#  ##.# ##
+##  ...$@#
+ #$#. ##$#
+ #  ..   #
+ # # ###$##
+ # $ $    #
+ #  ###   #
+ #### #####
+Author: Premysl Zika
+Title: Level 133
+Serial number: pz207
+Date: 2011
+
+
+##### ####
+#   ###  #
+#   $    #
+## #.##  #
+ #$#... ##
+ #   .#$##
+##$#...$@#
+#  ## ##$##
+#   $ $   #
+#  ####   #
+####  #####
+Author: Premysl Zika
+Title: Level 134
+Serial number: pz230
+Date: 2011
+
+
+##### #####
+#   ###   #
+#    $ $  #
+## # #.# ##
+ #$#...$  #
+## ..@.# $#
+# $#.#.## ##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 135
+Serial number: pz197
+Date: 2011
+
+
+##### ####
+#   ###  #
+#    $   #
+## ## #  #
+ # ## # ##
+ # ##..  #
+ #$# ..#$#
+## ....*@#
+# $# # #$##
+#  $ $ $  #
+#  ####   #
+####  #####
+Author: Premysl Zika
+Title: Level 136
+Serial number: pz231
+Date: 2011
+
+
+     ######
+ #####    #
+ #   #$## ###
+ # @  $   $ #
+ ## ###.$ # #
+  # ..*.$ # #
+### #.$.#   #
+#   #.$.#.###
+# # $.*... #
+# # $*####$##
+# $ $       #
+###$## ##   #
+  #    ######
+  ######
+Author: Premysl Zika
+Title: Level 137
+Serial number: pz227
+Date: 2011
+
+
+##### ####
+#   ###  #
+#  $ $   #
+##$# #.# ##
+ #  ..... #
+ #$#.*.##$#
+##  ... $@#
+# $# # ##$##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 138
+Serial number: pz198
+Date: 2011
+
+
+##### ####
+#   ###  #
+#  $ $   #
+##$# #.# ##
+ #  ..... #
+ # #.$.##$#
+##$#... $@#
+#  # # ##$##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 139
+Serial number: pz199
+Date: 2011
+
+
+##### ####
+#   ###  #
+#  $ $   #
+## # #.# ##
+ #$#...$  #
+ #  .+.##$#
+##$#.*.   #
+#  #.# ##$##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 140
+Serial number: pz200
+Date: 2011
+
+
+##### ####
+#   ###  #
+#  $     #
+## # ### ##
+ # #.. $  #
+ #$#.+.##$#
+##  ...   #
+# $## ###$##
+#   $ $    #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 141
+Serial number: pz201
+Date: 2011
+
+
+##### ####
+#   ###  #
+#  $     #
+## # ### ##
+ # #...$  #
+ #$#.@.##$#
+##  ...   #
+# $### ##$##
+#    $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 142
+Serial number: pz202
+Date: 2011
+
+
+##### ####
+#   ### @#
+#      $ #
+## ###$# ##
+ #$#...*  #
+ #  .*.##$#
+##$#...   #
+#  # ####$##
+#  $ $     #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 143
+Serial number: pz203
+Date: 2011
+
+
+##### ####
+#   ### @#
+#      $ #
+## ###$# ##
+ #$#...*  #
+ #  ...##$#
+##$#.*.   #
+#  ## ###$##
+#   $ $    #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 144
+Serial number: pz204
+Date: 2011
+
+
+##### ####
+#   ###  #
+#        #
+##$##$## ##
+ #  ....*@#
+ #$#.*.##$#
+##  ...   #
+#  # # ##$##
+# $$ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 145
+Serial number: pz205
+Date: 2011
+
+
+##### ####
+#   ###  #
+# $  $   #
+##$# # # ##
+ # #.+. $ #
+ #  *.*## #
+ # #.*.## #
+## #...   #
+#  # # ##$##
+# $$ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 146
+Serial number: pz206
+Date: 2011
+
+
+##### #####
+#   ###  @#
+#      $$ #
+## #.### ###
+ #$#..$.   #
+ #   *#.##$#
+##$#  ..## #
+#  ####.## ##
+#    $  $   #
+#  #### #   #
+#### #  #####
+     #  #
+     #  #
+     ####
+Author: Premysl Zika
+Title: Level 147
+Serial number: pz209
+Date: 2011
+
+
+#####  ####
+#   ####  #
+#   $ $   #
+##$## ##  #
+ # # ..* ##
+ # # $.#$##
+## #..... #
+#  ###$## ##
+#       $$@#
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 148
+Serial number: pz210
+Date: 2011
+
+
+#####  ####
+#   ####  #
+#   $ $ $ #
+## ## # # ######
+ # # *. $  #   #
+ #$#.*.*##   # #
+ #  ..*.####   #
+##$#..@.#  # ###
+#  #########$##
+#       $ $   #
+#  ##     #   #
+###############
+Author: Premysl Zika
+Title: Level 149
+Serial number: pz212
+Date: 2011
+
+
+#####   ####
+#   ##### @#
+#  $ $ $   #
+## # # ### ##
+ # #.....$  #
+ # #*# # ## #
+##$ .....##$#
+#  # # # ## ##
+#  $ $ $ $   #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 150
+Serial number: pz213
+Date: 2011
+
+
+#########
+#   ##  #
+#    $  #
+##$##.# ##
+ #  .... #
+ #$#.$##$#
+ # #.@## #
+##  ..   #
+# $# ###$##
+#  $ $    #
+#  ####   #
+####  #####
+Author: Premysl Zika
+Title: Level 151
+Serial number: pz217
+Date: 2011
+
+
+##### ####
+#   ###  #
+#     $  #
+## ### # #
+ #$# $ # ##
+ #  .#..  #
+ #$#.#.##$#
+## ..+.   #
+# $# #.##$##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 152
+Serial number: pz218
+Date: 2011
+
+
+        #####
+#########   #
+#        $  #
+# $##$## #.##
+## #    .#*##
+ #  $### .. #
+ # #   #.##$#
+ # # #*.    #
+ #  *..####$#
+## # +      #
+#  # ######$##
+#  $ $       #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 153
+Serial number: pz219
+Date: 2011
+
+
+##### #####
+#   ###   #
+#    $    #
+##$### # ##
+ #  ....$@#
+ #$#.$.##$#
+## #...   #
+#  # ####$##
+#  $ $     #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 154
+Serial number: pz220
+Date: 2011
+
+
+##### ####
+#   ###  #
+#      $ #
+##$##$## #
+ # ....# ##
+ #$#*+.   #
+##  ...## #
+# $## # $$##
+#   $ $    #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 155
+Serial number: pz221
+Date: 2011
+
+
+#####    ####
+#   ######  #
+#  $ $ $ $  #
+##$# # # #  #
+ #  .....*$##
+ #$#* *..#@##
+##  .....*. #
+# $# # # ##$##
+#  $ $ $ $   #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 156
+Serial number: pz223
+Date: 2011
+
+
+#####    ####
+#   ######  #
+#  $ $ $ $  #
+##$# # # #  #
+ #  .....*$##
+ #$#*.* .#@##
+##  .....*. #
+# $# # # ##$##
+#  $ $ $ $   #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 157
+Serial number: pz224
+Date: 2011
+
+
+#####  ####
+#   ####  #
+#   $@$ $ #
+##$##$##  #
+ #  ...# ##
+ # #...# ##
+##$ .*..$ #
+#  # #### ##
+#  $ $     #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 158
+Serial number: pz225
+Date: 2011
+
+
+ ##### ####
+ #   ###  #
+ #   $ $  #
+ ## ## ## ##
+### #...   #
+#   #*+.## #
+# #  *..## #
+# #$$.####$##
+#   $ $     #
+### ##$##   #
+  #    ######
+  ######
+Author: Premysl Zika
+Title: Level 159
+Serial number: pz226
+Date: 2011
+
+
+#####   ####
+#   #####  #
+#  $ $@$   #
+##$# ##$#  #
+#  #...  $##
+#  # ##.#.##
+# $#  #... #
+## .....## #
+# $## #.##$##
+#   $ $ $   #
+#  #### #   #
+##### $ #####
+   #  $ #
+   #   ##
+   #####
+Author: Premysl Zika
+Title: Level 160
+Serial number: pz228
+Date: 2011
+
+
+##### ####
+#   ###  ##
+#    $ . @#
+##$##$#.#$#
+ # #.*..  #
+##  ....# #
+# $# # ##$##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: GRIGoRusha + Premysl Zika
+Title: Level 161
+Serial number: pz239
+Date: 2011
+
+
+#####   #####
+#   ##### @ #
+#  $     $  #
+## # #$###.###
+ # #...* *.  #
+ #$#*#.$.# #$#
+##  . ...# $ #
+#  # # # ### ##
+#  $ $ $ $    #
+#  ########   #
+####      #####
+Author: Premysl Zika
+Title: Level 162
+Serial number: pz214
+Date: 2011
+
+
+#####    ####
+#   ######  #
+#     $ $   #
+## ####.##  #
+ #$#  *..* ##
+ #   @..*#$##
+##$#  .*.$  #
+#  ##### ## ##
+#  $         #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 163
+Serial number: pz211
+Date: 2011
+
+
+#####  ####
+#   #### @#
+#       $$#
+## # #### ##
+ # #*..  $ #
+ # #.##.## #
+ # #. $.## #
+##  .  .   #
+#  # ##.##$##
+# $$  $  $  #
+#  ######   #
+####    #####
+Author: Premysl Zika
+Title: Level 164
+Serial number: pz215
+Date: 2011
+
+
+#####   ####
+#   ##### @#
+#        $$#
+## #$##### ##
+ # #...   $ #
+ # #.###.## #
+ # #. $ .## #
+ # #. $ .## #
+## *. $ .   #
+#  # ###.##$##
+# $$  $   $  #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 165
+Serial number: pz216
+Date: 2011
+
+
+##### ####
+#   ###  #
+#   $ $  #
+##$## ## #
+ #  ...# ##
+ # #*.. $@#
+ #$#.*.##$#
+##  .*.## #
+#  ## # $ ##
+#   $ $    #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 166
+Serial number: pz222
+Date: 2011
+
+
+#####    ####
+#   ######  #
+#     $ $   #
+## ####.##  #
+ #$## ...* ##
+ #    *.*# #
+ #$#  ...#$##
+## #  .*. $@#
+#  ##### ##$##
+#  $   $ $   #
+#  #   ###   #
+######## #####
+Author: Premysl Zika
+Title: Level 167
+Serial number: pz232
+Date: 2011
+
+
+#####    ####
+#   ######  #
+#     $ $   #
+## ####.##  #
+ # ## ...* ##
+ #$#  ***# #
+ #    .*.# #
+ #$#  ...#$##
+## #  *.  $@#
+#  ##### ##$##
+#  $   $ $   #
+#  #   ###   #
+######## #####
+Author: Premysl Zika
+Title: Level 168
+Serial number: pz233
+Date: October 2011
+
+
+ ####  #####
+##  ####   ####
+#      #    $ #
+#      ## ##$ #
+##### ### ##@ #
+   #  ### ###.#
+   #        $.#
+   ##  ##### .#
+    ####   ####
+Author: Premysl Zika
+Title: Level 169 
+Serial number: pz138b
+Date: January 2012
+
+
+##### ####
+#   ###  #
+#  $ $   #
+##$#.#.# ##
+## ..+... #
+# $# # ##$##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 170 
+Serial number: pz249
+Date: January 2012
+
+
+#####     ####
+#   #######  #
+#  $ $ $     #
+##$# # # ### ##
+## ..........@#
+# $# # # ####$##
+#  $ $ $ $     #
+#  #########   #
+####       #####
+Author: Premysl Zika
+Title: Level 171 
+Serial number: pz248
+Date: January 2012
+
+
+#####   ####
+#   #####  #
+#        $ #
+## ## # #@ #
+ # ##.#.#$##
+ #$#..*.   #
+##  *.*.##$#
+#  # # ### ##
+#  $ $ $    #
+#  ######   #
+####    #####
+Author: Premysl Zika
+Title: Level 172 
+Serial number: pz247
+Date: January 2012
+
+
+########
+#   #  ####
+#    $    #
+## ##*#.# #
+ #$#.*.. $#
+##  ....#@#
+# $# # ##$##
+#  $ $ $   #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 173 
+Serial number: pz246
+Date: January 2012
+
+
+########
+#   #  ######
+#    $  $   #
+## ##*# # # #
+ #$#.*.*.. $#
+##  ......#@#
+# $# # # ##$##
+#  $ $ $ $   #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 174 
+Serial number: pz245
+Date: January 2012
+
+
+##### ####
+#   ###  ####
+#    $      #
+##$##$#.#$# #
+ # #.*....$$#
+##  ......#@#
+# $# # # ##$##
+#  $ $ $ $   #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 175 
+Serial number: pz244
+Date: January 2012
+
+
+#####    ####
+#   ######  #
+#    $    $ #
+##$##*#$#.# ##
+ # #.*..   $@#
+##  ......##$#
+# $#.# # ### ##
+#  $ $ $ $    #
+#  ########   #
+####      #####
+Author: Premysl Zika
+Title: Level 176 
+Serial number: pz243
+Date: January 2012
+
+
+#####   ####
+#   #####  ##
+#    $  $   #
+##$##$# #.# #
+ # #.*..*. $#
+##  ......#@#
+# $# # # ##$##
+#  $ $ $ $   #
+#  #######   #
+####     #####
+Author: Premysl Zika
+Title: Level 177 
+Serial number: pz242
+Date: January 2012
+
+
+    ####
+ ####  #
+ # $   #
+ # # # ##
+##  $   #
+# .###  #
+# ..$  ##
+#@ #####
+####
+Author: Premysl Zika
+Title: Level 178
+Serial number: pz251
+Date: January 2012
+
+
+              ####
+ ##############  #
+## $ $ $ $ $  $  #
+#  # # # # # # # ####
+#                   #
+#  ###############  #
+## #      #  ##  # ##
+ # #      #      # #
+## #      #  ##  # #
+#  #########$# $## #
+#  ........*@#     #
+#  ##############  #
+####            ####
+Author: Premysl Zika
+Title: Level 179
+Serial number: pz252
+Date: January 2012
+
+
+  #######
+  # .$  #
+  #$.$# #
+  # .   #
+  #$.$###
+### + #
+#  $.$#
+# # . #
+#  $.##
+###  #
+  ####
+Author: Premysl Zika
+Title: Level 180
+Serial number: pz253
+Date: February 2012
+
+
+ ####
+ #  ############
+ #             #
+ # ##########@ #
+ # #     ## $ ##
+ # #    ## $. #
+ # #   ## $. ##
+ # #  ## $. ##
+ # # ## $. ##
+ # ### $. ##
+ # ## $. ##
+ # # $. ##
+## # . ##
+#  ## ##
+#      #
+####   #
+   #####
+Author: Premysl Zika
+Title: Level 181
+Comment: Joke problem
+Serial number: pz254
+Date: February 2012
+
+
+    #### ####
+    #  ###  #
+    #   *   #
+ ####  ###  ####
+ #   # ### #   #
+ #  *   #   *  #
+ ## #   #   # ##
+##  #########  ##
+#  ####   ####  #
+#       @       #
+## ########### ##
+#     #   $    #
+#  #  # $$#$$# #
+#     #      # ##
+###  ## ######  #
+  ##### .....   #
+      ###########
+Author: Premysl Zika
+Title: Level 182
+Comment: Joke problem
+Serial number: pz255
+Date: February 2012
+
+
+                 ####
+                 #  ######
+                 #       #
+############# ####   # # #
+# ........  # #  ### #   #
+# ########  # #      #####
+#        # ####   #   #
+# $$ $ $ # #  ### #   #
+#  $ $ $ $ #      #####
+##########@#   #   #
+       #   ### #   #
+       #       #####
+       #  ###   #
+       #### #   #
+            #####
+Author: Premysl Zika
+Title: Level 183
+Comment: Joke problem
+Serial number: pz256
+Date: February 2012
+
+
+  #####
+###   #
+# $ # #
+# #   #
+#     #
+####$##############
+   #       @      #
+  ## ###########  #
+  # .# $ $ $ $ $$##
+  #.......       #
+  ################
+Author: Premysl Zika
+Title: Level 184
+Serial number: pz257
+Date: February 2012
+
+
+            ####
+       ######  #
+       #       #
+#####  #  ###  #
+#   ##### # # ####
+#         ### #  #
+## ######  #     #
+ # #######$$ ### #
+ #     ## ..## # #
+ #  #     #  ### ##
+#####.## ###      #
+#  $ .## # # ##   #
+# $$#.#  ###  #####
+# $@#.#       #
+#     #  ######
+##########
+Author: Premysl Zika
+Title: Level 185
+Comment: Joke problem
+Serial number: pz258
+Date: February 2012
+
+
+  #####    ####
+  #   ######  #
+  #           ####
+  ## ######## #  #
+   # #######     #
+   # #       ##  # ####
+   # # ######## ####  #
+   # #  #    #        #
+#### ##   ##** ###### #
+#    # **##   ##### # #
+#  #   #  # #     ### #
+## ###### # #####  ## ##
+#  ###### # ######     #
+#       # #     ## #   #
+#  ###  # #####     ####
+#### # ##    ## #   #
+     # #####     ####
+     # ##### #   #
+     #     #  ####
+     #  #     #
+     ####.#####
+     #   * $  #
+     # $#.#$$ #
+     #  #.#   #
+     # $#.### #
+     #  #+    #
+     ##########
+Author: Premysl Zika
+Title: Level 186
+Comment: Joke problem
+Serial number: pz259
+Date: February 2012
+
+
+                               ####
+            ####################  #
+            #                     #
+         ####  ################## #
+         #   # #                # #
+      ####     ################ # #
+      #   # ##      #         ### #
+   ####     ####### # #######  ## ##
+   #   # ##  #    # #  #   ###     #
+####     ###.. ##$$ ##.. #  ## #   #
+#   # ##  # $$## ..## $$###     ####
+#     ###   #  # #    #  ## #   #
+## ##  ####### # #######     ####
+ # ###         #      ## #   #
+ # # ################     ####
+ # ################## #   #
+ #                  #  ####
+ #  ##############     #
+ ####   #  $ $ $ $ #####
+        # $$ $ $ # #
+        #    @   # ##
+        # ########  #
+        # ........  #
+        #############
+Author: Premysl Zika
+Title: Level 187
+Comment: Joke problem
+Serial number: pz260
+Date: February 2012
+
+
+                                   ####
+               #####################  #
+               #                      #
+            ####  ################### #
+            #   # #                 # #
+         ####     ###########       # #
+         #   # ##  #        ####### # #
+      ####     ### # ######       ### #
+      #   # ##  #  #  #   #######  ## ##
+   ####     ###$. ###.$ #      ###     #
+   #   # ##  # $.### .$#######  ## #   #
+####     ###   #  #  #      ###     ####
+#   # ##  ####### # #######  ## #   #
+#     ###       # #  #   ###     ####
+## ##  ########$. ## . #  ## #   #
+ # ###       # $.## $*###     ####
+ # # #######   #    #  ## #   #
+ # #       ###########     ####
+ # ################### #   #
+ #                   #  ####
+ #  ###############     #
+ ####  #  $ $ $ $ $ #####
+       # $$ $ $ $ # #
+       #     @    # ##
+       # ##########  #
+       # ..........  #
+       ###############
+Author: Premysl Zika
+Title: Level 188
+Comment: Joke problem
+Serial number: pz261
+Date: February 2012
+
+
+                             ####
+            ##################  #
+            #                   #
+         ####  ################ #
+         #   # # #        #   # #
+      ####     ### ###### #   # #
+      #   # ##   #  #   # #   # #
+   ####     ####  #*  # # ##### #
+   #   # ##     #* * ## #    ## ##
+####     ######* * # ## ####     #
+#   # ##     # * #   ##   ## #   #
+#     ######   #  * #####     ####
+## ##      #### * #    ## #   #
+ # #######      #  ###     ####
+ # #     #########  ## #   #
+ # #             ##     ####
+ # ################ #   #
+ #                #  ####
+ #  ############     #
+ #### #  $ $ $ $ #####
+      # $$ $ $ # #
+      #    @   # ##
+      # ########  #
+      # ........  #
+      #############
+Author: Premysl Zika
+Title: Level 189
+Comment: Joke problem
+Serial number: pz262
+Date: February 2012
+
+
+                                ####
+               ##################  #
+               #                   #
+            ####  ################ #
+            #   # ###########    # #
+         ####     ##        #    # #
+         #   # ##  # ###### #    # #
+      ####     ### #  #   # #    # #
+      #   # ##   #  #*  # # ###### #
+   ####     ####  #* * ## #     ## ##
+   #   # ##     #* * # ## #####     #
+####     ######* * #   ##    ## #   #
+#   # ##     # * #  * ######     ####
+#     ######   #  * #     ## #   #
+## ##      #### * #  ####     ####
+ # #######      #  #   ## #   #
+ # #     ######### ###     ####
+ # #             #  ## #   #
+ # #             ##     ####
+ # ################ #   #
+ #                #  ####
+ #  ############     #
+ ####  $ $ $ $ $ #####
+    # $$ $ $ $ # #
+    #     @    # ##
+    # ##########  #
+    # ..........  #
+    ###############
+Author: Premysl Zika
+Title: Level 190
+Comment: Joke problem
+Serial number: pz263
+Date: February 2012
+
+
+  ##########
+  #    @   #
+ ##$######$#
+ #  $  $   #
+ # # ..### #
+## ##..$.# #
+#     $..# #
+#   ###. # #
+### ###$## ##
+  #      $  #
+  # ######  #
+  #        ##
+  ##########
+Author: Premysl Zika
+Title: Level 191
+Serial number: pz264
+Date: March 2012
+
+
+    ####
+    #  #
+    # $#
+#####. ####
+# $ $.$ $ #
+# ...@... #
+# $ $.$ $ #
+#### . ####
+   #$ ##
+   #  #
+   ####
+Author: Premysl Zika
+Title: Level 192
+Serial number: pz265
+Date: March 2012
+
+
+    #####
+    #   #
+    #$.$#
+    # . #
+#####$.$#####
+# $ $ . $ $ ##
+# ....$..... #
+# $ $ . $ $  #
+#####$.$######
+    # . #
+    #$.$#
+    # @ #
+    #####
+Author: Premysl Zika
+Title: Level 193
+Serial number: pz266
+Date: March 2012
+
+
+#####  ####
+#   ####  #
+#      $  #
+##$#####  #
+ # $...# ##
+## #.*. $@#
+#  # ####$##
+#          #
+#  #####   #
+####   #####
+Author: Premysl Zika
+Title: Level 194
+Serial number: pz267
+Date: March 2012
+
+
+ #####
+##   #
+#  #@##
+#     #
+#.#$$ #
+#.  ###
+#####
+Author: Premysl Zika
+Title: Level 195
+Serial number: pz268
+Date: March 2012
+
+
+ #######
+##     #
+#  ### ###
+# ##     #
+# # $### ##
+# #       #
+# # ###$$ #
+#@  ... ###
+#########
+Author: Premysl Zika
+Title: Level 196
+Serial number: pz269
+Date: March 2012
+
+
+ #########
+ #      @#
+##$###$# #
+#  $ $ # #
+# #*.. # #
+# ...* # #
+##.    $ #
+ # ###$###
+ #     #
+ #######
+Author: Premysl Zika
+Title: Level 197
+Serial number: pz270
+Date: March 2012
+
+
+ ########
+ #  @   #
+##$####$#
+# $   $ #
+# #   # #
+# #   # #
+# ##$## #
+#     # ##
+#.*...*..#
+# #$###  #
+#       ##
+#########
+Author: Premysl Zika
+Title: Level 198
+Serial number: pz271
+Date: March 2012
+
+
+      #####
+#######   #
+#    ## # #
+# $     $ #
+# $ $$ # ##
+##$# ##  #
+ #  $ $$ #
+ # $#.+. #
+ # ..*####
+ ##.*. #
+  #... #
+  ######
+Author: Mic, Jordi Domenech, Premysl Zika
+Title: Level 199
+Comment: add 2 boxes
+Serial number: pz272
+Date: March 2012
+
+
+######
+#  @ #
+#  # ##
+#     #
+# # $ #
+# #$###
+#.#   #
+#.# $ #
+#.  ###
+#####
+Author: Premysl Zika
+Title: Level 200
+Serial number: pz273
+Date: March 2012
+
+
+ ######
+ #    #
+##$## ###
+# .   $ #
+# #..**+#
+#     $ #
+##$# ####
+ #   #
+ #####
+Author: Premysl Zika
+Title: Level 201
+Serial number: pz274
+Date: March 2012
+
+
+ #######
+ #     #
+##$### ###
+# * $    #
+# #...*# #
+# . @  $ #
+##$## ####
+ #    #
+ ######
+Author: Premysl Zika
+Title: Level 202
+Serial number: pz275
+Date: March 2012
+
+
+#####   ####
+#   #####  #
+#     $    #
+## ###.##  #
+ #$#  ... ##
+ #   ..*#$##
+##$# *...$@#
+#  #### ##$##
+#  $  $ $   #
+#  #   ##   #
+#############
+Author: Premysl Zika
+Title: Level 203
+Serial number: pz276
+Date: March 2012
+
+
+#####   ####
+#   #####  #
+#     $    #
+## ###.##  #
+ #$###... ##
+ #    ..#$##
+##$# *...$@#
+#  #### ##$##
+#  $  $ $   #
+#  #   ##   #
+#############
+Author: Premysl Zika
+Title: Level 204
+Serial number: pz277/276 (del 1 box, add 2 walls)
+Date: March 2012
+
+
+#####    ####
+#   ######  #
+#     $ $   #
+## ####.##  #
+ # #   ..* ##
+ #$#  $**# #
+ # ....*.# #
+ #$#  $..#$##
+## #  $...$@#
+#  ##### ##$##
+#  $   $ $   #
+#  #   ###   #
+######## #####
+Author: Premysl Zika
+Title: Level 205
+Serial number: pz278/233 (add 1 box, del 1 wall)
+Date: October 2011, March 2012
+
+
+#####   ####
+#   #####  #
+#    $ $   #
+## ###.##  #
+ # #  ... ##
+ #$#$ **# #
+ # .. ..# #
+ #$#  **#$##
+## #  *..$@#
+#  #### ##$##
+#  $   $    #
+#  #   ##   #
+#############
+Author: Premysl Zika
+Title: Level 206
+Serial number: pz279
+Date: March 2012
+
+
+#####   ####
+#   #####  #
+#       $  #
+## ###.##  #
+ # ## ..* ##
+ #$## .*# #
+ # .  ..# #
+ #$#  .*#$##
+## # $.. $@#
+#  #### ##$##
+#  $  $ $   #
+#  #   ##   #
+#############
+Author: Premysl Zika
+Title: Level 207
+Serial number: pz280
+Date: March 2012
+
+
+#####   ####
+#   #####  #
+#       $  #
+## ###.##  #
+ # ## ..* ##
+ #$#  .*# #
+ # .  ..# #
+ #$# $.*#$##
+## # $...$@#
+#  #### ##$##
+#  $  $ $   #
+#  #   ##   #
+#############
+Author: Premysl Zika
+Title: Level 208
+Serial number: pz281
+Date: March 2012
+
+
+#####   ####
+#   #####  #
+#     $    #
+## ###.##  #
+ # ## ..* ##
+ #$##$.*# #
+ # . $..# #
+ #$#  .*#$##
+## #  ...$@#
+#  #### ##$##
+#  $  $ $   #
+#  #   ##   #
+#############
+Author: Premysl Zika
+Title: Level 209
+Serial number: pz282/280 (add 1 box, room+2 boxes)
+Date: March 2012
+
+
+#####   ####
+#   #####  #
+#    $ $   #
+## ###.##  #
+ # # #... ##
+ #$###$*# #
+ # .  *.# #
+ #$#  ..#$##
+## #  *..$@#
+#  #### ##$##
+#  $   $    #
+#  #   ##   #
+#############
+Author: Premysl Zika
+Title: Level 210
+Serial number: pz283
+Date: March 2012
+
+
+######### ####
+#   #   ###  #
+#   $  $  $  #
+## #####.##  #
+ #$## . ..* ##
+ # . $. **# #
+ #$#  .$..#$##
+## # ..*...$@#
+#  ###### ##$##
+#  $ $  $ $   #
+#  #     ##   #
+###############
+Author: Premysl Zika
+Title: Level 211 "Nut to crack"
+Serial number: pz284
+Date: March 2012
+
+
+ #########
+ #   .   #
+##* $.$ *#
+#  * * * ##
+# $ $.$ $ #
+#..*.*.*..#
+# $ $.$ $ #
+#  * * * ##
+##* $.$ *#
+ #   +   #
+ #########
+Author: Premysl Zika
+Title: Level 212
+Serial number: pz285
+Date: March 2012
+
+
+    #####
+   ## . ##
+   #  *  #
+ ### $.$ ###
+##  * * *  ##
+#  $ $.$ $  #
+#.*.*.*.*.*.#
+#  $ $.$ $  #
+### * * * ###
+  ## $.$ ##
+   ## * ##
+    # +##
+    ####
+Author: Premysl Zika
+Title: Level 213
+Serial number: pz286
+Date: March 2012
+
+
+  #####
+  #   #
+### # ###
+#       #
+#.$.$.$.#
+#$.$*$.$#
+#.$.$.$.#
+#$.$.$.$#
+#.$.$.$.#
+#   @   #
+#########
+Author: Premysl Zika
+Title: Level 214
+Serial number: pz287
+Date: March 2012
+
+
+#####   #####
+#   #   #   #
+# # ##### # #
+#           #
+###$.$.$.$# #
+  #.$.*.$.# #
+  #$.$.$.$# #
+  #.$.$.$.# #
+  #$.$.$.$  #
+  #   @   ###
+  #########
+Author: Premysl Zika
+Title: Level 215
+Serial number: pz288
+Date: March 2012
+
+
+########    ######
+#   #  #    #    #
+# #    #    #$$  #
+#   #  #    # $ ##
+###  $#######   #
+ #  # .......**@#
+##     ######   #
+#  #   #   ##$$ #
+#    # #   #  $ #
+#  #   #   #    #
+########   ######
+Author: Premysl Zika
+Title: Level 216
+Serial number: pz289
+Date: March 2012
+
+
+#####    #####
+#   #    #   #
+# # ###### # #
+#  $      $  #
+### $.$.$. ###
+  #$.$.$.$.#
+  # $.$.$. #
+  #$.$.$.$*#
+  # $.$.$. #
+  #$.$.$.$.#
+  # $.$.$. #
+ ###.$.$.$*###
+ # * .@.$.   #
+ # # #####.# #
+ #   #   #   #
+ #####   #####
+Author: Premysl Zika
+Title: Level 217
+Serial number: pz290
+Date: March 2012
+
+
+####
+#  ######
+#  *    #####
+#  #### ##  #
+## # $   $  #
+ # #  ...#  #
+ # ##### # ##
+ #     # #@#
+ ### #   # ##
+   #  *###  #
+   #   # $  #
+   # #*  #  #
+   #   ######
+   #####
+Author: Premysl Zika
+Title: Level 218
+Serial number: pz291
+Date: March 2012
+
+
+  #########
+  #       #
+###.#####.###
+# $.$ # $*$ #
+#  .  *  .  #
+#  *  #  .  #
+###*#####*###
+#  .  $  .  #
+# $*$$# $*$ #
+#  +  #  .  #
+#############
+Author: Premysl Zika
+Title: Level 219
+Serial number: pz292
+Date: April 2012
+
+
+       ####  ########  ########
+######## @#  #   #  #  #   #  #
+#         #  #      #  #      #
+#  ###### ##### ### ##### ### ##
+## #  ## $ ## $ ## $ ## $ ## $ #
+ # # ## $. # $. # $. # $. # $. #
+ # ### $. # $. # $. # $. # $. ##
+ # ## $. # $. # $. # $. # $. ##
+ # ## . ## . ## . ## . ## . ##
+ # ## ##### ### ##### ### ###
+ # #        ##        # # #
+ # #   ###  ##   ###  # # #
+ # ###################### ##
+ #                         #
+ #  ####################   #
+ ####                  #####
+Author: Premysl Zika
+Title: Level 220
+Serial number: pz293
+Date: April 2012
+
+
+       ####  ########  ########
+######## @#  #   #  #  #   #  #
+#         #  #      #  #      #
+#  ###### ##### ### ##### ### ##
+## #  ## . ## . ## . ## . ## . #
+ # # ## .$ # .$ # .$ # .$ # .$ #
+ # ### .$ # .$ # .$ # .$ # .$ ##
+ # ## .$ # .$ # .$ # .$ # .$ ##
+ # ## $ ## $ ## $ ## $ ## $ ##
+ # ## ##### ### ##### ### ###
+ # #        ##        # # #
+ # #   ###  ##   ###  # # #
+ # ###################### ##
+ #                         #
+ #  ####################   #
+ ####                  #####
+Author: Premysl Zika
+Title: Level 221
+Serial number: pz294/293 (variant)
+Date: April 2012
+
+
+  ###########
+  #         #
+ ## ####### ##
+##   ## ##   ##
+# $ $ ### $ $ #
+#  * $ # $ *  #
+#.*.*.. ..*.*.#
+#  * $ # $ *  #
+# $.$ ### $.$ #
+## . ## ## . ##
+ ## ####### ##
+  #    @    #
+  ###########
+Author: Premysl Zika
+Title: Level 222
+Serial number: pz295
+Date: April 2012
+
+
+      ######
+  #####    #
+  #   # ## ###
+  #     *.$* #
+  ## ##*.. # #
+ ##  ##.#. #@#
+## $## ...$# #
+# $  $ $   $ #
+#   #$#### ###
+#  ##       #
+#############
+Author: Premysl Zika
+Title: Level 223
+Serial number: pz296
+Date: April 2012
+
+
+#############################################################
+#  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+#   *    *  # **     *  # ***    *  # ***    *. #  *   $ *  #
+#  ** # * * #   * # *   # *   # *   #   *$# * * # * * # * * #
+##* * #$  *### *. # ***###**  # ** ### .* #  * ### ** # *@*##
+#   * #  *  #   * #  *  #   * # * * #  *  # * * #   * # * * #
+#   * # .**   **$ #  *    **  #  *     *  # .*  $  *  #  *  #
+#  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #  #
+#############################################################
+Author: Premysl Zika
+Title: Level 224 "Homage to laizhufu [Keyboard]"
+Serial number: pz297
+Date: April 2012
+
+
+     ####
+     #  #
+######  ##
+#  $ $   #
+#  # #*#$#
+##   . . #
+ #$#.#.#$#
+ #   + . ##
+ #$#.#.#  #
+ #   $ $  #
+ #  #######
+ ####
+Author: Premysl Zika
+Title: Level 225
+Serial number: pz298
+Date: April 2012
+
+
+   ####
+   #  #
+####.$##
+#      #
+# $#.# ###
+## . .   #
+ #$# #$$ #
+ #  .  ###
+ #@ ####
+ ####
+Author: Premysl Zika
+Title: Level 226
+Serial number: pz299
+Date: April 2012
+
+
+    ####
+    #  #
+  ###.$##
+###     #
+# $.#$# ###
+# .  *  . #
+### # #.$ #
+  #     ###
+  ##$*###
+   # @#
+   ####
+Author: Premysl Zika
+Title: Level 227
+Serial number: pz300
+Date: April 2012
+
+
+  ######
+  #    #
+  # ##$##
+  # .$  #
+  # . #@#
+  #$.$  #
+  # .$###
+  #$. #
+###..$#
+# $$. #
+#   . #
+#######
+Author: Premysl Zika
+Title: Level 228
+Serial number: pz301
+Date: April 2012
+
+
+  #########
+  #       #
+ ## ##### ##
+## $ ###   ##
+# $ $ # $ $ #
+#..*..$..*..#
+# $.$ # $.$ #
+###  ###   ##
+  # ##### ##
+  #   @   #
+  #########
+Author: Premysl Zika
+Title: Level 229
+Serial number: pz302
+Date: April 2012
+
+
+  #####
+  # . #
+  #$.$#
+  # . #
+###$.$###
+#   +   #
+# $ * $ #
+### . ###
+  #$.$#
+  # . #
+  #####
+Author: Premysl Zika
+Title: Level 230
+Serial number: pz303
+Date: April 2012
+
+
+  #####
+  # . #
+  #$.$#
+  # . #
+  #$.$#
+  # . #
+  #$.$#
+  # . #
+###$.$###
+#   +   #
+# $ * $ #
+### . ###
+  #$.$#
+  # . #
+  #$.$#
+  # . #
+  #$.$#
+  # . #
+  #$.$#
+  # . #
+  #####
+Author: Premysl Zika
+Title: Level 231
+Serial number: pz304
+Date: April 2012
+
+
+         ####
+         #  #
+##########  #
+#    $ $ $ $#
+#$$# # # #..#
+#. #+$ .....#
+#  # # # #..#
+#. $ $ $ $  #
+#$ ##########
+#  #
+####
+Author: Premysl Zika
+Title: Level 232
+Serial number: pz305
+Date: April 2012
+
+
+  #######
+  #  #  #
+###$.#.$###
+# .     . #
+# $ $.$ $ #
+###.#*#.###
+# $ $.$ $ #
+# .  @  . #
+###$.#.$###
+  #  #  #
+  #######
+Author: Premysl Zika
+Title: Level 233
+Serial number: pz306
+Date: April 2012
+
+
+#######
+#     #
+# $ $ #
+# $.$ #
+###.###
+  #.#####
+###.#   #
+#  .#   #
+# $    #####
+#  ### #   #
+####   #   #
+   #      #####
+   #  ### #   #
+   ####   #   #
+      #  @   #####
+      #  ### #   #
+      ####   #   #
+         #      #######
+         #  ### # #   #
+         ####   ###$$ #
+            # $.....  #
+            #  ####$$ #
+            ####  #   #
+                  #####
+Author: Premysl Zika
+Title: Level 234 "Joke problem"
+Serial number: pz307
+Date: April 2012
+
+
+            ####
+#####       #  #
+#   #########  #
+#  $ $ $ $ $  $#
+###.. . . . .. #
+  #$#########.$#
+ ##.. . . . .. ###
+ # $$ $ $@$ $ $  #
+ #  ##########   #
+ #  #        #####
+ ####
+Author: Premysl Zika
+Title: Level 235
+Serial number: pz308
+Date: April 2012
+
+
+   ####
+ ###  ###
+ #   $  ##
+ # $ @ $ #
+ ##$###  #
+##... ...#
+# $$#.#.##
+#   $ # ##
+## $#*#  #
+ #   *   #
+ ###   ###
+   #####
+Author: Premysl Zika
+Title: Level 236
+Serial number: pz309
+Date: April 2012
+
+
+########
+#      #
+# $.*  #
+##$## ##
+#  .. #
+#  *.$#
+## .. #
+ # ## #
+ #$@$$#
+ #    #
+ ######
+Author: Premysl Zika
+Title: Level 237
+Serial number: pz310
+Date: April 2012
+
+
+   #########
+   #   #   #
+   #       #
+   ## ###$##
+   ## #    #
+   # .#  . #
+   #$.## ###
+   # .#    #
+   #$.# .$ #
+   # .###$##
+####$.#  $ #
+#        $@#
+#   ###  ###
+##### ####
+Author: Premysl Zika
+Title: Level 238
+Serial number: pz311
+Date: April 2012
+
+
+    ######
+    #    #
+   ## ## ###
+   #  # .. #
+   #  # .. #
+   # $@##$##
+#### ##    #
+#   $   $  #
+#   ###  ###
+##### ####
+Author: Premysl Zika
+Title: Level 239
+Serial number: pz312
+Date: April 2012
+
+
+     #############
+     #           #
+  #### ######### #
+###  # #        $#
+#   .# #  $  $$$ #
+#  #.# ##$##  $  #
+##$#.*..  ## #$# ##
+ #@#....# #   $   #
+ #$#...*# #   #   #
+ #  .*..#$#########
+##$#### #  #
+#   $   $  #
+#   #####  #
+#####   ####
+Author: Premysl Zika
+Title: Level 240
+Serial number: pz313
+Date: April 2012
+
+
+    ####
+    #  # ####
+    # $###  #  #########
+    # ....$ #  #       #
+    # $##   #### $ $.$ #
+    #  ## ###  #####.###
+    # $##      #   #.###
+    #  #   #   #   #.  #
+   #####   # ####    $ #
+   #  ###### #  # ###  #
+   #         ####   ####
+####   #### @       #
+#  ### #  # ######  #
+#      #### #   #####
+#  .#   #   #   #  #
+###.#   #      ##$ #
+###.#####  ### ##  #
+# $ $ $ ####   ##$ #
+#       #  # $.... #
+#########  #  ###$ #
+           #### #  #
+                ####
+Author: Premysl Zika
+Title: Level 241
+Serial number: pz314
+Date: April 2012
+
+
+ ####
+ #  ############################
+ #                         ##  ##############
+ # ######################  ##               #
+ # #     #              # ### ############  #
+ # # ### # ############ #     #      #   # ##
+ # # # #   #########  # #  #    #### ##### #
+ # # # ##             # #### ####    #  ## #
+ # # #  # ########### #      #    #     ## #
+ # # #  # #####     # ######## #### ### ## #
+ # # #  #     #     # #        #  # # # ## #
+ # # #  #  #  ##### # # ########### # # ## #
+ # # ####### ##   # # # ##          # # ## #
+ # # #  ####      # # # ##  ######  # # ## #
+ # # #..      #   # # # ### #    ######  # #
+ # # #.#### # ####### # ###   ##         # #
+ # # #.#@ # # # #     # #    #    ######## #
+ # # #.# $$$# # # ##    #  # # ## #      # #
+ # # #.#    # # # #  ##### # # #  ######## #
+ # # #.# $$$# ### #        # # #           #
+ # # #.#    #     #######  # # ##########  #
+ # # #.# $$$#  #     #  ###  # #        ####
+ # # #      #### ##  #    # ## #
+ # # ########### ## #######    #
+ # #             ##          ###
+## ################  ####### #
+#  ######################### #
+#                            #
+###########################  #
+                          ####
+Author: Premysl Zika
+Title: Level 242 "Chaos (...as in the EU)"
+Serial number: pz315
+Date: May 2012
+
+
+           ############            ########
+   #########          ##############      #
+####         ######## #              #### #
+#    #########      #   ##############  # #
+# ####         #### ##                  # #
+# #    #########  # ## ################ # #
+# # #             # ## # ##########   # # #
+# # # ########### # ## ###        #   # # #
+# # # #@ ######## #  #     ###### #   # # #
+# # # #........   ## #  #       # ##### # #
+# # # #.##### ##   # #### ####  #     # # #
+# # # #.#      # # #      #    ###### # # #
+# # # #.# $$$$ # # ######## #       # # # #
+# # # #.# $  $ # #          # ####  # # # #
+# # # #.# $  $ # ############  # # ## # # #
+# # # #.# $  $ # #          ## ###    # # #
+# # # #.# $ $$## #  ####    ## #    ### # #
+# # # #.# $$$ #  ####  ######  #  # # # # #
+# # # #       #        ##     ### # # # # #
+# # # ################ ##  #      # # # # #
+# # #               ## ### # ###  # # # # ##
+# # #  ###########  ##     #   #### # # #  #
+#   ####  #      # ##   #  ###  #   # # ## #
+##        #####  # #  # #### ## # #####  # #
+ # ###### ##  #  # # ##    #  # #        # #
+ # ##   #     ####   ##### ####    ####### #
+ # ##      ## ##    ##   # #  ####  #  #   #
+ # ##    # ## ##  # ###### #        #### ###
+ # ####### ## ### #      # # ########  # #
+ # #       ##     ###### # #           # #
+ # # #######   #  #    # #    ######## # #
+ # #         # ######### #### #        # #
+ #    ########         #      # #####    #
+ #  # #      ######### ######## #   # ####
+ #### #              #          #   # ##
+    # ###############################  #
+    #                                  #
+    #  #################################
+    ####
+Author: Premysl Zika
+Title: Level 243 "EU - chaos and tragedy"
+Serial number: pz316
+Date: May 2012
+
+
+  ####
+###  #####
+#        #
+# .$   $ #
+##*####$##
+# ... . #
+# *.*.# #
+##.##   #
+##$#### #
+# $ $ $$#
+#   @   #
+#########
+Author: Premysl Zika
+Title: Level 244
+Serial number: pz317
+Date: May 2012
+
+
+ #########
+##   +   ##
+#  $.*.$  #
+# $## ##$ #
+# .#   #. #
+#.* $$$ *.#
+# .## ##. #
+# $## ##$ #
+#  $.*.$  #
+#    *    #
+###########
+Author: Premysl Zika
+Title: Level 245
+Serial number: pz318
+Date: May 2012
+
+
+  ####
+###  #########
+#            #
+#  $ $ $ $ $ #
+##.######## ##
+# .... . .  #
+# *## $ $ $*#
+##.######## #
+ #     @    #
+ ############
+Author: Premysl Zika
+Title: Level 246
+Serial number: pz319
+Date: May 2012
+
+
+       ####
+       #  #
+       #$ #
+ #######  #
+ #  #  #$ #
+ #  $  #  #####
+ #  #  #$ #   #
+ #  #       $ #
+##  #####  #$ #
+#   ####### $ #
+# #$......*.*.#
+#   ####### @ #
+#####     #####
+Author: Premysl Zika
+Title: Level 247
+Serial number: pz320
+Date: May 2012
+
+
+  #####
+###   #
+# $ # ####
+# #  *   #
+#  $#.##$##
+###@#.. $ #
+#  $..#   #
+# # #   ###
+#   #####
+#####
+Author: Premysl Zika
+Title: Level 248
+Serial number: pz321
+Date: May 2012
+
+
+   #########
+   #   #   #
+#### $   $ ####
+#  ##.# #.##  #
+# $  .# #.  $ #
+#  ##*# #*##  #
+##   . @ .   ##
+#  ##*#.#*##  #
+# $   #.#   $ #
+#  ## # # ##  #
+#### $   $ ####
+   #   #   #
+   #########
+Author: Premysl Zika
+Title: Level 249
+Serial number: pz322
+Date: May 2012
+
+
+  #############
+  #  #  #  #  #
+###$.#$.#.$#.$###
+# $           $ #
+# . * * * * * . #
+###********** ###
+# .  * *@* *  . #
+# $           $ #
+###$.#.$#$.#.$###
+  #  #  #  #  #
+  #############
+Author: Premysl Zika
+Title: Level 250
+Serial number: pz323
+Date: May 2012
+
+
+      ###
+      #*#
+      # #
+      # #
+     #####
+    ##.#.##
+    #  #  #
+  ###$*#*$###
+  # .     . #
+  # $ $.$ $ #
+#####.#*#.#####
+# . . $.$ . . #
+# $ $  @  $ $ #
+#####$.#.$#####
+    #  #  #
+    ### ###
+     ## ##
+     #   #
+     #####
+Author: Premysl Zika
+Title: Level 251 "Christmas tree"
+Serial number: pz324
+Date: May 2012
+
+
+  #####
+### . ###
+# $ . $ #
+#  . .  #
+###$.$###
+# $ . $ #
+# .$.$. #
+### . ###
+# $$.$$ #
+# . . . #
+###$.$###
+# $ . $ #
+# .$.$. #
+### . ###
+# $$.$$ #
+# . . . #
+###$*$###
+  # @ #
+  #####
+Author: Premysl Zika
+Title: Level 252
+Serial number: pz325
+Date: May 2012
+
+
+      ####
+      #  #
+  #####$ #####
+  #  $ $.$ $ #
+  # ........ #
+  # .$ $ $$.$#
+###$.$#### . ###
+#  .. #  #$.$$ #
+# $$.$#  # ..  #
+### . ####$.$###
+  #$*$$ $ $. #
+  # ........$#
+  # $ $.$ $  #
+  ##### $#####
+      #@ #
+      ####
+Author: Premysl Zika
+Title: Level 253
+Serial number: pz326
+Date: May 2012
+
+
+  #####   #####
+  #   #####   #
+  #           #
+#### ####### ####
+# $   $ # $   $ #
+# . * . # . * . #
+### * ##### * ###
+  # *   +   * #
+  # ********* #
+  #     $     #
+  #$.#$.#.$#.$#
+  #  #  #  #  #
+  #############
+Author: Premysl Zika
+Title: Level 254
+Serial number: pz327
+Date: May 2012
+
+
+  ############
+  #          #
+  # ######## #
+  # #  ##  # #
+  # #.$##$.# #
+  #     .    #
+  # ******** #
+### *      * ###
+# . * #$+# * $ #
+# $ * #  # * . #
+### * #### * ###
+  # *  $   * #
+  # ******** #
+  #     .    #
+  #####$ #####
+      #  #
+      ####
+Author: Premysl Zika
+Title: Level 255
+Serial number: pz328
+Date: May 2012
+
+
+  ####
+  #  #
+  #$.###########
+  #          $ #
+  # ******** . #
+  # *      * ###
+  # * #.$# * #
+  # * #  # * #
+  # * #### * #
+### *      * #
+# . ******** #
+# $    @     #
+###########$.#
+          #  #
+          ####
+Author: Premysl Zika
+Title: Level 256
+Serial number: pz329
+Date: May 2012
+
+
+  ############
+  #          #
+### ******** ###
+#   *      *   #
+# *** #.$# *** #
+# *   #  #   * #
+# * ######## * #
+# * . #  # . * #
+# * $ #  # $ * #
+# * ######## * #
+# *   #  #   * #
+# *** #$.#  ** #
+#   *      *   #
+### ******** ###
+  #    @#    #
+  ############
+Author: Premysl Zika
+Title: Level 257
+Serial number: pz330
+Date: June 2012
+
+
+####
+#  #
+#.$#################
+#                  #
+# **************** #
+# *              * #
+# * ************ * #
+# # *          * # #
+# # * ******** * # #
+# # # *      * # # #
+# # # # #$.# # # # #
+# # # # #  # # # # #
+# # # # #### # # # #
+# # # #      # # # #
+# # # ######## # # #
+# # #          # # #
+# # ############ # #
+# #              # #
+# ################ #
+#         @        #
+####################
+Author: Premysl Zika
+Title: Level 258 "Triple blockade"
+Serial number: pz331
+Date: June 2012
+
+
+   #############
+   #   #   #   #
+#### $   .   $ ####
+#  ##*#$### #*##  #
+# $*   .   .   *$ #
+#  ####*# #*####  #
+##   $ .# #. $ $ ##
+#  # ##.# #.## #  #
+# *#.  . + .  .#* #
+#  #.## # # ##.#  #
+## $.$  # #  $.  ##
+#  ####$# #$####  #
+# $*   .   .   *$ #
+#  ##*# ###$#*##  #
+#### $       $ ####
+   #   #   #   #
+   #############
+Author: Premysl Zika
+Title: Level 259
+Serial number: pz332
+Date: June 2012
+
+
+ #######
+ #     #
+ #$$#$ ##
+ #  ... #
+ #$#.#. #
+ # #.#. #
+## #$#.$###
+#@$ $ $   #
+#   . #   #
+###########
+Author: Premysl Zika
+Title: Level 260
+Serial number: pz333
+Date: June 2012
+
+
+  ####
+  #  ######
+  #$    $ ##
+  #.  .... #
+  #$ #.##.$#
+  #  #.##  #
+###$ #.## $###
+#  $ $*$  $  #
+#   # + ##   #
+##############
+Author: Premysl Zika
+Title: Level 261
+Serial number: pz334
+Date: June 2012
+
+
+  ####
+  #  #####
+  #$ $ $ ##
+  #  .... #
+  #$ #.#.$#
+  #  #.#  #
+###$ #.# $###
+#  $ $.$    #
+#   ##+ #   #
+#############
+Author: Premysl Zika
+Title: Level 262
+Serial number: pz335
+Date: June 2012
+
+
+#######
+# . . #
+#  $. ###
+# # . $ #
+#.$*#$$@#
+# # * $ #
+#   . ###
+#######
+Author: Premysl Zika
+Title: Level 263
+Serial number: pz336
+Date: June 2012
+
+
+ ######
+ #    #
+##$## ###
+# $     #
+# #$..* #
+#@#. **##
+# #$... #
+# $     #
+##$### ##
+ #     #
+ #######
+Author: Premysl Zika
+Title: Level 264
+Serial number: pz337
+Date: June 2012
+
+
+      ####
+      #  #
+   ####$.####
+  ##        ##
+ ##  ******  ##
+##  **    **  ##
+#  **   #  **  #
+# **  #  #  *. #
+## ##### #### ##
+#       @    $ #
+#   ########   #
+#####      #####
+Author: Premysl Zika
+Title: Level 265
+Serial number: pz338
+Date: June 2012
+
+
+ ####
+ # .#########
+ #$         #
+ # *******  #
+ # *     * ##
+ # * *** * #
+ # * *@* * #
+ # * *** * #
+## *     * #
+#  ******* #
+#          #
+#########  #
+        ####
+Author: Premysl Zika
+Title: Level 266
+Serial number: pz339
+Date: June 2012
+
+
+####
+#  #
+#.$#####
+#      #
+# ***  #
+#$.@* ##
+# *** #
+#     #
+####  #
+   ####
+Author: Premysl Zika
+Title: Level 267
+Serial number: pz340
+Date: June 2012
+
+
+   ##### ##### #####
+ ###   ###   ###   ###
+ #      $     $      #
+ # ## ##### ##### ## #
+ # ## #   #*#   #$## #
+ # # *...* . *...* #$#
+ # #   # # . # #   # #
+## ##### ##### ##### ##
+# $     $  @  $     $ #
+#   ###   ###   ###   #
+##### ##### ##### #####
+Author: Premysl Zika
+Title: Level 268
+Serial number: pz341
+Date: June 2012
+
+
+  #########
+  # . # . #
+  #$.$#$.$#
+###   $ . ###
+# $ * * $ . #
+# .$.$$ .$$ #
+### . #$. ###
+  # + # * #
+  ##### . #
+      #####
+Author: Premysl Zika
+Title: Level 269
+Serial number: pz342
+Date: June 2012
+
+
+    #####
+    #   #
+   ##$#.##
+   #     #
+  ## *** ##
+ ##  * *  ##
+ #  * * *  ##
+## * * * *  #
+# * * @ * * #
+#  * * * *  #
+##  * * *  ##
+ ##  * *  ##
+  ## *** ##
+   #     #
+   ##$#.##
+    #   #
+    #####
+Author: Premysl Zika
+Title: Level 270
+Serial number: pz343
+Date: June 2012
+

@@ -1,0 +1,511 @@
+Date of Last Change: 
+
+Set:       GRIGoRusha Star
+Copyright: © Evgeny Grigoriev (GRIGoRusha)
+Email:     grigr@yandex.ru
+Homepage:  http://grigr.narod.ru/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+#########
+#   #   #
+#   $   #
+## #$# ##
+## # . #
+#..*+*$#
+#  $#  #
+###    #
+  ######
+Title: Star forces
+Author: GRIGoRusha
+Comment:
+18.09.05
+Comment-End:
+
+2
+  #####
+  # . #
+  # . ##
+ ##$.$ #
+ # .*..#
+## $#$ #
+# $ @ $#
+#   #  #
+########
+Title: Space rocket
+Author: GRIGoRusha
+Comment:
+19.09.05
+Comment-End:
+
+3
+ ######
+ #.   ###
+##*## $ #
+# *   @ #
+# .*#$  #
+##    ###
+ #  ###
+ ####
+Title: Milky Way
+Author: GRIGoRusha
+Comment:
+18.09.05
+Comment-End:
+
+4
+    ####
+    #  ###
+##### $$ #
+# $ $  $ #
+# #.# #$ #
+#  .  #@ #
+###.  $$ #
+ # .###  #
+ # .... ##
+ ########
+Title: Big L
+Author: GRIGoRusha
+Comment:
+09.10.05
+Comment-End:
+
+5
+    #####
+#####   #
+#     # #
+# $$#*. #
+##$@.* ##
+#  $*. #
+#   #.##
+###   #
+  #####
+Title: Flower
+Author: GRIGoRusha
+Comment:
+18.10.05
+Comment-End:
+
+6
+ #########
+ #  *.#  #
+ #$...** #
+ # .#.#. #
+## #     #
+#  $ #   #
+#@$$$$ ###
+#  $ # #
+####   #
+   #####
+Title: Two Life
+Author: GRIGoRusha
+Comment:
+03.01.06
+Comment-End:
+
+7
+#########
+#   #####
+# #     #
+# #     #
+#***## ##
+# *. #$##
+# *#  $ #
+#.*.  $ #
+# @#    #
+#########
+Title: Tonus
+Author: GRIGoRusha
+Comment:
+08.01.06
+Comment-End:
+
+8
+    ####
+#####  ##
+#  $@$  #
+#  $$$#.#
+## # ...#
+ # # ...#
+## #$# ##
+#   $  #
+#   ####
+#####
+Title: The Cup
+Author: GRIGoRusha
+Comment:
+09.01.06
+Comment-End:
+
+9
+#####
+#   ######
+# $      #
+##$# $$$ #
+#  ## $ ##
+# $  .#.##
+#  #..*.@#
+##   .*. #
+ #########
+Title: Tabu
+Author: GRIGoRusha
+Comment:
+10.01.06
+Comment-End:
+
+10
+  ####
+### @####
+# $$    #
+#  $ #$$##
+#  ##  $ #
+## #   $ #
+# ...*#  #
+# ....  ##
+#########
+Title: Tort
+Author: GRIGoRusha
+Comment:
+12.01.06
+Comment-End:
+
+11
+      #####
+#######   #
+#   ##  $ #
+# .... # ##
+## #$ #@$#
+ #  .*** ##
+ ##$# # $ #
+  #       #
+  ##   ####
+   #####
+Title: Tamerlan
+Author: GRIGoRusha
+Comment:
+12.01.06
+Comment-End:
+
+12
+   #####
+  ###  #
+  #   $##
+ ## # $ ##
+ #....#. #
+ # #$**..#
+##  $@$  #
+#  $###$##
+#       #
+#  ######
+####
+Title: Tramplin
+Author: GRIGoRusha
+Comment:
+14.01.06
+Comment-End:
+
+13
+#### ####
+#  ###  #
+#       #
+#  ### $##
+##$$+*.$ #
+## #**.$ #
+#   ..#  #
+# # #   ##
+#   #####
+#####
+Title: Cosmos
+Author: GRIGoRusha
+Comment:
+14.01.06
+Comment-End:
+
+14
+    #####
+ ####.  #
+ #  .*  #
+ #  #+ ##
+ #$$**.#
+ #   $ #
+## ### ##
+#    $  #
+#   #   #
+#########
+Title: First Goal
+Author: GRIGoRusha
+Comment:
+15.01.06
+Comment-End:
+
+15
+    #####
+#####   ##
+#  #   $ #
+#  # $$$ #
+#$$   #  #
+#.* ##. ##
+#@*.... #
+######  #
+     ####
+Title: Toporiki
+Author: GRIGoRusha
+Comment:
+19.06.06
+Comment-End:
+
+16
+  ########
+  #. ##  #
+  #...   #
+ ## .##  #
+ # $.$ $##
+## ##$#@ #
+#    $ $ #
+#     #  #
+##########
+Title: The cluster
+Author: GRIGoRusha
+Comment:
+22.06.06
+Comment-End:
+
+17
+ ########
+##  ..* #
+#  #... #
+# # .#.##
+# #   $##
+#  $  $ #
+## $##$ #
+ #$   $ #
+ #   #@ #
+ ########
+Title: Whirlwind
+Author: GRIGoRusha
+Comment:
+24.06.06
+Comment-End:
+
+18
+ #########
+## .     #
+# .*.$ $ #
+#...### ##
+#.. $@$  #
+#.# $$$$ #
+# ### $  #
+#     ####
+#######
+Title: Korona
+Author: GRIGoRusha
+Comment:
+27.06.06
+Comment-End:
+
+19
+#####
+#   #####
+#    $  #
+## #..  #
+#  .*#$ ##
+# # *+$  #
+#  $.* $ #
+##  ######
+ ####
+Title: The Flame
+Author: GRIGoRusha
+Comment:
+01.07.06
+Comment-End:
+
+20
+     ####
+  ####  #
+  #  $  #
+  #  $  #
+### .## #
+# ...## ##
+# $$.$ $@#
+# .###   #
+#### #####
+Title: The Bend
+Author: GRIGoRusha
+
+21
+   ######
+ ### . .#
+ #@$ .#.#
+##$#$...#
+#  $ ##.##
+# #   $  #
+#  $ $ $ #
+#   ######
+#####
+Title: Four
+Author: GRIGoRusha
+Comment:
+06.07.06
+Comment-End:
+
+22
+  ####
+ ## .#####
+##  $  @ #
+#  #$# $ #
+#....# ###
+# $ $ $#
+##  ## #
+ #  .  #
+ #######
+Title: Travel Art
+Author: GRIGoRusha
+Comment:
+09.07.06
+Comment-End:
+
+23
+   #######
+ ###@#   #
+ # $ $   #
+## #$## ##
+#   ..* ##
+# # .*#$ #
+# # #.*  #
+#     #  #
+##   #####
+ #####
+Title: MacroCosmos
+Author: GRIGoRusha
+Comment:
+21.07.06
+Comment-End:
+
+24
+ ########
+ # @##  #
+ # $##$ #
+ # $    #
+##$##$# #
+#  $  # #
+#  #.   #
+## ...#*#
+ ##. .  #
+  #######
+Title: Up-Down
+Author: GRIGoRusha
+Comment:
+31.07.06
+Comment-End:
+
+25
+     ####
+######  ##
+# $  $$  #
+# ...  # #
+##$ ##   #
+ #...$$$##
+ #.# $   #
+ #.  # @ #
+ #########
+Title: Many Angles
+Author: GRIGoRusha
+Comment:
+31.07.06
+Comment-End:
+
+26
+    ####
+ ####  #
+ #  #$ #
+ #   $.#
+ #  #$.#
+###$. .#
+#  $.# #
+# #$.  #
+#  @####
+#####
+Author: GRIGoRusha
+Title: Overturn
+Comment:
+24.01.08
+Comment-End:
+
+27
+    ####
+#####  ##
+#    .. #
+#   #.# #
+## # ** #
+ # # ..###
+## #$$$  #
+#   $@$  #
+#   ######
+#####
+Author: GRIGoRusha
+Title: Good House
+Comment:
+25.01.08
+Comment-End:
+
+28
+   ####
+####  ###
+#       #
+# .*#$  #
+##$.* $##
+# .*.$ #
+#  ## @#
+#  ##  #
+########
+Author: GRIGoRusha
+Title: Infinity
+Comment:
+30.01.08
+Comment-End:
+
+29
+ #######
+ #  #@ #
+ #  $**#
+ #  #..#
+## $$*.##
+#   #. .#
+# $ $   #
+##   ####
+ #####
+Author: GRIGoRusha
+Title: The Third Heaven
+Comment:
+31.01.08
+Comment-End:
+
+30
+ ####
+ #  #####
+ # .... #
+ #$.# . #
+ # .#$.##
+##$# $  #
+# @  $  #
+# $$$ ###
+#    ##
+######
+Title: Choise-Point
+Author: GRIGoRusha

@@ -1,0 +1,644 @@
+Date of Last Change: 
+
+Set:       Microcosmos
+Copyright: © Aymeric du Peloux
+Email:     aymeric.du-peloux@gadz.org
+Homepage:  http://membres.lycos.fr/nabokos
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+#### ####
+#  ###  #
+# $ * $ #
+#   +   #
+### .$###
+  # . #
+  #####
+Title: Microcosmos 1
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4
+Comment-End:
+
+2
+#################
+#  #  #  #  #   #
+#.$   #  #.$    #
+#  #.$ .$   #   #
+# @#  #  #  #   #
+#################
+Title: Microcosmos 2
+Author: Aymeric du Peloux
+Comment:
+difficulté: 3.5
+Comment-End:
+
+3
+   ####
+####  #
+#  $  ##
+# #$#  #
+#  $   #
+#.###  #
+#.#### #
+#. @   #
+########
+Title: Microcosmos 3
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4
+Comment-End:
+
+4
+      ####
+####### .#
+# $ $ $$ #
+#   @ ...#
+###   ####
+  #####
+Title: Microcosmos 4
+Author: Aymeric du Peloux
+Comment:
+difficulté: 3
+Comment-End:
+
+5
+     ####
+ #####  #
+ # $ $  #
+ #.# #. #
+ # $@$ ##
+##.# #.##
+#  * *  #
+#   #   #
+#########
+Title: Microcosmos 5
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+6
+ #####
+ #   #
+ # # ##
+## *  ##
+# $*$  #
+#  * # #
+## .  +#
+ #######
+Title: Microcosmos 6
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+7
+ #####
+ #   #
+ # #$##
+## @  #
+# .#$ #
+# .  ##
+# .#$#
+##   #
+ #####
+Title: Microcosmos 7
+Author: Aymeric du Peloux
+Comment:
+difficulté: 3.5
+Comment-End:
+
+8
+  ####
+###  ###
+#   .  #
+#  $ $ #
+##.#+#.#
+ # $ $ #
+ ###  ##
+   ####
+Title: Microcosmos 8
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+9
+    ####
+#####  #
+# $   $#
+#  .#. #
+## ### ##
+ # .#.  #
+ #$ @ $ #
+ #  #####
+ ####
+Title: Microcosmos 9
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+10
+ #####
+##   #
+#  #.##
+# $$. #
+## @  #
+ # #. #
+ # $ ##
+ # ###
+ #  #
+ #  #
+ #  #
+ ####
+Title: Microcosmos 10
+Author: Aymeric du Peloux
+Comment:
+difficulté: 3.5
+Comment-End:
+
+11
+  #####
+  #+  ###
+ ##*# $ #
+ # *    #
+## * # ##
+#  *   #
+#   ####
+#####
+Title: Microcosmos 11
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+12
+######
+#    ##
+#  *  #
+# $*$ #
+## * ##
+ # * #
+ # . #
+ ##+##
+  ###
+Title: Microcosmos 12
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4.5
+Comment-End:
+
+13
+ #####
+##   ###
+# ...* #
+# #@$# #
+# $    #
+### #$##
+  #   #
+  #####
+Title: Microcosmos 13
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+14
+ #####
+ #   #
+ #.#$##
+ #    #
+ #.#$ #
+ #   ##
+ #.#$#
+##   #
+# .#$#
+# @  #
+#  ###
+####
+Title: Microcosmos 14
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4
+Comment-End:
+
+15
+  ####
+###  #
+#    ##
+#  #  ###
+## . . .#
+##$##.#$##
+# $  @ $ #
+#   ##   #
+##########
+Title: Microcosmos 15
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5.5
+Comment-End:
+
+16
+ ####
+ #  #####
+ #   $  #
+ #$# #  #
+##  +  ##
+#  #.#$#
+#  $.  #
+### . ##
+  #####
+Title: Microcosmos 16
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+17
+#### ####
+#  ###  #
+#  $ $  #
+# $#.## #
+##  .   ##
+ # .@.#$ #
+ ## #    #
+  #   ####
+  #####
+Title: Microcosmos 17
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+18
+  #######
+ ##  #  #
+ # * *  #
+##   #  #
+#  *#+ ##
+#     $#
+#####  #
+    ####
+Title: Microcosmos 18
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+19
+ #######
+ #  #  #
+ #$ + $#
+ # .#. #
+##$.#.$##
+# $ . $ #
+#   #   #
+#########
+Title: Microcosmos 19
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+20
+    #####
+#####   ##
+#   #$#  #
+#   $.@# #
+## ##..  #
+#  #.  ###
+#  $ $ #
+#  #####
+####
+Title: Microcosmos 20
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+21
+  #####
+  #   ###
+###*# $ #
+# $ @ # #
+# # ..  #
+# . #$###
+##$.  #
+ #  ###
+ ####
+Title: Microcosmos 21
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+22
+     ####
+ #####  #
+ # $    #
+## #.##$#
+#  # @. #
+#  .$ # ##
+## ##.#  #
+ #    $  #
+ #  ######
+ ####
+Title: Microcosmos 22
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5
+Comment-End:
+
+23
+#####
+#   ###
+#.#$  #
+# @$* #
+#  $  #
+##.#.##
+ #   #
+ #####
+Title: Microcosmos 23
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+24
+     #####
+ #####   #
+ # $ . # #
+ # # $$  #
+## ## # ##
+#  $.$. #
+# ##   ##
+#  .@.##
+#######
+Title: Microcosmos 24
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5
+Comment-End:
+
+25
+     ####
+  ####  #
+  #..   #
+### $@# ##
+#  $ #.. #
+# $   $  #
+####  ####
+   ####
+Title: Microcosmos 25
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5
+Comment-End:
+
+26
+  ########
+  #   #  #
+  #   $. #
+ ###$##  #
+ # $.## ##
+##  .*   #
+#  #$#   #
+# .@ #####
+##   #
+ #####
+Title: Microcosmos 26
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+27
+ #####
+ #   ###
+## #$ @#
+# . $  #
+#...#$##
+# #  $ #
+#  #   #
+##   ###
+ #####
+Title: Microcosmos 27
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+28
+     ####
+    ##  #
+   ## . #
+#### $  #
+# $ $.@##
+#  .  ##
+#######
+Title: Microcosmos 28
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4
+Comment-End:
+
+29
+   ####
+ ###  #
+## @$ #
+# .$  #
+# .* ##
+# .$ #
+##  ##
+ ####
+Title: Microcosmos 29
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5
+Comment-End:
+
+30
+######
+#   .#
+# . @#
+# # ###
+# # $ ##
+# *.   ##
+#### $$ ##
+   ##    #
+    ##   #
+     #####
+Title: Microcosmos 30
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+31
+  #####
+###   #
+#  *# ##
+# #  * #
+# *  # #
+## #+  #
+ #   $##
+ ###  #
+   ####
+Title: Microcosmos 31
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5
+Comment-End:
+
+32
+  #####
+  #   #
+###*# ##
+#    * #
+# #  # #
+# * +  #
+##  #$##
+ ##   #
+  #####
+Title: Microcosmos 32
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6.5
+Comment-End:
+
+33
+  ####
+###.@###
+#      #
+# *..# #
+## #$$ #
+ #    ##
+ ##$# #
+  #   #
+  #####
+Title: Microcosmos 33
+Author: Aymeric du Peloux
+Comment:
+difficulté: 7.5
+Comment-End:
+
+34
+ #########
+ #  ##   #
+##  *  # #
+# .$#*@  #
+#   *   ##
+#########
+Title: Microcosmos 34
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5
+Comment-End:
+
+35
+########
+#   *  #
+# +*** #
+##  $  #
+ ##   ##
+  ##  #
+   ####
+Title: Microcosmos 35
+Author: Aymeric du Peloux
+Comment:
+difficulté: 6
+Comment-End:
+
+36
+ ####
+ #  #
+##.@#
+# .$#####
+# $$ $  #
+# ..    #
+####  ###
+   ####
+Title: Microcosmos 36
+Author: Aymeric du Peloux
+Comment:
+difficulté: 5
+Comment-End:
+
+37
+     ####
+######  #
+# $  $  #
+# #  .# ##
+#  . #.@ #
+##$# *   #
+ #   #####
+ #####
+Title: Microcosmos 37
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+38
+  #####
+ ##   ###
+ #      #
+ #*#*#* #
+ # #@$ ##
+## # #.#
+#      #
+#   #  #
+########
+Title: Microcosmos 38
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8.5
+Comment-End:
+
+39
+  #####
+###   ##
+# $$.. #
+#  .@# #
+## #   #
+ # $* ##
+ ###  #
+   ####
+Title: Microcosmos 39
+Author: Aymeric du Peloux
+Comment:
+difficulté: 8
+Comment-End:
+
+40
+  #####
+###   ##
+#  $#  #
+#  .@.$##
+##.# #  #
+ # $    #
+ ##  ####
+  ####
+Title: Microcosmos 40
+Author: Aymeric du Peloux
+Comment:
+difficulté: 4.5
+Comment-End:

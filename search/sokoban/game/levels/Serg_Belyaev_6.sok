@@ -1,0 +1,542 @@
+Date of Last Change: 
+
+Set:       Serg Belyaev 6
+Copyright: © Serg Belyaev
+Email:     svb@sandy.ru
+Homepage:  http://svb-sokoban.narod.ru/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+501
+     ####
+######..#
+#    $..#
+# $#  ..#
+#  ## ###
+# $ *.. ##
+#  # #   #
+# $# $$  #
+#  ##@$$ #
+#####   ##
+    #####
+Title: svb 501
+Author: Serg Belyaev
+
+502
+   #####
+  ##   ##
+  # $.  #
+###$+#. ###
+#  *$.$.$ #
+#   .#*$  #
+###     ###
+  #######
+Title: svb 502
+Author: Serg Belyaev
+
+503
+ ####
+ #@ ####
+ #$$   #
+ #.#.  #
+##.## ##
+# $    #
+# #    #
+#    ###
+######
+Title: svb 503
+Author: Serg Belyaev
+
+504
+ ########
+ #@  ...#
+##*##$$ #
+#   . ####
+# $ #    #
+# #$*  # #
+#   #    #
+##########
+Title: svb 504
+Author: Serg Belyaev
+
+505
+ #####
+ #   ##
+ #  . ###
+##$.**  #
+#  ..*$ #
+#  $ $@##
+###  ###
+  ####
+Title: svb 505
+Author: Serg Belyaev
+
+506
+ #####
+ #   ##
+ #  *@###
+## .#*  #
+# $.*.$ #
+#   $  ##
+###  ###
+  ####
+Title: svb 506
+Author: Serg Belyaev
+
+507
+ #######
+ #  #  #
+ #   * #
+ # .$. #
+ # # #$##
+ # *.*  #
+## # $$ #
+#@**  # #
+#.  #   #
+#########
+Title: svb 507
+Author: Serg Belyaev
+
+508
+ #######
+ #  #  #
+ # $ .$#
+ # ..*@#
+ # #$#$##
+## . *  #
+# $#.#$ #
+# $. .  #
+#       #
+#########
+Title: svb 508
+Author: Serg Belyaev
+
+509
+ #######
+##     ##
+#  ###  #
+# $+*.$ #
+# $# #  #
+##   $ ##
+##$#.# ##
+#  ...$ #
+#  #    #
+#########
+Title: svb 509
+Author: Serg Belyaev
+
+510
+#########
+#       #
+#  ##$# #
+#. $    #
+#  ##.$ #
+# $ .*# #
+###.*+$ #
+  #.### #
+  # $ $ #
+  #.    #
+  #######
+Title: svb 510
+Author: Serg Belyaev
+
+511
+###########
+#  #@  #  #
+#   *$.$$ #
+# *$.$*$. #
+# # # # # #
+# ...$... #
+###$ $  ###
+  #    ##
+  ######
+Title: svb 511
+Author: Serg Belyaev
+
+512
+  ####
+  #@ ###
+### $  ##
+#    #$ #
+# # $.. #
+#.$  #* #
+####  .##
+   #####
+Title: svb 512
+Author: Serg Belyaev
+
+513
+#########
+#+$ ..$ #
+# $ #  .#
+###   # #
+#..$$$$ #
+#  $.  .#
+#########
+Title: svb 513
+Author: Serg Belyaev
+
+514
+#########
+# .   . #
+# $#$ $ #
+#. *  #.#
+# #$* $ #
+#  .*#$@#
+## .   ##
+ #######
+Title: svb 514
+Author: Serg Belyaev
+
+515
+#########
+#   . * #
+# # * # #
+# $ . $@#
+#  #*#$##
+# $ .  #
+#   *.##
+#######
+Title: svb 515
+Author: Serg Belyaev
+
+516
+#########
+#   #   #
+#.$.*.# #
+# #.*.# #
+# $...$ #
+#  #$#  #
+#$ $ $$ #
+#@$ .   #
+#########
+Title: svb 516
+Author: Serg Belyaev
+
+517
+#########
+#  $.   #
+# $ . $ #
+#  #$#  #
+##   $ ##
+## ###$##
+#@$.*. .#
+#  . .  #
+#########
+Title: svb 517
+Author: Serg Belyaev
+
+518
+#########
+#@$.. $ #
+# $ .$  #
+##$#.# ##
+ #  .. #
+## #.#$##
+#  $*   #
+#   . $ #
+#########
+Title: svb 518
+Author: Serg Belyaev
+
+519
+    ####
+#####  ####
+#         #
+# $# # #  #
+#.  $..*..#
+# # #$# #$#
+# $* .  $@#
+###  ######
+  ####
+Title: svb 519
+Author: Serg Belyaev
+
+520
+    ####
+  ###@ ##
+###  $$ ##
+#... # ..#
+# $.$  $ #
+### $#$ .#
+  #     ##
+  #######
+Title: svb 520
+Author: Serg Belyaev
+
+521
+ #######
+##@ .. #
+# $$.* #
+#   #.##
+# $ #. #
+#  $$  #
+##   ###
+ #####
+Title: svb 521
+Author: Serg Belyaev
+
+522
+ #######
+## ... ##
+#   *.* #
+# $ #.# #
+# $ #*  #
+#  $$@$ #
+##   ####
+ #####
+Title: svb 522
+Author: Serg Belyaev
+
+523
+########
+# $ .  #
+# ..*$ #
+## $*@##
+# $ .$ #
+#   .  #
+########
+Title: svb 523
+Author: Serg Belyaev
+
+524
+  ####
+  #  #########
+###  $@$ $   #
+# $ #$#$ #$# #
+#  .. .....$ #
+#####  #  .  #
+    #  #  ####
+    #######
+Title: svb 524
+Author: Serg Belyaev
+
+525
+##### #####
+#   ###@  #
+#  $$ $$  #
+#       $ #
+#   #$#####
+####.  #
+   #.. #
+   #.**#
+   #.. #
+   #####
+Title: svb 525
+Author: Serg Belyaev
+
+526
+    ####
+#####+ #
+#   *. #
+#  $#. #
+#   $ .#
+##$ $  #
+ #  ####
+ ####
+Title: svb 526
+Author: Serg Belyaev
+
+527
+    ####
+#####@ #
+# $ $$$#
+#   # .#
+# ...* #
+##*.## #
+# $    #
+#      #
+########
+Title: svb 527
+Author: Serg Belyaev
+
+528
+    ####
+#####  #
+#      ##
+# ..#$$ #
+# *.    #
+##*.## ##
+#@ $  $#
+#   #  #
+########
+Title: svb 528
+Author: Serg Belyaev
+
+529
+  ######
+###    #
+#  *.. ##
+# .$#$. #
+# *. .  #
+##$ ## ##
+#@$$$  #
+#   #  #
+########
+Title: svb 529
+Author: Serg Belyaev
+
+530
+   #####
+   #   #
+#### # ####
+# $  #  $ #
+# ...$... #
+# $ $+$ $ #
+#### . ####
+   #$.$#
+   #   #
+   #####
+Title: svb 530
+Author: Serg Belyaev
+
+531
+     ####
+######  #
+#   $   #
+#. #    #
+#  ##*###
+#  *... ##
+#  #  #$@#
+#  #   $ #
+#  ## $ ##
+#####  ##
+    ####
+Title: svb 531
+Author: Serg Belyaev
+
+532
+ #######
+##@ #  #
+# $ *.$#
+#  # . ##
+## #.#$ #
+## # .$ #
+#  *.#$ #
+#  .$.$ #
+#       #
+#########
+Title: svb 532
+Author: Serg Belyaev
+
+533
+  ######
+###    #
+# $ $*.###
+#...#.$+.#
+# $.$  $ #
+##$.# $###
+#   $  #
+#   #  #
+########
+Title: svb 533
+Author: Serg Belyaev
+
+534
+##### #####
+#   ###@  #
+# $.. $ $ #
+## .$.$ * #
+## #####$##
+# . ###   #
+#   $     #
+# . ### . #
+##### #####
+Title: svb 534
+Author: Serg Belyaev
+
+535
+###########
+#  .##    #
+#  . .*$. #
+##$* . $. #
+## #####$##
+#@$     $ #
+#         #
+###########
+Title: svb 535
+Author: Serg Belyaev
+
+536
+   #######
+ ###  .  ##
+ # $$# #  #
+ #   . ##$##
+## #. . #  #
+#@$  #.$.  #
+# $#.$ ##  #
+# $.* ######
+###   #
+  #####
+Title: svb 536
+Author: Serg Belyaev
+
+537
+   #####
+####   #
+# $  #$#
+# #..$ ##
+# .**.  #
+##.. #$ #
+# .#$ $ #
+#    $@##
+###   ##
+  #####
+Title: svb 537
+Author: Serg Belyaev
+
+538
+   #####
+####   #
+#  $  $#
+#  .#$@##
+# .## $ #
+##.*.$  #
+# .#.#  #
+#    $ ##
+###   ##
+  #####
+Title: svb 538
+Author: Serg Belyaev
+
+539
+     #######
+ #####     #
+ #@$ $ $#$ #
+ #*# # $ $ #
+ #.$.  #   #
+##.# #.#####
+# .*. . #
+#   #   #
+#########
+Title: svb 539
+Author: Serg Belyaev
+
+540
+#########
+#@ ##   ###
+# $    $  #
+#. ### ## #
+#.$ ## .  #
+## $# .. ##
+#     #.##
+# $$$##.#
+###     #
+  #######
+Title: svb 540
+Author: Serg Belyaev

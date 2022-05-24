@@ -1,0 +1,2226 @@
+Date of Last Change: 
+
+Set:       Remodel Club
+Copyright: © Evgeny Grigoriev (GRIGoRusha)
+Email:     grigr@yandex.ru
+Homepage:  http://grigr.narod.ru/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+    ####
+    #  ######
+    #  $ $  ###    ####
+    #   $     #   ##  #
+#####*#*##$$  #  ## $ #
+#     $ $   $ # ##    #
+#  #$    $ $##### $$ ##
+##$# ####$......#   ##
+#  $   # $..**.## ###
+#  $#  # $$ #.##.   #
+##     #    #.#+* # #
+ #     ######.##..$ #
+ ####### # $..##.####
+         # # *..*.#
+         #   .#.  #
+         ######$# #
+              #   #
+              #####
+Title: Mas Sasquatch 49c
+Author: David W. Skinner and GRIGoRusha
+Comment:
+3 boxes and 1 wall added
+Comment-End:
+
+2
+ ####         ####
+ #  ###########  #
+ #...            #
+ #.#.####$#$###  #
+ #.#.#  #        #
+ #   # ##$## $ ###
+ ##  # #... $ #  #
+  # ## #.#.#     #
+### ####.#*##$#  #
+#  $##   # @  # ##
+#  $ # $ # ####  #
+## # #$#$#$ ##...#
+ #          $ .#.#
+ #$## # # ## $.#.#
+ #  $ $ $   $  $ #
+ #   #############
+ #####
+Title: MP 20b
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+1 wall added
+Comment-End:
+
+3
+ #############
+ #     #     #
+## * * * * * ##
+#   * * * *   #
+# ## * * * ## #
+# ### * * ### #
+# #### + #### #
+# ##  * *  ## #
+# ## * * * ## #
+#   * * * *   #
+## * * * * * ##
+ ####  $  ####
+    ##   ##
+     #  ##
+     ####
+Title: novembre 2001ter
+Author: François Marques and GRIGoRusha
+Comment:
+2 walls added
+Comment-End:
+
+4
+#################
+#       #       #
+# * * * * * * * #
+#  * * * * * *  #
+# # * * * * * # #
+# ## * * * * ## #
+# ### * * * ### #
+# # ## * * ## # #
+# ##### + ##### #
+#   #  * *  #   #
+### # * * * # ###
+  #  * * * *  #
+  # * * * * * #
+  ####  $ #####
+     ##   ##
+      #  ##
+      ####
+Title: novembre 2001ter5
+Author: François Marques and GRIGoRusha
+Comment:
+7 boxes and 3 walls added
+Comment-End:
+
+5
+ ######             ######
+##    ###############    ##
+# * * * * $ $.$ $ * * * * #
+#  $.$ . $.$ . $.$ . $.$  #
+# *.$.*.*.$.*.*.$.*.*.$.* #
+#  $.$ . $.$ . $.$ . $.$  #
+##$ * $.$ $ $#$ $ $.$ * $##
+ #.*...#..*..#..*..#...*.#
+ #$ * $.$ $ $#$ $ $.$ * $#
+ # $.$ . $.$ . $.$ . $.$ #
+ #$.$.$*$.$.*.*.$.$*$.$.$#
+ # $.$ . $.$ * $.$ . $.$ #
+ #* * $.$ * *$* * $.$ * *#
+ # ...###..* @ *..###... #
+ #* * $.$ * *$* * $.$ * *#
+ # $.$ . $.$ * $.$ . $.$ #
+ #$.$.$*$.$.*.*.$.$*$.$.$#
+ # $.$ . $.$ . $.$ . $.$ #
+ #$ * $.$ $ $#$ $ $.$ * $#
+ #.*...#..*..#..*..#...*.#
+##$ * $.$ $ $#$ $ $.$ * $##
+#  $.$ . $.$ . $.$ . $.$  #
+# *.$.*.*.$.*.*.$.*.*.$.* #
+#  $.$ . $.$ . $.$ . $.$  #
+# * * * * $ $.$ $ * * * * #
+##    ###############    ##
+ ######             ######
+Title: Sasquatch VI 47h
+Author: David W. Skinner and GRIGoRusha
+Comment:
+18 boxes added
+Comment-End:
+
+6
+    #########
+    #   #   #
+    # $     #
+  #### ###  #
+  #  # ### ##
+###  # ## $ #
+# $ $ $##.  #
+#   #$ ..**.#
+## ##@ #.*.*#
+# $ $ ###...#
+#   # $   ###
+###   #####
+  #####
+Title: Monthly July 1998 remodel
+Author: Mic and GRIGoRusha
+Comment:
+2 walls added
+Comment-End:
+
+7
+              ####
+  #############  #
+  #   $  $ $ $ $ #
+  #  #$#       # #
+  # $  @  #### $ #
+  #  ##$# #### # #
+  # $# $  #  # $ #
+  #  # $ # $ # # #
+  # ## ## $ .#.# #
+  #$    #$ #.#.# #
+### ### $   ...  #
+#  ...###### ###$#
+# #*#.        ...##
+#  .#.##### ####* #
+##  $     $  .....#
+ #  ###############
+ ####
+Title: MP 13a
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+8
+########## ####
+#   ##   ###  ##
+# $   $ $ $@$  #
+##$### ## # #  #
+# *  # #  #.  ##
+#.*..#   $$*.$#
+#  ..###  #.. #
+### ##  # #.. ##
+# $$ # $  #.#  #
+#       #      #
+######  ####  ##
+     ####  ####
+Title: MP 09c
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+1 box added, 1 target moved
+Comment-End:
+
+9
+      ########
+      #      #
+      # $$ $ ####
+      # $ $$ #  #
+     ###    $   #
+     #  #### # $#
+ #####$      ## ##
+ #  ## $$######  #
+ #*.    *.* $ $  #
+##..####...     ##
+#  #  $ $##### $#
+#    $## *...#  #
+####  ## #...# $#
+   #@$## #...   #
+  ##  ## ##    $#
+  #..*#     #   ##
+  #...# $ $ $ $  #
+  #.#.# #######  #
+  #.#*$       $ ##
+  #. .###########
+  #####
+Title: MP 101c
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+4 boxes added
+Comment-End:
+
+10
+ #####
+##   # ####
+#    ###  #
+#  # @#   #
+##$####   ######
+# ... .  ##    ##
+# ... .#    ##  #
+####$# #####  # ##
+   # #       $#  #
+   # # $ $ $$  # #
+   #  #####  $ # #
+   ##      #   # #
+    ######  ###  #
+         ##     ##
+          #######
+Title: Mas Sasquatch 31a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+11
+  ########
+ ##.... @#
+ #  #..$ #
+## #  # ##
+#  #$ # #
+# $   # ##
+### $##  #
+  #   $$ #
+  #   #  #
+  ########
+Title: Sasquatch IV 11a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+12
+   ####
+   #  #######
+   #*.      #
+  ##..#### $##
+  # *.#  # $ ####
+  # *. $ #   $  #
+  #  $ # ##  # $#
+  # ####..## #@ #
+  # # ..*.# $$ $#
+ ## #  #...  #  #
+ #.*.# ### #### ##
+##.*.$ # $ # $ $ #
+#.*..    $ #  $  #
+#...## #####$$ $ #
+##### $ $ $ $ $  #
+    #            #
+    ##############
+Title: Bagatelle II 2e
+Author: David Holland and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+13
+#################################
+#               #.......*.....*.#
+# $$$$$ $$$$$$ $#.$..#.*.#.***..#
+# $   $      #$ #$$.*****#*#.$#.#
+# $$$ $ $$$$$   $.*.*.*.*.......#
+#   $ $   $ $ $ #.#**...*#*#*.# #
+# $$$ $ $   $##..*....*.*....#  #
+# $ $ $ $$$  #####..#.#.#*.**** #
+#@    $$ $ $$$    .#..#.*....#. #
+# $$$ $ $$   ###$*.*..*.##**.*. #
+# $        $$$ $ **#$#...*..*## #
+# $ $$$ $  $ #   .*...#***.*..* #
+# $ $ $ $$ $   # #**..#..#.#*.* #
+# $ $    $  ##$$ #.##.#.*#..*.# #
+# $ $ $ $ $$$ $ $ $...*..**.#*# #
+# $$$$$$$$$     $ #$*.#.**....* #
+# $      $  $$$    .#.*..#..*** #
+# $$$$$$ $$ $ $$$#$****.*#**#.* #
+#                #......        #
+#################################
+Title: SokoBig 2a
+Author: Howard Abed and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+14
+#########
+#       ##
+# $$$$#  #
+##       ##
+###### #  #####
+#     .#$ #   #
+# # #*# $ $$  #
+#   *.#.###   #
+### #...@## $##
+#   #.#*..* $ #
+# # $...#*# $ #
+#   ###...*   #
+###   $*#$#$$ #
+  ### #.    ###
+    #   #####
+    #####
+Title: novembre 2002c
+Author: François Marques and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+15
+#####
+#   ########
+#        $ #
+##.#####   #
+##.#   ## ##
+# .   $## #
+# .## @##$#
+##.##  ## ##
+ #.###   $ #
+ #   $ $   #
+ #####  ####
+     ####
+Title: Monthly January 2002 remodel
+Author: Mic and GRIGoRusha
+Comment:
+4 targets moved
+Comment-End:
+
+16
+#########
+#...    #
+#. .$.  #
+## ###  #
+ #  $  ##
+ # $$$##
+ #  $@#
+ #  ###
+ ####
+Title: Sasquatch 9a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+17
+      ########
+ ######      ##########
+## $     ###          ##
+# $ $ ## #  #########  #
+#  $  #              # #
+# $ $ # #  ######### # #
+#  $  #  # #. . . .  # #
+# $$$ # #    ... . .## #
+#  $  # # # . . . . #  #
+##$ $## #  #### # #   ##
+ #   #@ #       #  ####
+ ######  #####  #  #
+      ##     #  #  #
+       #####  ##  ##
+           ##    ##
+            ######
+Title: Sasquatch 27a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+18
+         ####
+   #######  ####
+   #         $ ##
+####$ #### ###  ##
+#   $ #  # #  #  #
+# # $ # ....$@ # #
+# #   #..### $ # #
+# # $#.*..  #  # #
+# #  #...#$  # # #
+# #$ #.## $$ $ # #
+# #  #..*    ##  #
+# #$$## #  ##   ##
+# #     ###   ###
+#  ####$    ###
+##      #####
+ ########
+Title: Sasquatch III 33v1a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+3 boxes and 1 wall added
+Comment-End:
+
+19
+         ####
+    ######  ####
+   ##        $ ##
+####  #### ###  ##
+#   $ #..#.#  #  #
+# # $ #.... $@ # #
+# #   #..### $ # #
+# # $#....  #  # #
+# #  # $ #$  # # #
+# #$ # ## $$ $ # #
+# #  #..*    ##  #
+# #$$## #  ##   ##
+# #     ###   ###
+#  ####$    ###
+##      #####
+ ########
+Title: Sasquatch III 33v2a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+2 boxes and 2 walls added
+Comment-End:
+
+20
+    ####
+   ##  ####
+   # $   .########
+   # $ # .   $ $ #
+#### ### .#### # #
+#  ....#$ #  # # #
+# #..$ # .#$ # # #
+#  ##  $$$@$ # # #
+##   ### #   # # #
+ ###   #  ## # # #
+   ### # ...     #
+     # #$*.*$#  ##
+     # # ...$ ###
+     # #$ #   #
+     # $ ######
+     #  $ #
+     ##   #
+      #####
+Title: Sasquatch III 43f
+Author: David W. Skinner and GRIGoRusha
+Comment:
+1 box and some walls added
+Comment-End:
+
+21
+  ####  ####
+  #  ####  ####
+###     $ $   #
+#    # $  *.*.##
+# $ ###### #.*.#
+##   #    $ .. #
+ # $$ $$@ #...##
+ #   #  #######
+ ####   #
+    #####
+Title: Sasquatch IV 22b
+Author: David W. Skinner and GRIGoRusha
+Comment:
+3 boxes added
+Comment-End:
+
+22
+      ######
+      #    #
+      # @  ###
+####  #.$$   #
+#  ####..#.#*#####
+# $ $ ##.*.*     #
+#    ....*.#$$   #
+###### ##*## #####
+     #  $    #
+     #### ####
+       #  #
+       #  #####
+     ### $    #
+     #  $ $   #
+     # #$# ####
+     #     #
+     #######
+Title: Sasquatch 10c
+Author: David W. Skinner and GRIGoRusha
+Comment:
+5 boxes added
+Comment-End:
+
+23
+      #####
+  #####   #####
+ ##   $. .$   ##
+ # $ $.$#$.$ $ #
+ #  #.$.$.$.#  #
+ # $. .$.$. .$ #
+##$.$.#.$.#.$.$##
+# .$.$.$.$.$.$. #
+#  #$.$.@.$.$#  #
+# .$.$.$.$.$.$. #
+##$.$.#.$.#.$.$##
+ # $. .$.$. .$ #
+ #  #.$.$.$.#  #
+ # $ $.$#$.$ $ #
+ ##   $. .$   ##
+  #####   #####
+      #####
+Title: Sasquatch VI 38a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+4 boxes added
+Comment-End:
+
+24
+       #####
+  ######   #
+  #  $ $$ $##
+  # ## # $  #
+  #     $   #
+  # ###$# ###
+ ##.#   # #
+ #..* #   #
+ #..* # ###
+ #..* # ###
+##$#### $ #
+#      .. #
+# @ #######
+#####
+Title: Mario 17a
+Author: Mario Bonenfant and GRIGoRusha
+Comment:
+1 box moved
+Comment-End:
+
+25
+#####   ##### #####
+#   #####   ###.. #
+#         # # $.. #
+##$##### $#    # ##
+ # #   #   ##### ##
+ # # .. #  #.  #  #
+ # ##.#. $$#...   #
+ #  #  ### ##*##  #
+ # $#  $ ...# ##  #
+ #  #  $$ #$#..#  #
+ #  ####  @ *. #  #
+ # $   ##   #. #  #
+ #  $ $  #######  #
+ # # $   #        #
+ #  $ $ $  $ $ #  #
+ #  ###############
+ ####
+Title: MP 27b
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+4 boxes added
+Comment-End:
+
+26
+     ######
+ #####    #
+## $   $$ #
+# $  ##   #
+# $##  #$ #
+# $ $$ #  #
+# .....#$ #
+##@#*#* $ #
+ #.....#$ #
+ #...**#  #
+ #  $    ##
+ ####  ###
+    ####
+Title: Sasquatch V 23b
+Author: David W. Skinner and GRIGoRusha
+Comment:
+1 box and 1 wall added
+Comment-End:
+
+27
+   ####  #####
+   #  ####   #
+   #         #
+   #  #####$###
+   #  #  #    #
+   #  #  #$## ##
+#####*####  #  #
+#...*. # $     #
+#..*.*..   $#  #
+##.######$# # ##
+#    $ $ $  #$#
+#   ## @ $    #
+##########  ###
+         ####
+Title: SokoIdea 44a
+Author: Mic and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+28
+#####  ####
+#   ####  #
+# $     $ #
+## #$$##  #
+#     ## ##
+#   ####..#
+##$$$.....#
+ # @####  #
+ ####  ####
+Title: SokoIdea 53a
+Author: Mic and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+29
+        #######
+        #  #  #
+        #     #
+        #  #  #
+    ######$# ##
+ ####  #  .#  #
+ #   $ ..*### #
+## #$  #....# #
+#  $  ##.*..$ #
+# $#####..#.###
+#     $..*# #
+### #   #  $##
+  # ######   #
+  #   $    $@#
+  # $ ### ####
+  # # #    ##
+  # $ $ #   #
+  ####$ $ # #
+     #  #   #
+     ########
+Title: Ziko 33a
+Author: ZIKO and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+30
+         #####
+##########@  #
+#    #    $# #
+# ## # $$  $ #
+# #     # $# #
+# $$ ####  $ ###
+###  #   $ $   #
+###*$#  $ # $$ #
+#... ### #### ##
+#.....    #   #
+#.*####   # ###
+#.....##### ##
+#####.     $ #
+    ######   #
+         #####
+Title: Ziko 27a
+Author: ZIKO and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+31
+  #########
+  #.*.#.*.#
+  #*.*.*.*#
+  #.*.*.*.#
+  #*.*.*.*#
+  #.*.*.*.#
+  ###$.$###
+    #   #
+###### ######
+#     $     #
+# $ $ $ $ $ #
+## $ $ $ $ ##
+ #$ $ $ $ $#
+ #   $@$   #
+ #  #####  #
+ ####   ####
+Title: Original 48c
+Author: Thinking Rabbit and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+32
+  #####
+### + ###
+#  * *  #
+# * * * #
+## * * *#
+ #* * * #
+## * * *#
+# * * * #
+#   $   #
+###    ##
+  #  ###
+  ####
+Title: novembre 2001x
+Author: François Marques and GRIGoRusha
+
+33
+          ###
+         ## ##
+        ##   ##
+       ## $.  ##
+      ##  .$.$ ##
+     ## $.$.$.  ##
+    ##  .$.$.$.$ ##
+   ## $.$.$.$.$.  ##
+  ##  .$.$.$.$.$.$ ##
+ ## $.$.$.$+$.$.$.  ##
+##  .$.$.$.$.$.$.$.$ ##
+#  .$.$.$.$#$.$.$.$.  #
+## $.$.$.$.$.$.$.$.  ##
+ ##  .$.$.$.$.$.$.$ ##
+  ## $.$.$.$.$.$.  ##
+   ##  .$.$.$.$.$ ##
+    ## $.$.$.$.  ##
+     ##  .$.$.$ ##
+      ## $.$.  ##
+       ##  .$ ##
+        ## # ##
+         ## ##
+          ###
+Title: Yms12c
+Author: York Shen and GRIGoRusha
+Comment:
+4 boxes and 2 walls added
+Comment-End:
+
+34
+        #####################
+       ##                   ##
+      ## $.$.$.$.$.$.$.$.$.  ##
+     ##  .$.$.$.$.$.$.$.$.$.$ ##
+    ## $.$.$.$.$.$.$.$.$.$.$.  ##
+   ##  .$.$.$.$.$.$.$.$.$.$.$.$ ##
+  ## $.$.$.$.$.$.$.$.$.$.$.$.$.  ##
+ ##  .$.$.$.$.$.$.$.$.$.$.$.$.$.$ ##
+## $.$.$.$.$.$.$.$.$.$.$.$.$.$.$.  ##
+#  .$.$.$.$.$.$.$.$.$.$.$.$.$.$.$.$ #
+##.$.$.$.$.$.*.$#$*$#$.*.$.$.$.$.$.@#
+# $.$.$.$.$.$.$.$.$.$.$.$.$.$.$.$.  #
+##  .$.$.$.$.$.$.$.$.$.$.$.$.$.$.$ ##
+ ## $.$.$.$.$.$.$.$.$.$.$.$.$.$.  ##
+  ##  .$.$.$.$.$.$.$.$.$.$.$.$.$ ##
+   ## $.$.$.$.$.$.$.$.$.$.$.$.  ##
+    ##  .$.$.$.$.$.$.$.$.$.$.$ ##
+     ## $.$.$.$.$.$.$.$.$.$.  ##
+      ##  .$.$.$.$.$.$.$.$.$ ##
+       ##                   ##
+        #####################
+Title: Yms12x
+Author: York Shen, Monry and GRIGoRusha
+Comment:
+development level yms12,
+general idea from level monry16
+Comment-End:
+
+35
+ #########
+ #       ###
+## #####.  ##
+#.$....*.#$ #
+#.*.. ## #  #
+#...##   $  #
+# #$ $$ ##$ #
+# $ @#   # ##
+# $#$# $$$  #
+#    #    # #
+#   ####    #
+#####  ######
+Title: Ziko 22a
+Author: ZIKO and GRIGoRusha
+Comment:
+2 walls added
+Comment-End:
+
+36
+         ####
+     #####  #####
+     #  .#$   $ #
+     # #. $$$ @ ##
+     # $.#$   $  #
+     ###.#  $ $  #
+       #.  ##$ ###
+ #######*###.$ #
+ # $   ..*..####
+## #$#$$....#
+#  $ $  .#..#
+#     $  #..#
+#  ##########
+####
+Title: Sasquatch 25a
+Author: David W. Skinner and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+37
+ ####### #######
+##     # #     ##
+# $$ $ ### $ $$ #
+#   $ $ # $ $   #
+# $ $ #.#.#.$ $ #
+## $#...#...#$ ##
+ #. .*.*+*.*  .#
+ #$##...#...##$#
+ # ### ### ### #
+ #     ###     #
+ ####$  $  $####
+    #  ###  #
+    #### ####
+Title: SokoTime 56a
+Author: Mic and GRIGoRusha
+Comment:
+4 boxes added
+Comment-End:
+
+38
+    ########
+    # ..   #
+##### ..## #
+#   ##*### #
+# $   .### ####
+## ##...# $   #
+##$##...  $ # #
+#    .*.# # # #
+# $ ##.## # # #
+# $ #  ## # $ #
+###$  ##  $  ##
+#   $$# $###@#
+# #$  $      #
+#    #  ######
+#########
+Title: SokoMaxx 39c
+Author: Mic and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+39
+########     ####
+#..##  #######  #
+#..  $      $.. #
+#..### $ #####. #
+#  ##  #$#   #$##
+# $## $#   @ #  #
+#  ##    ##$##  #
+# $#####.##  #  #
+#  #..$...   ##$##
+# $#..* .#### $  #
+#  ##.#### $ $ $ #
+#  ## ..##  $ $  #
+## ## ...# $ $ $ #
+#  ###*** $ $ $  #
+#     ...# $ $ $ #
+##########       #
+         #########
+Title: MP 28c
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+5 boxes added
+Comment-End:
+
+40
+  ############
+  #  #  ##   #
+  #     @    #
+ ## ### ### #####
+ #...## ###...  #
+ ##...# ##...##$###
+  ##...  ..#*$ $  #
+####$###$#...  #  #
+#    ##  #### ##$ #
+# $# ## ##  #     #
+##      ########$ #
+ # ###      $  $  #
+ # #  ## #  #  $ ##
+ # $ $   $ # $$ $ #
+ #  $ $ #$##      #
+ ###      #########
+   ########
+Title: MP 26b
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+4 boxes added
+Comment-End:
+
+41
+         ##########
+  ###### #  #...  #
+ ##    # #  *...# #
+ #   $ # #  #..   #
+ #   ###### ## # ##
+ # #       $#    #
+ # # ##$##  # $  #
+ # $ ##   $ #### #
+ # # #  ## $#  #$#
+ # #$# $@##.#.   #
+ # #   $$# ...#$ #
+## ### # # ...#  #
+#  #  $  ######  #
+#    $         $ #
+##############  ##
+             ####
+Title: MP 23a
+Author: Marcus Palstra and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+42
+#######  #### ####
+#  #  #  #  ###  #
+# $$  #### $ $   #
+#  #$ #  # $  $  #
+## #@    #   ## ##
+ # #$ #$ #   $  #
+ # #  # ## $ #  #
+ # #### ####$####
+ #  $ # #    #
+ # # .*...$# #
+## # .  $. # ###
+#.* ##   ##  * #
+#..* #####  $  #
+#...$     ...* #
+# ..############
+######
+Title: Maelstrom 15f
+Author: David Holland and GRIGoRusha
+Comment:
+8 walls added
+2 target moved
+Comment-End:
+
+43
+ #####     #####
+##   ##   ##   ##
+#  $. ## ## .$* #
+# $.$. ### * .$ #
+# .$*$. $ . . . #
+## .$.$ # $. * ##
+ ## .$. # *$. ##
+  ##   ###   ##
+   #$### ###$#
+  ## $ ###   ##
+ ## *   # .$. ##
+## * . $# $. * ##
+# *   * $ . * * #
+# $. * ### * .  #
+# @$* ## ## * $ #
+##   ##   ##   ##
+ #####     #####
+Title: SokoTime 90d
+Author: Mic and GRIGoRusha
+Comment:
+4 boxes added
+Comment-End:
+
+44
+ #####
+##   ##
+# $ * ##
+#  . * ##
+# * . * ##
+## * . $ ##
+ ## * $ $ ##
+  ## $ @ * ##
+   ## $ . * ##
+    ## * . * #
+     ## * .  #
+      ## * * #
+       ##   ##
+        #####
+Title: SokoTime 68a
+Author: Mic and GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+45
+#######
+#     #
+#  #  ##
+#. * * #
+# #$#$ #
+#. $ . #
+#$#$#  #
+#+ * . #
+#  # ###
+#    #
+######
+Title: Kevin 1159a
+Author: Kevin B. Reilly and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+46
+#####
+#   #####
+# # #   #
+# $   $ #
+## #.# ##
+#  #.# #
+# $...$#
+## #.#@##
+ # #.#  #
+ #$ $ $ #
+ #   #  #
+ ########
+Title: Twisty 1d
+Author: Martin P Holland & Marek Letrab & GRIGoRusha
+Comment:
+Taken 4 walls and 4 floors - Marek Letrab
+Some changes - GRIGoRusha
+Comment-End:
+
+47
+       #####
+       #   ##
+    #### $  #
+    #  ##$# ###
+    # $$..#   ##
+#####  #..###  #
+#  ### #..# $  #
+# $$   #..@ #  #
+#  #   #$#### ##
+## ####        #
+ #        ##   #
+ #  ############
+ ####
+Title: GRIGoRusha 101a
+Author: GRIGoRusha and Nakamiya
+
+48
+######    #######
+#  ..#    #  #  #
+#  ..###### $#  #
+## #.  $ ##  $  #
+ # .$$$   # ##$##
+ #.#..#$ $  #  #
+ #.#.## ### $  #
+ #.#   $ ## #  #
+ #.### @ ## ##$#
+ #.   ####     #
+ #.$$    $  $# #
+ #. ########   #
+ ####      #####
+Title: Mas Sasquatch 26c
+Author: David  W. Skinner and GRIGoRusha
+Comment:
+2 boxes and 4 walls added
+Comment-End:
+
+49
+     ####
+######..#
+#   ....#
+# $#  ..#
+#  ## ###
+# $  $  ##
+#  # #$ @#
+# $# $ $ #
+#  ## $ ##
+#####   #
+    #####
+Title: Mas Sasquatch 2c
+Author: David  W. Skinner and GRIGoRusha
+Comment:
+3 boxes added
+Comment-End:
+
+50
+   #####
+  ## @ ######
+  #  $   #  #
+  #$ # $ $$ #
+###  ###$#  #
+#..*.#   # ##
+#.*..# #$#  ###
+##.*.... ##   #
+# .##.##$#### ##
+#   #. #  $  $ #
+#   $$$# #  $  #
+#####. # ##   ##
+    #*    #####
+   ##.$ # #
+   # $    #
+   #   ####
+   #####
+Title: Mas Sasquatch 6h
+Author: David W. Skinner and GRIGoRusha
+Comment:
+6 boxes added and some changes
+Comment-End:
+
+51
+       #################
+      ##               ##
+     ##  * * * * * * *  ##
+    ##  * * * * * * * *  ##
+   ##  * * * * * * * * *  ##
+  ##  * * * * *** * * * *  ##
+ ##  * * * * * * * * * * *  ##
+##  * * * *** * * *** * * *  ##
+#  * * * * * * * * * * * * *  #
+#.* * *** * * *$* * * *** * *@#
+#  * * * * * * * * * * * * *  #
+##  * * * *** * * *** * * *  ##
+ ##  * * * * * * * * * * *  ##
+  ##  * * * * *** * * * *  ##
+   ##  * * * * * * * * *  ##
+    ##  * * * * * * * *  ##
+     ##  * * * * * * *  ##
+      ##               ##
+       #################
+Title: Monry 16y
+Author: Monry, GRIGoRusha, François Marques, York Shen
+Comment:
+8 boxes added
+Comment-End:
+
+52
+       #################
+      ##               ##
+     ##  * * * * * * *  ##
+    ##  * * * * * * * *  ##
+   ##  * * * * * * * * *  ##
+  ##  * * * * *#* * * * *  ##
+ ##  * * * * * * * * * * *  ##
+##  * * * *#* * * *#* * * *  ##
+#  * * * * * * * * * * * * *  #
+#.* * *#* * * *$* * * *#* * *@#
+#  * * * * * * * * * * * * *  #
+##  * * * *#* * * *#* * * *  ##
+ ##  * * * * * * * * * * *  ##
+  ##  * * * * *#* * * * *  ##
+   ##  * * * * * * * * *  ##
+    ##  * * * * * * * *  ##
+     ##  * * * * * * *  ##
+      ##               ##
+       #################
+Title: Monry 16z
+Author: Monry, GRIGoRusha, François Marques, York Shen
+Comment:
+8 walls added
+Comment-End:
+
+53
+  #####
+###   ##
+#  $$  #
+# $..$ #
+#  **  #
+##$..$##
+ # ** #
+ # ..@#
+ ######
+Title: Monthly October 2002 remodel
+Author: Mic, Hir and GRIGoRusha
+Comment:
+1 wall added
+Comment-End:
+
+54
+      ######  ####
+####### @  ####  #
+#    $ $# *...  $##
+# #$ ... #...*    #
+#   #.#*# *.####$##
+###$ . . #..#     #
+ #  $ #$# $    #$##
+ ##$  # ##  $#$   #
+ #   #  .*.#   #$##
+ ##$   #...# #$   #
+###  $# #*# $  #$##
+# $ #  .....   #  #
+# # $ $ $ $ $     #
+#   ###############
+#####
+Title: MP 19h
+Author: Marcus Palstra, GRIGoRusha and York Shen
+Comment:
+7 boxes added
+Comment-End:
+
+55
+####  #####
+#  ####   #
+#         #
+# @.# #$$##
+###.# #  #
+ # .*.# ##
+ # $ $   #
+ #####   #
+     #####
+Title: Monthly June 2003 remodel
+Author: Mic and GRIGoRusha
+
+56
+    #######
+######    ###
+#  # $$ $   #
+#        ## #
+#  ######## ###
+## #      $$  #
+ # #  $  #..$ #
+ # ## $###.#  #
+##$###.# ..####
+#...#..# $$  #
+#.. $..$$@#$ #
+##     #     #
+ #############
+Title: Ziko 18b
+Author: ZIKO and GRIGoRusha
+Comment:
+2 walls added
+Comment-End:
+
+57
+         #####
+      ####   #
+   ####    # #
+####  $ # $  ##
+#   .#.$.$.$. #
+# # $.$.$.$.# #
+#  $.$.$.#.$.$##
+## .$.#.$.$.$  #
+ # #.$.$$$.$.# #
+ #  $.$.$.#.$. ##
+ ##$.$.#.$.$.$  #
+  # #.$.$.$.$ # #
+  # .$.$.$.#.   #
+  ##  $ # $  ####
+   #$#  @ ####
+   #   ####
+   #####
+Title: dh2 6c
+Author: David Holland and GRIGoRusha
+Comment:
+2 boxes added
+Comment-End:
+
+58
+        #####
+    #####   ###
+   ## $   #   #####
+   # $ $    #   $ #
+####  $   # $ $ $ #
+#  # ####### ##   #
+#        $ $$ #   #
+#  ####### #  $  ##
+##$#  #  .*.# # ##
+ # $$  @$...#   #
+ #  $ ####.##.###
+ ##    ##..... #
+  ##   ##..... #
+   #############
+Title: Perfect 278c
+Author: Yasuhiro Morita and GRIGoRusha
+
+59
+         ####
+         #  #
+         #  ########
+   #######  #      #
+   #   # # # # #   #
+   # $     $  ## $$#
+  ### $# #  # #    ##########
+  #  $  #  $# # $$ #   # #  #
+ ## #   #     ###    $ # #$ #
+ #  #$ # # ###  #  # $$# #  #
+ #    $#  $  #   ## $  # # ##
+####$ $ #    ## $#   $   ...#
+#  #    ### # $   ###  ###.*#
+#     ##  $$ @  $     ##....#
+#  ##  ##   $ ##$#  ##....*.#
+## #  $  # # $ #  ##....*.###
+## ##  $  # $ # .#....*.###
+#    $ ####   # ....*.###
+#   #  #  #  #  ..*.###
+########  ###########
+Title: Perfect 280b
+Author: Unknown and GRIGoRusha
+
+60
+#############
+#.*.*.*.*.*.#
+#* $ $$$ $ *#
+#.$.$.$.$.$.#
+#* $.$+$.$ *#
+#.$.$ $.$.$.#
+#* $.$*$.$ *#
+#.$.$.$ $.$.#
+#* $.$*$.$ *#
+#.$.$.$.$.$.#
+#* $ $ $ $ *#
+#.*.*.*.*.*.#
+#############
+Title: Monry 10c
+Author: Monry and GRIGoRusha
+
+61
+      #########
+   ####.......###
+   #  ..$ ##.*. #
+ ### $##$###... #
+ #    #   ##*#*##
+## $#$# $ #..#. #
+#    $ #$ #..*$ #
+# #$$# #   ..#  #
+# # $   ###.##$@#
+# #   $    . #  #
+# $ #$ ### * #$ #
+# # $ $ $ #.$$  #
+# $ $      .$  ##
+##  ############
+ ####
+Title: ZikoFirst 42a
+Author: ZIKO and GRIGoRusha
+
+62
+    ####
+ ####  ####
+ #   *    #
+ #  .*#.. #
+ # #   # ##
+##*# $ $$##
+#  ##*#   #
+#    * **@#
+#  ##*#   #
+##*# $ $$##
+ # #   # ##
+ #  .*#.. #
+ #   *    #
+ ####  ####
+    ####
+Title: Ljy 391c
+Author: Ljy and GRIGoRusha
+
+63
+####         ####
+#  ###########  #
+# $     @    .$ #
+#..****.#.****  #
+# $$    $    .$ #
+#  ###########  #
+####         ####
+Title: SokoTime 33a
+Author: Mic and GRIGoRusha
+
+64
+ ####
+ #  ###############
+ #  $   $    $    #
+ #  ##  $   # ### #
+ #$ ####.####   # #
+ #  ###.*.$   #$  #
+ #$ ## .#.###   ###
+ #  ## $$ ..# #$#
+ #$ ##  #@#.*$  ###
+ #   .#.# .. $ $$ #
+ #$ #...#$##### # #
+ # $##.##..   #.  #
+##$     **# # ..* #
+#   $ $  .. ###*  #
+# $#######  # #  ##
+#  #     #### ####
+####
+Title: MP 24c
+Author: Marcus Palstra and GRIGoRusa
+
+65
+     #####
+  ####   ###
+  #    #   ###
+ ## # .$.#   #
+ #  $.#.$.$# #
+## #.$.$$$.  ##
+#  .$$$+$.#.  #
+# #$.$.#.$.$# #
+#  .#.$.$$$.  #
+##  .$$$.$.# ##
+ # #$.$.#.$  #
+ #   #.$. # ##
+ ###   #    #
+   ###   ####
+     #####
+Title: SasquatchVI 36b
+Author: David W. Skinner, York Shen and GRIGoRusha
+
+66
+ #############
+##           #
+# $********* #
+# *   *  * * #
+# *  *  *  * #
+# * *$ *  ** #
+# **  ** * * #
+# *  *  *  * #
+# * * **. ** #
+# **  *  * * #
+# *  *  *  * #
+# *********+ #
+#            #
+##############
+Title: Sven 213c
+Author: Sven Egevad, York Shen and GRIGoRusha
+
+67
+    ####
+#####  ###
+#   #$.. #
+#   $  . #
+## #$##.##
+ # @ # .#
+ # $ # .#
+ # $ $.*#
+ ##$ #  #
+  #  ####
+  ####
+Title: Monthly March 2004 remodel
+Author: Mic and GRIGoRusha
+
+68
+####
+# @#######
+# $.... .#
+# $# ..  #
+##   ## ##
+ ## $## #
+  # $   #
+  #$ $$ #
+  #   ###
+  #####
+Title: Monry-light 6a
+Author: Monry and GRIGoRusha
+
+69
+  ####
+ ##  #
+ #  .####
+##.$. . #
+# .$.$# #
+#@ $ $  #
+#### $###
+   #  #
+   ####
+Title: GrigrSpecial 21a
+Author: GRIGoRusha
+Comment:
+'Light Ladder'
+Comment-End:
+
+70
+   ####
+ ###  #
+##   $#
+#  .*@###
+#  ***  #
+### *   #
+  # # ###
+  #   #
+  #####
+Title: GrigrSpecial 21b
+Author: GRIGoRusha
+Comment:
+'Light Target'
+Comment-End:
+
+71
+###################
+#        # .   .  #
+# #$##$# # #$##$#.#
+#.#.##. $  $ ##  $#
+# # $ $# # #.$ $#.#
+#. .##.  #   ##.  #
+# # ## #####$##$# #
+# $.  .$ # . $ .  #
+# $.  .$@# . $ .  #
+# # ## #####$##$# #
+#. .##.  #   ##.  #
+# # $ $# # #.$ $#.#
+#.#.##. $  $ ##  $#
+# #$##$# # #$##$#.#
+#        # .   .  #
+###################
+Title: GRIGoRusha 1a
+Author: William Fraser and GRIGoRusha
+Comment:
+gr: 1 wall added, some targets moved
+gr: 1 wall added, 6 boxes added, some targets moved
+Comment-End:
+
+72
+     #####
+######   #
+#   ## # #
+#    $   #
+## ##*# ##
+## ..*.  ##
+#  #*$+#$ #
+#   .#. $ #
+#  # $$   #
+#####   ###
+    #####
+Title: GrigrSpecial 6a
+Author: GRIGoRusha
+Comment:
+Jumper
+Comment-End:
+
+73
+  #####   #####
+  #   #####   #
+  #         $ #
+  ## ####### ##
+   #@##  ###  #
+#### ##$    $ #
+#  # #.*.###  #
+#    #... .####
+# $# #*.# *#
+## # #     #
+ # # #### $#
+ # $       #
+## ####### #
+# $        #
+#   ########
+#####
+Title: LevFeb 05a
+Author: Mic and GRIGoRusha
+Comment:
+2 walls and 1 box added
+Comment-End:
+
+74
+   #####
+ ###   #
+##     #
+# ****##
+#     #
+# +*$##
+###  #
+  #  #
+  ####
+Title: Nabokosmos 40a
+Author: Aymeric du Peloux and GRIGoRusha
+Comment:
+1 wall added
+Comment-End:
+
+75
+   #########################
+   #   ##  # @ ##  #   ##  #
+   # $     # $  .$ # $  .$ #
+#####.###  ##.###  ##.###  ####
+#   #  ## ### ###.###  ##.##  #
+# $ .$ ## # # ## $  .$ # $ .$ #
+##.##  ## # # ##   ##  #   #  #
+## ###### # # ############## ##
+#  #   #  ###  $ $ $ $ #  ##.##
+# $. $ #      . . . .  # $. $ #
+#  ##.############### ##  #   #
+##### ### $ $ $ $ $ $  ## #####
+#   #  ##  . . . . . . ##.##  #
+# $ .$ ### ############# $ .$ #
+##.##  ##  $ $ $ $ $ $ #   #  #
+## ###### . . . . . .  ##### ##
+#  #   ############## ##  ##.##
+# $. $ ## $ $ $ $ $ $  # $. $ #
+#  ##.###  . . . . . . #  #   #
+##### #### ############## #####
+#   #  ##  $ $ $ $ $ $ ##.##  #
+# $ .$ ## . . . . . .  # $ .$ #
+##.##  #################   #  #
+## #####  ##   #  ##   ##### ##
+#  #   # $.  $ # $.  $ #  ##.##
+# $. $ #  ###.##  ###.## $. $ #
+#  ##.###.##  ###.### ##  #   #
+#####    $ # $.  $ #  ###.#####
+    #  #   #  ##   # $.  $ #
+    ################  ##   #
+                   #########
+Title: calc 3
+Author: Unknown, Marek Letrab, Eric Leung, GRIGoRusha and Gyjgw
+Comment:
+gr: 10 walls, 19 boxes added
+Comment-End:
+
+76
+####  #####
+#  ####   #
+#  $@$    #
+# $#$### ##
+## ..... #
+##$#.## ##
+#  $    #
+#   ##  #
+#########
+Title: GRIGoRusha 135a
+Author: GRIGoRusha
+Comment:
+2 walls added
+Comment-End:
+
+77
+      #### 
+  #####  # 
+  #...#  # 
+  #.$.$ $# 
+  ##...  # 
+  ##.##@$# 
+  # .##  # 
+###$ ###$##
+#         #
+#  $ $ $  #
+## $#######
+ #  #      
+ ####      
+Title: SokoStars 34b
+Author: Mic and GRIGoRusha
+Comment: 
+gr: 2 walls added
+Comment-End:
+
+78
+     #######
+######     #
+#   ## ### #
+#    .$#.  #
+##$# *...$##
+#  ##.##. # 
+#     ### ##
+##$##$$    #
+ #@   ## $ #
+ #######   #
+       #####
+Title: SokoStars 43a
+Author: Mic and GRIGoRusha
+Comment: 
+gr: 1 wall added
+Comment-End:
+
+79
+ #######
+ #     #
+##$ $$ #######
+# $  # ###   ###
+#  # #   $$ $  ##
+## $$# #  $ $ $ #
+ #    .####  #$ #
+ ## ##.##.  $ $ #
+ # $....*.##$ # #
+ # $.####*##   @#
+ # $....*.###$ ##
+ #   ##......$ #
+ ######.##### ##
+      #       #
+      #########
+Title: Ziko 40a
+Author: ZIKO and GRIGoRusha
+Comment:
+gr: 1 box changed to 1 wall
+Comment-End:
+
+80
+#####
+#   ###
+# + * #
+## #  ###
+# ***$  #
+#       #
+####  ###
+   ####
+Title: Nabokosmos 33a
+Author: Aymeric du Peloux and GRIGoRusha
+Comment:
+gr: 2 walls added
+Comment-End:
+
+81
+     #####
+   ###   #
+   #   $ #
+   # $ $####
+   # # $   #
+#### ##  $ #
+#  $ ####  #
+#@ $  ..# ##
+###$### # ###
+ #  #....*  #
+ #  $ .*..  #
+ #  #  ######
+ #######
+Title: SokoStars 101d
+Author: Mic, York Shen and GRIGoRusha
+Comment: 
+ys: 2 boxes added
+gr: 1 box, 2 walls added
+Comment-end:
+
+82
+  ####
+  # @####
+  #$**. #
+### .#. #
+#    . ##
+# $$#$ ##
+##      #
+ #  #   #
+ ########
+Title: GRIGoRusha 37a
+Author: GRIGoRusha
+Comment:
+gr: 2 walls added, 1 box removed
+Comment-End:
+
+83
+ ####################
+ #                  #
+ #$ $ $ $$ $ $ $ $ $#
+ # $ $$$ #########  #
+ #  $ $  #  ###   #$#
+ # $ $ $ #..* $ $ #.##
+ #  $ $  #.#.$  # .. #
+ # ###   #...  $##   #
+ # $..####$ ##  ######
+ # #..   $ +## $#
+ # #..####*..#  #
+ #$##.####.#.$ $###
+ #     $ #. .$  $ #
+ #$ # $#  #$###   #
+ # #.  .# #.*. ####
+ # #* #*# #.#..  #
+ # #.  .# ....#  #
+## #* #*$  #### ##
+#  #.  .# $ ### #
+#   .*..$  $    #
+### .#########  #
+  ####       ####
+Title: MP 102g
+Author: Marcus Palstra, York Shen and GRIGoRusha
+Comment:
+ys: 7 boxes added
+gr: 1 box, 1 wall added
+Comment-End:
+
+84
+  ####
+  #  ###
+  # $  #
+### *  #
+#  * *###
+# # *   #
+# #*@*# #
+#   * # #
+###*.*  #
+ #  * ###
+ #    #
+ ###  #
+   ####
+Title: GRIGoRusha 12a
+Author: GRIGoRusha and Gyjgw
+Comment:
+4 walls added
+Comment-End:
+
+85
+ ######### 
+ #    #  # 
+ # ## $$ # 
+ #   $   # 
+## ####@## 
+#   $ #$###
+# $$#...$ #
+##  ...#$ #
+ #  #...  #
+ #######  #
+       ####
+Title: SokoMania 80b
+Author: Mic and GRIGoRusha
+Comment:
+gr: 3 boxes added
+Comment-End:
+
+86
+  ####    
+  #  #####
+  #$ #   #
+### $    #
+# $.###$##
+# #.+.*. #
+# #*.*.. #
+#  .$ ## #
+#  $#    #
+### ##$ ##
+ #   $  # 
+ #  $#  # 
+ # # #### 
+ #   #    
+ #####    
+Title: SokoMania 98b
+Author: Mic and GRIGoRusha
+Comment:
+gr: 2 boxes, 1 wall added 
+Comment-End:
+
+87
+ ########
+ #  #   #
+ #    # #
+##$*.*  #
+#  #  ###
+#  * *  #
+# #* *  #
+#  @#####
+#####
+Title: GRIGoRusha 104a
+Author: GRIGoRusha
+
+88
+ #### ####
+ #  ###@ #
+ #     $ #
+## .###*.#
+#  #   *.#
+#  $  #*.#
+#  #    ##
+## $ #$##
+ ###   #
+   #####
+Title: GrigrSpecial 2a
+Author: GRIGoRusha
+
+89
+     #####
+  ####   #
+###@ *   #
+#  * * .##
+#  $**  #
+###  ####
+  #  #
+  ####
+Title: Dries 27a
+Author: Dries De Clercq and GRIGoRusha
+
+90
+ ####
+ # @#
+## $###
+#  *  #
+#  *# ##
+# **   #
+##.#   #
+ #   ###
+ #####
+Title: GrigrSpecial 36a
+Author: GRIGoRusha
+Comment:
+'Collapse comet'
+gr: 1 box stoned
+Comment-End:
+
+91
+########
+#   # @#
+#    $$##
+## ##   #
+ # ...# #
+ # ***#$##
+ ## # #  #
+ #       #
+ #   ##  #
+ #########
+Title: GRIGoRusha 111a
+Author: GRIGoRusha
+Comment:
+'Kotya'
+Comment-End:
+
+92
+ ##########
+ #   ##   #
+ #    $   #
+ ## #$#*.##
+ #  .*.*.##
+## ### #  #
+#    $ $  #
+#   # @ ###
+#########
+Title: GRIGoRusha 30a
+Author: GRIGoRusha
+Comment:
+'Klubok'
+Comment-End:
+
+93
+  #####
+###   ###
+# ...$. #
+# #$.$# #
+# .$.@# #
+##$# $# ##
+ #   $   #
+ #  ##   #
+ #########
+Title: GrigrSpecial 20a
+Author: GRIGoRusha
+Comment:
+'Brave Warrior'
+1 wall added
+Comment-End:
+
+94
+ ####
+ #  #######
+ # .* #   #
+ #  *.$   #
+## #*.$#$##
+#   *.@# #
+#   # $  #
+#####  ###
+    ####
+Title: GRIGoRusha 29a
+Author: GRIGoRusha
+Comment:
+'Razvorot'
+1 wall added
+Comment-End:
+
+95
+##########
+#   ## @ #
+#    $ $ #
+## # ##$##
+ # ..* $ #
+ # # .   #
+ # # *# ##
+ # ***. #
+ ###   ##
+   #####
+Title: GrigrSpecial 14a
+Author: Nakamiya and GRIGoRusha
+Comment:
+'The First Hunter'
+1 wall removed, 2 boxes added
+second remodel from nakamiya new 02
+Comment-End:
+
+
+96
+     #####
+######   ##
+#         #
+# # ###$# ##
+# $$##     #
+##..*..#   #
+ #@#*### # #
+ #  * $    #
+ ##   ######
+  #####
+Title: The Turn
+Author: GRIGoRusha
+Comment:
+1 box added
+Comment-End:
+
+
+97
+  ####
+###  ##
+#  *  ##
+#  *#  #
+## * * ##
+ # @*   #
+ # * *  #
+ #####  #
+     ####
+Title: Koshkin Dom
+Author: GRIGoRusha
+Comment:
+06.07.06
+Comment-End:
+
+98
+    ###########
+   ##         ##
+  ##  * * * *  ##
+ ##  * * * * *  ##
+##  * * * * * *  ##
+#  ******$******@.#
+##  * * * * * *  ##
+ ##  * * * * *  ##
+  ##  * * * *  ##
+   ##         ##
+    ###########
+Title: Gyijw 0806c1
+Author: Gyijw and GRIGoRusha
+
+99
+ ###########
+ #         ####
+## #######    #####
+# $#  #  ####     ##
+#    $$  #  # $$$  #
+#  #  #.$#.$  $  # #
+#####  #.#.#  #$   #
+    # *....## $   ##
+    # #...*@# $ ###
+   ##$#...* # ###
+   #  #######  #
+   #         $ #
+   ##########  #
+            ####
+Title: Maelstrom 4d
+Author: David Holland, York Shen and GRIGoRusha
+
+100
+      ####
+    ###  #
+    #    #
+  ### #  #
+  #  $* ##
+ ## $@.$##
+##  $#.$ #
+#... #*# #
+# ###    #
+#     ####
+#######
+Title: LevDec 07a
+Author: MIC and GRIGoRusha
+Comment:
+'Seven Friends'
+21.11.07
+Comment-End:
+
+101
+#####
+#   ######
+#  $     #
+##$# . $ #
+#  ##.$ ##
+# @$..#$ #
+#  #...$ #
+## $.$.  #
+ #########
+Title: GrigrStar 09a
+Author: GRIGoRusha
+Comment:
+'Dobro'
+Comment-End:
+
+102
+ #####
+ #  @####
+##$$    #
+#  $ #$$##
+#   #  $ #
+## #   $ #
+# ..**#  #
+# ..... ##
+#########
+Title: GrigrStar 10a
+Author: GRIGoRusha
+Comment:
+'Window'
+Comment-End:
+
+103
+   ######
+ ### . .#
+ #   *#.#
+##$# ...#
+# $ $##.##
+#@#$ $   #
+#   $ $  #
+#####   ##
+    #####
+Title: GrigrStar 21a
+Author: GRIGoRusha
+Comment:
+'Form'
+Comment-End:
+
+104
+  ######
+  #    ###
+ ##$ #   #
+ #@$   $ #
+## #   # #
+# ***# $ #
+# .*.  ###
+###..###
+  ####
+Title: Kenyam 05a
+Author: Kenyam and GRIGoRusha
+Comment:
+'New Dance'
+Comment-End:
+
+105
+  ######
+### *  ###
+#  .*..  #
+# # *  # #
+# @#*#$$$##
+##        #
+ ###### # #
+      #   #
+      #####
+Title: Kenyam 18a
+Author: Kenyam and GRIGoRusha
+Comment:
+'Direct Angle'
+Comment-End:
+
+106
+ #########
+##  #@   #
+#   * *  #
+#  $*.*$ #
+### .## ##
+  #  $  #
+  # *.* #
+  #  #  #
+  #######
+Title: Kokoban 29a
+Author: Aymeric du Peloux and GRIGoRusha
+Comment:
+'Piramid'
+Comment-End:
+
+107
+           ####
+   #########  #
+   #        $ #
+   #*#######  #
+####@####### ####
+#   *   #   *   #
+#  * *  #  * *  #
+# * * * # * * * #
+#* *#* *#* *#* *#
+# * * * # * * * #
+#  * *  #  * *  #
+#   *   ##  *  ##
+#### ####### ###
+  #  #  *  #   #
+  # $.* *  # # #
+  #  #  * *.   #
+  ####  *  #####
+     #######
+Title: Perfect 305j
+Author: Thinking Rabbit, York Shen, GRIGoRusha, Gyijw
+Comment:
+ys: 4 boxes added 
+gr: 1 box added
+gjw: 2 boxes stoned
+Comment-End:
+
+108
+          #####
+         ##   ##
+        ##  *  ##
+     ####  *$*  ####
+    ##    * * *    ##
+   ##  * * * * * *  ##
+  ##  *** * * * ***  ##
+ ##  * * * *** * * *  ##
+##  * * * * * * * * *  ##
+#  * * * * * * * * * *  #
+# * * *** *.*.* *** * * #
+#  * * * * * * * * * *  #
+##  * * * * * * * * *  ##
+ ##  * * * *** * * *  ##
+  ##  *** * * * ***  ##
+   ##  * * * * * *  ##
+    ##    * * *    ##
+     ####  *$*  ####
+        ##  *  ##
+         ## @ ##
+          #####
+Title: Gyijw 0908a
+Author: Gyijw and GRIGoRusha

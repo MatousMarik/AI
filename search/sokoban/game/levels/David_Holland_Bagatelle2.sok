@@ -1,0 +1,251 @@
+Date of Last Change: 
+
+Set:       Bagatelle2
+Copyright: © David Holland
+Email:     david@clickfest88.freeserve.co.uk
+Homepage:  http://www.clickfest88.freeserve.co.uk/
+
+Archives:  http://web.archive.org/web/*/http://clickfest88.freeserve.co.uk/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+unfinished Sokoban collection by David Holland
+
+Original release date: July 09 2002
+
+
+1
+####   ####
+#  #####  #
+#    $  $ #
+# ..$# .. #
+## . #$.$##
+ # .$# . #
+ ##  #$$##
+  #  # @#
+  #######
+Title: heart1
+Author: David Holland
+
+
+2
+   ####
+   #  #######
+   #$       #
+  ##..#### $##
+  # *.#  # $ ####
+  # .. $ #   $  #
+  # .* # ##  # $#
+  # ####..## #@ #
+  # #  .*.# $$ $#
+ ## #  #..   #  #
+ #.*.# ### #### ##
+##.*.$ #   # $ $ #
+#.*..    $ #  $  #
+#...## #####$$ $ #
+##### $ $ $ $ $  #
+    #            #
+    ##############
+Title: holster7
+Author: David Holland
+
+
+3
+#####   ####
+#   #####  #
+# # #.$    ##
+#   * $ #   #
+### #.### # #
+##  # $.* # #
+#      .#.# #
+# $####$$.* #
+#   ## $ .###
+### @  ####
+  ######
+Title: spin6
+Author: David Holland
+
+
+4
+   ######
+ ###    ####
+ #     *#  #
+ #$$ $ $ $ #
+## #*#*# # ##
+# @*.. ...  #
+#   #####   #
+#####   #####
+Title: jellyfish2
+Author: David Holland
+
+
+5
+#####
+#   ######
+#      $ #
+## # #   #
+#  *  ####
+#.$*$.#
+#. . .#
+# .#$ #
+# .*. #
+#$#$#$#
+#  $  #
+## @ ##
+ #####
+Title: doodle8
+Author: David Holland
+
+
+6
+#####   #####
+#   ## ##   #
+# $  ### $  #
+## #  # @# ##
+ # ##.*.## ##
+## # .*..#  #
+#    .***$$ #
+# $$ ....#  #
+###  $#  ####
+##  $ ## $ #
+#  $ ###   #
+#   ## #####
+#####
+Title: midblock7
+Author: David Holland
+
+
+7
+   ######
+   #    ##
+  ##$##  ####
+  #  .#  #  ###
+  #   #  $ $  #
+  ### ## #. # #
+####. .*.## # #
+#    #*#*#  # #
+# #$##.*.     #
+# #  #.##$#####
+# $  $      #
+###  #$ #@  #
+  ####  ## ##
+     ##    #
+      ######
+Title: squarespiral9
+Author: David Holland
+
+
+8
+              #######
+#####     #####     #
+#   #######  # .### ###
+# $   @      # ..$    #
+##### ##$### #$.$ #$# #
+# $ $  # .## # . #  # #
+#      #$.#  #$* #    #
+## #####  #    .#   ###
+ # #   .#.# ##$*### #
+ # #.$.   #*## .$ # #
+## ##$#.  .  #$.. # #
+#  ..*.##$## # .### #
+# $.*   $     #     #
+#####  $  # $ #######
+    ##### # $ #
+        # $ # #
+        ###   #
+          #####
+Title: pinball15
+Author: David Holland
+
+
+9
+            #####
+  #######   #   #
+  #     ##### # #
+  #      #  #   #
+  ##.##  #    $####
+ ##...#  #$###  $ ###
+ #  #.*.##  ##$   $ #
+ #$##.*.    #   $ $ #
+ #  #... ####$  #$  #
+ #$ #####.    $# $  #
+ #  ## $ .$ # $    ##
+ #$....#@ #.###   ##
+ #  #..##*$   #####
+ # #..*.   #  #
+ # #  .*  ## ##
+ #  ##.###   #
+##$$# .# $$  #
+# $  $ $ $  ##
+#     #     #
+#############
+Title: ukasar4
+Author: David Holland
+
+
+10
+ ###############
+ #             #
+ #.## #### ###.#
+ #   * $ $ *   #
+ # $#   $  #$$ #
+##   ##.#.# $  ##
+# $$ #..*.. #$  #
+#    #.*.*.#    #
+####*$*#.#*$*####
+#    # *...#    #
+# $$ #@.*..# $$ #
+##   ##.#.##   ##
+ # $$#  $  #$$ #
+ #   * $ $ *   #
+ #.#####.#####.#
+ #             #
+ ###############
+Title: boxclever14
+Author: David Holland
+
+
+11
+        ####
+   ######  ##
+   #@ $     #
+#### $### # ##
+#   $ ## .#  #
+#  #    ** # #
+## ####... # #
+ #. ### # #  #
+ #$  $  $   ##
+ #. ####   ##
+ ####  #####
+Title: eightfold21
+Author: David Holland
+
+
+12
+#########
+#   #   ##
+#     $$ #
+##.#*.#. #
+ #$.  . ##
+## .  *$##
+#  ##*#  #
+# $@$    #
+#######  #
+      ####
+Title: wye11
+Author: David Holland

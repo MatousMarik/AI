@@ -1,0 +1,248 @@
+Date of Last Change: 
+
+Set:       Mas Microban, arranged
+Copyright: © York Shen
+Email:     linashen@ms28.hinet.net
+Homepage:  
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Arrangements of David W. Skinner's levels
+They are published with David W. Skinner's permission
+original level page: http://users.bentonrea.com/~sasquatch/sokoban/
+
+67
+   ####
+  ##  ##
+ ## *  ##
+## $ .$ ##
+#  .$+ * #
+# *   .  #
+## $. $ ##
+ ##  * ##
+  ##  ##
+   ####
+Title: Mas Microban 67a
+Author: David W. Skinner, York Shen
+
+68
+      ###
+     ##.##
+  #### $ ####
+  #         #
+  # **#*#** #
+ ## *     * ##
+##  # *** #  ##
+#.$ * *@* * $.#
+##  # *** #  ##
+ ## *     * ##
+  # ******* #
+  #         #
+  #### $ ####
+     ##.##
+      ###
+Title: Mas Microban 68a
+Author: David W. Skinner, York Shen
+Comment:
+enlarged size
+Comment-End:
+
+68
+      ###
+     ##.##
+  #### $ ####
+  #         #
+  # *##*### #
+ ## *     * ##
+##  * *** *  ##
+#.$ * *@* * $.#
+##  * *** *  ##
+ ## *     * ##
+  # ###*##* #
+  #         #
+  #### $ ####
+     ##.##
+      ###
+Title: Mas Microban 68b
+Author: David W. Skinner, York Shen, Marek Letrab
+Comment:
+enlarged size
+A10 boxes stoned - M.L.
+Comment-End:
+
+68
+      ###
+     ##.##
+  #### $ ####
+  #         #
+  # ##***## #
+ ## #     # ##
+##  # *** #  ##
+#.$ * *@* * $.#
+##  # *** #  ##
+ ## #     # ##
+  # ###*### #
+  #         #
+  #### $ ####
+     ##.##
+      ###
+Title: Mas Microban 68c
+Author: David W. Skinner, York Shen, Marek Letrab
+Comment:
+enlarged size
+radical stoneing
+Comment-End:
+
+93
+    ####
+  ###  #
+ ## .  #
+##  $  #
+# .*. ##
+# $ ###
+# .$####
+###    #
+ ##$#  #
+ #  #  #
+ #  @ ##
+ ###  #
+   ####
+Title: Mas Microban 93a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+109
+ #####
+ # . #####
+ #$ $$ $ #
+ # .. . .#
+##$ * .$ #
+# $. * $##
+#. . .. #
+#@$ $$ $#
+##### . #
+    #####
+Title: Mas Microban 109a
+Author: David W. Skinner, York Shen
+Comment:
+added 2 boxes
+Comment-End:
+
+109
+ #####
+ # . #####
+ #$ $$ $ #
+ # .. . .#
+##$ * .$ #
+# $.** $##
+#. . .. #
+#@$ $$ $#
+##### . #
+    #####
+Title: Mas Microban 109b
+Author: David W. Skinner, York Shen
+Comment:
+added 3 boxes
+Comment-End:
+
+113
+###########
+#         #
+#  * . *  #
+##*$***$*##
+#  * + *  #
+#    #    #
+###########
+Title: Mas Microban 113a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+115
+     ###
+    ## ##
+   ##   ##
+  ## .*. ##
+ ## .$.$. ##
+## .$ $ $. ##
+#  $*$@$*$  #
+## .$ $ $. ##
+ ## .$.$. ##
+  ## .*. ##
+   ##   ##
+    ## ##
+     ###
+Title: Mas Microban 115a
+Author: David W. Skinner, York Shen
+Comment:
+added 2 boxes
+Comment-End:
+
+126
+ #######
+ #     #
+ # $$  #
+ #  $###
+ # #  #
+ # #$ #
+ # #  #
+## ##.##
+#    ..#######
+#@###...     #
+#   #.#### $ #
+### #*# $ $$ #
+  #  .    #  #
+  #########  #
+          ####
+Title: Mas Microban 126a
+Author: David W. Skinner, York Shen
+Comment:
+added 1 box
+Comment-End:
+
+134
+          #####
+         ##.. ##
+        ##  .$ ##
+       ## $#. $ ##
+      ## $ #.# $ ##
+     ## $  #.#  $ ##
+    ## $   #.# # $ ##
+   ## $ ## #.$ $  $ ##
+  ## $      .# # # $ ##
+ ## $ #$####.$ # #  $ ##
+## $        .# #     $ ##
+# $ ###$#$##.# # ##### .#
+#...........@...........#
+#. ##### # #.##$#$### $ #
+## $     # #.        $ ##
+ ## $  # # $.####$# $ ##
+  ## $ # # #.      $ ##
+   ## $  $ $.# ## $ ##
+    ## $ # #.#   $ ##
+     ## $  #.#  $ ##
+      ## $ #.# $ ##
+       ## $ .#$ ##
+        ## $.  ##
+         ## ..##
+          #####
+Title: Mas Microban 134a
+Author: David W. Skinner, York Shen

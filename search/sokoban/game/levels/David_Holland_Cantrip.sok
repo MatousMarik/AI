@@ -1,0 +1,323 @@
+Date of Last Change: 
+
+Set:       Cantrip
+Copyright: © David Holland
+Email:     david@clickfest88.freeserve.co.uk
+Homepage:  http://www.clickfest88.freeserve.co.uk/
+
+Archives:  http://web.archive.org/web/*/http://clickfest88.freeserve.co.uk/
+           http://web.archive.org/web/20040806174456/www.clickfest88.freeserve.co.uk/cantrip/index.html
+           http://web.archive.org/web/20040828051358/www.clickfest88.freeserve.co.uk/cantrip/cantrip.txt
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+The cantrip Sokoban levels by David Holland
+
+Original release date: November 2001
+
+Author's note:
+The puzzles are all small (between 6 and 9 goals and pretty cramped), with maze and walls
+designed by me and computer-generated start positions. Because of the computer
+involvement, the start positions of the puzzles may look abstract or random. The meat of
+the puzzles is in the variations, the unexpected twists, and the underlying problems. The
+human element of design is most evident in the solved position, by construction, and I
+like to think of the solving process as producing order from chaos. This collection is
+meant for experienced solvers, or at least determined ones, as it contains probably my
+toughest puzzles so far. As usual I have tried to put the puzzles in rough ascending order
+of difficulty, but here this is even more approximate than usual as I find the puzzles
+difficult to compare. The puzzles have been extensively play-tested. On a good day I can
+actually solve them...
+
+These levels may be distributed freely as long as this copyright message is retained.
+
+
+1
+   #####
+ ###   ###
+ # $ # * #
+## $*.*  #
+#  *   . #
+#@  ###  #
+##### ####
+Title: loom1
+Author: David Holland
+
+
+2
+ ####
+ #  ######
+ #   $@$ #
+ # **##. #
+##$.$  . #
+#  .# .*##
+#    $  #
+######  #
+     ####
+Title: pinwheel3
+Author: David Holland
+
+
+3
+##########
+#@ *.##  #
+# $   $  #
+###*..#  #
+  #  $  ##
+  # .#. #
+  # $ $ #
+  ####  #
+     ####
+Title: fretsaw1
+Author: David Holland
+
+
+4
+#####
+#   #####
+# # $ $ #
+# $$. *@#
+# #  ** #
+# ### *##
+#  # .* #
+##  . . #
+ ##     #
+  #######
+Title: canine4
+Author: David Holland
+
+
+5
+     ####
+ #####  #
+## $  $ #
+#@$.#.* ##
+# $.$ .  #
+##$.*#.  #
+ #      ##
+ #  ######
+ ####
+Title: notchwheel1
+Author: David Holland
+
+
+6
+  ####
+###  #####
+#  .$  . ##
+# $*@#$*  #
+## .$* .  #
+ ### #  ###
+   #   ##
+   #####
+Title: quarkspin3
+Author: David Holland
+
+
+7
+##########
+#   #    #
+# #$. .# #
+#@#. * # #
+# # * .# #
+# #*$*$# #
+# $      #
+####  ####
+   ####
+Title: osmosis1
+Author: David Holland
+
+
+8
+ #####
+##   #####
+#  # $@$ #
+# #..#*  #
+#  .   . #
+## $.#.* #
+ # $ $$# #
+ #####   #
+     #####
+Title: catkins5
+Author: David Holland
+
+
+9
+ #######
+##  #  ##
+#     $ #
+# ** **@#
+# * # * #
+##  .  ##
+ #  .$##
+ ##   #
+  #####
+Title: splittee1
+Author: David Holland
+
+
+10
+  ########
+  #   #  #
+ ##$#   .##
+## .* #   #
+#  .* *$# #
+#   . #@$ #
+#  # ##$###
+####    #
+   ######
+Title: flagon1
+Author: David Holland
+
+
+11
+    #####
+  ###   #
+###..$. #
+# $ $.$##
+# #$. * #
+#  . *$ #
+##   # @#
+ ########
+Title: shuffle1
+Author: David Holland
+
+
+12
+#####
+#   ####
+# #$   ###
+# #.*$*  #
+# # .* # #
+#  . $.#@#
+###  $ # #
+  ####   #
+     #####
+Title: bigt2
+Author: David Holland
+
+
+13
+  #####
+###   ###
+# $ #$  #
+# ....* #
+#  *. $ #
+## # # ##
+ # $$* #
+ ## @ ##
+  #####
+Title: gyroscope2
+Author: David Holland
+
+
+14
+ ####
+##  ####
+# $  $ #
+# $... ##
+#@*$$$* #
+## ...  #
+ ##   ###
+  #####
+Title: moebius2
+Author: David Holland
+
+
+15
+  ####
+###  #
+#@$ .#####
+# *$ $ $ #
+## * * . #
+ # . . ###
+ # . ###
+ ## $#
+  #  #
+  ####
+Title: boomerang5
+Author: David Holland
+
+
+16
+      #####
+ ######   #
+ #   # $  #
+##  $..#$ #
+#  #**.   #
+#@# *.*#  #
+#   ##   ##
+### $  ###
+  ###  #
+    ####
+Title: clasp1
+Author: David Holland
+
+
+17
+####   ####
+#  #####  #
+#    $@$  #
+# *.$#*.* #
+## . # . ##
+ # . #$. #
+ ## $$  ##
+  #  #  #
+  #######
+Title: heart4
+Author: David Holland
+
+
+18
+    ####
+#####  ##
+#   $ $ ##
+#   #.$. #
+##  **.#@#
+ #   . $ #
+ #####  ##
+     ####
+Title: cossack2
+Author: David Holland
+
+
+19
+   #####
+ ###   #
+## .$.$#
+#  .** ##
+# * . * #
+##   $$ #
+ #  ## @#
+ ########
+Title: space invader1
+Author: David Holland
+
+
+20
+ #####
+ #   #####
+ #     $@#
+ ## ##.#*###
+### # $  $ #
+# $ .$. .# #
+#   $ ##$# #
+###.#.  .  #
+  #   ######
+  #####
+Title: bola1
+Author: David Holland

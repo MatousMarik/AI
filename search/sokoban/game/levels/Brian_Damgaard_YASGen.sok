@@ -1,0 +1,408 @@
+Date of Last Change: 
+
+Set:       YASGen
+Copyright: © Brian Damgaard
+Email:     BrianDamgaard@jubii.dk
+Homepage:  http://sourceforge.net/projects/sokobanyasc/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+1
+#########
+#  # ...#
+#  $$#..#
+#  $  *.#
+##   $$$#
+ #    #@#
+ ########
+Title: YASGen 1
+Author: Brian Damgaard
+
+2
+ ########
+##@$ .. #
+# $#$ *.#
+#  $  *.#
+# $  #.$#
+##  # . #
+ #      #
+ ########
+Title: YASGen 2
+Author: Brian Damgaard
+
+3
+#########
+#   . $ #
+# $ ***@#
+##   .$ #
+#####. ##
+#    *  #
+#  $ .  #
+#########
+Title: YASGen 3
+Author: Brian Damgaard
+
+4
+ ########
+##      #
+#@$ $*  #
+##$$ * ##
+# $...###
+# # *$  #
+#  ...  #
+#########
+Title: YASGen 4
+Author: Brian Damgaard
+
+5
+  #######
+  # . $@#
+ ## .$$##
+ # $.$ ##
+##...#  #
+#  $.$$ #
+#  $..  #
+#########
+Title: YASGen 5
+Author: Brian Damgaard
+
+6
+#########
+#  #....#
+#   @#**#
+# $$# ..#
+##  $$ *#
+ #$ $   #
+ #      #
+ ########
+Title: YASGen 6
+Author: Brian Damgaard
+
+7
+   ######
+ ### ...#
+ # $ #+.#
+ #  $$**#
+## $ $ .#
+# $ #   #
+#     ###
+#######
+Title: YASGen 7
+Author: Brian Damgaard
+
+8
+#######
+#.... #
+#*.## ###
+#.* #   #
+# $ $$  #
+# $$  $ #
+#@ #    #
+#########
+Title: YASGen 8
+Author: Brian Damgaard
+
+9
+  ########
+  # *    #
+### *.$  #
+#   **$  #
+#  $.*@###
+###  .##
+  #####
+Title: YASGen 9
+Author: Brian Damgaard
+
+10
+#########
+#  ##   #
+#. $@$  #
+#.*.$# ##
+#*.* #$ #
+#.#   $ #
+#. # $$ #
+#.      #
+#########
+Title: YASGen 10
+Author: Brian Damgaard
+
+11
+  #####
+###@ .#
+# $ #.#
+#  $$ #
+#.  # #
+#   $.#
+#######
+Title: Chaos
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Chaos was the unorganized state from which all things arose. Chaos preceded the origin not only of the world, but also of the gods.
+Comment-End:
+
+12
+#######
+#@.   #
+#$$.$.#
+#. *$.#
+# $ *$#
+#.    #
+#######
+Title: Gaea
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Gaea was the goddess of Earth and the daughter of Chaos. She gave birth to Uranus, the sky, and with him, she was the mother of the giants, the Cyclops, and the 12 Titans.
+Comment-End:
+
+13
+#######
+#+$ ..#
+#$$$$*#
+#.    #
+# * #.#
+# $  .#
+#######
+Title: Uranus
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Uranus represented the sky or heaven. He was both the son and husband of Gaea, the Earth, by whom he fathered first the hundred-handed giants and the Cyclopes, and later the 12 Titans.
+Comment-End:
+
+14
+#######
+#. $..#
+#.$ $.#
+# $ $ #
+#$$# $#
+#. + .#
+#######
+Title: Cronus
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Cronus was the youngest of the Titans, the 12 children of Uranus (Heaven) and Gaea (Earth). Cronus became supreme ruler of the universe by killing his father. With his sister and wife Rhea, he was the father of the original gods of Olympus: Hestia, Demeter, Hera, Hades, Poseidon, and Zeus.
+Comment-End:
+
+15
+#######
+# . + #
+# #$*$##
+# $. . #
+# *$ $ #
+### * .#
+  #    #
+  ######
+Title: Rhea
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Rhea was one of the 12 Titans, the daughter of Uranus and his mother Gaea, whose position as goddess of the Earth she assumed. With her brother and husband Cronus, she was the mother of the original gods of Olympus: Hestia, Demeter, Hera, Hades, Poseidon, and Zeus.
+Comment-End:
+
+16
+########
+# .  . #
+#. $*$.#
+# #  $ #
+#.  $# #
+#.$# $*#
+#    $+#
+########
+Title: Oceanus
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Oceanus was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). Oceanus ruled over Ocean, the stream surrounding the world. With his sister and wife Tethys, he was the father of the ocean nymphs, also known as the three-thousand Oceanids.
+Comment-End:
+
+17
+#########
+#@$  . .#
+#**$$ * #
+# $...* #
+#. *$$  #
+## *    #
+ ########
+Title: Tethys
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Tethys was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). With her brother and husband Oceanus, she was the mother of the ocean nymphs, also known as the three-thousand Oceanids.
+Comment-End:
+
+18
+########
+# . # @#
+#  $ $$#
+#.*. $ #
+# .$ $.#
+#$* ## #
+# .  . #
+########
+Title: Mnemosyne
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Mnemosyne was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). Mnemosyne was the goddess of memory. With Zeus, she was the mother of the 9 Muses.
+Comment-End:
+
+19
+ ######
+ # .  #
+##$#. ###
+#@* .   #
+##$#**  #
+# $  .###
+# $ $ #
+#   .##
+######
+Title: Coeus
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Coeus was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). With his sister and wife Phoebe, he was the father of Leto and Asteria.
+Comment-End:
+
+20
+########
+# . .$+#
+#  $*$*#
+# . #  #
+#.#$$ $#
+#    $ #
+#.  # .#
+########
+Title: Phoebe
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Phoebe was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). With her brother and husband Coeus, she was the mother of Leto and Asteria.
+Comment-End:
+
+21
+########
+#. .*  #
+# $ *  #
+## .$ *#
+## $ ..#
+#@$$**$#
+#  .   #
+########
+Title: Hyperion
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Hyperion was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). With his sister and wife Theia, he was the father of Helios, god of the sun, Selene, goddess of the moon, and Eos, goddess of the dawn.
+Comment-End:
+
+22
+########
+#@$  . #
+#$$** .#
+#.   $ #
+#.$**$.#
+#  .$ $#
+#. *.  #
+########
+Title: Theia
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Theia was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). With her brother and husband Hyperion, she was the mother of Helios, god of the sun, Selene, goddess of the moon, and Eos, goddess of the dawn.
+Comment-End:
+
+23
+########
+# $   +#
+#  $ #*#
+#  $ # #
+# *$$  #
+#**.#  #
+# .. . #
+########
+Title: Iapetus
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Iapetus was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). With the nymph Clymene, he was the father of Prometheus, Atlas, Epimetheus, and Menoetius and an ancestor of the human species. His wife was occasionally considered to be Asia or Asopis.
+Comment-End:
+
+24
+########
+#@*    #
+#$ **$ #
+#.$ .  #
+# $.$#$#
+# *.  .#
+#  .*  #
+########
+Title: Crius
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Crius was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). With Eurybia, he was the father of Pallas.
+Comment-End:
+
+25
+########
+#@$  . #
+#** * $#
+# $*. .#
+# $ $  #
+# #. # #
+#  .$. #
+########
+Title: Themis
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Themis was one of the Titans, the 12 offspring of Uranus (Heaven) and his mother Gaea (Earth). She was the the goddess of divine justice and law. With Zeus, she was the mother of mother of the Seasons and the three Fates.
+Comment-End:
+
+26
+########
+#    . #
+#$#$.$ #
+# $ #*.#
+# *  $ #
+#.* .* #
+#@$  . #
+########
+Title: Hestia
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Hestia was the goddess of the hearth. She was the eldest daughter of the Titans Cronus and Rhea, and sister to Zeus, Hera, Hades, Poseidon, and Demeter.
+Comment-End:
+
+27
+########
+#@.$ *.#
+#$$. $ #
+#.# $ *#
+# $. ..#
+#. *$$ #
+#  $.  #
+########
+Title: Zeus
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Zeus was the ultimate ruler of heaven and earth and of all gods and humankind. He was the youngest son of the Titans Cronus and Rhea. He was married to his sister Hera, but had, however, many casual affairs with mortal women as well as goddesses, and he fathered innumerable children.
+Comment-End:
+
+28
+#########
+#.$.  *@#
+#  .$*$$#
+## $* * #
+#   *   #
+# #$.$#.#
+#.$ .  .#
+#########
+Title: Hera
+Author: Brian Damgaard
+Comment:
+In Greek mythology, Hera was queen of the Olympian gods, the goddess of marriage and the protector of married women. She was the daughter of the Titans Cronus and Rhea and was married to her brother Zeus.
+Comment-End:

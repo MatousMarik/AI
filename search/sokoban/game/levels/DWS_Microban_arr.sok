@@ -1,0 +1,78 @@
+Date of Last Change: 
+
+Set:       Microban, arranged
+Copyright: © York Shen
+Email:     linashen@ms28.hinet.net
+Homepage:  
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+This Sokoban level set is published here with the author's permission.
+
+The level set is distributed in a text format, that can be imported
+by most of the major Sokoban programs.
+
+For Microsoft Windows ® we recommend using "Sokoban YASC", which can
+be downloaded from: http://sourceforge.net/projects/sokobanyasc/
+
+Enjoy!
+
+SOKOBAN Project         at http://sokobano.de/
+Sokoban WIKI            at http://sokobano.de/wiki/
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Arrangements of David W. Skinner's levels
+They are published with David W. Skinner's permission
+original level page: http://users.bentonrea.com/~sasquatch/sokoban/
+
+101
+  #####
+  #   #
+  # # #######
+  #  *  #   #
+  ## ##   # #
+  #   * #*  #
+### # # # ###
+#  *#$+   #
+# #   ## ##
+#   #  *  #
+####### # #
+      #   #
+      #####
+Title: Microban 101a
+Author: David W. Skinner and York Shen
+Comment:
+added 1 box
+Comment-End:
+
+145
+   #####
+   # @ #
+  ##   ##
+###.$$$.###
+#  $...$  #
+#  $.#.$  #
+#  $.*.$  #
+###.$$$.###
+  ## . ##
+   #   #
+   #####
+Title: Microban 145a
+Author: David W. Skinner and York Shen
+
+146
+ #######
+##  .  ##
+# .$$$. #
+# $ + $ #
+#.$.*.$.#
+# $ . $ #
+# .$$$. #
+##  .  ##
+ #######
+Title: Microban 146a
+Author: David W. Skinner and York Shen
+Comment:
+added 1 box
+Comment-End:

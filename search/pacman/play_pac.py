@@ -1,0 +1,219 @@
+import game.controllers as gc
+from game.pacman_core import Game
+from argparse import ArgumentParser, Namespace
+from typing import List, Optional, Tuple
+from time import perf_counter
+from random import randrange
+
+from importlib.util import spec_from_file_location, module_from_spec
+from os.path import join as path_join, dirname
+
+AGENTS_DIR = path_join(dirname(__file__), "agents")
+
+
+parser = ArgumentParser()
+parser.add_argument(
+    "-a",
+    "--agent",
+    default=None,
+    type=str,
+    help=(
+        "Agent to use, should be name of class in the file lowercase.py,"
+        " in the same directory. (default player)"
+    ),
+)
+parser.add_argument(
+    "-s",
+    "--sim",
+    type=int,
+    help="Simulate a series of games without visualization",
+)
+parser.add_argument(
+    "-l", "--level", default=1, type=int, help="Starting level (1-4)."
+)
+parser.add_argument(
+    "-t",
+    "--time_limit",
+    default=None,
+    type=float,
+    help="Set strict time limit in ms for agent tick.",
+)
+parser.add_argument("--seed", type=int, help="Random seed.")
+parser.add_argument(
+    "-v",
+    "--verbose",
+    default=False,
+    action="store_true",
+    help="Verbose output.",
+)
+parser.add_argument(
+    "--scale",
+    type=float,
+    default=1.0,
+    help="Scale the visualized game resolution [0.2; 3]. Use only if needed.",
+)
+
+
+def process_args(
+    args: Optional[List[str]] = None,
+) -> Tuple[gc.PacManControllerBase, Namespace, bool]:
+    """Parse arguments, check validity and return usefull values."""
+    if args is None:
+        args = parser.parse_args()
+    else:
+        args = parser.parse_args(args)
+
+    if args.level is not None and (args.level < 1 or args.level > 4):
+        parser.error("Invalid level number.")
+
+    if args.agent:
+        try:
+            spec = spec_from_file_location(
+                f"agents.{str.lower(args.agent)}",
+                path_join(AGENTS_DIR, f"{str.lower(args.agent)}.py"),
+            )
+            am = module_from_spec(spec)
+            spec.loader.exec_module(am)
+            agent: gc.PacManControllerBase = getattr(am, args.agent)(
+                seed=args.seed
+            )
+        except BaseException as e:
+            parser.error(f"Invalid agent name:\n{str(e)}")
+    else:
+        agent: gc.PacManControllerBase = gc.PacManControllerBase(True)
+
+    if args.sim is not None:
+        if args.sim < 1:
+            parser.error("Invalid number of simulations.")
+        if args.agent is None:
+            parser.error("You have to specify agent with --sim.")
+        if args.time_limit is not None:
+            if args.time_limit < 1:
+                parser.error("Invalid time limit - has to be greater than 0.")
+            else:
+                args.time_limit /= 1000
+        visualize = False
+    else:
+        visualize = True
+        if args.scale < 0.2:
+            parser.error("Scale too small.")
+        if args.scale > 3:
+            parser.error("Scale too big.")
+
+    return agent, args, visualize
+
+
+def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
+    """
+    Function for simulating pacman game.
+
+    If ui is provided simulation will be visualized.
+    """
+    seeds = (
+        (
+            [randrange(0, 999999999) for _ in range(args.sim)]
+            if args.seed is None
+            else list(range(args.seed, args.seed + args.sim))
+        )
+        if args.sim is not None
+        else [args.seed]
+    )
+    # INIT GAME
+    game = Game(seeds[0])
+    game.new_game(level=args.level)
+
+    # INIT CONTROLLERS
+    pac_controller = agent
+    pac_controller.reset(game)
+    ghosts_controller = gc.GhostController()
+    ghosts_controller.reset(game)
+
+    # VISUALIZED SIM
+    if gui is not None:
+        if args.verbose:
+            ghosts_controller._debugging = gui  # class
+        gui = gui(game, args.scale)
+        gui.game_loop(pac_controller, ghosts_controller)
+        return
+
+    score = 0
+    total_time = 0
+    level = 0
+    ticks = 0
+    # SIM
+    for seed in seeds:
+        game.new_game(level=args.level, seed=seed)
+        time = 0
+        time_fine = True
+        while not game.game_over:
+            start = perf_counter()
+            pac_controller.tick(game)
+            tick_time = perf_counter() - start
+            time += tick_time
+
+            # check strict time limit
+            if args.time_limit and tick_time > args.time_limit:
+                time_fine = False
+                break
+
+            ghosts_controller.tick(game)
+
+            pac_action: gc.PacManAction = pac_controller.get_action()
+            ghosts_actions: gc.GhostsActions = ghosts_controller.get_actions()
+
+            game.advance_game(
+                pac_action.direction,
+                [ga.direction for ga in ghosts_actions.actions],
+            )
+        total_time += time
+        score += game.score
+        level += game.current_level - args.level
+        ticks += game.total_ticks
+
+        if args.verbose:
+            if time_fine:
+                fail_s = ""
+            else:
+                fail_s = " failed tick {} - {:.1f} ms".format(
+                    game.total_ticks, tick_time * 1000
+                )
+            print(
+                "Seed {}{}: level {:2d}, score {:5d} in {:5.2f}ms (in {:5d} ticks) = {:3.2f} ms/tick".format(
+                    seed,
+                    fail_s,
+                    game.current_level,
+                    game.score,
+                    time * 1000,
+                    game.total_ticks,
+                    time / game.total_ticks * 1000,
+                )
+            )
+
+    print("Averages from {} games:".format(args.sim))
+    print("  levels cleared: {:.1f}".format(level // args.sim))
+    print("  score: {:.1f}".format(score / args.sim))
+    print(
+        "  time: {:.1f} ms/tick, {:.2f} s/level".format(
+            total_time / ticks * 1000,
+            total_time / (level + args.sim),
+        ),
+    )
+
+
+def main(args_list: list = None) -> None:
+    agent, args, visualize = process_args(args_list)
+
+    gui = None
+    if visualize:
+        from game.pac_gui import PacView
+
+        gui = PacView
+
+    sim(agent, args, gui)
+
+
+if __name__ == "__main__":
+    # if you don't want to specify arguments for the script you can also
+    # call main with desired arguments in list
+    # e.g. main(["-a=MyAgent", "-l", "2", "--sim=3"])
+    main()
