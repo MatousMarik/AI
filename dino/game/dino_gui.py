@@ -6,7 +6,7 @@ from typing import Optional, Union
 import pygame as pg
 from os import environ
 from os.path import dirname
-from os.path import join as pj
+from os.path import join as path_join
 
 WINDOW_POSITION = (150, 120)
 
@@ -17,11 +17,11 @@ environ["SDL_VIDEO_WINDOW_POS"] = (
 WHITE = pg.Color("white")
 BLACK = pg.Color("black")
 
-RESOURCES = pj(dirname(__file__), "resources")
+RESOURCES = path_join(dirname(__file__), "resources")
 
 
 def convert_image(name: str) -> pg.Surface:
-    return pg.image.load(pj(RESOURCES, name)).convert_alpha()
+    return pg.image.load(path_join(RESOURCES, name)).convert_alpha()
 
 
 Images = namedtuple(
@@ -45,7 +45,7 @@ def load_images():
     # need to have this pg.Surface to convert images
     pg.display.set_mode((1, 1), flags=pg.HIDDEN)
     pg.font.init()
-    font = pg.font.Font(pj(RESOURCES, "FreeSansBold.ttf"), 30)
+    font = pg.font.Font(path_join(RESOURCES, "FreeSansBold.ttf"), 30)
     birds = [convert_image("Bird{:d}.png".format(b)) for b in range(1, 3)]
 
     return Images(
@@ -119,7 +119,7 @@ class Dino_GUI:
 
         self.images: Images = load_images()
         pg.font.init()
-        self.font = pg.font.Font(pj(RESOURCES, "FreeSansBold.ttf"), 20)
+        self.font = pg.font.Font(path_join(RESOURCES, "FreeSansBold.ttf"), 20)
         self.screen: pg.Surface = self._new_display()
 
     def _new_display(self) -> pg.Surface:

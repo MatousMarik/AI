@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import pygame as pg
 import os
-from os.path import join as pj
+from os.path import join as path_join
 from typing import List, Tuple
 from collections import namedtuple
 from game.pacman_core import Game, Direction
@@ -13,12 +13,12 @@ os.environ["SDL_VIDEO_WINDOW_POS"] = (
     str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
 )
 
-RES = pj(os.path.dirname(__file__), "resources")
-IMAGES_DIR = pj(RES, "images")
+RES = path_join(os.path.dirname(__file__), "resources")
+IMAGES_DIR = path_join(RES, "images")
 
 
 def convert_image(name: str) -> pg.Surface:
-    return pg.image.load(pj(IMAGES_DIR, name)).convert_alpha()
+    return pg.image.load(path_join(IMAGES_DIR, name)).convert_alpha()
 
 
 def load_images():
@@ -111,8 +111,10 @@ class PacView:
 
         self.pac_man_dir: int = 0
         pg.font.init()
-        self.font = pg.font.Font(pj(RES, "verdana.ttf"), 11, bold=True)
-        self.small_font = pg.font.Font(pj(RES, "verdana.ttf"), 8, bold=True)
+        self.font = pg.font.Font(path_join(RES, "verdana.ttf"), 11, bold=True)
+        self.small_font = pg.font.Font(
+            path_join(RES, "verdana.ttf"), 8, bold=True
+        )
 
         self.surf: pg.Surface = None
         self.ss: pg.Surface = None

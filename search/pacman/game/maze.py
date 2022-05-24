@@ -2,9 +2,9 @@
 from typing import List
 from collections import namedtuple
 from os.path import dirname
-from os.path import join as pj
+from os.path import join as path_join
 
-LEVELS_DIR = pj(dirname(__file__), "resources", "data")
+LEVELS_DIR = path_join(dirname(__file__), "resources", "data")
 
 Coords = namedtuple("Coords", "x y")
 Node = namedtuple(
@@ -79,7 +79,7 @@ class Maze:
 
     def load_nodes(self, file_name: int) -> None:
         """Loads all the nodes from files and initializes all maze-specific information."""
-        with open(pj(LEVELS_DIR, file_name)) as file:
+        with open(path_join(LEVELS_DIR, file_name)) as file:
             h = file.readline()[:-1].split("\t")
             self.name = h[0]
             self.pac_pos = int(h[1])
@@ -112,6 +112,6 @@ class Maze:
         have been removed to preserve memory and all distances are stored
         in a 1D array; they are looked-up using getDistance(-).
         """
-        with open(pj(LEVELS_DIR, file_name)) as file:
+        with open(path_join(LEVELS_DIR, file_name)) as file:
             for line in file:
                 self.distances.append(int(line))

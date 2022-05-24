@@ -4,9 +4,9 @@ from typing import Optional, Union, Tuple, Deque, List
 from collections import deque
 import pygame as pg
 from os.path import dirname
-from os.path import join as pj
+from os.path import join as path_join
 
-RESOURCES = pj(dirname(__file__), "resources")
+RESOURCES = path_join(dirname(__file__), "resources")
 
 DebugRect = namedtuple("DebugRect", ["rect", "color"])
 DebugDinoRect = namedtuple("DebugDinoRect", ["dxdy", "rect", "color"])
@@ -40,7 +40,7 @@ class DebugGame(Game):
         self, seed: Optional[int] = None, *, new_game: bool = True
     ) -> None:
         pg.font.init()
-        self.debug_font = pg.font.Font(pj(RESOURCES, "verdana.ttf"), 12)
+        self.debug_font = pg.font.Font(path_join(RESOURCES, "verdana.ttf"), 12)
 
         self.debug_rects: Deque[DebugRect] = deque()
         self.debug_dino_rects: List[DebugDinoRect] = []
