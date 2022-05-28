@@ -76,19 +76,21 @@ def random_forward_prob(size: int) -> BooleanCSP:
         new_vars = min(size - n, random.randrange(1, 5))
 
         sum_ = 0
-        cvars = []
+        c_vars = []
+        # select variables with value for constraint
         for i in random.sample(range(prev), k=prev):
-            cvars.append(var_map[i])
+            c_vars.append(var_map[i])
             sum_ += vals[i]
 
+        # decide value for new variables and sets it
         val = 1 if sum_ == 0 else 0 if sum_ == prev else random.randrange(2)
-        for i in range(new_vars):
-            cvars.append(var_map[n + i])
+        for i in range(n, n + new_vars):
+            c_vars.append(var_map[i])
             vals.append(val)
             sum_ += val
 
-        cvars.sort()
-        csp.add_constraint(Constraint(sum_, cvars))
+        c_vars.sort()
+        csp.add_constraint(Constraint(sum_, c_vars))
         n += new_vars
     return csp
 
@@ -240,8 +242,8 @@ def test_solve_random(solver: Solver) -> bool:
     return True
 
 
-def test_infer(probs, solver: Solver) -> bool:
-    for pi, p in enumerate(probs, 1):
+def test_infer(problems, solver: Solver) -> bool:
+    for pi, p in enumerate(problems, 1):
         expected = {}
         csp = parse(p, expected)
 
