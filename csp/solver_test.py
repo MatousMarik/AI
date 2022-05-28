@@ -72,7 +72,6 @@ def str_values(a: list) -> str:
 
 def random_forward_prob(size: int) -> BooleanCSP:
     """Generate a random CSP that can be solved by forward checking."""
-    random.seed(0)
     var_map = list(range(size))
     random.shuffle(var_map)
 
@@ -105,7 +104,6 @@ def random_forward_prob(size: int) -> BooleanCSP:
 
 def random_satisfiable(size: int) -> BooleanCSP:
     """Generate a random CSP that is satisfiable."""
-    random.seed(0)
     vals = random.choices([True, False], k=size)
     print("actual values:", str_values(vals))
     csp = BooleanCSP(size)
