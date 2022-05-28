@@ -80,8 +80,8 @@ def random_forward_prob(size: int) -> BooleanCSP:
     csp = BooleanCSP(size)
     n = 0
     while n < size:
-        prev = min(n, 1 + random.randrange(4))
-        new_vars = min(size - n, 1 + random.randrange(4))
+        prev = min(n, random.randrange(1, 5))
+        new_vars = min(size - n, random.randrange(1, 5))
 
         sum_ = 0
         cvars = []
@@ -110,7 +110,7 @@ def random_satisfiable(size: int) -> BooleanCSP:
     print("actual values:", str_values(vals))
     csp = BooleanCSP(size)
     for _ in range(floor(2 / 3 * size)):
-        count = min(2 + random.randrange(4), size)
+        count = min(random.randrange(2, 6), size)
         vars = random.sample(range(size), k=count)
         sum_ = sum([vals[v] for v in vars])
         csp.add_constraint(Constraint(sum_, vars))
