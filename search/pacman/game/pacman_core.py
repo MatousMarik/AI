@@ -8,7 +8,7 @@ from copy import deepcopy
 
 
 class DM(Enum):
-    """simple enumeration for use with the direction methods (below)."""
+    """Simple enumeration for use with the direction methods (below)."""
 
     PATH = auto()
     EUCLID = auto()
@@ -17,6 +17,8 @@ class DM(Enum):
 
 
 class Direction(IntEnum):
+    """Note: for enumeration is recommended to use range(-1,4), that is much faster."""
+
     NONE = -1
     UP = 0
     RIGHT = 1
@@ -33,6 +35,8 @@ class Game:
      c) test moves by using a forward model
          i.e., copy() followed by advanceGame()
          (which is slow and should not be necessary for our purpose)
+
+    You can find getters under "GETTERS" comment bellow.
     """
 
     PILL = 10
@@ -147,9 +151,9 @@ class Game:
         self._fruit_loc: int = -1
         self.ate_fruit_time: int = 0
 
-    # =========
-    # GAME PLAY
-    # =========
+    # ===============================================================
+    #                         GAME PLAY
+    # ===============================================================
 
     def _place_in_lair(self, index: int) -> None:
         loc = self._maze.lair_pos
@@ -436,9 +440,9 @@ class Game:
         self._level_time += 1
         self._check_level_state()
 
-    # =======
-    # GETTERS
-    # =======
+    # ===============================================================
+    #                            GETTERS
+    # ===============================================================
 
     @property
     def score(self) -> int:

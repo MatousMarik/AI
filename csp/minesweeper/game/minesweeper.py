@@ -107,7 +107,7 @@ class ActionFactory:
 
 class Board:
     """
-    Represents state of minesweeper game.
+    Represent state of the minesweeper game.
 
     Main methods:
     - initialization - fills board with mines randomly and set hits

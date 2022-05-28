@@ -10,7 +10,7 @@ Pos = namedtuple("Pos", "x y")
 
 class Board:
     """
-    Sokoban game state representation.
+    Sokoban game-state representation.
 
     Implements eq and hash.
 

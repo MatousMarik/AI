@@ -332,6 +332,10 @@ class Dino:
 
 
 class Game:
+    """
+    Represent state of the dino game.
+    """
+
     SPAWN = 0.04
     SPAWN_INC = 0.001
     PREVIOUS_OBSTACLE = 800
