@@ -1,16 +1,10 @@
 #!/usr/bin/env python3
 from math import floor
 from csp_templates import Constraint, BooleanCSP
-
-from solver import Solver
+from typing import Tuple, Optional, Dict
 import random
 
-
-class Assignment:
-    def __init__(self, var: int, value: bool):
-        self.var: int = var
-        self.value: bool = value
-
+from solver import Solver
 
 # Some small problems that are solvable by forward checking.
 easy = [
@@ -72,8 +66,7 @@ def str_values(a: list) -> str:
 
 def random_forward_prob(size: int) -> BooleanCSP:
     """Generate a random CSP that can be solved by forward checking."""
-    var_map = list(range(size))
-    random.shuffle(var_map)
+    var_map = random.sample(range(size), k=size)
 
     vals = []
     csp = BooleanCSP(size)
@@ -84,11 +77,9 @@ def random_forward_prob(size: int) -> BooleanCSP:
 
         sum_ = 0
         cvars = []
-        while len(cvars) < prev:
-            i = random.randrange(prev)
-            if var_map[i] not in cvars:
-                cvars.append(var_map[i])
-                sum_ += vals[i]
+        for i in random.sample(range(prev), k=prev):
+            cvars.append(var_map[i])
+            sum_ += vals[i]
 
         val = 1 if sum_ == 0 else 0 if sum_ == prev else random.randrange(2)
         for i in range(new_vars):
@@ -102,22 +93,27 @@ def random_forward_prob(size: int) -> BooleanCSP:
     return csp
 
 
-def random_satisfiable(size: int) -> BooleanCSP:
-    """Generate a random CSP that is satisfiable."""
+def random_satisfiable(size: int) -> Tuple[BooleanCSP, str]:
+    """
+    Generate a random CSP that is satisfiable.
+    Returns csp and solution string.
+    """
     vals = random.choices([True, False], k=size)
-    print("actual values:", str_values(vals))
     csp = BooleanCSP(size)
     for _ in range(floor(2 / 3 * size)):
         count = min(random.randrange(2, 6), size)
         vars = random.sample(range(size), k=count)
         sum_ = sum([vals[v] for v in vars])
         csp.add_constraint(Constraint(sum_, vars))
-
-    print(csp)
-    return csp
+    return csp, "actual values:\n" + str_values(vals)
 
 
-def parse(s: str, inferences: None) -> BooleanCSP:
+def parse(s: str, inferences: Optional[Dict] = None) -> BooleanCSP:
+    """
+    Parse csp problem from string to BooleanCSP.
+    If inferences are provided and available it also fills inferences
+    with as var -> val mapping.
+    """
     top = s.split("/")
     parts = top[0].split(":")
     num_vars = int(parts[0].split(" ", maxsplit=1)[0])
@@ -134,16 +130,15 @@ def parse(s: str, inferences: None) -> BooleanCSP:
     if len(top) > 1 and inferences is not None:
         for a in top[1].split(","):
             a = a.strip().split("=")
-            inferences.append(Assignment(int(a[0]), a[1] == "T"))
-
+            inferences[int(a[0])] = a[1] == "T"
     return csp
 
 
-def check_solved(csp: BooleanCSP) -> bool:
+def check_solved(csp: BooleanCSP) -> Tuple[bool, str]:
+    """Returns solved and error string."""
     for i, v in enumerate(csp.value):
-        if v == None and csp.var_constraints[i]:
-            print(f"no value for {i}")
-            return False
+        if v is None and csp.var_constraints[i]:
+            return False, f"no value for {i}"
 
     for c in csp.constraints:
         count = 0
@@ -152,29 +147,38 @@ def check_solved(csp: BooleanCSP) -> bool:
                 count += 1
 
         if count != c.count:
-            print("constraint not satisfied")
-            return False
-
-    return True
+            return False, f"constraint {str(c)} not satisfied"
+    return True, None
 
 
-def test_forward(csp: BooleanCSP, solver: Solver) -> bool:
+def test_forward(csp: BooleanCSP, solver: Solver) -> Tuple[bool, str]:
+    """Return solved and error string."""
     found = solver.forward_check(csp)
     if found is None:
-        print("failed to find a solution")
-        return False
-    print(str_values(csp.value))
+        return False, "failed to find a solution"
     if len(found) != csp.num_vars:
-        "failed to solve all variables"
-        return False
-    return check_solved(csp)
+        return (
+            False,
+            "failed to solve all variables\nfound solution:\n"
+            + str_values(csp.value),
+        )
+
+    fine, error = check_solved(csp)
+    if fine:
+        return True, None
+    else:
+        return False, error + "\nfound solution:\n" + str_values(csp.value)
 
 
 def test_forward_easy(solver: Solver) -> bool:
     print("\ntesting forward checking")
-    for p in easy:
-        print(p)
-        if not test_forward(parse(p, None), solver):
+    for pi, p in enumerate(easy, 1):
+        solved, error = test_forward(parse(p, None), solver)
+        if solved:
+            print(f"problem {pi}: solved")
+        else:
+            print(p)
+            print(error)
             return False
     return True
 
@@ -183,27 +187,40 @@ def test_forward_random(solver: Solver) -> bool:
     print("\ntesting forward checking on random problems")
     for size in range(10, 101, 10):
         csp = random_forward_prob(size)
-        print(csp)
-        if not test_forward(csp, solver):
+        solved, error = test_forward(csp, solver)
+        if solved:
+            print(f"{size} vars: solved")
+        else:
+            print(csp)
+            print(error)
             return False
     return True
 
 
-def test_solve(csp: BooleanCSP, solver: Solver) -> bool:
+def test_solve(csp: BooleanCSP, solver: Solver) -> Tuple[bool, str]:
+    """Return solved and error string."""
     found = solver.solve(csp)
     if found is None:
-        print("failed to find a solution")
-        return False
-    print("found solution:", str_values(csp.value))
-    return check_solved(csp)
+        return False, "failed to find a solution"
+    fine, error = check_solved(csp)
+    if fine:
+        return True, None
+    else:
+        return False, error + "\nfound solution:\n" + str_values(csp.value)
 
 
 def test_solve_fixed(solver: Solver) -> bool:
     print("\ntesting solver")
+    pi = 0
     for tests in [easy, harder]:
         for p in tests:
-            print(p)
-            if not test_solve(parse(p, None), solver):
+            pi += 1
+            solved, error = test_solve(parse(p, None), solver)
+            if solved:
+                print(f"problem {pi}: solved")
+            else:
+                print(p)
+                print(error)
                 return False
     return True
 
@@ -211,27 +228,34 @@ def test_solve_fixed(solver: Solver) -> bool:
 def test_solve_random(solver: Solver) -> bool:
     print("\ntesting solver on random problems")
     for size in range(100, 1001, 100):
-        csp = random_satisfiable(size)
-        if not test_solve(csp, solver):
+        csp, actual = random_satisfiable(size)
+        solved, error = test_solve(csp, solver)
+        if solved:
+            print(f"{size} vars: solved")
+        else:
+            print(csp)
+            print(error)
+            print(actual)
             return False
     return True
 
 
 def test_infer(probs, solver: Solver) -> bool:
-    for p in probs:
-        print(p)
-        expected = []
+    for pi, p in enumerate(probs, 1):
+        expected = {}
         csp = parse(p, expected)
 
         # Repeatedly call forwardCheck() and inferVar() to infer as much as possible.
         while True:
             if solver.forward_check(csp) is None:
+                print(p)
                 print("forward inference failed")
                 return False
             if solver.infer_var(csp) == -1:
                 break
 
-        print(str_values(csp.value))
+        # check inferences correspond to expected
+        error = None
         for var, val in enumerate(csp.value):
             b = None
             for c in csp.var_constraints[var]:
@@ -240,19 +264,26 @@ def test_infer(probs, solver: Solver) -> bool:
                     break
 
             if b is None:
-                for a in expected:
-                    if a.var == var:
-                        b = a.value
-                        break
+                if var in expected:
+                    b = expected[var]
+                    break
             if b is None and val is not None:
-                print(f"should not have inferrred value for var {var}")
-                return False
+                error = f"should not have inferred value for var {var}"
+                break
             if b is not None and val is None:
-                print(f"should have inferred value for var {var}")
-                return False
+                error = f"should have inferred value for var {var}"
+                break
             if b != val:
-                print(f"inferred wrong value for var {var}")
-                return False
+                error = f"inferred wrong value for var {var}"
+                break
+        if error is None:
+            print(f"problem {pi}: solved")
+        else:
+            print(p)
+            print(error)
+            print("found solution:")
+            print(str_values(csp.value))
+            return False
     return True
 
 
