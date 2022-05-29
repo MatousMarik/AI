@@ -146,7 +146,7 @@ class Rect:
 
     @staticmethod
     def collision(t1, l1, b1, r1, t2, l2, b2, r2) -> bool:
-        """Whether two [top left bottom right] rectangles colide."""
+        """Whether two [top left bottom right] rectangles collide."""
         return t1 < b2 and l1 < r2 and b1 > t2 and r1 > l2
 
 
