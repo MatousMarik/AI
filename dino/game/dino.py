@@ -352,7 +352,7 @@ class Game:
 
     SPAWN = 0.04
     SPAWN_INC = 0.001
-    PREVIOUS_OBSTACLE = 800
+    PREVIOUS_OBSTACLE = WIDTH - 300
     SPEED = 5
     INC_INTEVAL = 100
     SPEED_INC = 0.3
@@ -381,6 +381,10 @@ class Game:
         self.previous_obstacle = Game.PREVIOUS_OBSTACLE
 
     def _add_obstacle(self) -> None:
+        """
+        If previous obstacle is far enough
+        randomly add obstacle with respect to spawn.
+        """
         if len(self.obstacles) == 0 or (
             self.obstacles[0].rect.x < self.previous_obstacle
             and self.rnd.random() < self.spawn

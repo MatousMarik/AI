@@ -289,10 +289,3 @@ class Dino_GUI:
             pg.draw.line(s, l.color, l.start, l.start + l.vector)
         for t in game.debug_texts:
             s.blit(game.debug_font.render(t.text, False, t.color), t.xy)
-
-
-# =========================
-# VISUAL AIDS FOR DEBUGGING
-# =========================
-# namedtuples are used since pg.Rect and pg.Vector2
-# can be easily modified in place

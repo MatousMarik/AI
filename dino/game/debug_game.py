@@ -8,6 +8,8 @@ from os.path import join as path_join
 
 RESOURCES = path_join(dirname(__file__), "resources")
 
+# namedtuple is used since pg.Rect and pg.Vector2
+# can be easily modified in place
 DebugRect = namedtuple("DebugRect", ["rect", "color"])
 DebugDinoRect = namedtuple("DebugDinoRect", ["dxdy", "rect", "color"])
 DebugLine = namedtuple("DebugLine", ["start", "end", "color"])
@@ -17,7 +19,7 @@ DebugDinoLine = namedtuple(
 
 
 class DebugText:
-    """Namedtuple can't be used sso text can be replaced."""
+    """Namedtuple can't be used so text can be replaced."""
 
     def __init__(
         self, xy: Coords, text: str, color: Union[str, Tuple[int, int, int]]
