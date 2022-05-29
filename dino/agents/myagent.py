@@ -4,9 +4,10 @@ from game.agent import Agent
 
 
 class MyAgent(Agent):
-    """Reflex agent class for Dino game."""
+    """Reflex agent static class for Dino game."""
 
-    def get_move(self, game: Game) -> DinoMove:
+    @staticmethod
+    def get_move(game: Game) -> DinoMove:
         # # for visual debugging intellisense you can use
         # from game.debug_game import DebugGame
         # game: DebugGame = game

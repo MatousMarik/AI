@@ -4,15 +4,16 @@ from game.agent import Agent
 
 
 class Dummy_Agent(Agent):
-    """Reflex agent class for Dino game."""
+    """Reflex agent static class for Dino game."""
 
     def __init__(self) -> None:
         # AGENT WON'T BE INITIALIZED, SO THIS IS FINE
         raise RuntimeError
 
-    def get_move(self, game: Game) -> DinoMove:
+    @staticmethod
+    def get_move(game: Game) -> DinoMove:
         # for visual debugging intellisense you can use
-        if self.debug:
+        if Dummy_Agent.debug:
             from game.debug_game import DebugGame
 
             game: DebugGame = game
@@ -34,7 +35,7 @@ class Dummy_Agent(Agent):
         x = game.dino.x
         for o in game.obstacles:
             if o.rect.coords.x > x and o.rect.coords.x < x + 600 // game.speed:
-                if self.verbose:
+                if Dummy_Agent.verbose:
                     print("jumping")
                 return DinoMove.UP
 

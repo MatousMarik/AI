@@ -192,12 +192,15 @@ class Dino:
         # AGENT MIGHT WANT TO ACCESS THESE:
         self.x: float = Dino.X
         self.y: int = Dino.Y
+
+        # velocities
         self.jump_vel: float = Dino.JUMP_VEL
         self.move_vel: float = 0
 
         self.state: DinoState = DinoState.RUNNING
 
     def _fell(self) -> bool:
+        """Dino fell to the ground."""
         # MAX_HEIGHT can be used because dino is surely standing
         # when this method is called
         return self.y + Dino.MAX_HEIGHT >= Game.GROUND_Y
@@ -207,6 +210,17 @@ class Dino:
         Move dino according to given movement.
 
         Set state and rectangle.
+
+        Horizontal movement:
+            Left/right movement causes acceleration along the x-axis.
+            Once direction is changed acceleration is reset.
+        Vertical movement:
+            When running, dino can duck to avoid collision with flying bird
+            by moving down or it can initialize jump by moving up.
+            Once jump is initialized dino gets upwards velocity
+            that continuously decrease until dino falls.
+            During the jump down movement cause upward velocity
+            to instantly decrease to negative values and decrease more quickly.
         """
         fall = False
         if action.UP is not None:

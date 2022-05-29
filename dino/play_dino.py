@@ -76,9 +76,8 @@ def process_args(
             )
             agent_module = module_from_spec(spec)
             spec.loader.exec_module(agent_module)
-            agent_class = getattr(agent_module, args.agent)
-            # instantiate agent without calling initializing
-            agent = agent_class.__new__(agent_class)
+            # agent is a non-instantiated class
+            agent = getattr(agent_module, args.agent)
             agent.verbose = args.verbose
             agent.debug = args.debug
         except BaseException as e:
