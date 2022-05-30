@@ -7,6 +7,7 @@ import pygame as pg
 from os import environ
 from os.path import dirname
 from os.path import join as path_join
+from dataclasses import make_dataclass
 
 WINDOW_POSITION = (150, 120)
 
@@ -24,7 +25,7 @@ def convert_image(name: str) -> pg.Surface:
     return pg.image.load(path_join(RESOURCES, name)).convert_alpha()
 
 
-Images = namedtuple(
+Images = make_dataclass(
     "Images",
     [
         "track",

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from game.controllers import PacManControllerBase
-from game.pacman_core import Game, DM
+from game.pacman import Game, DM
 
 
 class Agent_Example(PacManControllerBase):

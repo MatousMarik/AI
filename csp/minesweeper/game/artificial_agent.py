@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from game.minesweeper import Board, Action, ActionFactory
+from game.minesweeper import Board, Action, ActionFactory, Position
 from random import Random
 from time import perf_counter
 from typing import List, Tuple
@@ -31,7 +31,7 @@ class ArtificialAgent:
         self._think_time = 0  # seconds
 
         # not visible tiles
-        self.unknown: List[Tuple[int, int]] = None
+        self.unknown: List[Position] = None
 
     def new_game(self) -> None:
         """Agent got into a new level."""
@@ -47,13 +47,15 @@ class ArtificialAgent:
 
         if self.unknown:
             self.unknown[:] = [
-                pos for pos in self.unknown if not board.tile(*pos).visible
+                pos
+                for pos in self.unknown
+                if not board.tile(pos.x, pos.y).visible
             ]
         else:
             self.unknown = []
             for (x, y), tile in board.generator():
                 if not tile.visible:
-                    self.unknown.append((x, y))
+                    self.unknown.append(Position(x, y))
 
     def act(self) -> Action:
         """Agent is queried what to do next."""
@@ -72,16 +74,19 @@ class ArtificialAgent:
 
         # always use advice
         safe_pos = self._board.last_safe_tile
-        if safe_pos is not None and not self._board.tile(*safe_pos).visible:
+        if (
+            safe_pos is not None
+            and not self._board.tile(safe_pos.x, safe_pos.y).visible
+        ):
             if self.verbose > 1:
-                print("took hint at ({0}, {1})".format(*safe_pos))
-            return ActionFactory.get_uncover_action(*safe_pos)
+                print("took hint at ({0}, {1})".format(safe_pos.x, safe_pos.y))
+            return ActionFactory.get_uncover_action(safe_pos.x, safe_pos.y)
 
         # check only mines remaining
         if len(self.unknown) == self._board.mines_count:
             for pos in self.unknown:
-                if not self._board.tile(*pos).flag:
-                    return ActionFactory.get_flag_action(*pos)
+                if not self._board.tile(pos.x, pos.y).flag:
+                    return ActionFactory.get_flag_action(pos.x, pos.y)
             raise RuntimeError(
                 "Should not reach here; solution or board.mines invalid?"
             )

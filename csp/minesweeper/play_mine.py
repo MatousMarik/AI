@@ -219,7 +219,11 @@ def sim(
                 board.apply_action(action)
                 observed = 0
             else:
-                print("WARNING: Ignoring invalid action: {}.".format(action))
+                print(
+                    "WARNING: Ignoring invalid action: {}.".format(
+                        ActionFactory.action_to_string(action)
+                    )
+                )
 
             # DRAW
             if gui:

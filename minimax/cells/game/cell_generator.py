@@ -6,17 +6,17 @@ import game.cells as gc
 
 
 def half_counts_of_cells_in_columns(
-    num_cells, d_inc: int, width, half_width, height, rnd: Random
+    num_cells, d_inc: int, width, half_width, est_height, rnd: Random
 ) -> List[int]:
-    """Return number of cells in columns for the first half of grid."""
-    mid = height // max(1, d_inc // 2)
+    """Return number of cells in columns for the first half of grid and height."""
+    mid = est_height // max(1, d_inc // 2)
     if num_cells % 2 == 1 and mid % 2 != 1:
-        height += 1
+        est_height += 1
         mid += 1
     elif num_cells % 2 == 0 and mid % 2 == 1:
         mid -= 1
     avg_count = num_cells // width
-    max_count, min_count = min(avg_count * 5 // 2, height), max(
+    max_count, min_count = min(avg_count * 5 // 2, est_height), max(
         1, avg_count // 2
     )
     counts = rnd.choices(range(min_count, max_count), k=half_width)
@@ -38,7 +38,7 @@ def half_counts_of_cells_in_columns(
                 counts[i] += dif
                 half_missing -= dif
     counts.append(mid)
-    return counts
+    return counts, est_height
 
 
 def get_grid_with_holes(
@@ -372,11 +372,11 @@ def generate_cells(
     d_inc = int(1 / density)
     x = sqrt(num_cells * d_inc / 40)
     half_width = ceil(4 * x)
-    width, height = half_width * 2 + 1, ceil(5 * x)
+    width, estimated_height = half_width * 2 + 1, ceil(5 * x)
 
     for i in range(10):
-        counts = half_counts_of_cells_in_columns(
-            num_cells, d_inc, width, half_width, height, rnd
+        counts, height = half_counts_of_cells_in_columns(
+            num_cells, d_inc, width, half_width, estimated_height, rnd
         )
 
         grid = get_grid_with_holes(

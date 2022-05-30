@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from game.pacman_core import Game, Direction
+from game.pacman import Game, Direction
 from typing import List, Optional, Sequence, Tuple
 from copy import deepcopy
 from enum import IntEnum

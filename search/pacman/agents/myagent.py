@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from game.controllers import PacManControllerBase
-from game.pacman_core import Game, DM
+from game.pacman import Game, DM
 
 # from game.pac_gui import PacView
 import sys
@@ -9,7 +9,7 @@ from os.path import dirname
 # hack for importing from parent package
 sys.path.append(dirname(dirname(dirname(__file__))))
 from search_templates import *
-from ucs import UCS
+from ucs import ucs
 
 # hint: class PacManProblem(Problem)...
 #       ... Ucs.search(problem)

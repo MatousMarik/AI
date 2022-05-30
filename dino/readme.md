@@ -1,5 +1,5 @@
 # Assignment 1: Dino
-![Dino](dino.png)
+![dino image](dino.png)
 
 
 Dino is a simple implementation of Google Chrome T-Rex. The goal is to control tyrannosaurus so he won't collide with obstacles — cactuses and birds — for as long as possible, while it slowly accelerates. 

@@ -3,13 +3,17 @@ from game.agent import Agent
 from game.cells import *
 
 from typing import List, Tuple, Union
-from collections import namedtuple
+from dataclasses import dataclass, astuple
 
 
 MAX_INT = 2**16
-EnemyCell = namedtuple(
-    "EnemyCell", "min_attack index min_defense", defaults=(None, None, None)
-)
+
+
+@dataclass
+class EnemyCell:
+    min_attack: int = None
+    index: int = None
+    min_defense: int = None
 
 
 class Ranger(Agent):
@@ -21,9 +25,9 @@ class Ranger(Agent):
             e[1],
         )
         self.enemy_key = lambda e: (
-            e[0] - self.e_incoming[e[1]][0],
+            e.min_attack - self.e_incoming[e.index][0],
             self.random.randrange(MAX_INT),
-            e[1],
+            e.index,
         )
         self.need_key = lambda e: (
             e[0],
@@ -97,7 +101,7 @@ class Ranger(Agent):
         bn, bp = [], []
 
         for ci in self.border:
-            ep = [
+            en_players = [
                 EnemyCell(
                     Ranger.atk_mass(game.masses[ni]),
                     ni,
@@ -106,13 +110,13 @@ class Ranger(Agent):
                 for ni in game.neighbors[ci]
                 if game.owners[ni] == 3 - self.me
             ]
-            en = [
+            en_neutrals = [
                 EnemyCell(Ranger.atk_mass(game.masses[ni]), ni)
                 for ni in game.neighbors[ci]
                 if game.owners[ni] == 0
             ]
-            self.enemies[ci] = (ep, en)
-            if ep:
+            self.enemies[ci] = (en_players, en_neutrals)
+            if en_players:
                 bp.append(ci)
             else:
                 bn.append(ci)
@@ -125,23 +129,23 @@ class Ranger(Agent):
 
         if self.me == 1:
             for ci in self.border:
-                ep = self.enemies[ci][0]
-                if ep:
+                en_players = self.enemies[ci][0]
+                if en_players:
                     self.needs[ci] = CellType.MAXIMAL.min_size + sum(
-                        dm for _, _, dm in ep
+                        ep.min_defense for ep in en_players
                     )
                 else:
                     self.needs[ci] = CellType.MAXIMAL.min_size
         else:
             for ci in self.border:
-                ep, en = self.enemies[ci]
-                if ep:
+                en_players, en_neutrals = self.enemies[ci]
+                if en_players:
                     self.needs[ci] = CellType.MAXIMAL.min_size + max(
-                        e.min_attack for e in ep
+                        e.min_attack for e in en_players
                     )
                 else:
                     self.needs[ci] = CellType.MAXIMAL.min_size + max(
-                        e.min_attack for e in en
+                        e.min_attack for e in en_neutrals
                     )
         self.first_border_nb: int = len(self.insides) - border_nbs_count
         self.incoming: List[int] = [0] * game.num_cells
@@ -171,11 +175,12 @@ class Ranger(Agent):
 
     def add_plan(self, cell: int, enemies: List[EnemyCell], mass: int) -> None:
         pl = []
-        for _, ei, _ in enemies:
-            e_i = self.e_incoming[ei]
-            if e_i[0] > -1:
-                e_i[0] += mass
-                e_i[1].append(cell)
+        for e in enemies:
+            ei = e.index
+            e_inc = self.e_incoming[ei]
+            if e_inc[0] > -1:
+                e_inc[0] += mass
+                e_inc[1].append(cell)
                 pl.append(ei)
 
         self.plans[cell] = (
@@ -262,7 +267,7 @@ class Ranger(Agent):
         can_plan = False
         cp_index = 0
         for index_in_enemies in range(len(enemies)):
-            min_attack, ei, def_need = enemies[index_in_enemies]
+            min_attack, ei, def_need = astuple(enemies[index_in_enemies])
             inc_attack, _ = self.e_incoming[ei]
             if inc_attack <= -1:
                 cp_index += 1

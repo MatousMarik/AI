@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 from search_templates import Problem, Solution
+from typing import Optional
 
 
-def UCS(prob: Problem) -> Solution:
+def ucs(prob: Problem) -> Optional[Solution]:
     """Return Solution of the problem solved by UCS search."""
     # Your implementation goes here.
     raise NotImplementedError

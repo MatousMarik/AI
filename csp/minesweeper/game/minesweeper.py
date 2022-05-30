@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 from copy import deepcopy
 from typing import List, Tuple, Generator, Optional
-from collections import namedtuple
+from dataclasses import dataclass
 from random import Random
 
-Position = namedtuple("Position", "x y")
+
+@dataclass
+class Position:
+    x: int
+    y: int
 
 
 class Tile:
@@ -73,7 +77,11 @@ class Tile:
         return "."
 
 
-Action = namedtuple("Action", "type x y", defaults=[0, None, None])
+@dataclass
+class Action:
+    type: int
+    x: int = None
+    y: int = None
 
 
 class ActionFactory:
@@ -98,7 +106,7 @@ class ActionFactory:
         return Action(0)
 
     @staticmethod
-    def __str__(action: Action) -> str:
+    def action_to_string(action: Action) -> str:
         return "Action[{}{}]".format(
             ActionFactory.names[action.type],
             "" if action.type == 0 else "|{},{}".format(action.x, action.y),

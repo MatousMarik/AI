@@ -2,31 +2,47 @@
 from game.dino import *
 from typing import Optional, Union, Tuple, Deque, List
 from collections import deque
+from dataclasses import dataclass
 import pygame as pg
 from os.path import dirname
 from os.path import join as path_join
 
 RESOURCES = path_join(dirname(__file__), "resources")
 
-# namedtuple is used since pg.Rect and pg.Vector2
-# can be easily modified in place
-DebugRect = namedtuple("DebugRect", ["rect", "color"])
-DebugDinoRect = namedtuple("DebugDinoRect", ["dxdy", "rect", "color"])
-DebugLine = namedtuple("DebugLine", ["start", "end", "color"])
-DebugDinoLine = namedtuple(
-    "DebugDinoLine", ["dxdy", "start", "vector", "color"]
-)
+
+@dataclass
+class DebugRect:
+    rect: pg.Rect
+    color: pg.Color
 
 
+@dataclass
+class DebugDinoRect:
+    dxdy: pg.Vector2
+    rect: pg.Rect
+    color: pg.Color
+
+
+@dataclass
+class DebugLine:
+    start: pg.Vector2
+    end: pg.Vector2
+    color: pg.Color
+
+
+@dataclass
+class DebugDinoLine:
+    dxdy: pg.Vector2
+    start: pg.Vector2
+    vector: pg.Vector2
+    color: pg.Color
+
+
+@dataclass
 class DebugText:
-    """Namedtuple can't be used so text can be replaced."""
-
-    def __init__(
-        self, xy: Coords, text: str, color: Union[str, Tuple[int, int, int]]
-    ):
-        self.xy: Coords = xy
-        self.text: str = text
-        self.color: Union[str, Tuple[int, int, int]] = color
+    xy: pg.Vector2
+    text: str
+    color: Union[str, Tuple[int, int, int]]
 
 
 class DebugGame(Game):
@@ -155,7 +171,7 @@ class DebugGame(Game):
         Note: text is rerendered each frame, so you can
               just change returned_reference.text to change the value.
         """
-        t = DebugText(xy, text, color)
+        t = DebugText(pg.Vector2(xy), text, color)
         self.debug_texts.append(t)
         return t
 

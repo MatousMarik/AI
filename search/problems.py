@@ -31,6 +31,27 @@ class Empty(Problem, Optimal):
         return 0
 
 
+class Unsolvable(Problem):
+    """
+    Model search problem testing goal checking.
+    """
+
+    def initial_state(self):
+        return 0
+
+    def actions(self, state) -> list:
+        return [1, 2, 3]
+
+    def result(self, state, action):
+        return min(state + action, 10)
+
+    def is_goal(self, state) -> bool:
+        return False
+
+    def cost(self, state, action) -> float:
+        return 1
+
+
 class Graph(Optimal, Problem):
     """Model search problem testing graph."""
 

@@ -3,6 +3,7 @@ from game.cells import Transfer, Game
 from game.agent import Agent
 
 from math import sqrt
+from dataclasses import make_dataclass
 from collections import namedtuple
 import pygame as pg
 from typing import List, Tuple
@@ -23,7 +24,7 @@ ZERO_COORDS = pg.Vector2(0, 0)
 environ["SDL_VIDEO_WINDOW_POS"] = (
     str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
 )
-Colors = namedtuple(
+Colors = make_dataclass(
     "Colors",
     [
         "background",
@@ -78,7 +79,9 @@ COLORS = Colors(
     pg.Color(1, 2, 3),
 )
 
-Arrow = namedtuple("Arrow", "text_rect whole_rect surface transfer")
+Arrow = make_dataclass(
+    "Arrow", ["text_rect", "whole_rect", "surface", "transfer"]
+)
 
 
 class CellsGUI:
@@ -228,8 +231,8 @@ class CellsGUI:
         arrows.fill(COLORS.colorkey)
         arrows.set_colorkey(COLORS.colorkey)
         arrows.set_alpha(TRANSPARENT)
-        for source, target, mass in transfers:
-            self.draw_arrow(arrows, source, target, mass, owner)
+        for t in transfers:
+            self.draw_arrow(arrows, t.source, t.target, t.mass, owner)
         self.screen.blit(arrows, ZERO_COORDS)
         pg.display.update()
 
@@ -510,8 +513,8 @@ class CellsGUIAgent(CellsGUI, Agent):
         arrows = pg.Surface((self.width, self.height))
         arrows.set_colorkey(COLORS.colorkey)
         arrows.fill(COLORS.colorkey)
-        for _, r, s, _ in self.arrows:
-            arrows.blit(s, r)
+        for ar in self.arrows:
+            arrows.blit(ar.surface, ar.whole_rect)
         arrows.set_alpha(TRANSPARENT)
         self.screen.blit(arrows, ZERO_COORDS)
 
@@ -625,5 +628,5 @@ class CellsGUIAgent(CellsGUI, Agent):
             clock.tick(FPS)
 
         m = [a.transfer for a in self.arrows]
-        self.arrows = []
+        self.arrows.clear()
         return m

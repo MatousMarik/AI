@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import game.controllers as gc
-from game.pacman_core import Game
+from game.pacman import Game
 from argparse import ArgumentParser, Namespace
 from typing import List, Optional, Tuple
 from time import perf_counter

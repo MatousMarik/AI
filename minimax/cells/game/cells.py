@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 from math import ceil, floor
-from typing import List, Tuple, Union, Optional
+from typing import List, Tuple, Union
 from random import Random
-from collections import namedtuple
+from dataclasses import dataclass
 from copy import deepcopy
 from sys import stderr
 import game.cell_generator
@@ -12,17 +12,21 @@ def ceil_div(a, b):
     return -1 * (-a // b)
 
 
-CT = namedtuple("CT", "size_index growth min_size")
+@dataclass
+class CellProperties:
+    size_index: int
+    growth: int
+    min_size: int
 
 
 class CellType:
     """Represents type of the cell. Must be kept consistent."""
 
-    NEUTRAL = CT(-1, 1, 1)
+    NEUTRAL = CellProperties(-1, 1, 1)
 
-    SMALL = CT(0, 5, 1)
-    MEDIUM = CT(1, 12, 35)
-    BIG = CT(2, 35, 100)
+    SMALL = CellProperties(0, 5, 1)
+    MEDIUM = CellProperties(1, 12, 35)
+    BIG = CellProperties(2, 35, 100)
 
     # NEEDS TO BE KEPT CONSISTENT
     TYPES = (SMALL, MEDIUM, BIG)
@@ -60,6 +64,8 @@ class CellType:
     @staticmethod
     def get_mass_over_min_size(mass: int, size_index: int = -1) -> int:
         """Returns mass available for transfer stay in current or specified size class."""
+        if mass <= 1:
+            return 0
         if size_index == -1:
             i = len(CellType.TYPES) - 1
             mms = CellType.MIN_MASSES
@@ -103,7 +109,7 @@ class Cell:
         return CellType.get_type(self.mass)
 
     @property
-    def type_CT(self) -> CT:
+    def type_CT(self) -> CellProperties:
         CellType.get_type(self.mass)
 
     @staticmethod
@@ -150,7 +156,11 @@ class Cell:
         return growth
 
 
-Transfer = namedtuple("Transfer", "source target mass")
+@dataclass
+class Transfer:
+    source: int
+    target: int
+    mass: int
 
 
 class TransferMove:
@@ -161,11 +171,10 @@ class TransferMove:
         self.transfers.append(transfer)
 
     def add_and_combine_transfer(self, transfer: Transfer) -> None:
-        s, t, m = transfer
-        for i in reversed(range(len(self.transfers))):
-            tr = self.transfers[i]
+        s, t, m = transfer.source, transfer.target, transfer.mass
+        for tr in reversed(self.transfers):
             if tr.source == s and tr.target == t:
-                self.transfers[i] = tr._replace(mass=tr.mass + m)
+                tr.mass += m
                 return
         self.transfers.append(transfer)
 
@@ -176,11 +185,11 @@ class TransferMove:
     def get_transfers_i(move: "TransferMove") -> List[Transfer]:
         return [
             Transfer(
-                cell if isinstance(cell, int) else cell.index,
-                target if isinstance(target, int) else target.index,
-                mass,
+                t.source if isinstance(t.source, int) else t.source.index,
+                t.target if isinstance(t.target, int) else t.target.index,
+                t.mass,
             )
-            for cell, target, mass in move.get_transfers()
+            for t in move.get_transfers()
         ]
 
 
@@ -322,7 +331,7 @@ class Game:
         attacking = attacking * Game.ATTACK_MUL
         if defending >= attacking:
             return False, ceil(defending - attacking * Game.DEF_ATTACK_MUL)
-        return True, attacking - floor(defending * Game.SUC_DEFENSE_MUL)
+        return True, max(1, floor(attacking - defending * Game.SUC_DEFENSE_MUL))
 
     def cell_can_send_mass(
         self, mass: int, source_i: int, recipient_i: int
@@ -365,31 +374,32 @@ class Game:
         real_sender = self.turn
         done = [False] * self.num_cells
 
-        for ci, ti, mass in cell_transfers:
+        for tr in cell_transfers:
+            si, ti, mass = tr.source, tr.target, tr.mass
             # check validity
             errors = []
             if mass <= 0:
                 errors.append("non positive mass")
-            if done[ci]:
+            if done[si]:
                 errors.append("source has already transferred")
-            if ci == ti:
+            if si == ti:
                 errors.append("source targets itself")
-            sender = self.owners[ci]
+            sender = self.owners[si]
             if sender != real_sender:
                 errors.append("source is not owned")
             possible, error = self.cell_can_send_mass(
-                outgoing[ci] + mass, ci, ti
+                outgoing[si] + mass, si, ti
             )
             if not possible:
                 errors.append(error)
 
             if errors:
-                self.print_transfer_error(ci, ti, mass, errors)
+                self.print_transfer_error(si, ti, mass, errors)
                 continue
 
             # append to perform
-            done[ci] = True
-            outgoing[ci] += mass
+            done[si] = True
+            outgoing[si] += mass
             recipient = self.owners[ti]
             if sender == recipient:
                 transfers[ti] += mass
@@ -409,16 +419,15 @@ class Game:
         # receive mass
         total_difs = [0, 0, 0]
         # transfers only as a spaceholder
-        for ci, (c, mass) in enumerate(
+        for si, (c, mass) in enumerate(
             zip(self.cells if update_cells else transfers, attacks)
         ):
             if mass == 0:
                 continue
-            recipient = self.owners[ci]
+            recipient = self.owners[si]
             success, remaining_mass = Game.attack(mass, c.mass)
-            assert remaining_mass > 0
             if success:
-                self.owners[ci] = real_sender
+                self.owners[si] = real_sender
                 total_difs[real_sender] -= mass - remaining_mass
                 if update_cells:
                     if c.owner == 0:
@@ -430,7 +439,7 @@ class Game:
                 total_difs[recipient] -= c.mass - remaining_mass
             if update_cells:
                 c.mass = remaining_mass
-            self.masses[ci] = remaining_mass
+            self.masses[si] = remaining_mass
 
         for i in range(3):
             self.total_masses[i] += total_difs[i]

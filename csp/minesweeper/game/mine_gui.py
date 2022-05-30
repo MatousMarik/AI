@@ -76,7 +76,7 @@ class MineGUI:
         self.screen.blits(sequence)
         if board.last_safe_tile is not None:
             lst = board.last_safe_tile
-            t = board.tile(*lst)
+            t = board.tile(lst.x, lst.y)
             if not t.visible and not t.flag:
                 self.screen.blit(
                     self.tiles["S"], (lst.x * TILE_SIZE, lst.y * TILE_SIZE)

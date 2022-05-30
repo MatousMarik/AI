@@ -3,8 +3,8 @@ import pygame as pg
 import os
 from os.path import join as path_join
 from typing import List, Tuple
-from collections import namedtuple
-from game.pacman_core import Game, Direction
+from dataclasses import make_dataclass
+from game.pacman import Game, Direction
 from game.controllers import *
 
 WINDOW_POSITION = (500, 120)
@@ -345,9 +345,9 @@ class PacView:
     # For debugging/illustration only: draw colors in the maze
     # to check whether controller is working correctly or not,
     # can draw squares and lines (see NearestPillPacManVS for demonstration)
-    DebugPointer = namedtuple("DebugPointer", ["rect", "color"])
-    DebugLine = namedtuple("DebugLine", ["x1y1", "x2y2", "color"])
-    DebugText = namedtuple("DebugText", ["xy", "color", "text"])
+    DebugPointer = make_dataclass("DebugPointer", ["rect", "color"])
+    DebugLine = make_dataclass("DebugLine", ["start", "end", "color"])
+    DebugText = make_dataclass("DebugText", ["pos", "color", "text"])
 
     map_xy_for_lines = lambda xy: (
         xy[0] * PacView.MAG + 5,
@@ -407,8 +407,8 @@ class PacView:
         if cls.is_visible:
             cls.debug_lines.extend(
                 (
-                    cls.DebugLine(f, t, pg.Color(color))
-                    for f, t in zip(
+                    cls.DebugLine(start, to, pg.Color(color))
+                    for start, to in zip(
                         map(
                             cls.map_xy_for_lines,
                             map(game.get_xy, from_node_indices),
@@ -438,8 +438,8 @@ class PacView:
         if cls.is_visible:
             cls.debug_lines.extend(
                 (
-                    cls.DebugLine(f, t, pg.Color(color))
-                    for f, t in zip(
+                    cls.DebugLine(start, end, pg.Color(color))
+                    for start, end in zip(
                         map(cls.map_xy_for_lines, from_xy),
                         map(cls.map_xy_for_lines, to_xy),
                     )
@@ -480,14 +480,14 @@ class PacView:
 
     def _draw_debug_info(self, s: pg.Surface) -> None:
         """Draw added debug entities and clear them."""
-        for pr, color in self.debug_pointers:
-            pg.draw.rect(s, color, pr)
+        for dp in self.debug_pointers:
+            pg.draw.rect(s, dp.color, dp.rect)
 
-        for f, t, color in self.debug_lines:
-            pg.draw.line(s, color, f, t)
+        for dl in self.debug_lines:
+            pg.draw.line(s, dl.color, dl.start, dl.end)
 
-        for p, color, text in self.debug_texts:
-            s.blit(self.font.render(text, False, color), p)
+        for dt in self.debug_texts:
+            s.blit(self.font.render(dt.text, False, dt.color), dt.pos)
 
         self.debug_pointers.clear()
         self.debug_lines.clear()
