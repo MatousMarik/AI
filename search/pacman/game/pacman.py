@@ -8,9 +8,9 @@ from copy import deepcopy
 
 
 class DM(Enum):
-    """Simple enumeration for use with the direction methods (below)."""
+    """Simple enumeration of metrics. To be used with the direction methods (below)."""
 
-    PATH = auto()
+    PATH = auto()  # precalculated - fast
     EUCLID = auto()
     MANHATTAN = auto()
     EUCLID_SQ = auto()
@@ -93,9 +93,10 @@ class Game:
         self.extra_life: bool = False
 
         self._new_board()
-        self.reset(new_level=False)
+        self._initialize_level(new_level=False)
 
     def copy(self) -> "Game":
+        """Return deep copy of the game."""
         return deepcopy(self)
 
     def _change_maze(self, index: int) -> None:
@@ -118,7 +119,7 @@ class Game:
         self._power_pills: List[bool] = [True] * self._maze.power_pill_count
         self.fruits_left: int = 2
 
-    def reset(self, new_level: bool) -> None:
+    def _initialize_level(self, new_level: bool) -> None:
         if new_level:
             if self.remaining_levels > 1:
                 self.remaining_levels -= 1
@@ -184,7 +185,7 @@ class Game:
                 if self._lives_remaining <= 0:
                     self._game_over = True
                 else:
-                    self.reset(False)
+                    self._initialize_level(False)
             return True
         return False
 
@@ -408,14 +409,14 @@ class Game:
         if self._current_level == self.MAX_LEVLES:
             self._game_over = True
         else:
-            self.reset(True)
+            self._initialize_level(True)
 
     def advance_game(
         self,
         pacman_dir: int,
         ghosts_dirs: List[int],
     ) -> Optional[List[int]]:
-        """Central method that advances the game state"""
+        """Central method that advances the game state."""
         if self._action_paused():
             return None
 
@@ -544,8 +545,8 @@ class Game:
         """
         The neighbors of the node at which the specified ghost currently resides.
 
-        NOTE: since ghosts are not allowed to reverse, that neighbor is filtered out.
-            Alternatively use: getNeighbor(), given curGhostLoc[-] for all directions
+        NOTE: Since ghosts are not allowed to reverse, that neighbor is filtered out.
+            Alternatively use: getNeighbor(), given curGhostLoc[-] for all directions.
 
         :return: list of node indices
         """
@@ -559,8 +560,8 @@ class Game:
         """
         The neighbors of the node where ghost with given direction can go.
 
-        NOTE: since ghosts are not allowed to reverse, that neighbor is filtered out.
-            Alternatively use: getNeighbor(), given curGhostLoc[-] for all directions
+        NOTE: Since ghosts are not allowed to reverse, that neighbor is filtered out.
+            Alternatively use: getNeighbor(), given curGhostLoc[-] for all directions.
 
         :return: list of node indices
         """
@@ -645,7 +646,7 @@ class Game:
     def get_pill_index(self, node: int) -> int:
         """
         The pill index of the node. If it is -1, the node has no pill.
-        Otherwise one can use the index to check
+        One can use the index to check
         whether the pill has already been eaten.
         """
         return self._graph[node].pill_index
@@ -653,7 +654,7 @@ class Game:
     def get_power_pill_index(self, node: int) -> int:
         """
         The power pill index of the node. If it is -1, the node has no power pill.
-        Otherwise one can use the index to check
+        One can use the index to check
         whether the power pill has already been eaten.
         """
         return self._graph[node].power_pill_index
@@ -661,7 +662,8 @@ class Game:
     def get_neighbor(self, node: int, dir: int) -> int:
         """
         Returns the neighbor of node index that corresponds to direction.
-        In the case of neutral, the same node index is returned.
+        In the case of no move, the same node index is returned.
+        If there is no neighboring node at the direction return -1.
 
         :return: node index
         """
@@ -671,11 +673,11 @@ class Game:
             return node
 
     def get_node_indices_with_pills(self) -> List[int]:
-        """The indices to all the nodes that have pills."""
+        """The indices to all the nodes that have pills at the beginning of the level."""
         return [*self._maze.pills]
 
     def get_node_indices_with_power_pills(self) -> List[int]:
-        """The indices to all the nodes that have power pills."""
+        """The indices to all the nodes that have power pills at the beginning of the level."""
         return [*self._maze.power_pills]
 
     def get_junction_indices(self) -> List[int]:
@@ -704,7 +706,7 @@ class Game:
     def get_active_pills_nodes(self) -> List[int]:
         """The node indices of all active pills in the maze."""
         nodes = self._maze.pills
-        return [nodes[i] for i in self.get_active_pills_indices()]
+        return [nodes[i] for i, v in enumerate(self._pills) if v]
 
     def get_active_power_pills_indices(self) -> List[int]:
         """The indices of all active power pills in the maze."""
@@ -713,7 +715,7 @@ class Game:
     def get_active_power_pills_nodes(self) -> List[int]:
         """The node indices of all active power pills in the maze."""
         nodes = self._maze.power_pills
-        return [nodes[i] for i in self.get_active_power_pills_indices()]
+        return [nodes[i] for i, v in enumerate(self._power_pills) if v]
 
     def get_pill_node(self, pill_index: int) -> int:
         """Node index of the pill."""
@@ -764,7 +766,7 @@ class Game:
         """
         The PATH distance from any node to any other node.
 
-        Note: precounted - really fast
+        Note: precalculated - really fast
         """
         if from_ == to:
             return 0
@@ -790,9 +792,15 @@ class Game:
         tx, ty = self._graph[to].coords
         return abs(fx - tx) + abs(fy - ty)
 
-    def get_metric_function(
+    def get_distance_function(
         self, measure: DM
     ) -> Union[Callable[[int, int], int], Callable[[int, int], float]]:
+        """
+        Return distance function computing distance between two nodes
+        with respect to given metric.
+
+        Function gets two node indices and returns distance.
+        """
         if measure is DM.PATH:
             return self.get_path_distance
         elif measure is DM.EUCLID:
@@ -814,14 +822,14 @@ class Game:
         """
         Return the direction to take given some options (usually corresponding
         to the neighbors of the node in question), moving either towards or
-        away (closer in {true, false}) using one of the three distance
+        away (closer in {true, false}) using one of the four distance
         measures.
 
         :param from_: list of neighbor nodes (can contain -1)
         :param to: target node
         :return: direction index
         """
-        dist_f = self.get_metric_function(measure)
+        dist_f = self.get_distance_function(measure)
         min_max = min if closer else max
         _, bi = min_max(
             (
@@ -921,7 +929,7 @@ class Game:
 
         :return: node index
         """
-        dist_f = self.get_metric_function(measure)
+        dist_f = self.get_distance_function(measure)
         min_max = min if nearest else max
         _, bt = min_max(
             ((dist_f(from_, node), node) for node in targets if node != -1),
@@ -933,7 +941,7 @@ class Game:
         self, ghost: int, targets: List[int], nearest: bool
     ) -> int:
         """
-        The target nearest/farhest from the position of the ghost,
+        The target nearest/farthest from the position of the ghost,
         considering that reversals are not allowed.
 
         :return: node index
@@ -950,4 +958,8 @@ class Game:
         return -1 if self._fruit_loc == -1 else self.fruit_type
 
     def get_fruit_value(self) -> int:
+        """
+        Return score gain for eating current fruit.
+        0 if there is no fruit.
+        """
         return 0 if self._fruit_loc == -1 else self.FRUIT_VALUE[self.fruit_type]
