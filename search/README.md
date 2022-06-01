@@ -5,7 +5,7 @@
 
 This assignment consist of two parts — implementing uniform-cost search and agent for Pac-Man game.
 ### 1. Uniform-cost search
-Write general-purpose implementation of uniform-cost search in [ucs.py](ucs.py). It should be able to search any problems implementing `Problem` interface, that can be found in [search_templates.py](search_templates.py). The search should return `Solution` instance if solution is found, otherwise null.
+Write general-purpose implementation of uniform-cost search in [ucs.py](ucs.py). It should be able to search any problems implementing `Problem` interface, that can be found in [search_templates.py](search_templates.py). The search should return `Solution` instance if solution is found, otherwise `None`.
 
 Search method could be used like this:
 ```python
@@ -17,6 +17,7 @@ You can test your implementation on `Problem` instances from [problems.py](probl
 
 #### Hints
 - Create `Node` data structure that will hold nodes for the search.
+  - [Dataclass](https://docs.python.org/3/library/dataclasses.html) might come in handy.
 - Create `Path` data structure that will hold paths to `Node`s in a way that it can be easily extended and partially shared.
   - E.g. some kind of linked list with more heads.
 - Create `Frontier` data structure that will work as a priority queue.
@@ -39,3 +40,30 @@ Continue to [Pac-Man info](pacman/README.md).
 
 
 ## Assignment 3: A* and Sokoban
+
+This assignment consist of two parts — implementing A* search and agent for Sokoban game.
+
+### 1. A* search
+
+Write general-purpose implementation of A* search in [astar.py](astar.py). It should be able to search any problems implementing `HeuristicProblem` interface (can be found in [search_templates.py](search_templates.py)), that extends `Problem` from previous assignment by method `estimate`. The search should return `Solution` instance if solution is found, otherwise `None` (as in the previous assignment).
+
+Search method could be used like this:
+```python
+problem: HeuristicProblem = SomeProblem()
+solution: Solution = ucs(problem)
+```
+
+You can test your implementation on `HeuristicProblem` instances from [problems.py](problems.py) script by running script [ucs_test.py](ucs_test.py) as it is.
+
+Note that it would be wise to ensure that your A* implementation returns optimal solutions to these test problems before you apply it to Sokoban. You should be able to solve second 15-puzzle instance from the test in about a minute. If it takes significantly longer, your A* implementation is not working as efficiently as it should.
+
+#### Hints
+- A* is a variation of UCS, so you will need to make only a few changes to your UCS implementation.
+- Your `Node` data structure should be comparable by its f-cost, defined as $f(n) = g(n) + h(n)$, where $g(n)$ is the path cost and $h(n)$ is the heuristic estimate.
+- Do not compute heuristic estimate on every comparison.
+- For debugging, print out the number of explored nodes and compare it with comments in test script.
+
+### 2. Sokoban
+In this part of the assignment, you write an agent that plays Sokoban.
+
+Continue to [Sokoban info](sokoban/README.md).
