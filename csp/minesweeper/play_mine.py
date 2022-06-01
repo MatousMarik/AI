@@ -10,57 +10,63 @@ from os.path import join as path_join, dirname
 
 AGENTS_DIR = path_join(dirname(__file__), "agents")
 
-parser = ArgumentParser()
-parser.add_argument(
-    "-a",
-    "--agent",
-    default=None,
-    type=str,
-    help="Agent to use, should be name of class in the file lowercase.py the"
-    + " agent directory. (default player)",
-)
-parser.add_argument(
-    "-s",
-    "--sim",
-    default=None,
-    type=int,
-    help="Simulate a series of games without visualization.",
-)
 
-g1 = parser.add_mutually_exclusive_group()
-g1.add_argument(
-    "-d", "--density", type=float, help="Mines density. (default 0.2)"
-)
-g1.add_argument("-c", "--mine_count", type=int, help="Number of mines.")
+def get_parser() -> ArgumentParser:
+    parser = ArgumentParser()
+    parser.add_argument(
+        "-a",
+        "--agent",
+        default=None,
+        type=str,
+        help="Agent to use, should be name of class in the file lowercase.py the"
+        + " agent directory. (default player)",
+    )
+    parser.add_argument(
+        "-s",
+        "--sim",
+        default=None,
+        type=int,
+        help="Simulate a series of games without visualization.",
+    )
 
-g2 = parser.add_mutually_exclusive_group()
-g2.add_argument(
-    "--size",
-    type=int,
-    nargs="+",
-    help="Size of the rectangle board. (default 9 x 9, min 3 x 3, min with UI 4 x 3)",
-)
-g2.add_argument(
-    "--easy",
-    action="store_true",
-    help="9 x 9, 10 mines (default if no size is specified)",
-)
-g2.add_argument("--medium", action="store_true", help="16 x 16, 40 mines")
-g2.add_argument("--hard", action="store_true", help="30 x 16, 99 mines")
-g2.add_argument("--impossible", action="store_true", help="50 x 50, 500 mines")
-parser.add_argument(
-    "-v",
-    "--verbose",
-    default=0,
-    type=int,
-    choices=[0, 1, 2, 3],
-    help="Level of verbosity. Default 0, 1 information about each level, 2 showing actions, 3 showing boards.",
-)
-parser.add_argument("--seed", default=None, type=int, help="Random seed.")
+    g1 = parser.add_mutually_exclusive_group()
+    g1.add_argument(
+        "-d", "--density", type=float, help="Mines density. (default 0.2)"
+    )
+    g1.add_argument("-c", "--mine_count", type=int, help="Number of mines.")
+
+    g2 = parser.add_mutually_exclusive_group()
+    g2.add_argument(
+        "--size",
+        type=int,
+        nargs="+",
+        help="Size of the rectangle board. (default 9 x 9, min 3 x 3, min with UI 4 x 3)",
+    )
+    g2.add_argument(
+        "--easy",
+        action="store_true",
+        help="9 x 9, 10 mines (default if no size is specified)",
+    )
+    g2.add_argument("--medium", action="store_true", help="16 x 16, 40 mines")
+    g2.add_argument("--hard", action="store_true", help="30 x 16, 99 mines")
+    g2.add_argument(
+        "--impossible", action="store_true", help="50 x 50, 500 mines"
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        default=0,
+        type=int,
+        choices=[0, 1, 2, 3],
+        help="Level of verbosity. Default 0, 1 information about each level, 2 showing actions, 3 showing boards.",
+    )
+    parser.add_argument("--seed", default=None, type=int, help="Random seed.")
+    return parser
 
 
 def process_args(args: Optional[List[str]] = None):
     """Parse arguments, check validity and return usefull values."""
+    parser = get_parser()
     if args is None:
         args = parser.parse_args()
     else:

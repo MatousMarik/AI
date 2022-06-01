@@ -68,75 +68,81 @@ GAMES = {
     ),
 }
 
-# strategy regex
-pattern = re.compile(
-    r"^(random|basic|perfect|heuristic|minimax|mcts)(:([0-9]+)(/(random|basic|perfect|heuristic))?)?$"
-)
-parser = ArgumentParser(
-    epilog="All available strategies are random, basic, perfect, heuristic, minimax, mcts."
-)
 
+def get_parser() -> ArgumentParser:
+    parser = ArgumentParser(
+        epilog="All available strategies are random, basic, perfect, heuristic, minimax, mcts."
+    )
 
-def regex_strategy(arg_value):
-    """
-    Pattern match strategy and its arguments.
-    """
-    r = pattern.match(arg_value)
-    if not r:
-        parser.error(
-            ArgumentError(
-                message="Invalid strategy, should be one of {random, basic, perfect, heuristic, minimax, mcts}."
+    # strategy regex
+    pattern = re.compile(
+        r"^(random|basic|perfect|heuristic|minimax|mcts)(:([0-9]+)(/(random|basic|perfect|heuristic))?)?$"
+    )
+
+    def regex_strategy(arg_value):
+        """
+        Pattern match strategy and its arguments.
+        """
+        r = pattern.match(arg_value)
+        if not r:
+            parser.error(
+                ArgumentError(
+                    message="Invalid strategy, should be one of {random, basic, perfect, heuristic, minimax, mcts}."
+                )
             )
-        )
-    else:
-        if r[1] not in ["minimax", "mcts"]:
-            if r[2] is not None:
-                parser.error("Cant specify details for this strategy.")
-            else:
-                return [r[1]]
-        elif r[1] == "minimax":
-            if r[4] is not None:
-                parser.error("Cant specify base_strategy for minimax.")
-            elif r[2] is None:
-                parser.error(
-                    "Must specify depth for minimax.\nUse minimax:[depth]."
-                )
-            else:
-                return [r[1], int(r[3])]
         else:
-            if r[4] is None:
-                parser.error(
-                    "Must specify iterations and base_strategy for mcts.\nUse mcts:[iterations]/[base_strategy]."
-                )
+            if r[1] not in ["minimax", "mcts"]:
+                if r[2] is not None:
+                    parser.error("Cant specify details for this strategy.")
+                else:
+                    return [r[1]]
+            elif r[1] == "minimax":
+                if r[4] is not None:
+                    parser.error("Cant specify base_strategy for minimax.")
+                elif r[2] is None:
+                    parser.error(
+                        "Must specify depth for minimax.\nUse minimax:[depth]."
+                    )
+                else:
+                    return [r[1], int(r[3])]
             else:
-                return [r[1], int(r[3]), r[5]]
+                if r[4] is None:
+                    parser.error(
+                        "Must specify iterations and base_strategy for mcts.\nUse mcts:[iterations]/[base_strategy]."
+                    )
+                else:
+                    return [r[1], int(r[3]), r[5]]
 
-
-parser.add_argument("game", type=str, choices=list(GAMES), help="Game to run.")
-parser.add_argument(
-    "strategy1", type=regex_strategy, help="Strategy of the first player - bot."
-)
-parser.add_argument(
-    "strategy2",
-    nargs="?",
-    type=regex_strategy,
-    help="Strategy of the second player. If not specified user will play vs first strategy.",
-)
-parser.add_argument(
-    "-s",
-    "--sim",
-    default=None,
-    type=int,
-    help="Simulate a series of games without visualization.",
-)
-parser.add_argument("--seed", default=None, type=int, help="Random seed.")
-parser.add_argument(
-    "-v",
-    "--verbose",
-    default=False,
-    action="store_true",
-    help="Verbose output.",
-)
+    parser.add_argument(
+        "game", type=str, choices=list(GAMES), help="Game to run."
+    )
+    parser.add_argument(
+        "strategy1",
+        type=regex_strategy,
+        help="Strategy of the first player - bot.",
+    )
+    parser.add_argument(
+        "strategy2",
+        nargs="?",
+        type=regex_strategy,
+        help="Strategy of the second player. If not specified user will play vs first strategy.",
+    )
+    parser.add_argument(
+        "-s",
+        "--sim",
+        default=None,
+        type=int,
+        help="Simulate a series of games without visualization.",
+    )
+    parser.add_argument("--seed", default=None, type=int, help="Random seed.")
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        default=False,
+        action="store_true",
+        help="Verbose output.",
+    )
+    return parser
 
 
 def sim(
@@ -209,6 +215,7 @@ def sim(
 
 def process_args(args: Optional[List[str]] = None):
     """Parse arguments, check validity and return usefull values."""
+    parser = get_parser()
     if args is None:
         args = parser.parse_args()
     else:

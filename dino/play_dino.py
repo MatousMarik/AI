@@ -10,58 +10,62 @@ from os.path import join as path_join, dirname
 
 AGENTS_DIR = path_join(dirname(__file__), "agents")
 
-parser = ArgumentParser()
-parser.add_argument(
-    "-a",
-    "--agent",
-    default=None,
-    type=str,
-    help=(
-        "Agent to use, should be name of class in the file lowercase.py,"
-        " in the same directory. (default player)"
-    ),
-)
-parser.add_argument(
-    "-s",
-    "--sim",
-    type=int,
-    help="Set number of simulations of dino game. Set => no visualization.",
-)
-parser.add_argument(
-    "-t",
-    "--time_limit",
-    default=None,
-    type=float,
-    help="Set strict time limit in ms for agent tick. (only for simulations)",
-)
-parser.add_argument("--seed", type=int, help="Random seed.")
-parser.add_argument(
-    "-r",
-    "--vis_rect",
-    default=False,
-    action="store_true",
-    help="Visualize bounding boxes. (only for visualization)",
-)
-parser.add_argument(
-    "-d",
-    "--debug",
-    default=False,
-    action="store_true",
-    help="Debuging visualization (only for visualization).",
-)
-parser.add_argument(
-    "-v",
-    "--verbose",
-    default=False,
-    action="store_true",
-    help="Verbose output.",
-)
+
+def get_parser() -> ArgumentParser:
+    parser = ArgumentParser()
+    parser.add_argument(
+        "-a",
+        "--agent",
+        default=None,
+        type=str,
+        help=(
+            "Agent to use, should be name of class in the file lowercase.py,"
+            " in the same directory. (default player)"
+        ),
+    )
+    parser.add_argument(
+        "-s",
+        "--sim",
+        type=int,
+        help="Set number of simulations of dino game. Set => no visualization.",
+    )
+    parser.add_argument(
+        "-t",
+        "--time_limit",
+        default=None,
+        type=float,
+        help="Set strict time limit in ms for agent tick. (only for simulations)",
+    )
+    parser.add_argument("--seed", type=int, help="Random seed.")
+    parser.add_argument(
+        "-r",
+        "--vis_rect",
+        default=False,
+        action="store_true",
+        help="Visualize bounding boxes. (only for visualization)",
+    )
+    parser.add_argument(
+        "-d",
+        "--debug",
+        default=False,
+        action="store_true",
+        help="Debuging visualization (only for visualization).",
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        default=False,
+        action="store_true",
+        help="Verbose output.",
+    )
+    return parser
 
 
 def process_args(
     args: Optional[List[str]] = None,
 ) -> Tuple[Agent, Namespace, bool]:
     """Parse arguments, check validity and return usefull values."""
+    parser = get_parser()
     if args is None:
         args = parser.parse_args()
     else:
@@ -87,7 +91,7 @@ def process_args(
         if args.sim < 1:
             parser.error("Invalid number of simulations.")
         if args.agent is None:
-            parser.error("You have to specify agent with --sim.")
+            parser.error("You have to specify Agent with --sim.")
         if args.time_limit is not None:
             if args.time_limit < 1:
                 parser.error("Invalid time limit - has to be greater than 0.")

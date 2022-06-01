@@ -11,56 +11,62 @@ from typing import List, Optional, Tuple
 AGENTS_DIR = path_join(dirname(__file__), "agents")
 LEVELS_DIR = path_join(dirname(__file__), "game", "levels")
 
-parser = ArgumentParser()
-parser.add_argument(
-    "level_set", type=str, help="Name of set of levels to play. (without .sok)"
-)
-parser.add_argument("-l", "--level", type=int, help="Level number to play.")
-parser.add_argument(
-    "-n", "--num_levels", type=int, help="Number of levels to play."
-)
-parser.add_argument(
-    "-a",
-    "--agent",
-    default=None,
-    type=str,
-    help=(
-        "Agent to use, should be name of class in the file lowercase.py,"
-        " in the same directory as this script. (default player)"
-    ),
-)
-parser.add_argument(
-    "-o",
-    "--optimal",
-    default=False,
-    action="store_true",
-    help="Require move-optimal solution. (Omitted when player plays.)",
-)
-parser.add_argument(
-    "--max_fail",
-    default=0,
-    type=int,
-    help="Maximum level failures allowed. (Omitted when player plays.)",
-)
-parser.add_argument(
-    "-v",
-    "--verbose",
-    default=False,
-    action="store_true",
-    help="Verbose output. (Omitted when player plays.)",
-)
-parser.add_argument(
-    "--visualize",
-    default=False,
-    action="store_true",
-    help="Graphical simulation.",
-)
+
+def get_parser() -> ArgumentParser:
+    parser = ArgumentParser()
+    parser.add_argument(
+        "level_set",
+        type=str,
+        help="Name of set of levels to play. (without .sok)",
+    )
+    parser.add_argument("-l", "--level", type=int, help="Level number to play.")
+    parser.add_argument(
+        "-n", "--num_levels", type=int, help="Number of levels to play."
+    )
+    parser.add_argument(
+        "-a",
+        "--agent",
+        default=None,
+        type=str,
+        help=(
+            "Agent to use, should be name of class in the file lowercase.py,"
+            " in the same directory as this script. (default player)"
+        ),
+    )
+    parser.add_argument(
+        "-o",
+        "--optimal",
+        default=False,
+        action="store_true",
+        help="Require move-optimal solution. (Omitted when player plays.)",
+    )
+    parser.add_argument(
+        "--max_fail",
+        default=0,
+        type=int,
+        help="Maximum level failures allowed. (Omitted when player plays.)",
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        default=False,
+        action="store_true",
+        help="Verbose output. (Omitted when player plays.)",
+    )
+    parser.add_argument(
+        "--visualize",
+        default=False,
+        action="store_true",
+        help="Graphical simulation.",
+    )
+    return parser
 
 
 def process_args(
     args: Optional[List[str]] = None,
 ) -> Tuple[ArtificialAgent, str, Namespace]:
     """Parse arguments, check validity and return usefull values."""
+    parser = get_parser()
     if args is None:
         args = parser.parse_args()
     else:

@@ -12,83 +12,86 @@ from os.path import join as path_join, dirname
 
 AGENTS_DIR = path_join(dirname(__file__), "agents")
 
-parser = ArgumentParser()
-parser.add_argument(
-    "agent1", nargs="?", type=str, help="Name of the first player agent."
-)
-parser.add_argument(
-    "agent2",
-    nargs="?",
-    type=str,
-    help="Name of the second player agent."
-    + " (If not specified and visualized, player plays.)",
-)
-parser.add_argument(
-    "-c",
-    "--num_cells",
-    default=[20, 50],
-    type=int,
-    nargs="+",
-    help="Number of cells in the game. Can be value or range"
-    + " from which will be randomly chosen. (default [20, 50])",
-)
-parser.add_argument(
-    "-d",
-    "--density",
-    default=0.5,
-    type=float,
-    help="Density of cells on board. (default 0.5)",
-)
-parser.add_argument(
-    "-p",
-    "--hole_probability",
-    type=float,
-    default=0.6,
-    help="Probability that distan cells won't be connected. (default 0.6)",
-)
-parser.add_argument(
-    "-s",
-    "--sim",
-    type=int,
-    help="Simulate a series of games without visualization.",
-)
-parser.add_argument(
-    "-m",
-    "--max_turns",
-    default=200,
-    type=int,
-    help="Set maximal number of turns. (default 500)",
-)
-parser.add_argument(
-    "-t",
-    "--time_limit",
-    default=None,
-    type=float,
-    help="Set strict time limit in s for agents tick. (only for simulations)",
-)
-parser.add_argument(
-    "--agent2_first",
-    default=False,
-    action="store_true",
-    help="Agent2 starts.",
-)
-parser.add_argument(
-    "--swap",
-    default=False,
-    action="store_true",
-    help="Change first agent after each game.",
-)
-parser.add_argument("--seed", type=int, help="Random seed.")
-parser.add_argument(
-    "-v",
-    "--verbose",
-    default=False,
-    action="store_true",
-    help="Verbose output.",
-)
-parser.add_argument(
-    "--scale", type=float, default=1, help="Scale visualization window."
-)
+
+def get_parser() -> ArgumentParser:
+    parser = ArgumentParser()
+    parser.add_argument(
+        "agent1", nargs="?", type=str, help="Name of the first player agent."
+    )
+    parser.add_argument(
+        "agent2",
+        nargs="?",
+        type=str,
+        help="Name of the second player agent."
+        + " (If not specified and visualized, player plays.)",
+    )
+    parser.add_argument(
+        "-c",
+        "--num_cells",
+        default=[20, 50],
+        type=int,
+        nargs="+",
+        help="Number of cells in the game. Can be value or range"
+        + " from which will be randomly chosen. (default [20, 50])",
+    )
+    parser.add_argument(
+        "-d",
+        "--density",
+        default=0.5,
+        type=float,
+        help="Density of cells on board. (default 0.5)",
+    )
+    parser.add_argument(
+        "-p",
+        "--hole_probability",
+        type=float,
+        default=0.6,
+        help="Probability that distan cells won't be connected. (default 0.6)",
+    )
+    parser.add_argument(
+        "-s",
+        "--sim",
+        type=int,
+        help="Simulate a series of games without visualization.",
+    )
+    parser.add_argument(
+        "-m",
+        "--max_turns",
+        default=200,
+        type=int,
+        help="Set maximal number of turns. (default 500)",
+    )
+    parser.add_argument(
+        "-t",
+        "--time_limit",
+        default=None,
+        type=float,
+        help="Set strict time limit in s for agents tick. (only for simulations)",
+    )
+    parser.add_argument(
+        "--agent2_first",
+        default=False,
+        action="store_true",
+        help="Agent2 starts.",
+    )
+    parser.add_argument(
+        "--swap",
+        default=False,
+        action="store_true",
+        help="Change first agent after each game.",
+    )
+    parser.add_argument("--seed", type=int, help="Random seed.")
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        default=False,
+        action="store_true",
+        help="Verbose output.",
+    )
+    parser.add_argument(
+        "--scale", type=float, default=1, help="Scale visualization window."
+    )
+    return parser
 
 
 def process_args(
@@ -104,6 +107,7 @@ def process_args(
     * visualize?
     * args
     """
+    parser = get_parser()
     if args is None:
         args = parser.parse_args()
     else:

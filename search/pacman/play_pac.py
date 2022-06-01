@@ -12,53 +12,56 @@ from os.path import join as path_join, dirname
 AGENTS_DIR = path_join(dirname(__file__), "agents")
 
 
-parser = ArgumentParser()
-parser.add_argument(
-    "-a",
-    "--agent",
-    default=None,
-    type=str,
-    help=(
-        "Agent to use, should be name of class in the file lowercase.py,"
-        " in the same directory. (default player)"
-    ),
-)
-parser.add_argument(
-    "-s",
-    "--sim",
-    type=int,
-    help="Simulate a series of games without visualization",
-)
-parser.add_argument(
-    "-l", "--level", default=1, type=int, help="Starting level (1-4)."
-)
-parser.add_argument(
-    "-t",
-    "--time_limit",
-    default=None,
-    type=float,
-    help="Set strict time limit in ms for agent tick.",
-)
-parser.add_argument("--seed", type=int, help="Random seed.")
-parser.add_argument(
-    "-v",
-    "--verbose",
-    default=False,
-    action="store_true",
-    help="Verbose output.",
-)
-parser.add_argument(
-    "--scale",
-    type=float,
-    default=1.0,
-    help="Scale the visualized game resolution [0.2; 3]. Use only if needed.",
-)
+def get_parser() -> ArgumentParser:
+    parser = ArgumentParser()
+    parser.add_argument(
+        "-a",
+        "--agent",
+        default=None,
+        type=str,
+        help=(
+            "Agent to use, should be name of class in the file lowercase.py,"
+            " in the same directory. (default player)"
+        ),
+    )
+    parser.add_argument(
+        "-s",
+        "--sim",
+        type=int,
+        help="Simulate a series of games without visualization",
+    )
+    parser.add_argument(
+        "-l", "--level", default=1, type=int, help="Starting level (1-4)."
+    )
+    parser.add_argument(
+        "-t",
+        "--time_limit",
+        default=None,
+        type=float,
+        help="Set strict time limit in ms for agent tick.",
+    )
+    parser.add_argument("--seed", type=int, help="Random seed.")
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        default=False,
+        action="store_true",
+        help="Verbose output.",
+    )
+    parser.add_argument(
+        "--scale",
+        type=float,
+        default=1.0,
+        help="Scale the visualized game resolution [0.2; 3]. Use only if needed.",
+    )
+    return parser
 
 
 def process_args(
     args: Optional[List[str]] = None,
 ) -> Tuple[gc.PacManControllerBase, Namespace, bool]:
     """Parse arguments, check validity and return usefull values."""
+    parser = get_parser()
     if args is None:
         args = parser.parse_args()
     else:
