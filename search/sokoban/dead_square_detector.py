@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-from game.board import Board
-from game.enums import ETile
+from game.board import Board, ETile
 from typing import List
 
 

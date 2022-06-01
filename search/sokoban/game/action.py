@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-from game.enums import EDirection, ETile
-from game.board import Board
+from game.board import Board, EDirection, ETile
 from typing import List, Tuple
 from abc import ABC, abstractmethod
 

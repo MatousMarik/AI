@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-from game.board import Board
+from game.board import Board, EDirection
 from game.action import Action, Move
-from game.enums import EDirection
 import time
 from typing import List, Union
 

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from game.action import *
 from game.board import *
-from game.enums import *
 from game.artificial_agent import ArtificialAgent
 from typing import List
 from time import perf_counter
