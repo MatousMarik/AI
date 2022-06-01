@@ -4,7 +4,7 @@
 
 In this part of the assignment, you write an agent that plays Pac-Man. Your uniform-cost search from the [previous part](../README.md#1-uniform-cost-search) of the assignment might be helpful.
 
-To play the game you need to run [play_pac.py](play_pac.py). If you run it with no commands you can control Pac-Man by yourself with keyboard arrows. Otherwise you can run the script with option `-h` to see all available options. Particularly you should be interested in option `-a Agent` which allows you to specify agent to control Pac-Man.
+To play the game you need to run [play_pacman.py](play_pacman.py). If you run it with no commands you can control Pac-Man by yourself with keyboard arrows. Otherwise you can run the script with option `-h` to see all available options. Particularly you should be interested in option `-a Agent` which allows you to specify agent to control Pac-Man.
 
 ## Game controls
 | Command | Purpose |
@@ -45,7 +45,9 @@ In the API, each position in the maze is a node in the maze graph. The initial n
 
 When your search returns a `Solution`, the first action in the solution is the direction that Pac-Man should go.
 
-The main issue should be assigning cost to graph edges to avoid going undesirable paths. E.g. edges close to a ghost, or you can consider where the ghosts are heading. Remember that UCS does not work with negative costs.
+The main issue should be assigning cost to graph edges to avoid going undesirable paths. E.g. edges close to a ghost, or you can consider where the ghosts are heading. Remember that UCS does not work with negative costs. 
+
+Keep in mind that your agent has to answer in given time.
 
 ### Visual debugging
 For easier debugging you can use class methods of `PacView` that allows your to visualize paths, lines and texts. You can find these at the bottom of [game/pac_gui.py](game/pac_gui.py) under *VISUAL AIDS FOR DEBUGGING*. 
