@@ -186,7 +186,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
                     game.total_ticks, tick_time * 1000
                 )
             print(
-                "Seed {}{}: level {:2d}, score {:5d} in {:5.2f} ms (in {:5d} ticks)\n\t average {:3.2f} ms/tick; max {:3.2f} ms/tick".format(
+                "Seed {}{}: level {:d}, score {:d} in {:.2f} ms (in {:d} ticks)\n\t average {:.2f} ms/tick; max {:.2f} ms/tick".format(
                     seed,
                     fail_s,
                     game.current_level,
@@ -207,7 +207,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
             total_time / (level + args.sim),
         ),
     )
-    print("Max tick {:3.2f} ms".format(total_max_tick * 1000))
+    print("Max tick {:.2f} ms".format(total_max_tick * 1000))
 
 
 def main(args_list: list = None) -> None:
