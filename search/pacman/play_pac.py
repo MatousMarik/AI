@@ -79,7 +79,7 @@ def process_args(
             am = module_from_spec(spec)
             spec.loader.exec_module(am)
             agent: gc.PacManControllerBase = getattr(am, args.agent)(
-                seed=args.seed
+                seed=args.seed, verbose=args.verbose
             )
         except BaseException as e:
             parser.error(f"Invalid agent name:\n{str(e)}")

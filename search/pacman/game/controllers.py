@@ -378,7 +378,9 @@ VALID_KEYS = set(ValidKeys._value2member_map_.keys())
 
 
 class PacManControllerBase:
-    def __init__(self, human: bool = False, seed: int = 0) -> None:
+    def __init__(
+        self, human: bool = False, seed: int = 0, verbose: bool = False
+    ) -> None:
         self.pacman: PacManAction = PacManAction()
         self.human: PacManAction = PacManAction()
 
@@ -388,7 +390,7 @@ class PacManControllerBase:
         self.hijacked: bool = human
 
         # for debugging purposes only
-        self.verbose: bool = False
+        self.verbose: bool = verbose
 
     def reset(self, game: Game) -> None:
         self.pacman.reset()
