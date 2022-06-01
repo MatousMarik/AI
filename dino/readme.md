@@ -6,6 +6,19 @@ Dino is a simple implementation of Google Chrome T-Rex. The goal is to control t
 
 You can play it just by running [play_dino.py](play_dino.py) (by executing `python3 [path]/play_dino.py`). If you run it with no commands you can control T-Rex by yourself with keyboard arrows. Otherwise you can run the script with option `-h` to see all available options. Particularly you should be interested in option `-a Agent` which allows you to specify agent to control T-Rex.
 
+There are two ways how to specify options for the script. You can either run script with options specified in terminal e.g.
+
+    python3 play_dino.py −a=MyAgent −−seed=0 −−vis_rect −d
+
+or alternatively you can specify options as a parameter of method `main` at the end of [play_dino.py](play_dino.py) and executing script (with all options from terminal ignored):
+
+    main(["-a=MyAgent", "--se=0", "--vis", "--deb"])
+    ...
+    python3 play_dino.py -hello world
+
+Note that `argparse` allows long options to be abbreviated if it is unambiguous.
+
+
 ## Agent implementation
 ### Game API
 Before you start to implement your agent, you should look into script [game/dino.py](game/dino.py), that is complete implementation of the game. As you will find, there are not many getters or methods for interacting with the game state, however your agent will get reference to the current game state so you gain complete access to all components. You should use it as *read-only* variable but during debugging your agent you may modify the game state as you like. Note that ReCodEx tests won't allow you to do any modifications.
