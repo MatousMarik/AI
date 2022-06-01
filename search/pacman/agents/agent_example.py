@@ -19,6 +19,7 @@ class Agent_Example(PacManControllerBase):
 
         nearest = game.get_target(current, targets, True, DM.PATH)
 
+        # # EXAMPLE OF VISUAL DEBUGGING
         # from game.pac_gui import PacView
 
         # # add the path that pac-man is following

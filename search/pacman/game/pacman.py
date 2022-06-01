@@ -415,7 +415,7 @@ class Game:
         self,
         pacman_dir: int,
         ghosts_dirs: List[int],
-    ) -> Optional[List[int]]:
+    ) -> None:
         """Central method that advances the game state."""
         if self._action_paused():
             return None
