@@ -31,23 +31,24 @@ class ETile:
 
     @classmethod
     def is_free(cls, flag: int) -> bool:
-        return flag < 2
+        # PLACE is lowest bit
+        return flag <= cls.PLACE
 
     @classmethod
     def is_wall(cls, flag: int) -> bool:
-        return flag == 8
+        return flag == cls.WALL
 
     @classmethod
     def is_player(cls, flag: int) -> bool:
-        return bool(flag & 4)
+        return bool(flag & cls.PLAYER)
 
     @classmethod
     def is_box(cls, flag: int) -> bool:
-        return bool(flag & 2)
+        return bool(flag & cls.BOX)
 
     @classmethod
     def is_target(cls, flag: int) -> bool:
-        return bool(flag & 1)
+        return bool(flag & cls.PLACE)
 
     # str methods are fixed hence .sok files are
 
