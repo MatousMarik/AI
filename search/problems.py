@@ -281,7 +281,7 @@ class PuzzleState:
     def __eq__(self, __o: object) -> bool:
         return isinstance(__o, PuzzleState) and self.squares == __o.squares
 
-    def possible_directions(self) -> List["NPuzzle.Dir"]:
+    def possible_directions(self) -> List[int]:
         """Return valid directions to slide a tile."""
         dirs = []
         r = self.empty // self.size
@@ -297,23 +297,23 @@ class PuzzleState:
 
         return dirs
 
-    def slide(self, dir: Union["NPuzzle.Dir", int]) -> "PuzzleState":
+    def slide(self, dir: int) -> "PuzzleState":
         """
         Apply slide in direction to a copy of the state
         and return resulting state.
         """
-        if dir == NPuzzle.Dir.Left:
+        if dir == 0:
             d = -1
-        elif dir == NPuzzle.Dir.Right:
+        elif dir == 1:
             d = 1
-        elif dir == NPuzzle.Dir.Up:
+        elif dir == 2:
             d = -self.size
-        elif dir == NPuzzle.Dir.Down:
+        elif dir == 3:
             d = self.size
         else:
             raise ValueError("invalid direction")
 
-        a = [*self.squares]
+        a = self.squares.copy()
         a[self.empty] = a[self.empty - d]
         a[self.empty - d] = 0
         return PuzzleState(a, self.size, self.empty - d)
@@ -369,13 +369,7 @@ class NPuzzle(HeuristicProblem):
     This is much harder, and requires pattern databases to solve effectively.
     """
 
-    class Dir(IntEnum):
-        """Directions for NPuzzle problem."""
-
-        Left = 0
-        Right = 1
-        Up = 2
-        Down = 3
+    Dir = type("Dir", (), dict(Left=0, Right=1, Up=2, Down=3))
 
     def __init__(self, init: Union[PuzzleState, int]) -> None:
         if isinstance(init, PuzzleState):
@@ -384,27 +378,32 @@ class NPuzzle(HeuristicProblem):
             self.initial = PuzzleState.reversed(init)
         else:
             raise ValueError("invalid initial parameter")
+        self.dists = NPuzzle.get_dists(self.initial.size)
+
+    @staticmethod
+    def get_dists(size: int) -> List[List[int]]:
+        dists = []
+        for i in range(size**2):
+            di = []
+            for j in range(size**2):
+                # taxicab distance
+                di.append(abs(i // size - j // size) + abs(i % size - j % size))
+            dists.append(di)
+        return dists
 
     def initial_state(self) -> PuzzleState:
         return self.initial
 
-    def actions(self, state: PuzzleState) -> List[Dir]:
+    def actions(self, state: PuzzleState) -> List[int]:
         return state.possible_directions()
 
-    def result(
-        self, state: PuzzleState, action: Union[Dir, int]
-    ) -> PuzzleState:
+    def result(self, state: PuzzleState, action: int) -> PuzzleState:
         return state.slide(action)
 
     def is_goal(self, state: PuzzleState) -> bool:
         return state.is_goal()
 
-    @staticmethod
-    def dist(size: int, i: int, j: int) -> int:
-        """taxicab distance between squares i and j"""
-        return abs(i // size - j // size) + abs(i % size - j % size)
-
-    def cost(self, state: PuzzleState, action: Union[Dir, int]) -> int:
+    def cost(self, state: PuzzleState, action: int) -> int:
         return 1
 
     def estimate(self, state: PuzzleState) -> int:
@@ -412,7 +411,7 @@ class NPuzzle(HeuristicProblem):
         sum = 0
         for i, s in enumerate(state.squares):
             if s > 0:
-                sum += NPuzzle.dist(state.size, s, i)
+                sum += self.dists[s][i]
         return sum
 
 
