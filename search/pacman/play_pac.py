@@ -144,15 +144,18 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
     total_time = 0
     level = 0
     ticks = 0
+    total_max_tick = 0
     # SIM
     for seed in seeds:
         game.new_game(level=args.level, seed=seed)
         time = 0
         time_fine = True
+        max_tick = 0
         while not game.game_over:
             start = perf_counter()
             pac_controller.tick(game)
             tick_time = perf_counter() - start
+            max_tick = max(max_tick, tick_time)
             time += tick_time
 
             # check strict time limit
@@ -170,6 +173,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
                 [ga.direction for ga in ghosts_actions.actions],
             )
         total_time += time
+        total_max_tick = max(total_max_tick, max_tick)
         score += game.score
         level += game.current_level - args.level
         ticks += game.total_ticks
@@ -182,7 +186,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
                     game.total_ticks, tick_time * 1000
                 )
             print(
-                "Seed {}{}: level {:2d}, score {:5d} in {:5.2f}ms (in {:5d} ticks) = {:3.2f} ms/tick".format(
+                "Seed {}{}: level {:2d}, score {:5d} in {:5.2f} ms (in {:5d} ticks)\n\t average {:3.2f} ms/tick; max {:3.2f} ms/tick".format(
                     seed,
                     fail_s,
                     game.current_level,
@@ -190,6 +194,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
                     time * 1000,
                     game.total_ticks,
                     time / game.total_ticks * 1000,
+                    max_tick * 1000,
                 )
             )
 
@@ -202,6 +207,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
             total_time / (level + args.sim),
         ),
     )
+    print("Max tick {:3.2f} ms".format(total_max_tick * 1000))
 
 
 def main(args_list: list = None) -> None:
