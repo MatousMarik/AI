@@ -14,7 +14,7 @@ from astar import AStar
 from search_templates import HeuristicProblem
 
 
-class Agent(ArtificialAgent):
+class MyAgent(ArtificialAgent):
     """
     Logic implementation for Sokoban ArtificialAgent.
 
