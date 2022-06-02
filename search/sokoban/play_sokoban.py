@@ -117,10 +117,20 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
     total_time = 0
     total_losses = 0
     level_count = 0
+    if args.level is not None:
+        if args.num_levels > 1:
+            level_str = f"levels {args.level}-{args.level + args.num_levels}"
+        else:
+            level_str = f"level {args.level}"
+    else:
+        if args.num_levels > 0:
+            level_str = f"first {args.num_level}"
+        else:
+            level_str = "all levels"
     print(
         "Playing sokoban: set {}, {}".format(
             args.level_set,
-            f"level {args.level}" if args.level is not None else "all levels",
+            level_str,
         )
     )
     levels_running = True
@@ -136,11 +146,14 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
         moves = 0
         if reset:
             board, min_moves, skip = Board.from_file(
-                file, next_level - 1, skip=skips[-2]
+                file,
+                next_level - 1,
+                args.level is None,
+                skip=skips[-2],
             )
         else:
             board, min_moves, skip = Board.from_file(
-                file, next_level, skip=skips[-1]
+                file, next_level, args.level is None, skip=skips[-1]
             )
 
         if board is None:
