@@ -219,7 +219,7 @@ class Board:
         for col in self.tiles[1:-1]:
             for tile in col[1:-1]:
                 h = 13 * h + tile
-            if h > 2**32:
+            if h > 1 << 32:
                 h &= (1 << 32) - 1
         self._hash = h
         return h
@@ -573,7 +573,7 @@ class StateMinimal:
         h = 0
         for p in self.positions:
             h = 13 * h + p
-            if h > 2**32:
+            if h > 1 << 32:
                 h &= (1 << 32) - 1
         self._hash = h
         return h
