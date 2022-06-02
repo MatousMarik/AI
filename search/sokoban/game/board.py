@@ -5,6 +5,9 @@ from enum import Enum
 
 from os.path import basename
 
+TWO_32 = 2**32
+TWO_32_MASK = TWO_32 - 1
+
 
 class ETile:
     """
@@ -12,6 +15,9 @@ class ETile:
 
     Bits (LE):
     TARGET, BOX, SOKOBAN, WALL
+
+    Is methods are implemented without bitmasking,
+    but by checking all options, since (==, or) is much faster than &.
     """
 
     SYMBOLS = " .$*@+#"
@@ -39,26 +45,27 @@ class ETile:
         Whether there is NO blocking entity on the tile,
         such as Sokoban, Box or Wall.
         """
-        # PLACE is lowest bit
-        return flag <= cls.TARGET
+        return flag == cls.NONE or flag == cls.TARGET
 
     @classmethod
     def is_wall(cls, flag: int) -> bool:
-        # does not check with mask
-        # since there should not be anything else with wall
         return flag == cls.WALL
 
     @classmethod
     def is_sokoban(cls, flag: int) -> bool:
-        return bool(flag & cls.SOKOBAN)
+        return flag == cls.SOKOBAN or flag == cls.SOKOBAN_ON_TARGET
 
     @classmethod
     def is_box(cls, flag: int) -> bool:
-        return bool(flag & cls.BOX)
+        return flag == cls.BOX or flag == cls.BOX_IN_PLACE
 
     @classmethod
     def is_target(cls, flag: int) -> bool:
-        return bool(flag & cls.TARGET)
+        return (
+            flag == cls.TARGET
+            or flag == cls.BOX_IN_PLACE
+            or flag == cls.SOKOBAN_ON_TARGET
+        )
 
     # str methods are fixed hence .sok files are
 
@@ -219,8 +226,8 @@ class Board:
         for col in self.tiles[1:-1]:
             for tile in col[1:-1]:
                 h = 13 * h + tile
-            if h >= 1 << 32:
-                h &= (1 << 32) - 1
+            if h >= TWO_32:
+                h &= TWO_32_MASK
         self._hash = h
         return h
 
@@ -428,6 +435,7 @@ class Board:
     def from_file(
         file_name: str,
         level_number: Optional[int] = None,
+        announce_not_found: bool = True,
         *,
         skip: int = 0,
     ) -> Tuple["Board", int, int]:
@@ -436,6 +444,7 @@ class Board:
 
         :param str file_name: path to the file
         :param int|None level_number: number of level to load, if None - load first
+        :param bool announce_not_found: announce if level is not found
         :param int skip: skip lines in the file
 
         :return: Board, minimal_moves (if specified in file), last line of level
@@ -462,7 +471,7 @@ class Board:
                         found = True
                         break
 
-            if not found:
+            if not found and announce_not_found:
                 print(
                     "Failed to find level{}.".format(
                         "" if level_number is None else " " + str(level_number)
@@ -573,8 +582,8 @@ class StateMinimal:
         h = 0
         for p in self.positions:
             h = 13 * h + p
-            if h >= 1 << 32:
-                h &= (1 << 32) - 1
+            if h >= TWO_32:
+                h &= TWO_32_MASK
         self._hash = h
         return h
 
