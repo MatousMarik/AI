@@ -21,8 +21,8 @@ class Agent(ArtificialAgent):
     See ArtificialAgent for details.
     """
 
-    def __init__(self) -> None:
-        super().__init__()  # recommended
+    def __init__(self, optimal: bool = False, verbose: bool = False) -> None:
+        super().__init__(optimal, verbose)  # recommended
 
         # you can add your instance variables here
 

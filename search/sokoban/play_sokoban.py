@@ -93,12 +93,11 @@ def process_args(
             )
             am = module_from_spec(spec)
             spec.loader.exec_module(am)
-            agent: ArtificialAgent = getattr(am, args.agent)()
+            agent: ArtificialAgent = getattr(am, args.agent)(
+                args.optimal, args.verbose
+            )
         except BaseException as e:
             parser.error(f"Invalid agent name:\n{str(e)}")
-
-        agent.verbose = args.verbose
-        agent.optimal = args.optimal
 
     file = path_join(LEVELS_DIR, args.level_set + ".sok")
     if not exists(file):

@@ -18,11 +18,11 @@ class ArtificialAgent:
     in think method which is called by act.
     """
 
-    def __init__(self) -> None:
+    def __init__(self, optimal: bool = False, verbose: bool = False) -> None:
         # solution should be optimal
-        self.optimal: bool = False
+        self.optimal: bool = optimal
         # verbose output - can be used for logging
-        self.verbose: bool = False
+        self.verbose: bool = verbose
 
         self._actions: List[Union[EDirection, Action]] = None
         self._board: Board = None  # readonly

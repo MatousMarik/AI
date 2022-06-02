@@ -9,9 +9,9 @@ from time import perf_counter
 class Simple_Agent(ArtificialAgent):
     """Example Sokoban Agent implementation - tree DFS."""
 
-    def __init__(self) -> None:
+    def __init__(self, optimal: bool = False, verbose: bool = False) -> None:
         """Really simple Tree-DFS agent."""
-        super().__init__()  # recommended
+        super().__init__(optimal, verbose)  # recommended
 
         # you can add your instance variables here
         self.board: Board = None
