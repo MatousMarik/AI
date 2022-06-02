@@ -1,4 +1,4 @@
-# Pac-Man game state documentation(short)
+# Pac-Man game state API summary
 This provides list of methods that you might need for interaction with Pac-Man game state. Note that the interface is built about main idea - all maze nodes has unique index and you access them and their content by these indices.
 
 ## enum `DM`
