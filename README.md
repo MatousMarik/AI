@@ -16,8 +16,8 @@ In total there will be 5 programming assignments whose solutions will be submitt
 | Game | Suggested Approach |
 | ---- | ------ |
 | [Dino](dino/README.md) | rule-based agent |
-| [Pac-Man](search/README.md#assignment-2-pac-man) | uniform-cost search |
-| [Sokoban](search/README.md#assignment-3-sokoban) | A* with custom heuristics |
+| [Pac-Man](search/README.md#assignment-2-uniform-cost-search-and-pac-man) | uniform-cost search |
+| [Sokoban](search/README.md#assignment-3-a-and-sokoban) | A* with custom heuristics |
 | Cell Wars | minimax or Monte Carlo tree search |
 | Minesweeper | backtracking search for CSPs |
 
