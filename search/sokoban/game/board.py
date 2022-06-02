@@ -432,7 +432,7 @@ class Board:
         skip: int = 0,
     ) -> Tuple["Board", int, int]:
         """
-        Load board from the file.
+        Load board from the file. Does not check for validity.
 
         :param str file_name: path to the file
         :param int|None level_number: number of level to load, if None - load first
@@ -491,6 +491,9 @@ class Board:
         min_moves = -1
 
         for line in lines:
+            if not line:
+                comments = True
+                continue
             if not comments and any(
                 c not in ETile.get_maze_symbols() for c in line
             ):
