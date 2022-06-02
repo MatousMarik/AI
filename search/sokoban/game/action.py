@@ -28,10 +28,11 @@ class Move(Action):
     """
     Sokoban moves one tile in selected direction without pushing box.
 
-    Note: You should not initialize new instances.
+    Note: You should not create new instances.
     """
 
-    actions = None
+    # will be injected with moves in all directions
+    _actions: Tuple["Move"] = None
 
     def __init__(self, dir: EDirection) -> None:
         self.dir: EDirection = dir
@@ -52,24 +53,24 @@ class Move(Action):
             return Push.get_action(dir)
 
     @classmethod
-    def get_actions(cls) -> List["Move"]:
+    def get_actions(cls) -> Tuple["Move"]:
         """Return all possibilities of Move actions."""
-        return cls.actions
+        return cls._actions
 
     @classmethod
     def get_action(cls, dir: EDirection) -> "Move":
-        """Return move into given direction."""
-        return cls.actions[dir.index]
+        """Return move to given direction."""
+        return cls._actions[dir.index]
 
     def is_possible(self, board: Board) -> bool:
         # edge
-        if not board.on_board(*board.player, self.dir):
+        if not board.on_board(*board.sokoban, self.dir):
             return False
 
         # tile is not free
         if not ETile.is_free(
             board.tile(
-                board.player[0] + self.dir.dx, board.player[1] + self.dir.dy
+                board.sokoban[0] + self.dir.dx, board.sokoban[1] + self.dir.dy
             )
         ):
             return False
@@ -77,7 +78,7 @@ class Move(Action):
 
     def perform(self, board: Board) -> None:
         """Perform the move, no validation!"""
-        board.move_player(self.dir)
+        board.move_sokoban(self.dir)
 
     def perform_with_result(
         self, board: Board
@@ -89,16 +90,16 @@ class Move(Action):
         and new string representation of tile
         ((x, y, 't'), ...)
         """
-        p = board.player
-        board.move_player(self.dir)
+        p = board.sokoban
+        board.move_sokoban(self.dir)
         return (
             (*p, ETile.str_repr(board.tile(*p))),
-            (*board.player, ETile.str_repr(board.tile(*board.player))),
+            (*board.sokoban, ETile.str_repr(board.tile(*board.sokoban))),
         )
 
     def reverse(self, board: Board) -> None:
         """Reverse this move PREVIOUSLY done by perform, no validation."""
-        board.move_player(self.dir.opposite())
+        board.move_sokoban(self.dir.opposite())
 
     def reverse_with_result(
         self, board: Board
@@ -110,18 +111,18 @@ class Move(Action):
         and new string representation of tile
         ((x, y, 't'), ...)
         """
-        p = board.player
-        board.move_player(self.dir.opposite())
+        p = board.sokoban
+        board.move_sokoban(self.dir.opposite())
         return (
             (*p, ETile.str_repr(board.tile(*p))),
-            (*board.player, ETile.str_repr(board.tile(*board.player))),
+            (*board.sokoban, ETile.str_repr(board.tile(*board.sokoban))),
         )
 
     def __str__(self) -> str:
         return f"Move[{self.dir}]"
 
 
-Move.actions = [Move(dir) for dir in EDirection]
+Move._actions = tuple(Move(dir) for dir in EDirection)
 
 
 class Push(Action):
@@ -129,10 +130,11 @@ class Push(Action):
     Sokoban moves box in selected direction to that direction
     and then moves itself onto freed tile.
 
-    Note: You should not initialize new instances.
+    Note: You should not create new instances.
     """
 
-    actions = None
+    # will be injected with pushes in all directions
+    _actions: Tuple["Push"] = None
 
     def __init__(self, dir: EDirection):
         self.dir: EDirection = dir
@@ -141,24 +143,24 @@ class Push(Action):
         return self.dir
 
     @classmethod
-    def get_actions(cls) -> List["Push"]:
+    def get_actions(cls) -> Tuple["Push"]:
         """Return all possibilities of Push actions."""
-        return cls.actions
+        return cls._actions
 
     @classmethod
     def get_action(cls, dir: EDirection) -> "Move":
         """Return push into given direction."""
-        return cls.actions[dir.index]
+        return cls._actions[dir.index]
 
     def is_possible(self, board: Board) -> bool:
-        px, py = board.player
+        px, py = board.sokoban
 
         # edge
         if not board.on_board(px, py, self.dir):
             return False
 
         # no box
-        if not ETile.is_box(board.ptile(self.dir)):
+        if not ETile.is_box(board.stile(self.dir)):
             return False
 
         # box on edge
@@ -177,7 +179,7 @@ class Push(Action):
     def perform(self, board: Board) -> None:
         """Perform the PUSH, no validation."""
         board.move_box(self.dir)
-        board.move_player(self.dir)
+        board.move_sokoban(self.dir)
 
     def perform_with_result(
         self, board: Board
@@ -191,20 +193,20 @@ class Push(Action):
         and new string representation of tile
         ((x, y, 't'), ...)
         """
-        p = board.player
+        p = board.sokoban
         board.move_box(self.dir)
-        board.move_player(self.dir)
-        nx = board.player[0] + self.dir.dx
-        ny = board.player[1] + self.dir.dy
+        board.move_sokoban(self.dir)
+        nx = board.sokoban[0] + self.dir.dx
+        ny = board.sokoban[1] + self.dir.dy
         return (
             (*p, ETile.str_repr(board.tile(*p))),
-            (*board.player, ETile.str_repr(board.tile(*board.player))),
+            (*board.sokoban, ETile.str_repr(board.tile(*board.sokoban))),
             (nx, ny, ETile.str_repr(board.tile(nx, ny))),
         )
 
     def reverse(self, board: Board) -> None:
         """Reverse this action PREVIOUSLY done by perform, no validation."""
-        board.move_player(self.dir.opposite())
+        board.move_sokoban(self.dir.opposite())
         board.move_box(self.dir, rev=True)
 
     def reverse_with_result(
@@ -219,16 +221,16 @@ class Push(Action):
         and new string representation of tile
         ((x, y, 't'), ...)
         """
-        p = board.player
+        p = board.sokoban
         nx = p[0] + self.dir.dx
         ny = p[1] + self.dir.dy
 
-        board.move_player(self.dir.opposite())
+        board.move_sokoban(self.dir.opposite())
         board.move_box(self.dir, rev=True)
 
         return (
             (*p, ETile.str_repr(board.tile(*p))),
-            (*board.player, ETile.str_repr(board.tile(*board.player))),
+            (*board.sokoban, ETile.str_repr(board.tile(*board.sokoban))),
             (nx, ny, ETile.str_repr(board.tile(nx, ny))),
         )
 
@@ -236,4 +238,4 @@ class Push(Action):
         return f"Push[{self.dir}]"
 
 
-Push.actions = [Push(dir) for dir in EDirection]
+Push._actions = tuple(Push(dir) for dir in EDirection)

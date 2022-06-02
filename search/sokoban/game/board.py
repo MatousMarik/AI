@@ -11,23 +11,23 @@ class ETile:
     Enum flag utility for sokoban tiles.
 
     Bits (LE):
-    TARGET, BOX, PLAYER, WALL
+    TARGET, BOX, SOKOBAN, WALL
     """
 
     SYMBOLS = " .$*@+#"
 
     # FLAGS:
     NONE = 0
-    PLACE = 1
+    TARGET = 1
     BOX = 2
-    PLAYER = 4
+    SOKOBAN = 4
     WALL = 8
 
     # COMBINED FLAGS:
-    BOX_IN_PLACE = BOX | PLACE
-    PLAYER_ON_PLACE = PLAYER | PLACE
-    ENTITY = BOX | PLAYER
-    NULLIFY_ENTITY = PLACE | WALL
+    BOX_IN_PLACE = BOX | TARGET
+    SOKOBAN_ON_TARGET = SOKOBAN | TARGET
+    ENTITY = BOX | SOKOBAN
+    NULLIFY_ENTITY = TARGET | WALL
 
     @classmethod
     def get_maze_symbols(cls) -> str:
@@ -35,16 +35,22 @@ class ETile:
 
     @classmethod
     def is_free(cls, flag: int) -> bool:
+        """
+        Whether there is NO blocking entity on the tile,
+        such as Sokoban, Box or Wall.
+        """
         # PLACE is lowest bit
-        return flag <= cls.PLACE
+        return flag <= cls.TARGET
 
     @classmethod
     def is_wall(cls, flag: int) -> bool:
+        # does not check with mask
+        # since there should not be anything else with wall
         return flag == cls.WALL
 
     @classmethod
-    def is_player(cls, flag: int) -> bool:
-        return bool(flag & cls.PLAYER)
+    def is_sokoban(cls, flag: int) -> bool:
+        return bool(flag & cls.SOKOBAN)
 
     @classmethod
     def is_box(cls, flag: int) -> bool:
@@ -52,7 +58,7 @@ class ETile:
 
     @classmethod
     def is_target(cls, flag: int) -> bool:
-        return bool(flag & cls.PLACE)
+        return bool(flag & cls.TARGET)
 
     # str methods are fixed hence .sok files are
 
@@ -65,7 +71,7 @@ class ETile:
         return s != "#"
 
     @classmethod
-    def is_player_str(cls, s: str) -> bool:
+    def is_sokoban_str(cls, s: str) -> bool:
         return s in "@+"
 
     @classmethod
@@ -83,15 +89,15 @@ class ETile:
         if s == "#":
             return cls.WALL
         if s == ".":
-            return cls.PLACE
+            return cls.TARGET
         if s == "$":
             return cls.BOX
         if s == "*":
             return cls.BOX_IN_PLACE
         if s == "@":
-            return cls.PLAYER
+            return cls.SOKOBAN
         if s == "+":
-            return cls.PLAYER_ON_PLACE
+            return cls.SOKOBAN_ON_TARGET
         raise RuntimeError("Invalid character.")
 
     @classmethod
@@ -165,13 +171,15 @@ class Board:
     Useful methods:
     - clone
     - tile
-    - ptile
-    - move_player
+    - stile
+    - move_sokoban
     - move_box
     - is_victory
     - on_board
+    - get_positions
     - set_state
     - unset_state
+    - unset_and_get_state
     - from_file
     """
 
@@ -179,7 +187,7 @@ class Board:
         self.width: int = width
         self.height: int = height
 
-        self.player: Pos = None
+        self.sokoban: Pos = None
         self.box_count: int = 0
         self.box_in_place_count: int = 0
 
@@ -198,7 +206,7 @@ class Board:
         result = Board(self.width, self.height, init_tiles=False)
         result.tiles = tuple(c.copy() for c in self.tiles)
 
-        result.player = self.player
+        result.sokoban = self.sokoban
         result.box_count = self.box_count
         result.box_in_place_count = self.box_in_place_count
         result._hash = self._hash
@@ -217,41 +225,45 @@ class Board:
         return h
 
     def __eq__(self, __o: "Board") -> bool:
-        """Note: assumes same type."""
+        """Note: assumes the same type."""
         if self.__hash__() != __o.__hash__():
             return False
+        # border is always wall
         return self.tiles[1:-1] == __o.tiles[1:-1]
 
     def tile(self, x: int, y: int) -> int:
-        """Return tile on given position."""
+        """Return tile int representation on given position."""
         return self.tiles[x][y]
 
-    def ptile(self, dir: EDirection) -> int:
-        """Return tile at given direction from the player position."""
-        return self.tiles[self.player.x + dir.dx][self.player.y + dir.dy]
+    def stile(self, dir: EDirection) -> int:
+        """
+        Return tile int representation at given direction
+        from the sokoban position.
+        """
+        return self.tiles[self.sokoban.x + dir.dx][self.sokoban.y + dir.dy]
 
-    def relocate_player(self, tx: int, ty: int) -> None:
-        """Teleport player (no checks)."""
+    def relocate_sokoban(self, tx: int, ty: int) -> None:
+        """Teleport sokoban (no checks)."""
 
-        sx, sy = self.player
+        sx, sy = self.sokoban
         self._relocate_entity(sx, sy, tx, ty)
-        self.player = Pos(tx, ty)
+        self.sokoban = Pos(tx, ty)
 
-    def move_player(self, dir: EDirection) -> None:
-        """Move player in given direction (no checks)."""
-        sx, sy = self.player
+    def move_sokoban(self, dir: EDirection) -> None:
+        """Move sokoban to the given direction (no checks)."""
+        sx, sy = self.sokoban
         tx, ty = sx + dir.dx, sy + dir.dy
         self._relocate_entity(sx, sy, tx, ty)
-        self.player = Pos(tx, ty)
+        self.sokoban = Pos(tx, ty)
 
     def move_box(self, dir: EDirection, *, rev=False) -> None:
         """
-        Move box in given direction from the player
+        Move box in the given direction from the sokoban
         to that direction (no checks).
 
         rev=True to move it backwards.
         """
-        sx, sy = self.player.x + dir.dx, self.player.y + dir.dy
+        sx, sy = self.sokoban.x + dir.dx, self.sokoban.y + dir.dy
         tx, ty = sx + dir.dx, sy + dir.dy
 
         if rev:
@@ -269,7 +281,7 @@ class Board:
         """
         Teleport entity (no checks).
 
-        Note: this will damage consistency of player and box_in_place_count.
+        Note: this will damage consistency of sokoban and box_in_place_count.
         """
         self._hash = None
         entity = self.tiles[sx][sy] & ETile.ENTITY
@@ -322,21 +334,21 @@ class Board:
     # ==============================
     def get_positions(self, *, remove: bool = False) -> bytearray:
         """
-        Get positions of moving entities. (for StateMinimal)
+        Get positions of movable entities. (for StateMinimal)
         If remove == True,  remove those entities from board.
 
         Return:
         bytearray - positions - two 8 bit position x and position y
-        [0,1]       - PLAYER-x, PLAYER-y
+        [0,1]       - SOKOBAN-x, SOKOBAN-y
         [2n, 2n+1] - nth-BOX-x, nth-BOX-y
         """
         ret = bytearray(2 + self.box_count * 2)
 
-        ret[0:2] = self.player
+        ret[0:2] = self.sokoban
         i = 2
         if remove:
             self.tiles[x][y] &= ETile.NULLIFY_ENTITY
-            self.player = Pos(-1, -1)
+            self.sokoban = Pos(-1, -1)
             for x, col in enumerate(self.tiles):
                 for y, t in enumerate(col):
                     if ETile.is_box(t):
@@ -369,8 +381,8 @@ class Board:
         self._hash = None
 
         x, y = state.positions[0:2]
-        self.player = Pos(x, y)
-        self.tiles[x][y] |= ETile.PLAYER
+        self.sokoban = Pos(x, y)
+        self.tiles[x][y] |= ETile.SOKOBAN
 
         self.box_count = (l // 2) - 1
         if self.box_count == 0:
@@ -391,7 +403,7 @@ class Board:
         """
         x, y = state.positions[0:2]
         self.tiles[x][y] &= ETile.NULLIFY_ENTITY
-        self.player = Pos(-1, -1)
+        self.sokoban = Pos(-1, -1)
         self.box_in_place_count = 0
         self.box_count = 0
 
@@ -525,10 +537,10 @@ class Board:
                     board.box_count += 1
                     if ETile.is_target(f):
                         board.box_in_place_count += 1
-                elif ETile.is_player(f):
-                    if board.player is not None:
-                        raise RuntimeError("More players on the board.")
-                    board.player = Pos(x, y)
+                elif ETile.is_sokoban(f):
+                    if board.sokoban is not None:
+                        raise RuntimeError("More sokobans on the board.")
+                    board.sokoban = Pos(x, y)
 
             for x in range(x, width):
                 board.tiles[x][y] = ETile.WALL
@@ -540,13 +552,13 @@ class Board:
 
 
 class StateMinimal:
-    """Runtime part of the Sokoban game state - only moving entities positions."""
+    """Runtime part of the Sokoban game state - only movable entities positions."""
 
     def __init__(self, positions: bytearray):
         """
         Pass positions like from Board.get_positions.
         bytearray - positions - two 8 bit position x and position y
-        [0,1]       - PLAYER-x, PLAYER-y
+        [0,1]       - SOKOBAN-x, SOKOBAN-y
         [2n, 2n+1] - nth-BOX-x, nth-BOX-y
         """
         self.positions = positions
