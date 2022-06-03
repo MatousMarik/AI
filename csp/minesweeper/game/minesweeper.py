@@ -27,13 +27,7 @@ class Tile:
     def is_flagged(self) -> bool:
         return self.flag
 
-    def is_mine(self) -> Optional[bool]:
-        return self.mine
-
-    def is_free(self) -> Optional[bool]:
-        return None if self.mine is None else not self.mine
-
-    def is_visible(self) -> bool:
+    def is_uncovered(self) -> bool:
         return self.visible
 
     def is_unknown(self) -> bool:
@@ -85,6 +79,8 @@ class Action:
 
 
 class ActionFactory:
+    """Static class for creating Action instances."""
+
     # ACTION TYPES
     SUGGEST_SAFE_TILE = 0
     UNCOVER = 1
@@ -144,16 +140,16 @@ class Board:
         self.mines_count: int = mines
         self.width: int = width
         self.height: int = height
-        self.s2: int = width * height
         self.tiles: List[List[Tile]] = (
             None
             if skip_initialization
             else [[Tile() for _ in range(height)] for _ in range(width)]
         )
         self.boom: bool = False
+        self.last_safe_tile: Position = None
 
         self._safe_tiles: Tuple[List[Position], List[Position]] = None
-        self.last_safe_tile: Position = None
+        self._covered: int = width * height
 
         if not skip_initialization:
             self.init_tiles(seed)
@@ -235,18 +231,7 @@ class Board:
         """
         if self.boom:
             return False
-
-        visibles = 0
-        flags = 0
-        for col in self.tiles:
-            for t in col:
-                if t.visible:
-                    visibles += 1
-                elif t.flag:
-                    flags += 1
-        return (self.s2 - self.mines_count == visibles) and (
-            flags == self.mines_count
-        )
+        return self.mines_count == self._covered
 
     def is_possible(self, action: Action) -> bool:
         """
@@ -293,6 +278,7 @@ class Board:
         if t.visible or t.flag:
             return
         t.visible = True
+        self._covered -= 1
 
         if t.mine:
             self.boom = True
@@ -322,6 +308,7 @@ class Board:
                         continue
                     found.append(np)
                     nt.visible = True
+                    self._covered -= 1
                     if nt.mines_around == 0:
                         expand_positions.append(np)
         return
@@ -356,6 +343,6 @@ class Board:
         return "\n".join(
             [
                 " ".join(a[i : i + self.width])
-                for i in range(0, self.s2, self.width)
+                for i in range(0, self.width * self.height, self.width)
             ]
         )

@@ -22,16 +22,16 @@ class ArtificialAgent:
           which is called by think
     """
 
-    def __init__(self, verbose: int = 0) -> None:
-        self._board: Board = None
+    def __init__(self, verbose: int = 0, seed: int = 0) -> None:
         self.verbose: int = verbose
-        self.random: Random = Random()
+        self.random: Random = Random(seed)
 
+        # not visible tiles, use for read only
+        self.unknown: List[Position] = None
+
+        self._board: Board = None
         self._previous_board: Board = None
         self._think_time = 0  # seconds
-
-        # not visible tiles
-        self.unknown: List[Position] = None
 
     def new_game(self) -> None:
         """Agent got into a new level."""
@@ -82,15 +82,6 @@ class ArtificialAgent:
                 print("took hint at ({0}, {1})".format(safe_pos.x, safe_pos.y))
             return ActionFactory.get_uncover_action(safe_pos.x, safe_pos.y)
 
-        # check only mines remaining
-        if len(self.unknown) == self._board.mines_count:
-            for pos in self.unknown:
-                if not self._board.tile(pos.x, pos.y).flag:
-                    return ActionFactory.get_flag_action(pos.x, pos.y)
-            raise RuntimeError(
-                "Should not reach here; solution or board.mines invalid?"
-            )
-
         # do the thinking
         if self.verbose > 1:
             print("THINKING")
@@ -98,7 +89,7 @@ class ArtificialAgent:
         result = self.think_impl(self._board, self._previous_board)
         self._think_time += perf_counter() - start
 
-        # save board think_impl has seen
+        # saves board think_impl has seen
         # -- mind the fact, that the next think() iteration may not invoke think_impl()
         #    due to the fact we're auto-using suggestions
         self._previous_board = self._board
@@ -110,7 +101,7 @@ class ArtificialAgent:
         Think over the 'board' and produce an 'action'; preferably using an Action method.
 
         Things already guaranteed:
-        1) board is not fully solvable yet
+        1) board is not fully solved yet
         2) we do not have any new advice; if you want one, issue Action.advice().
 
         Parameters:
