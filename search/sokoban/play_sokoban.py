@@ -124,7 +124,7 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
             level_str = f"level {args.level}"
     else:
         if args.num_levels > 0:
-            level_str = f"first {args.num_level}"
+            level_str = f"first {args.num_levels}"
         else:
             level_str = "all levels"
     print(
@@ -175,11 +175,9 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
         action = None
         if agent:
             agent.new_game()
-            agent.observe(board)
-
             # let agent think before initializing GUI
             print("Agent thinking.")
-            action = agent.act()
+            agent.observe(board)
             if not verbose:
                 print("Thinking done.")
 
@@ -216,7 +214,7 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
             # MOVE
             rev = False
             if agent:
-                action = agent.act() if action is None else action
+                action = agent.act()
                 if action is None:
                     # agent gave up
                     if verbose:
@@ -232,18 +230,22 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
                 while True:
                     sign, action = gui.choose_direction(bool(actions))
                     if sign == 1:
+                        # action
                         action = Move.or_push(board, action)
                         if action.is_possible(board):
                             break
                     elif sign == -1:
+                        # quit
                         levels_running = False
                         end_current_game = True
                         break
                     elif sign == 0:
+                        # reset
                         reset = True
                         end_current_game = True
                         break
                     elif sign == 2:
+                        # reverse
                         rev = True
                         action = actions.pop()
                         break

@@ -37,6 +37,13 @@ class ArtificialAgent:
     def observe(self, board: Board) -> None:
         """Agent receives current state of the board."""
         self._board = board
+        cpy = board.clone()
+        start = time.perf_counter()
+        self._actions = self.think(cpy)
+        self._think_time += time.perf_counter() - start
+
+        # for popping from list
+        self._actions.reverse()
 
     def act(self) -> Action:
         """Agent is queried what to do next."""
@@ -47,18 +54,8 @@ class ArtificialAgent:
             if isinstance(action, EDirection):
                 action = Move.or_push(self._board, action)
             return action
-
-        start = time.perf_counter()
-        self._actions = self.think(self._board.clone())
-        self._think_time += time.perf_counter() - start
-
-        if not self._actions:
+        else:
             return None
-
-        # for popping from list
-        self._actions.reverse()
-
-        return self.act()
 
     def think(self, board: Board) -> List[Union[EDirection, Action]]:
         raise NotImplementedError
