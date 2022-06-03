@@ -18,29 +18,16 @@ class Agent(ArtificialAgent):
     See ArtificialAgent for details.
     """
 
-    def __init__(self) -> None:
-        super().__init__()  # recommended
+    def __init__(self, verbose: int) -> None:
+        super().__init__(verbose)
 
         # you can add your instance variables here
-
-        # # EXAMPLE:
-        # # tiles not visible, but they have visible neighbor tile
-        # self.border_unknown: List[Tuple[int, int]] = None
-        # # visible tiles with mines > 0 and have at least 1 non-visible neighbor tile
-        # self.border_numbers: List[Tuple[int, int]] = None
-        # # flagged tiles
-        # self.flagged: List[Tuple[int, int]] = None
 
     def new_game(self) -> None:
         """Agent got into a new level."""
         super().new_game()
 
         # you can reset your instance variables here
-
-        # # EXAMPLE:
-        # self.border_unknown = None
-        # self.border_numbers = None
-        # self.flagged = None
 
     def think_impl(self, board: Board, previous_board: Board) -> Action:
         """
@@ -67,7 +54,7 @@ class Agent(ArtificialAgent):
                 # test border tile
                 if self.is_border_tile(x, y, board):
                     self.border_unknown.append((x, y))
-            elif tile.mines > 0:
+            elif tile.mines_around > 0:
                 # test border tile
                 if self.is_border_tile(x, y, board):
                     self.border_numbers.append((x, y))

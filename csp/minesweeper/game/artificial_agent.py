@@ -22,9 +22,9 @@ class ArtificialAgent:
           which is called by think
     """
 
-    def __init__(self) -> None:
+    def __init__(self, verbose: int = 0) -> None:
         self._board: Board = None
-        self.verbose: int = 0
+        self.verbose: int = verbose
         self.random: Random = Random()
 
         self._previous_board: Board = None

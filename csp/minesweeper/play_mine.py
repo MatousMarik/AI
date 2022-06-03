@@ -100,9 +100,7 @@ def process_args(args: Optional[List[str]] = None):
             )
             am = module_from_spec(spec)
             spec.loader.exec_module(am)
-            agent: ArtificialAgent = getattr(am, args.agent)()
-
-            agent.verbose = args.verbose
+            agent: ArtificialAgent = getattr(am, args.agent)(args.verbose)
         except BaseException as e:
             parser.error(f"Invalid agent name:\n{str(e)}")
 
