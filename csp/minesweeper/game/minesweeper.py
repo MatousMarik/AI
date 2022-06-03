@@ -11,6 +11,7 @@ class Position:
     y: int
 
 
+@dataclass
 class Tile:
     """
     Tile of minesweeper board.
@@ -18,11 +19,10 @@ class Tile:
     mine represents whether there is a mine on the tile, None is for UNKNOWN
     """
 
-    def __init__(self):
-        self.mine: bool = False  # None for UNKNOWN
-        self.mines: int = 0  # mines around
-        self.visible: bool = False  # visible to agent
-        self.flag: bool = False  # flagged by agent
+    mine: bool = False  # None for UNKNOWN
+    mines_around: int = 0
+    visible: bool = False  # visible to agent
+    flag: bool = False  # flagged by agent
 
     def is_flagged(self) -> bool:
         return self.flag
@@ -47,11 +47,11 @@ class Tile:
         """
         nt = object.__new__(Tile)
         if for_view and not self.visible:
-            nt.mines = -1
+            nt.mines_around = -1
             nt.mine = None
         else:
             nt.mine = self.mine
-            nt.mines = self.mines
+            nt.mines_around = self.mines_around
         nt.visible = self.visible
         nt.flag = self.flag
         return nt
@@ -61,7 +61,7 @@ class Tile:
             if self.mine:
                 return "M"
             else:
-                return str(self.mines)
+                return str(self.mines_around)
         if self.flag:
             return "F"
         return "."
@@ -71,7 +71,7 @@ class Tile:
             if self.mine:
                 return "M"
             else:
-                return self.mines
+                return self.mines_around
         if self.flag:
             return "F"
         return "."
@@ -174,14 +174,14 @@ class Board:
                     y - 1 if y > 0 else y,
                     y + 2 if y < self.height - 1 else y + 1,
                 ):
-                    self.tiles[nx][ny].mines += 1
+                    self.tiles[nx][ny].mines_around += 1
 
         # init safe tiles
         self._safe_tiles = ([], [])
         for x, col in enumerate(self.tiles):
             for y, t in enumerate(col):
                 if t.mine is False:
-                    if t.mines == 0:
+                    if t.mines_around == 0:
                         self._safe_tiles[0].append(Position(x, y))
                     else:
                         self._safe_tiles[1].append(Position(x, y))
@@ -196,7 +196,7 @@ class Board:
                 yield (x, y), tile
 
     def tile(self, x, y) -> Tile:
-        """Return tile on the position."""
+        """Return tile at a given position."""
         return self.tiles[x][y]
 
     def clone(self) -> "Board":
@@ -298,7 +298,7 @@ class Board:
             self.boom = True
             return
 
-        if t.mines > 0:
+        if t.mines_around > 0:
             return
 
         # FLOOD-FILL
@@ -322,7 +322,7 @@ class Board:
                         continue
                     found.append(np)
                     nt.visible = True
-                    if nt.mines == 0:
+                    if nt.mines_around == 0:
                         expand_positions.append(np)
         return
 
