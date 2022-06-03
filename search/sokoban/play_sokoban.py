@@ -293,4 +293,4 @@ if __name__ == "__main__":
     # call main with desired arguments in list
     # e.g. main(["easy"]),
     # main(["Aymeric_Hard", "-l=3", "-a=Agent", "--visualize"])
-    main(["easy", "-a=Simple_Agent", "-v"])
+    main()
