@@ -14,5 +14,5 @@ class Agent(ABC):
     """
 
     @abstractstaticmethod
-    def get_move(self, game: Game) -> DinoMove:
+    def get_move(game: Game) -> DinoMove:
         pass
