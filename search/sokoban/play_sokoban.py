@@ -103,12 +103,6 @@ def process_args(
     return agent, file, args
 
 
-def get_board(file: str, level: int, skip: int) -> Tuple[Board, int]:
-    board, min_moves, skip = Board.from_file(file, level, skip=skip)
-
-    return board, min_moves
-
-
 def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
     verbose = args.verbose
     skips: List[int] = [0]
@@ -146,12 +140,15 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
             board, min_moves, skip = Board.from_file(
                 file,
                 next_level - 1,
-                args.level is None,
+                args.level is not None or args.num_levels is not None,
                 skip=skips[-2],
             )
         else:
             board, min_moves, skip = Board.from_file(
-                file, next_level, args.level is None, skip=skips[-1]
+                file,
+                next_level,
+                args.level is not None or args.num_levels is not None,
+                skip=skips[-1],
             )
 
         if board is None:
@@ -194,7 +191,7 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
                 if not gui:
                     if verbose:
                         print(
-                            f" solved in {agent._think_time:.2f} s and {moves} moves"
+                            f" solved in {agent.think_time:.2f} s and {moves} moves"
                         )
                     if args.optimal and min_moves != -1 and min_moves < moves:
                         if verbose:
@@ -206,7 +203,7 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
                         total_losses += 1
 
                 if agent:
-                    total_time += agent._think_time
+                    total_time += agent.think_time
                 break
 
             # MOVE
@@ -216,9 +213,9 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
                 if action is None:
                     # agent gave up
                     if verbose:
-                        print(f" agent gave up after {agent._think_time:.2f} s")
+                        print(f" agent gave up after {agent.think_time:.2f} s")
                     total_losses += 1
-                    total_time += agent._think_time
+                    total_time += agent.think_time
                     break
                 if not action.is_possible(board):
                     raise RuntimeError("Agent returned illegal move!")
@@ -296,4 +293,4 @@ if __name__ == "__main__":
     # call main with desired arguments in list
     # e.g. main(["easy"]),
     # main(["Aymeric_Hard", "-l=3", "-a=Agent", "--visualize"])
-    main()
+    main(["easy", "-a=Simple_Agent", "-v"])

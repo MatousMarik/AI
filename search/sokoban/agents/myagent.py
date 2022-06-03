@@ -21,29 +21,15 @@ class MyAgent(ArtificialAgent):
     See ArtificialAgent for details.
     """
 
-    def __init__(self, optimal: bool = False, verbose: bool = False) -> None:
-        super().__init__(optimal, verbose)  # recommended
-
-        # you can add your instance variables here
-
-    def new_game(self) -> None:
-        """Agent got into a new level."""
-        super().new_game()  # recommended
-
-        # you can add your instance variables here
-
-    def observe(self, board: Board) -> None:
-        """Agent receives current state of the board."""
-        super().observe(board)  # recommended
-
-        # you can add your instance variables here
-
-    def think(self, board: Board) -> List[Union[EDirection, Action]]:
+    @staticmethod
+    def think(
+        board: Board, optimal: bool, verbose: bool
+    ) -> List[Union[EDirection, Action]]:
         """
         Code your custom agent here.
-        You should use your AStart implementation.
+        You should use your A* implementation.
 
-        You can find example implementation (without use of AStart)
+        You can find example implementation (without use of A*)
         in simple_agent.py.
         """
         # Your implementation goes here.
