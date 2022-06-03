@@ -58,8 +58,6 @@ The same as `Move` action above, but moves sokoban and one neighboring box. You 
 
 ## Artificial agent
 Agent interface for solving sokoban game. Can be found in [artificial_agent.py](artificial_agent.py).
-Your agent implementation should subclass `ArtificialAgent`, that provides basic methods for interacting with the game. Note that agent will be instantiated with parameters `optimal` and `verbose` according to the options of the game script.
+Your agent implementation should subclass `ArtificialAgent`, that provides basic methods for interacting with the game. You should not modify existing functionality.
 
-You can extend methods `new_game` and `observe`, but you should preserve current functionality.
-
-Then you will need to implement agent logic in method `think` that gets copy of initial board state. You can modify this state as you need. After you solve the game, you should return it as a sequence of `EDirecitons` or `Actions`.
+Then you will need to implement agent logic in static method `think` that gets copy of initial *board* state and parameters *optimal* and *verbose*. You can modify this state as you need. After you solve the game, you should return it as a sequence of `EDirecitons` or `Actions`.
