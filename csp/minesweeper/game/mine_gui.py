@@ -10,21 +10,25 @@ TILE_SIZE = 32
 
 
 def load_tiles():
-    return {
-        "M": pg.image.load(path_join(IM_DIR, "mine.png")),
-        0: pg.image.load(path_join(IM_DIR, "0.png")),
-        1: pg.image.load(path_join(IM_DIR, "1.png")),
-        2: pg.image.load(path_join(IM_DIR, "2.png")),
-        3: pg.image.load(path_join(IM_DIR, "3.png")),
-        4: pg.image.load(path_join(IM_DIR, "4.png")),
-        5: pg.image.load(path_join(IM_DIR, "5.png")),
-        6: pg.image.load(path_join(IM_DIR, "6.png")),
-        7: pg.image.load(path_join(IM_DIR, "7.png")),
-        8: pg.image.load(path_join(IM_DIR, "8.png")),
-        "F": pg.image.load(path_join(IM_DIR, "flag.png")),
-        ".": pg.image.load(path_join(IM_DIR, "hidden.png")),
-        "S": pg.image.load(path_join(IM_DIR, "safe.png")),
+    # need to have this pg.Surface to convert images
+    pg.display.set_mode((1, 1), flags=pg.HIDDEN)
+    ret = {
+        "M": pg.image.load(path_join(IM_DIR, "mine.png")).convert(),
+        0: pg.image.load(path_join(IM_DIR, "0.png")).convert(),
+        1: pg.image.load(path_join(IM_DIR, "1.png")).convert(),
+        2: pg.image.load(path_join(IM_DIR, "2.png")).convert(),
+        3: pg.image.load(path_join(IM_DIR, "3.png")).convert(),
+        4: pg.image.load(path_join(IM_DIR, "4.png")).convert(),
+        5: pg.image.load(path_join(IM_DIR, "5.png")).convert(),
+        6: pg.image.load(path_join(IM_DIR, "6.png")).convert(),
+        7: pg.image.load(path_join(IM_DIR, "7.png")).convert(),
+        8: pg.image.load(path_join(IM_DIR, "8.png")).convert(),
+        "F": pg.image.load(path_join(IM_DIR, "flag.png")).convert(),
+        ".": pg.image.load(path_join(IM_DIR, "hidden.png")).convert(),
+        "S": pg.image.load(path_join(IM_DIR, "safe.png")).convert(),
     }
+    pg.display.quit()
+    return ret
 
 
 class MineGUI:
@@ -44,27 +48,32 @@ class MineGUI:
 
     def new_board(self, board: Board) -> None:
         pg.init()
-        pg.display.set_caption("Minesweeper")
         self.width = board.width
         self.height = board.height
-        self.screen = pg.display.set_mode(
-            (self.width * TILE_SIZE, self.height * TILE_SIZE), pg.SCALED
-        )
+
         # draw all tiles as hidden
+        all_hidden = pg.Surface(
+            (self.width * TILE_SIZE, self.height * TILE_SIZE)
+        )
         hidden = self.tiles["."]
         sequence = (
             (hidden, (x * TILE_SIZE, y * TILE_SIZE))
             for x in range(self.width)
             for y in range(self.height)
         )
-        self.screen.blits(sequence)
-        self.screen.blit(
+        all_hidden.blits(sequence)
+        all_hidden.blit(
             self.tiles["S"],
             (
                 board.last_safe_tile.x * TILE_SIZE,
                 board.last_safe_tile.y * TILE_SIZE,
             ),
         )
+        pg.display.set_caption("Minesweeper")
+        self.screen = pg.display.set_mode(
+            (self.width * TILE_SIZE, self.height * TILE_SIZE), pg.SCALED
+        )
+        self.screen.blit(all_hidden, (0, 0))
         self.clock = pg.time.Clock()
         pg.display.update()
 

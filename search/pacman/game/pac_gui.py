@@ -83,6 +83,7 @@ def load_images():
         [[convert_image(im) for im in dir_] for dir_ in ghost] for ghost in gis
     ]
     fruits = convert_image("fruits.png")
+    pg.display.quit()
     return maze_imgs, pac_imgs, ghost_imgs, fruits
 
 

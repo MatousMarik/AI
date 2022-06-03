@@ -21,7 +21,7 @@ def load_tiles():
     EPLAYER = pg.image.load(path_join(IMAGES_DIR, "eplayer.png")).convert()
     PLAYER = pg.image.load(path_join(IMAGES_DIR, "gsokoban.png")).convert()
     WALL = pg.image.load(path_join(IMAGES_DIR, "wall.png")).convert()
-
+    pg.display.quit()
     # in order of flag represention
     return [GROUND, PLACE, BOX, BOX_IN_PLACE, PLAYER, EPLAYER, None, None, WALL]
 

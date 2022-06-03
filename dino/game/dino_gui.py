@@ -48,8 +48,7 @@ def load_images():
     pg.font.init()
     font = pg.font.Font(path_join(RESOURCES, "FreeSansBold.ttf"), 30)
     birds = [convert_image("Bird{:d}.png".format(b)) for b in range(1, 3)]
-
-    return Images(
+    ret = Images(
         convert_image("Track.png"),
         convert_image("Reset.png"),
         convert_image("GameOver.png"),
@@ -71,6 +70,8 @@ def load_images():
         [convert_image("DinoRun{:d}.png".format(r)) for r in range(1, 3)],
         font.render("Press any Key to Start", True, BLACK),
     )
+    pg.display.quit()
+    return ret
 
 
 def keys_to_move(keys):
