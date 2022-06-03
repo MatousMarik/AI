@@ -7,6 +7,7 @@ from typing import List, Optional, Tuple
 from time import perf_counter
 from random import randrange
 from os.path import join as path_join, dirname
+import sys
 
 AGENTS_DIR = path_join(dirname(__file__), "agents")
 
@@ -62,14 +63,11 @@ def get_parser() -> ArgumentParser:
 
 
 def process_args(
-    args: Optional[List[str]] = None,
+    args: List[str] = [],
 ) -> Tuple[Agent, Namespace, bool]:
     """Parse arguments, check validity and return usefull values."""
     parser = get_parser()
-    if args is None:
-        args = parser.parse_args()
-    else:
-        args = parser.parse_args(args)
+    args = parser.parse_args(args + sys.argv[1:])
 
     agent: Agent = None
     if args.agent:
@@ -168,7 +166,7 @@ def sim(agent: Agent, args: Namespace) -> None:
     print("  time: {:.1f} ms/tick".format(total_time / total_ticks * 1000))
 
 
-def main(args_list: list = None) -> None:
+def main(args_list: list = []) -> None:
     agent, args, visualize = process_args(args_list)
 
     gui = None

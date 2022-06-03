@@ -5,6 +5,7 @@ from game.agent import Agent
 from argparse import ArgumentParser, Namespace
 from random import Random
 from importlib.util import spec_from_file_location, module_from_spec
+import sys
 
 from typing import Optional, Tuple, List, Union
 
@@ -95,7 +96,7 @@ def get_parser() -> ArgumentParser:
 
 
 def process_args(
-    args: Optional[List[str]] = None,
+    args: List[str] = [],
 ) -> Tuple[Agent, Agent, Union[None, Agent], bool, Namespace]:
     """
     Parse arguments, check validity and return usefull values.
@@ -108,10 +109,7 @@ def process_args(
     * args
     """
     parser = get_parser()
-    if args is None:
-        args = parser.parse_args()
-    else:
-        args = parser.parse_args(args)
+    args = parser.parse_args(args + sys.argv[1:])
 
     if args.scale < 0.3 or args.scale > 5:
         parser.error("Invalid scale. Use values from [0.3, 5]")
@@ -364,7 +362,7 @@ def sim_with_gui(agent1: Agent, agent2: Agent, gui, args: Namespace) -> None:
             ais[:] = ais[::-1]
 
 
-def main(args_list: list = None) -> None:
+def main(args_list: list = []) -> None:
     agent1, agent2, gui_agent, visualize, args = process_args(args_list)
 
     if visualize:

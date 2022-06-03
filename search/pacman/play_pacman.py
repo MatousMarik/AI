@@ -5,6 +5,7 @@ from argparse import ArgumentParser, Namespace
 from typing import List, Optional, Tuple
 from time import perf_counter
 from random import randrange
+import sys
 
 from importlib.util import spec_from_file_location, module_from_spec
 from os.path import join as path_join, dirname
@@ -58,14 +59,11 @@ def get_parser() -> ArgumentParser:
 
 
 def process_args(
-    args: Optional[List[str]] = None,
+    args: List[str] = [],
 ) -> Tuple[gc.PacManControllerBase, Namespace, bool]:
     """Parse arguments, check validity and return usefull values."""
     parser = get_parser()
-    if args is None:
-        args = parser.parse_args()
-    else:
-        args = parser.parse_args(args)
+    args = parser.parse_args(args + sys.argv[1:])
 
     if args.level is not None and (args.level < 1 or args.level > 4):
         parser.error("Invalid level number.")
@@ -210,7 +208,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
     print("Max tick {:.2f} ms".format(total_max_tick * 1000))
 
 
-def main(args_list: list = None) -> None:
+def main(args_list: list = []) -> None:
     agent, args, visualize = process_args(args_list)
 
     gui = None

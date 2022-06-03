@@ -7,6 +7,7 @@ from typing import Optional, List
 from importlib.util import spec_from_file_location, module_from_spec
 from os.path import join as path_join
 from os.path import dirname
+import sys
 
 from minimax import Minimax
 
@@ -145,6 +146,73 @@ def get_parser() -> ArgumentParser:
     return parser
 
 
+def process_args(args: List[str] = []):
+    """Parse arguments, check validity and return usefull values."""
+    parser = get_parser()
+    args = parser.parse_args(args + sys.argv[1:])
+
+    game, ui, available_strats, base_strats = GAMES[args.game]
+
+    try:
+        spec = spec_from_file_location(
+            f"{args.game}.{args.game}",
+            path_join(DIR, args.game, f"{args.game}.py"),
+        )
+        module = module_from_spec(spec)
+        spec.loader.exec_module(module)
+        game = getattr(module, game)()
+    except BaseException as e:
+        parser.error(f"Specified module not working: \n{str(e)}")
+
+    strategies = []
+    ss = [args.strategy1]
+    if args.strategy2 is not None:
+        ss.append(args.strategy2)
+
+    for s in ss:
+        if s[0] not in available_strats:
+            parser.error(
+                f"'{s[0]}' is not available strategy for '{args.game}'"
+            )
+
+        if len(s) > 1:
+            if s[1] < 0:
+                parser.error(
+                    "'{0}' is not valid {1}".format(
+                        s[1],
+                        "depth"
+                        if s[0] == "minimax"
+                        else "number of iterations",
+                    )
+                )
+
+            if s[0] == "minimax":
+                strategies.append(Minimax(game, s[1]))
+            elif s[0] == "mcts":
+                if s[2] not in base_strats:
+                    parser.error(
+                        f"'{s[2]}' is not valid base strategy for mcts in '{args.game}'. Use one of {base_strats}"
+                    )
+                AVS = available_strats[s[2]]
+                if isinstance(AVS, str):
+                    AVS = getattr(module, AVS)
+                strategies.append(MCTS(game, AVS(), s[1]))
+            else:
+                parser.error(
+                    f"Invalid strategy with specified details - '{s[0]}'"
+                )
+        else:
+            AVS = available_strats[s[0]]
+            if isinstance(AVS, str):
+                AVS = getattr(module, AVS)
+            strategies.append(AVS())
+
+    if len(strategies) == 1:
+        return args, game, ui, strategies[0], None
+    else:
+        return args, game, ui, strategies[0], strategies[1]
+
+
 def sim(
     game: AbstractGame,
     strat1: Strategy,
@@ -213,77 +281,7 @@ def sim(
     return wins
 
 
-def process_args(args: Optional[List[str]] = None):
-    """Parse arguments, check validity and return usefull values."""
-    parser = get_parser()
-    if args is None:
-        args = parser.parse_args()
-    else:
-        args = parser.parse_args(args)
-
-    game, ui, available_strats, base_strats = GAMES[args.game]
-
-    try:
-        spec = spec_from_file_location(
-            f"{args.game}.{args.game}",
-            path_join(DIR, args.game, f"{args.game}.py"),
-        )
-        module = module_from_spec(spec)
-        spec.loader.exec_module(module)
-        game = getattr(module, game)()
-    except BaseException as e:
-        parser.error(f"Specified module not working: \n{str(e)}")
-
-    strategies = []
-    ss = [args.strategy1]
-    if args.strategy2 is not None:
-        ss.append(args.strategy2)
-
-    for s in ss:
-        if s[0] not in available_strats:
-            parser.error(
-                f"'{s[0]}' is not available strategy for '{args.game}'"
-            )
-
-        if len(s) > 1:
-            if s[1] < 0:
-                parser.error(
-                    "'{0}' is not valid {1}".format(
-                        s[1],
-                        "depth"
-                        if s[0] == "minimax"
-                        else "number of iterations",
-                    )
-                )
-
-            if s[0] == "minimax":
-                strategies.append(Minimax(game, s[1]))
-            elif s[0] == "mcts":
-                if s[2] not in base_strats:
-                    parser.error(
-                        f"'{s[2]}' is not valid base strategy for mcts in '{args.game}'. Use one of {base_strats}"
-                    )
-                AVS = available_strats[s[2]]
-                if isinstance(AVS, str):
-                    AVS = getattr(module, AVS)
-                strategies.append(MCTS(game, AVS(), s[1]))
-            else:
-                parser.error(
-                    f"Invalid strategy with specified details - '{s[0]}'"
-                )
-        else:
-            AVS = available_strats[s[0]]
-            if isinstance(AVS, str):
-                AVS = getattr(module, AVS)
-            strategies.append(AVS())
-
-    if len(strategies) == 1:
-        return args, game, ui, strategies[0], None
-    else:
-        return args, game, ui, strategies[0], strategies[1]
-
-
-def main(args_: Optional[List[str]] = None) -> None:
+def main(args_: List[str] = []) -> None:
     args, game, ui, strategy1, strategy2 = process_args(args_)
     if args.sim is not None:
         sim(

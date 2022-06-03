@@ -37,7 +37,7 @@ class Agent(ArtificialAgent):
         The Board object passed to think_impl gives you the current board state.
         Check ArtificialAgent.think_impl docstring for more info.
         """
-        return Action.advice()
+        return ActionFactory.get_advice_action()
 
     def reset_lists(self, board: Board) -> None:
         """Example."""

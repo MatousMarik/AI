@@ -7,6 +7,7 @@ from importlib.util import spec_from_file_location, module_from_spec
 from os.path import join as path_join
 from os.path import dirname, exists
 from typing import List, Optional, Tuple
+import sys
 
 AGENTS_DIR = path_join(dirname(__file__), "agents")
 LEVELS_DIR = path_join(dirname(__file__), "game", "levels")
@@ -63,14 +64,11 @@ def get_parser() -> ArgumentParser:
 
 
 def process_args(
-    args: Optional[List[str]] = None,
+    args: List[str] = [],
 ) -> Tuple[ArtificialAgent, str, Namespace]:
     """Parse arguments, check validity and return usefull values."""
     parser = get_parser()
-    if args is None:
-        args = parser.parse_args()
-    else:
-        args = parser.parse_args(args)
+    args = parser.parse_args(args + sys.argv[1:])
 
     if args.level and args.level < 1:
         parser.error("Invalid level number.")
@@ -279,7 +277,7 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
         )
 
 
-def main(args_list: list = None) -> None:
+def main(args_list: list = []) -> None:
     agent, file, args = process_args(args_list)
 
     gui = None

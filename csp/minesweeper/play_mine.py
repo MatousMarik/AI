@@ -4,6 +4,7 @@ from game.artificial_agent import ArtificialAgent
 from argparse import ArgumentParser
 from random import sample as random_sample
 from typing import List, Optional
+import sys
 
 from importlib.util import spec_from_file_location, module_from_spec
 from os.path import join as path_join, dirname
@@ -64,13 +65,10 @@ def get_parser() -> ArgumentParser:
     return parser
 
 
-def process_args(args: Optional[List[str]] = None):
+def process_args(args: List[str] = []):
     """Parse arguments, check validity and return usefull values."""
     parser = get_parser()
-    if args is None:
-        args = parser.parse_args()
-    else:
-        args = parser.parse_args(args)
+    args = parser.parse_args(args + sys.argv[1:])
 
     if not args.agent and args.sim:
         parser.error("Can't simulate player.")
@@ -257,7 +255,7 @@ def sim(
             )
 
 
-def main(args: Optional[List[str]] = None) -> None:
+def main(args: List[str] = []) -> None:
     agent, width, height, mines, seed, sims, verbose = process_args(args)
 
     # set ui if needed

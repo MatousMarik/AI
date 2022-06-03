@@ -10,11 +10,11 @@ There are two ways how to specify options for the script. You can either run scr
 
     python3 play_dino.py −a=MyAgent −−seed=0 −−vis_rect −d
 
-or alternatively you can specify options as a parameter of method `main` at the end of [play_dino.py](play_dino.py) and executing script (with all options from terminal ignored):
+or alternatively you can specify options as a parameter of method `main` at the end of [play_dino.py](play_dino.py) and executing script (with all options from terminal taking priority):
 
-    main(["-a=MyAgent", "--se=0", "--vis", "--deb"])
+    main(["-a=MyAgent", "--se=1", "--vis", "--deb"])
     ...
-    python3 play_dino.py -hello world
+    python3 play_dino.py --seed=0
 
 Note that `argparse` allows long options to be abbreviated if it is unambiguous.
 
