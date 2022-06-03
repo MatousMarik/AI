@@ -39,16 +39,10 @@ class Tile:
 
         If for_view is True, returns modified tile, so the player won't see any additional information.
         """
-        nt = object.__new__(Tile)
         if for_view and not self.visible:
-            nt.mines_around = -1
-            nt.mine = None
+            return Tile(None, -1, False, self.flag)
         else:
-            nt.mine = self.mine
-            nt.mines_around = self.mines_around
-        nt.visible = self.visible
-        nt.flag = self.flag
-        return nt
+            return Tile(self.mine, self.mines_around, True, self.flag)
 
     def __str__(self) -> str:
         if self.visible:

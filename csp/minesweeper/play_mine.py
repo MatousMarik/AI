@@ -114,9 +114,9 @@ def process_args(args: List[str] = []):
         if args.mine_count:
             mines = args.mine_count
         elif args.density:
-            mines = int(width * height * args.density)
+            mines = round(width * height * args.density)
         else:
-            mines = int(width * height * 0.2)
+            mines = round(width * height * 0.2)
     elif args.medium:
         width, height, mines = 16, 16, 40
     elif args.hard:
@@ -152,7 +152,7 @@ def sim(
     for seed in (
         range(start_seed, start_seed + sims)
         if start_seed is not None
-        else random_sample(range(1000 + sims), sims)
+        else random_sample(range(max(1000, sims)), sims)
     ):
         board = Board(width, height, mines, seed)
         board.suggest_safe_tile()
