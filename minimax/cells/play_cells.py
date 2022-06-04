@@ -137,7 +137,7 @@ def process_args(
             am = module_from_spec(spec)
             spec.loader.exec_module(am)
             agent2 = getattr(am, args.agent2)()
-            agent2.init_random(args.seed)
+            agent2.init_random()
             agent2.verbose = args.verbose
         except BaseException as e:
             parser.error(f"Invalid agent name. \n{str(e)}")

@@ -6,7 +6,7 @@ from typing import List
 
 
 class Support(Agent):
-    def init_random(self, seed: Union[int, None]) -> None:
+    def init_random(self, seed: Union[int, None] = 0) -> None:
         self.random = Random(seed)
 
     @staticmethod

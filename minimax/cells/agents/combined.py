@@ -17,7 +17,7 @@ class Combined(Agent):
         assert len(self.agents) >= len(self.add_score_fs)
         self.random: Random = None
 
-    def init_random(self, seed: Union[int, None]) -> None:
+    def init_random(self, seed: Union[int, None] = 0) -> None:
         self.random = Random(seed)
         if seed is None:
             seed = 0

@@ -17,7 +17,7 @@ class EnemyCell:
 
 
 class Ranger(Agent):
-    def init_random(self, seed: Union[int, None]) -> None:
+    def init_random(self, seed: Union[int, None] = 0) -> None:
         self.random = Random(seed)
         self.key = lambda e: (
             e[0],

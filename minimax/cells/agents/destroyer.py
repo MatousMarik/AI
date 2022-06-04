@@ -6,7 +6,7 @@ from typing import List
 
 
 class Destroyer(Agent):
-    def init_random(self, seed: Union[int, None]) -> None:
+    def init_random(self, seed: Union[int, None] = 0) -> None:
         pass
 
     @staticmethod

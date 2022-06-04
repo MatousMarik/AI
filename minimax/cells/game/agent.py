@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 
 
 class Agent(ABC):
-    def init_random(self, seed: Union[int, None]) -> None:
+    def init_random(self, seed: Union[int, None] = 0) -> None:
         # optional implementation
         pass
 

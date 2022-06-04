@@ -11,7 +11,7 @@ class AgressiveRanger(Agent):
         self.agents: List[Agent] = [None, Destroyer(), Ranger()]
         self.random: Random = None
 
-    def init_random(self, seed: Union[int, None]) -> None:
+    def init_random(self, seed: Union[int, None] = 0) -> None:
         self.agents[2].init_random(seed)
 
     def get_move(self, game: Game) -> List[Transfer]:

@@ -8,7 +8,7 @@ from os.path import dirname
 # hack for importing from parent package
 path.append(dirname(dirname(dirname(__file__))))
 from minimax import Minimax
-from mcts import MCTS
+from mcts import Mcts
 from minimax_templates import *
 
 from random import Random
@@ -18,7 +18,7 @@ class CellsGame(HeuristicGame):
     def __init__(self) -> None:
         raise NotImplementedError
 
-    def initial_state(self, seed: Optional[int] = None) -> object:
+    def initial_state(self, seed: Optional[int] = 0) -> object:
         raise NotImplementedError
 
     def clone(self, state) -> object:
