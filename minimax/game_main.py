@@ -21,11 +21,11 @@ DIR = dirname(__file__)
 #             [nonstandart (no MCTS/Minimax) strategies names]
 # }
 GAMES = {
-    "tic_tac_toe": (
+    "tictactoe": (
         "TicTacToeGame",
         (
-            "tic_tac_toe.tic_tac_toe_gui",
-            path_join("tic_tac_toe", "tic_tac_toe_gui.py"),
+            "tictactoe.tictactoe_gui",
+            path_join("tictactoe", "tictactoe_gui.py"),
             "TicTacToeGUI",
         ),
         {
