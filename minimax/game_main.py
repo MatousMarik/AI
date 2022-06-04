@@ -11,7 +11,7 @@ import sys
 
 from minimax import Minimax
 
-from mcts import MCTS
+from mcts import Mcts
 
 DIR = dirname(__file__)
 
@@ -32,7 +32,7 @@ GAMES = {
             "random": RandomStrategy,
             "basic": "BasicStrategy",
             "minimax": Minimax,
-            "mcts": MCTS,
+            "mcts": Mcts,
         },
         ["random", "basic"],
     ),
@@ -47,7 +47,7 @@ GAMES = {
             "random": "RandomStrategy",
             "perfect": "PerfectStrategy",
             "minimax": Minimax,
-            "mcts": MCTS,
+            "mcts": Mcts,
         },
         ["random", "perfect"],
     ),
@@ -63,7 +63,7 @@ GAMES = {
             "basic": "BasicStrategy",
             "heuristic": "HeuristicStrategy",
             "minimax": Minimax,
-            "mcts": MCTS,
+            "mcts": Mcts,
         },
         ["random", "basic", "heuristic"],
     ),
@@ -196,7 +196,7 @@ def process_args(args: List[str] = []):
                 AVS = available_strats[s[2]]
                 if isinstance(AVS, str):
                     AVS = getattr(module, AVS)
-                strategies.append(MCTS(game, AVS(), s[1]))
+                strategies.append(Mcts(game, AVS(), s[1]))
             else:
                 parser.error(
                     f"Invalid strategy with specified details - '{s[0]}'"

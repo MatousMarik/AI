@@ -2,7 +2,7 @@
 from minimax_templates import *
 
 
-class MCTS(Strategy):
+class Mcts(Strategy):
     """
     Strategy implementation selecting action
     by Monte Carlo Tree-search with base strategy method.
