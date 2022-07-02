@@ -72,7 +72,7 @@ class CellType:
     @classmethod
     def get_mass_over_min_size(cls, mass: int, size_index: int = -1) -> int:
         """
-        Return mass available for transfer stay in current or specified size class.
+        Return mass available for transfer to stay in current or specified size class.
 
         Note: Result can be negative.
         Note2: For mass < 1 returns 0.
