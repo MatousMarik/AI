@@ -19,6 +19,16 @@ class CellProperties:
     min_size: int
 
 
+def _get_cell_type_properties(TYPES) -> tuple[CellProperties]:
+    return (None,) + sum(
+        (
+            (TYPES[i - 1],) * (TYPES[i].min_size - TYPES[i - 1].min_size)
+            for i in range(1, len(TYPES))
+        ),
+        (),
+    )
+
+
 class CellType:
     """
     Utility static class for getting type of the cell.
@@ -39,57 +49,42 @@ class CellType:
 
     # AUTO
     MAX_I = MAXIMAL.min_size
-    TYPES_I = (None) + sum(
-        (
-            (TYPES[i - 1]) * (TYPES[i].min_size - TYPES[i - 1].min_size)
-            for i in range(1, len(TYPES))
-        ),
-        (),
-    )
-    LAST = len(TYPES) - 1
-    GROWTHS = tuple(t.growth for t in TYPES)
-    MIN_MASSES = tuple(t.min_size for t in TYPES)
+    PROPERTIES = _get_cell_type_properties(TYPES)
 
     @classmethod
-    def get_type(cls, mass: int) -> int:
-        """Return CellProperties instance for cell with given mass."""
-        i = cls.LAST
-        mms = cls.MIN_MASSES
-        while mms[i] > mass:
-            i -= 1
-        return cls.TYPES[i]
+    def get_type(cls, mass: int) -> CellProperties:
+        if mass >= cls.MAX_I:
+            return cls.MAXIMAL
+        return cls.PROPERTIES[mass]
 
     @classmethod
     def get_type_index(cls, mass: int) -> int:
-        """Return type index of the cell with given mass."""
-        i = cls.LAST
-        mms = cls.MIN_MASSES
-        while mms[i] > mass:
-            i -= 1
-        return i
+        if mass >= cls.MAX_I:
+            return cls.MAXIMAL.size_index
+        return cls.PROPERTIES[mass].size_index
 
     @classmethod
     def get_growth(cls, mass: int) -> int:
-        """Return growth of the cell with given mass."""
-        i = cls.LAST
-        mms = cls.MIN_MASSES
-        while mms[i] > mass:
-            i -= 1
-        return cls.GROWTHS[i]
+        if mass >= cls.MAX_I:
+            return cls.MAXIMAL.growth
+        return cls.PROPERTIES[mass].growth
 
     @classmethod
     def get_mass_over_min_size(cls, mass: int, size_index: int = -1) -> int:
-        """Returns mass available for transfer stay in current or specified size class."""
+        """
+        Return mass available for transfer stay in current or specified size class.
+
+        Note: Result can be negative.
+        Note2: For mass < 1 returns 0.
+        """
         if mass <= 1:
             return 0
         if size_index == -1:
-            i = cls.LAST
-            mms = cls.MIN_MASSES
-            while mms[i] > mass:
-                i -= 1
-            return mass - mms[i]
+            if mass >= cls.MAX_I:
+                return mass - cls.MAXIMAL.min_size
+            return mass - cls.PROPERTIES[mass].min_size
         else:
-            return mass - mms[size_index]
+            return mass - cls.TYPES[size_index].min_size
 
 
 class Cell:
