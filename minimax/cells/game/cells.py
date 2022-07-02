@@ -109,26 +109,22 @@ class Cell:
     def type(self) -> CellType:
         return CellType.get_type(self.mass)
 
-    @property
-    def type_CT(self) -> CellProperties:
-        CellType.get_type(self.mass)
-
-    @staticmethod
-    def get_growth(mass: int, owner: int, safe: int) -> int:
+    @classmethod
+    def get_growth(cls, mass: int, owner: int, safe: int) -> int:
         """
         Return growth of the cell with given mass, owner
         and information whether all neighboring cells are of the same owner
         as their number (0 for not safe).
         """
-        if mass > Cell.SIZE_CAP:
-            loss = ceil_div(mass, Cell.OVER_CAP_DECAY)
-            growth = Cell.MAX_GROWTH - loss
+        if mass > cls.SIZE_CAP:
+            loss = ceil_div(mass, cls.OVER_CAP_DECAY)
+            growth = cls.MAX_GROWTH - loss
         elif owner == 0:
-            growth = Cell.NEUTRAL_GROWTH
+            growth = cls.NEUTRAL_GROWTH
         else:
             growth = (
                 CellType.get_growth(mass)
-                + safe * Cell.WHEN_SAFE_GROWTH_PER_NEIGHBOR
+                + safe * cls.WHEN_SAFE_GROWTH_PER_NEIGHBOR
             )
         return growth
 
@@ -139,18 +135,18 @@ class Cell:
 
         Return the difference in mass.
         """
-        if self.mass > Cell.SIZE_CAP:
-            loss = ceil_div(self.mass, Cell.OVER_CAP_DECAY)
-            growth = Cell.MAX_GROWTH - loss
+        if self.mass > self.SIZE_CAP:
+            loss = ceil_div(self.mass, self.OVER_CAP_DECAY)
+            growth = self.MAX_GROWTH - loss
         elif self.owner == 0:
-            growth = Cell.NEUTRAL_GROWTH
+            growth = self.NEUTRAL_GROWTH
         else:
             growth = CellType.get_growth(self.mass)
 
             # safety check
             if all(self.owner == n.owner for n in self.neighbors):
                 growth += (
-                    len(self.neighbors) * Cell.WHEN_SAFE_GROWTH_PER_NEIGHBOR
+                    len(self.neighbors) * self.WHEN_SAFE_GROWTH_PER_NEIGHBOR
                 )
 
         self.mass += growth
@@ -419,7 +415,7 @@ class Game:
 
         # receive mass
         total_difs = [0, 0, 0]
-        # transfers only as a spaceholder
+        # transfers only as a placeholder
         for si, (c, mass) in enumerate(
             zip(self.cells if update_cells else transfers, attacks)
         ):
