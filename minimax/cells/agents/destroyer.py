@@ -12,7 +12,7 @@ class Destroyer(Agent):
     @staticmethod
     def priority(game: Game, s: Cell, t: Cell, graph: List[List[int]]) -> int:
         me = game.current_player
-        o = game.get_owner(s)
+        o = game.get_owner(t)
         # focus enemy
         if o != me:
             if o:
@@ -27,7 +27,8 @@ class Destroyer(Agent):
         else:
             weight = 2
         # focus small if me else big
-        weight = weight * (3 - t.size_index if o == me else t.size_index + 1)
+        tsi = t.size_index
+        weight = weight * (3 - tsi if o == me else tsi + 1)
         # focus according to graph
         if graph[s.index] and t.index in graph[s.index]:
             weight *= 2
@@ -78,14 +79,17 @@ class Destroyer(Agent):
         graph = Destroyer.get_graph(game)
         for cell in game.get_player_cells(me):
             target = max(
-                (nb for nb in cell.neighbors),
+                cell.neighbors,
                 key=lambda nb: (
                     Destroyer.priority(game, cell, nb, graph),
                     -nb.mass,
                     nb.index,
                     nb,
                 ),
+                default=None,
             )
+            if target is None:
+                continue
             if target.owner == me:
                 mass = CellType.get_mass_over_min_size(cell.mass)
             else:

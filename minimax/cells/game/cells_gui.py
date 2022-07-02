@@ -178,16 +178,14 @@ class CellsGUI:
     def draw_arrow(
         self, surf: pg.Surface, start, end, value, color: int = 0
     ) -> Tuple[pg.Rect, pg.Rect]:
+        if start == end:
+            return None
         width = self.radius
         start = pg.Vector2(*self.centers[start])
         end = pg.Vector2(*self.centers[end])
         vector = end - start
         ds = vector.copy()
-        try:
-            ds.scale_to_length(width + 1)
-        except Exception as e:
-            print(value)
-            raise e
+        ds.scale_to_length(width + 1)
 
         start = start + ds
         vector -= ds * 2
@@ -370,10 +368,10 @@ class CellsGUI:
             self.clock.tick(FPS)
 
     def draw_end_and_wait(self, winner: int) -> bool:
-        if winner == 0:
+        if winner is None:
             text = "DRAW"
         else:
-            text = "PLAYER {} WIN".format(winner)
+            text = "{} WIN".format(winner)
         text = self.end_font.render(
             text, True, COLORS.text, COLORS.end_background
         )

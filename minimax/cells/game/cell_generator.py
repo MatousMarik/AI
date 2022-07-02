@@ -3,183 +3,252 @@ from random import Random
 from typing import Tuple, List, Union, Iterable, Optional
 from math import sqrt, ceil
 import game.cells as gc
+from dataclasses import dataclass
 
 
 def half_counts_of_cells_in_columns(
     num_cells, d_inc: int, width, half_width, est_height, rnd: Random
 ) -> List[int]:
-    """Return number of cells in columns for the first half of grid and height."""
-    mid = est_height // max(1, d_inc // 2)
-    if num_cells % 2 == 1 and mid % 2 != 1:
+    """Return number of cells in columns for the first half (symmetric) of grid and height."""
+    # process odd x even
+    if num_cells % 2 == 1 and est_height % 2 == 0:
         est_height += 1
+    mid = est_height // max(1, d_inc // 2)
+    # mid has to be odd if num_cells is odd
+    if num_cells % 2 == 1 and mid % 2 != 1:
         mid += 1
     elif num_cells % 2 == 0 and mid % 2 == 1:
         mid -= 1
-    avg_count = num_cells // width
+
+    avg_count = (num_cells - mid) // (width - 1)
     max_count, min_count = min(avg_count * 5 // 2, est_height), max(
         1, avg_count // 2
     )
+    # raw counts
     counts = rnd.choices(range(min_count, max_count), k=half_width)
+    # missing in counts sum
     half_missing = (num_cells - mid) // 2 - sum(counts)
     if half_missing != 0:
+        # add/remove missing counts
+        # get order
         idcs = rnd.sample(range(len(counts)), k=len(counts))
         if half_missing > 0:
-            for i in idcs:
-                if half_missing == 0:
-                    break
-                dif = min(max_count - counts[i], half_missing)
-                counts[i] += dif
-                half_missing -= dif
+            get_dif = lambda count, half_missing: min(
+                max_count - count, half_missing
+            )
         else:
-            for i in idcs:
-                if half_missing == 0:
-                    break
-                dif = max(min_count - counts[i], half_missing)
-                counts[i] += dif
-                half_missing -= dif
+            get_dif = lambda count, half_missing: max(
+                min_count - count, half_missing
+            )
+        for i in idcs:
+            if half_missing == 0:
+                break
+            dif = get_dif(counts[i], half_missing)
+            counts[i] += dif
+            half_missing -= dif
+    # add middle column count
     counts.append(mid)
     return counts, est_height
 
 
-def get_grid_with_holes(
-    width, height, hole_probability, rnd: Random, counts: List[int], middle: int
-) -> List[List[Union[bool, Tuple[bool, bool]]]]:
-    """
-    Grid cell is True for Cell, (True/False, True/False) for hole, where True means, there should not be edge through in (horizontal, vertical) direction.
-    Edges through multiple holes are decide by majority with, tie - edge.
-    """
-    grid = [[True] * height for _ in range(width)]
-    mid_col = grid[middle]
-
-    def rnd_to_hole(rand) -> Tuple[Union[None, bool], Union[None, bool]]:
-        return tuple(True if r < hole_probability else False for r in rand)
-
-    rh = range(height)
-    for x, (col, hole_count) in enumerate(
-        zip(grid[:middle], (height - count for count in counts[:-1]))
-    ):
-        rem = rnd.sample(rh, k=hole_count)
-        if x != 0:
-            rands = ((rnd.random(), rnd.random()) for _ in range(hole_count))
-            holes = map(rnd_to_hole, rands)
-        else:
-            holes = ((False, False) for _ in range(hole_count))
-        for i, hole in zip(rem, holes):
-            col[i] = hole
-    hole_count = height - counts[-1]
-    if hole_count % 2 != 0:
-        mid_col[height // 2] = (False, False)
-    rem = rnd.sample(range(height // 2), k=hole_count // 2)
-    rands = ((rnd.random(), rnd.random()) for _ in range(hole_count // 2))
-    holes = map(rnd_to_hole, rands)
-    for i, hole in zip(rem, holes):
-        mid_col[i] = hole
-        mid_col[height - i - 1] = hole
-    return grid
+@dataclass
+class HoleCell:
+    vertical_hole: bool = False  # False for edge
+    horizontal_hole: bool = False  # False for edge
 
 
 def add_neighbors(
     cells: Iterable["gc.Cell"], neighbors: Iterable["gc.Cell"]
 ) -> None:
     for c, n in zip(cells, neighbors):
+        assert n not in c.neighbors
         c.neighbors.append(n)
+        assert c not in n.neighbors
         n.neighbors.append(c)
 
 
-def set_neighbors_update_grid_get_positions(
-    num_cells,
-    cells: List["gc.Cell"],
-    grid: List[List[Union[bool, Tuple[bool, bool]]]],
-    middle,
-) -> List[Tuple[int, int]]:
+@dataclass
+class Neighbor:
+    cells: tuple["gc.Cell"]  # mirror cells
+    hole_weight: int = 0
+
+
+def get_grid_and_positions(
+    width,
+    height,
+    hole_probability,
+    rnd: Random,
+    counts: List[int],
+    middle: int,
+    cell_iterator,
+    reverse_cell_iterator,
+) -> Tuple[List[List[Optional["gc.Cell"]]], List[Tuple[int, int]]]:
     """
-    Sets neighbors in cells, grid is changed to List[List[Optional[Cell]]].
-    Returns positions of cells.
+    Return grid with cells or None and positions of the cells.
     """
-    width, height = len(grid), len(grid[0])
+    grid = [[None] * height for _ in range(width)]
     positions = []
     positions2 = []
-    i = 0
-    last_cell_i = num_cells - 1
+
     w, h = width - 1, height - 1
-    last_horizontal_neighbors = [None] * height
-    for x, col in enumerate(grid[:middle]):
-        last_vertical_neighbors = None
-        for y, c in enumerate(col):
-            h_nb = last_horizontal_neighbors[y]
-            v_nb = last_vertical_neighbors
-            if c is not True:
-                col[y] = None
-                grid[width - 1 - x][height - 1 - y] = None
-                h_hole, v_hole = c
-                if h_nb is not None:
-                    if h_hole:
-                        h_nb[1] -= 1
-                    else:
-                        h_nb[1] += 1
-                if v_nb is not None:
-                    if v_hole:
-                        v_nb[1] -= 1
-                    else:
-                        v_nb[1] += 1
-                continue
-            col[y] = cells[i]
-            grid[width - 1 - x][height - 1 - y] = cells[last_cell_i - i]
-            a_cells = (cells[i], cells[last_cell_i - i])
-            positions.append((x, y))
-            positions2.append((w - x, h - y))
-            i += 1
-            if v_nb is not None and v_nb[1] >= 0:
-                add_neighbors(a_cells, v_nb[0])
-            last_vertical_neighbors = [a_cells, 0]
-            if h_nb is not None and h_nb[1] >= 0:
-                add_neighbors(a_cells, h_nb[0])
-            last_horizontal_neighbors[y] = [a_cells, 0]
 
-    mid_col = grid[middle]
-    last_vertical_neighbor = None
-    for y, c in enumerate(mid_col):
-        v_nb = last_vertical_neighbor
-        h_nb = last_horizontal_neighbors[y]
-        horizontal_neighbors = []
-        if h_nb is not None:
-            horizontal_neighbors.append((h_nb[0][0], h_nb[1]))
-        h_nb2 = last_horizontal_neighbors[height - 1 - y]
-        if h_nb2 is not None:
-            horizontal_neighbors.append((h_nb2[0][1], h_nb2[1]))
-        if c is not True:
-            mid_col[y] = None
-            h_hole, v_hole = c
-            if len(horizontal_neighbors) > 1:
-                h_sum = sum(hnb[1] for hnb in horizontal_neighbors)
-                if h_hole:
-                    h_sum -= 1
+    def add_cells(x, y, cells):
+        nonlocal grid, positions, positions2, w, h
+        positions.append((x, y))
+        positions2.append((w - x, h - y))
+        grid[x][y] = cells[0]
+        grid[w - x][h - y] = cells[1]
+
+    def update_neighbors_with_hole(nbs: Iterable[Neighbor]):
+        nonlocal rnd, hole_probability
+        for n in nbs:
+            if n is not None:
+                if rnd.random() < hole_probability:
+                    n.hole_weight -= 1
                 else:
-                    h_sum += 1
-                if h_sum >= 0:
-                    add_neighbors(
-                        (horizontal_neighbors[0][0],),
-                        (horizontal_neighbors[1][0],),
-                    )
-            if v_nb is not None:
-                if v_hole:
-                    v_nb[1] -= 1
-                else:
-                    v_nb[1] += 1
+                    n.hole_weight += 1
+
+    def add_hv_neighbors(cells, nbs: Iterable[Neighbor]):
+        for n in nbs:
+            if n is not None and n.hole_weight >= 0:
+                add_neighbors(cells, n.cells)
+
+    horizontal_neighbors: list[Neighbor] = []
+    vertical_neighbor: Neighbor = None
+
+    # fist column without holes
+    cell_count = counts[0]
+    holes = [False] * cell_count + [True] * (height - cell_count)
+    rnd.shuffle(holes)
+    for y, hole in enumerate(holes):
+        if hole:
+            horizontal_neighbors.append(None)
             continue
-        mid_col[y] = cells[i]
-        cell = (cells[i],)
-        positions.append((middle, y))
-        i += 1
-        if v_nb is not None and v_nb[1] >= 0:
-            add_neighbors(cell, v_nb[0])
-        last_vertical_neighbor = [cell, 0]
-        for nb, h_sum in horizontal_neighbors:
-            if h_sum >= 0:
-                add_neighbors(cell, (nb,))
+        cells = (next(cell_iterator), next(reverse_cell_iterator))
+        add_cells(0, y, cells)
+        horizontal_neighbors.append(Neighbor(cells))
+        add_hv_neighbors(cells, (vertical_neighbor,))
+        vertical_neighbor = Neighbor(cells)
 
+    # columns
+    for x, cell_count in enumerate(counts[1:-1], start=1):
+        vertical_neighbor = None
+        holes = [False] * cell_count + [True] * (height - cell_count)
+        rnd.shuffle(holes)
+        for y, hole in enumerate(holes):
+            horizontal_neighbor = horizontal_neighbors[y]
+            if hole:
+                update_neighbors_with_hole(
+                    (vertical_neighbor, horizontal_neighbor)
+                )
+                continue
+
+            cells = (next(cell_iterator), next(reverse_cell_iterator))
+            add_cells(x, y, cells)
+            add_hv_neighbors(cells, (vertical_neighbor, horizontal_neighbor))
+            vertical_neighbor = Neighbor(cells)
+            horizontal_neighbors[y] = Neighbor(cells)
+
+    # middle column symmetric
+    cell_count = counts[-1]
+    vertical_neighbor = None
+    holes = [False] * (cell_count // 2) + [True] * (
+        height // 2 - cell_count // 2
+    )
+    rnd.shuffle(holes)
+    # center tile
+    if height % 2:
+        if cell_count % 2:
+            holes += [None]
+        else:
+            holes += [True]
+    for y, hole in enumerate(holes):
+        horizontal_neighbor1 = horizontal_neighbors[y]
+        horizontal_neighbor2 = horizontal_neighbors[h - y]
+        # middle mirror
+        if horizontal_neighbor2 is not None:
+            horizontal_neighbor2.cells = horizontal_neighbor2.cells[::-1]
+        if hole:
+            # connect from symmetric other half
+            if (
+                horizontal_neighbor1 is not None
+                and horizontal_neighbor2 is not None
+            ):
+                weight = (
+                    horizontal_neighbor1.hole_weight
+                    + horizontal_neighbor2.hole_weight
+                )
+                if rnd.random() < hole_probability:
+                    weight -= 1
+                else:
+                    weight += 1
+                if weight >= 0:
+                    # middle hole
+                    if horizontal_neighbor1 is horizontal_neighbor2:
+                        add_neighbors(
+                            (horizontal_neighbor1.cells[0],),
+                            (horizontal_neighbor1.cells[1],),
+                        )
+                    else:
+                        add_neighbors(
+                            horizontal_neighbor1.cells,
+                            horizontal_neighbor2.cells,
+                        )
+            update_neighbors_with_hole((vertical_neighbor,))
+            continue
+        if hole is None:
+            cells = (next(cell_iterator),) * 2
+            positions.append((middle, y))
+            grid[middle][y] = cells[0]
+            horizontal_neighbor2 = None
+        else:
+            cells = (next(cell_iterator), next(reverse_cell_iterator))
+            add_cells(middle, y, cells)
+        add_hv_neighbors(
+            cells,
+            (vertical_neighbor, horizontal_neighbor1, horizontal_neighbor2),
+        )
+        vertical_neighbor = Neighbor(cells)
     positions.extend(reversed(positions2))
-    return positions
+    return grid, positions
+
+
+@dataclass
+class Component:
+    cells: list["gc.Cell"]
+    indices: set[int]
+
+
+def get_components(cells) -> tuple[list[Component], dict[int, Component]]:
+    """Find components by dfs."""
+    all_components = []
+    cell_to_comp = {}
+
+    active = []
+    active_set = set()
+    comp = Component(active, active_set)
+    done = set()
+    for c in cells:
+        if c.index in done:
+            continue
+        queue = [c]
+        while queue:
+            c = queue.pop()
+            if c.index in done:
+                continue
+            done.add(c.index)
+            active.append(c)
+            active_set.add(c.index)
+            cell_to_comp[c.index] = comp
+            for nb in c.neighbors:
+                if nb.index in done:
+                    continue
+                else:
+                    queue.append(nb)
+        all_components.append(comp)
+        active, active_set = [], set()
+        comp = Component(active, active_set)
+    return all_components, cell_to_comp
 
 
 def connect_components(
@@ -194,64 +263,48 @@ def connect_components(
     If fail return on fail otherwise try to connect as many components as you can.
     """
     width, height = len(grid), len(grid[0])
-    all_components = []
-
-    def find_component_index(cell_index) -> int:
-        return next(
-            (i for i, (oc, _) in enumerate(all_components) if cell_index in oc)
-        )
+    all_components, cell_to_comp = get_components(cells)
+    if len(all_components) == 1:
+        return True
 
     def connect_components(
-        comps: Iterable[Tuple[List["gc.Cell"]]],
-        indices_of_other_components: Iterable[int],
+        comps: Iterable[Component],
+        other_comps: Iterable[Component],
     ) -> None:
-        """comps are tuples (list of cells, set of cell indices)"""
-        for (comp, c_set), oci in zip(comps, indices_of_other_components):
-            all_components[oci][0].extend(comp)
-            all_components[oci][1].update(c_set)
+        nonlocal cell_to_comp
+        for comp, o_comp in zip(comps, other_comps):
+            o_comp.cells.extend(comp.cells)
+            o_comp.indices.update(comp.indices)
+            for i in comp.indices:
+                cell_to_comp[i] = o_comp
 
-    # find components by dfs
-    active = []
-    active_set = set()
-    done = set()
-    for c in cells:
-        if c.index in done:
-            continue
-        queue = [c]
-        while queue:
-            c = queue.pop()
-            if c.index in done:
-                continue
-            done.add(c.index)
-            active.append(c)
-            active_set.add(c.index)
-            for nb in c.neighbors:
-                if nb.index in done:
-                    continue
-                else:
-                    queue.append(nb)
-        all_components.append((active, active_set))
-        active, active_set = [], set()
-
-    if len(all_components) == 1:
-        connected = True
-    else:
-        connected = False
     while len(all_components) > 1:
-        all_components.sort(key=lambda comp_set: len(comp_set[0]), reverse=True)
-        comp, c_set = all_components.pop()
-        rnd.shuffle(comp)
+        # larger in the front
+        all_components.sort(key=lambda comp: len(comp.cells), reverse=True)
+        if fail:
+            # connect only owned components
+            comp = cell_to_comp[0]
+            all_components.remove(comp)
+        else:
+            # all should be connected, start with smaller
+            comp = all_components.pop()
+        rnd.shuffle(comp.cells)
 
         # find cell in other component searching in direction as long as possible
         # if other cell from the same component is found
         #  set it as active and continue in the same direction
         found = False
-        for cell in comp:
-            cx, cy = positions[cell.index]
-            for dx, dy in rnd.sample(((0, 1), (0, -1), (1, 0), (-1, 0)), k=4):
-                ax, ay = cx, cy  # active_cell position
-                fx, fy = cx, cy  # found_cell position
-                active_cell = cell
+        comp_cells = {
+            c.index: [(0, 1), (0, -1), (1, 0), (-1, 0)] for c in comp.cells
+        }
+        while comp_cells:
+            cell_index, dirs = comp_cells.popitem()
+            while dirs:
+                dir = dirs.pop(rnd.randrange(len(dirs)))
+                dx, dy = dir
+                ax, ay = positions[cell_index]  # active_cell position
+                fx, fy = ax, ay  # found_cell position
+                active_cell_i = cell_index
                 while True:
                     fx += dx
                     fy += dy
@@ -260,51 +313,54 @@ def connect_components(
                     found_cell = grid[fx][fy]
                     if found_cell is None:
                         continue
-                    if found_cell.index in c_set:
-                        active_cell = found_cell
-                        ax, ay = fx, fy
+                    if found_cell.index in comp.indices:
+                        if (
+                            found_cell.index in comp_cells
+                            and dir in comp_cells[found_cell.index]
+                        ):
+                            active_cell_i = found_cell.index
+                            comp_cells[active_cell_i].remove(dir)
+                            ax, ay = fx, fy
                         continue
                     found = True
-                    connected = True
                     break
                 if found:
                     break
             if found:
                 break
         if not found:
-            if fail:
-                return found
-            else:
-                continue
+            return not fail
+
+        active_cell = cells[active_cell_i]
 
         # process mirror active cell
         ax2, ay2 = width - 1 - ax, height - 1 - ay
         active_mirror = grid[ax2][ay2]
         if active_mirror is active_cell:
             cells1 = (active_cell,) * 2
-            comps1 = ((comp, c_set),)
+            comps1 = (comp,)
         else:
             if found_cell is active_mirror:
                 add_neighbors((active_cell,), (found_cell,))
-                other_comp_index = find_component_index(found_cell.index)
-                all_components[other_comp_index][0].extend(comp)
-                all_components[other_comp_index][1].update(c_set)
+                other_comp = cell_to_comp[found_cell.index]
+                connect_components((comp,), (other_comp,))
                 continue
 
             cells1 = (active_cell, active_mirror)
 
-            if active_mirror.index in c_set:
+            if active_mirror.index in comp.indices:
                 # active mirror is in the same component
-                comps1 = ((comp, c_set),)
+                comps1 = (comp,)
             else:
-                other_comp_index = find_component_index(active_mirror.index)
-                if found_cell.index in all_components[other_comp_index][1]:
+                other_comp = cell_to_comp[active_mirror.index]
+                if found_cell.index in other_comp.indices:
                     # found cell in the same component as active_mirror
-                    comps1 = ((comp, c_set),)
+                    comps1 = (comp,)
                 else:
+                    all_components.remove(other_comp)
                     comps1 = (
-                        (comp, c_set),
-                        all_components.pop(other_comp_index),
+                        comp,
+                        other_comp,
                     )
 
         # process mirror found cell and connect components
@@ -313,31 +369,29 @@ def connect_components(
 
         if (
             found_cell is found_mirror
-            or found_mirror.index in comps1[0][1]
-            or (len(comps1) > 1 and found_mirror.index in comps1[1][1])
+            or found_mirror.index in comps1[0].indices
+            or (len(comps1) > 1 and found_mirror.index in comps1[1].indices)
         ):
             # found cells are in the same component
             if found_cell is found_mirror and cells1[0] is cells1[1]:
                 add_neighbors(cells1, (found_cell,))
             else:
                 add_neighbors(cells1, (found_cell, found_mirror))
-            other_comp_index = find_component_index(found_cell.index)
-            connect_components(comps1, (other_comp_index,) * 2)
+            other_comp = cell_to_comp[found_cell.index]
+            connect_components(comps1, (other_comp,) * 2)
         else:
             add_neighbors(cells1, (found_cell, found_mirror))
-            other_comp_index = find_component_index(found_cell.index)
-            other_comp_index2 = find_component_index(found_mirror.index)
+            other_comp1 = cell_to_comp[found_cell.index]
+            other_comp2 = cell_to_comp[found_mirror.index]
             if len(comps1) == 1:
-                if other_comp_index != other_comp_index2:
-                    comps1 += (all_components.pop(other_comp_index2),)
-                    if other_comp_index2 < other_comp_index:
-                        other_comp_index -= 1
-                connect_components(comps1, (other_comp_index,) * 2)
+                # mirror in same comp, or mirror in found comp
+                if other_comp1 is not other_comp2:
+                    all_components.remove(other_comp2)
+                    comps1 += (other_comp2,)
+                connect_components(comps1, (other_comp1,) * 2)
             else:
-                connect_components(
-                    comps1, (other_comp_index, other_comp_index2)
-                )
-    return connected
+                connect_components(comps1, (other_comp1, other_comp2))
+    return True
 
 
 def generate_cells(
@@ -367,20 +421,19 @@ def generate_cells(
     * list of cell positions
     * grid size
     """
-    assert 0.1 <= density <= 1
+    assert 0.2 <= density <= 1
     assert 0 <= hole_probability <= 1
+    # increase in height, etc.
     d_inc = int(1 / density)
     x = sqrt(num_cells * d_inc / 40)
     half_width = ceil(4 * x)
     width, estimated_height = half_width * 2 + 1, ceil(5 * x)
 
+    # try iterate to connect owned cells (for small density)
+    # if it fails for the 9th time let it be and connect what you can
     for i in range(10):
         counts, height = half_counts_of_cells_in_columns(
             num_cells, d_inc, width, half_width, estimated_height, rnd
-        )
-
-        grid = get_grid_with_holes(
-            width, height, hole_probability, rnd, counts, half_width
         )
 
         cells = [gc.Cell(i) for i in range(num_cells)]
@@ -390,8 +443,15 @@ def generate_cells(
         for c in cells[-counts[0] :]:
             c.owner = 2
 
-        positions = set_neighbors_update_grid_get_positions(
-            num_cells, cells, grid, half_width
+        grid, positions = get_grid_and_positions(
+            width,
+            height,
+            hole_probability,
+            rnd,
+            counts,
+            half_width,
+            iter(cells),
+            reversed(cells),
         )
 
         if connect_components(cells, rnd, positions, grid, i != 9):
@@ -414,6 +474,10 @@ def generate_cells(
         list(range(counts[0])),
         list(range(num_cells - counts[0], num_cells)),
     )
+
+    for c in cells:
+        if c in c.neighbors:
+            print(c.index, [n.index for n in c.neighbors])
 
     return (
         cells,

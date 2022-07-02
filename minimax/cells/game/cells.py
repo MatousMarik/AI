@@ -34,46 +34,47 @@ class CellType:
     MAXIMAL = BIG
 
     # AUTO
+    LAST = len(TYPES) - 1
     GROWTHS = tuple(t.growth for t in TYPES)
     MIN_MASSES = tuple(t.min_size for t in TYPES)
 
-    @staticmethod
-    def get_type(mass: int) -> int:
-        i = len(CellType.TYPES) - 1
-        mms = CellType.MIN_MASSES
+    @classmethod
+    def get_type(cls, mass: int) -> int:
+        i = cls.LAST
+        mms = cls.MIN_MASSES
         while mms[i] > mass:
             i -= 1
-        return CellType.TYPES[i]
+        return cls.TYPES[i]
 
-    @staticmethod
-    def get_type_index(mass: int) -> int:
-        i = len(CellType.TYPES) - 1
-        mms = CellType.MIN_MASSES
+    @classmethod
+    def get_type_index(cls, mass: int) -> int:
+        i = cls.LAST
+        mms = cls.MIN_MASSES
         while mms[i] > mass:
             i -= 1
         return i
 
-    @staticmethod
-    def get_growth(mass: int) -> int:
-        i = len(CellType.TYPES) - 1
-        mms = CellType.MIN_MASSES
+    @classmethod
+    def get_growth(cls, mass: int) -> int:
+        i = cls.LAST
+        mms = cls.MIN_MASSES
         while mms[i] > mass:
             i -= 1
-        return CellType.GROWTHS[i]
+        return cls.GROWTHS[i]
 
-    @staticmethod
-    def get_mass_over_min_size(mass: int, size_index: int = -1) -> int:
+    @classmethod
+    def get_mass_over_min_size(cls, mass: int, size_index: int = -1) -> int:
         """Returns mass available for transfer stay in current or specified size class."""
         if mass <= 1:
             return 0
         if size_index == -1:
-            i = len(CellType.TYPES) - 1
-            mms = CellType.MIN_MASSES
+            i = cls.LAST
+            mms = cls.MIN_MASSES
             while mms[i] > mass:
                 i -= 1
-            return mass - CellType.MIN_MASSES[i]
+            return mass - mms[i]
         else:
-            return mass - CellType.MIN_MASSES[size_index]
+            return mass - mms[size_index]
 
 
 class Cell:
@@ -271,6 +272,7 @@ class Game:
         ret.max_rounds = self.max_rounds
 
         ret.num_cells = self.num_cells
+        ret.use_cells = self.use_cells
         if self.use_cells:
             # preserves cell neighbors references
             ret.cells = deepcopy(self.cells)
@@ -359,10 +361,9 @@ class Game:
         self, source: int, target: int, mass: int, errors: List[str]
     ) -> None:
         print(
-            "Transfer {}:{} -> {} declined, turn {}.".format(
-                source, mass, target, ", ".join(errors)
+            "Transfer {}:{} -> {} declined, turn {}.\nCause: {}".format(
+                source, mass, target, self.counter, ", ".join(errors)
             ),
-            self.turn,
             file=stderr,
         )
 
@@ -424,8 +425,9 @@ class Game:
         ):
             if mass == 0:
                 continue
+            prior_mass = self.masses[si]
             recipient = self.owners[si]
-            success, remaining_mass = Game.attack(mass, c.mass)
+            success, remaining_mass = Game.attack(mass, prior_mass)
             if success:
                 self.owners[si] = real_sender
                 total_difs[real_sender] -= mass - remaining_mass
@@ -433,10 +435,10 @@ class Game:
                     if c.owner == 0:
                         c.neutral = False
                     c.owner = real_sender
-                total_difs[recipient] -= c.mass
+                total_difs[recipient] -= prior_mass
             else:
                 total_difs[sender] -= mass
-                total_difs[recipient] -= c.mass - remaining_mass
+                total_difs[recipient] -= prior_mass - remaining_mass
             if update_cells:
                 c.mass = remaining_mass
             self.masses[si] = remaining_mass

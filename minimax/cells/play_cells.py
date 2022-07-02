@@ -47,7 +47,7 @@ def get_parser() -> ArgumentParser:
         "--hole_probability",
         type=float,
         default=0.6,
-        help="Probability that distan cells won't be connected. (default 0.6)",
+        help="Probability that distant cells won't be connected. (default 0.6)",
     )
     parser.add_argument(
         "-s",
@@ -99,7 +99,7 @@ def process_args(
     args: List[str] = [],
 ) -> Tuple[Agent, Agent, Union[None, Agent], bool, Namespace]:
     """
-    Parse arguments, check validity and return usefull values.
+    Parse arguments, check validity and return useful values.
 
     Return:
     * instance of agent1
@@ -120,8 +120,8 @@ def process_args(
     else:
         args.max_turns = -1
 
-    if not 0.1 <= args.density <= 1:
-        parser.error("Invalid density, should be from [0.1, 1].")
+    if not 0.2 <= args.density <= 1:
+        parser.error("Invalid density, should be from [0.2, 1].")
 
     if not 0 <= args.hole_probability <= 1:
         parser.error("Invalid hole probability, should be from [0, 1].")
@@ -187,7 +187,10 @@ def sim(
     args: Namespace,
 ):
     game = Game(args.seed, args.max_turns)
-    agent_names = (None, args.agent1, args.agent2)
+    if args.agent1 == args.agent2:
+        agent_names = (None, args.agent1 + "1", args.agent2 + "2")
+    else:
+        agent_names = (None, args.agent1, args.agent2)
     if len(args.num_cells) == 1:
         nc = args.num_cells[0]
         get_num_cells = lambda: nc
@@ -257,7 +260,7 @@ def sim(
                 else:
                     print(
                         "{}: agent {} won in {} rounds.".format(
-                            gi, agent_names[game.winner], game.round
+                            gi, agent_names[ais[game.winner]], game.round
                         )
                     )
         if args.verbose:
@@ -279,11 +282,11 @@ def sim(
             )
         if args.swap:
             ais = (0, *ais[:0:-1])
-    off = len(args.agent1) - len(args.agent2)
+    off = len(agent_names[1]) - len(agent_names[2])
     if off > 0:
-        names = None, args.agent1, args.agent2 + " " * off
+        names = None, agent_names[1], agent_names[2] + " " * off
     else:
-        names = None, args.agent1 + " " * (-off), args.agent2
+        names = None, agent_names[1] + " " * (-off), agent_names[2]
     off = len(str(total_wins[1])) - len(str(total_wins[2]))
     if off > 0:
         pre_wins = None, "", " " * off
@@ -315,6 +318,10 @@ def sim(
 def sim_with_gui(agent1: Agent, agent2: Agent, gui, args: Namespace) -> None:
     from game.cells_gui import CellsGUI
 
+    names = [None, args.agent1, args.agent2 if args.agent2 else "Player"]
+    if names[1] == names[2]:
+        names[1] += "1"
+        names[2] += "2"
     # intellisense hack
     gui: CellsGUI = gui
     game = Game(args.seed, args.max_turns)
@@ -341,7 +348,7 @@ def sim_with_gui(agent1: Agent, agent2: Agent, gui, args: Namespace) -> None:
                     if not gui.wait_next():
                         return
 
-                    gui.draw_transfers(move, ai)
+                    gui.draw_transfers(move, game.turn)
                 game.make_move(move)
                 if agent is not gui and not gui.wait_next():
                     return
@@ -352,7 +359,7 @@ def sim_with_gui(agent1: Agent, agent2: Agent, gui, args: Namespace) -> None:
                     running = False
                     if not gui.wait_next():
                         return
-                    play = gui.draw_end_and_wait(game.winner)
+                    play = gui.draw_end_and_wait(names[game.winner])
                     break
             if not running:
                 break

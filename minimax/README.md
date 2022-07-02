@@ -102,7 +102,7 @@ If your implementation of minimax or MCTS is correct, here is how you should do 
 
 
 ## 2. Cell Wars
-Implement agent playing Cell Wars. See more Info
+Implement agent playing Cell Wars. See [Cell Wars info](cells/README.md).
 
 
 
