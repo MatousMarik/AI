@@ -20,7 +20,11 @@ class CellProperties:
 
 
 class CellType:
-    """Represents type of the cell. Must be kept consistent."""
+    """
+    Utility static class for getting type of the cell.
+
+    Note: Must be kept consistent.
+    """
 
     NEUTRAL = CellProperties(-1, 1, 1)
 
@@ -34,12 +38,21 @@ class CellType:
     MAXIMAL = BIG
 
     # AUTO
+    MAX_I = MAXIMAL.min_size
+    TYPES_I = (None) + sum(
+        (
+            (TYPES[i - 1]) * (TYPES[i].min_size - TYPES[i - 1].min_size)
+            for i in range(1, len(TYPES))
+        ),
+        (),
+    )
     LAST = len(TYPES) - 1
     GROWTHS = tuple(t.growth for t in TYPES)
     MIN_MASSES = tuple(t.min_size for t in TYPES)
 
     @classmethod
     def get_type(cls, mass: int) -> int:
+        """Return CellProperties instance for cell with given mass."""
         i = cls.LAST
         mms = cls.MIN_MASSES
         while mms[i] > mass:
@@ -48,6 +61,7 @@ class CellType:
 
     @classmethod
     def get_type_index(cls, mass: int) -> int:
+        """Return type index of the cell with given mass."""
         i = cls.LAST
         mms = cls.MIN_MASSES
         while mms[i] > mass:
@@ -56,6 +70,7 @@ class CellType:
 
     @classmethod
     def get_growth(cls, mass: int) -> int:
+        """Return growth of the cell with given mass."""
         i = cls.LAST
         mms = cls.MIN_MASSES
         while mms[i] > mass:
@@ -155,12 +170,24 @@ class Cell:
 
 @dataclass
 class Transfer:
-    source: int
-    target: int
+    """
+    Representation of single transfer.
+
+    List of Transfers form one game move.
+
+    Source and target can be cell or cell index,
+    but move must contain only indices — you can use
+    TransferMove.get_transfers_i.
+    """
+
+    source: Union[int, Cell]
+    target: Union[int, Cell]
     mass: int
 
 
 class TransferMove:
+    """Utility class for creating moves."""
+
     def __init__(self, transfers: List[Transfer] = None) -> None:
         self.transfers: List[Transfer] = [] if transfers is None else transfers
 
@@ -179,18 +206,50 @@ class TransferMove:
         return self.transfers
 
     @staticmethod
-    def get_transfers_i(move: "TransferMove") -> List[Transfer]:
+    def get_transfers_i(
+        move: Union["TransferMove", List[Transfer]]
+    ) -> List[Transfer]:
+        """Converts transfers with cell class representations to index representations."""
+        if isinstance(move, TransferMove):
+            move = move.get_transfers()
         return [
             Transfer(
                 t.source if isinstance(t.source, int) else t.source.index,
                 t.target if isinstance(t.target, int) else t.target.index,
                 t.mass,
             )
-            for t in move.get_transfers()
+            for t in move
         ]
 
 
 class Game:
+    """
+    Cell Wars game-state representation.
+
+    Note you can disable usage of cell class representation by setting
+    'use_cells' to False.
+
+    Useful methods:
+    - clone
+    - sizes
+    - get_player_cells
+    - get_cell
+    - attack
+    - is_neighbor
+    - get_owner
+    - is_owned_by
+    - total_mass
+    - cells_owned
+    - current_player
+    - is_done
+    - borders_enemy_cells
+    - round
+
+    Methods for advancing the game:
+    - make_move
+    - grow_cells
+    """
+
     ATTACK_MUL = 0.8
     DEF_ATTACK_MUL = 0.8
     SUC_DEFENSE_MUL = 0.9
@@ -230,6 +289,7 @@ class Game:
 
     @property
     def sizes(self) -> List[int]:
+        """Return list of size indices."""
         return [CellType.get_type(mass).size_index for mass in self.masses]
 
     def get_gui_info(self) -> Tuple[List[int], List[int], List[int], List[int]]:
@@ -282,6 +342,7 @@ class Game:
     def get_player_cells(
         self, player: int, *, return_cells: bool = True
     ) -> Union[List[int], List[Cell]]:
+        """Return cells or indices of cells that are controlled by given player."""
         indices = [i for i, o in enumerate(self.owners) if o == player]
 
         if return_cells and self.use_cells:
@@ -292,6 +353,10 @@ class Game:
     def get_player_starting_cells(
         self, player: int, *, return_cells: bool = True
     ) -> Union[List[int], List[Cell]]:
+        """
+        Return cells or indices of cells
+        that are controlled by given player at the beginning of the game.
+        """
         indices = self.starting_indices[player]
 
         if return_cells and self.use_cells:
@@ -303,6 +368,7 @@ class Game:
         return self.cells[index]
 
     def grow_cells(self) -> None:
+        """Add mass to all cells with respect to their size and neighbors."""
         growths = [0, 0, 0]
         if self.use_cells:
             for ci, (c, o) in enumerate(zip(self.cells, self.owners)):
@@ -443,22 +509,27 @@ class Game:
             self.total_masses[i] += total_difs[i]
 
     def is_neighbor(self, cell_index1: int, cell_index2: int) -> bool:
+        """Whether cells with given indices are neighbors."""
         return cell_index2 in self.neighbors[cell_index1]
 
     def get_owner(self, cell: Union[int, Cell]) -> int:
+        """Return player owning given cell or cell with given index."""
         if isinstance(cell, Cell):
             cell = cell.index
         return self.owners[cell]
 
     def is_owned_by(self, cell: Union[int, Cell], player: int) -> bool:
+        """Whether given cell/index is owned by given player."""
         if isinstance(cell, Cell):
             cell = cell.index
         return self.owners[cell] == player
 
     def total_mass(self, player: int) -> int:
+        """Return total mass of cells given player own."""
         return self.total_masses[player]
 
     def cells_owned(self, player: int) -> int:
+        """Return number of cells given player own."""
         return sum(o == player for o in self.owners)
 
     @property
@@ -471,6 +542,7 @@ class Game:
     def borders_enemy_cells(
         self, cell: Union[int, Cell], for_player: int
     ) -> bool:
+        """Whether given cell/index has neighbor with different owner."""
         if isinstance(cell, Cell):
             cell = cell.index
         return any(for_player != self.owners[n] for n in self.neighbors[cell])
