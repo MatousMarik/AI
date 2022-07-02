@@ -44,10 +44,10 @@ class CellType:
 
     # NEEDS TO BE KEPT CONSISTENT
     TYPES = (SMALL, MEDIUM, BIG)
-    MINIMAL = SMALL
-    MAXIMAL = BIG
 
     # AUTO
+    MINIMAL = TYPES[0]
+    MAXIMAL = TYPES[-1]
     MAX_I = MAXIMAL.min_size
     PROPERTIES = _get_cell_type_properties(TYPES)
 
