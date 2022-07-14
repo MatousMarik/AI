@@ -153,7 +153,7 @@ class Cell:
         else:
             growth = CellType.get_growth(self.mass)
 
-            # safety check
+            # cell safety check
             if all(self.owner == n.owner for n in self.neighbors):
                 growth += (
                     len(self.neighbors) * self.WHEN_SAFE_GROWTH_PER_NEIGHBOR

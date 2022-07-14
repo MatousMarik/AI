@@ -124,7 +124,7 @@ Alternatively we could have called `solve`, which would find the same solution. 
 - Running script [solver_test.py](solver_test.py) will test your implementation of `forward_check`, `solve` and `infer_var` on a number of constraint satisfaction problems (including some that were derived from Minesweeper game boards).
 
 ## 2. Minesweeper
-![minesweeper](mine.png)
+![minesweeper](minesweeper/mine.png)
 
 Write an agent that plays Minesweeper. As always in this tutorial you may use any technique you like, but probably it will be easiest to use the CSP solver you just wrote. 
 

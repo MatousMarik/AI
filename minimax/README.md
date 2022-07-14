@@ -102,8 +102,22 @@ If your implementation of minimax or MCTS is correct, here is how you should do 
 
 
 ## 2. Cell Wars
-Implement agent playing Cell Wars. See [Cell Wars info](cells/README.md).
+![cell_wars](cells/cells.png)
 
+### Game 
 
+The game is a combination of classic board game [Risk](https://en.wikipedia.org/wiki/Risk_(game)) (or PC game Warlight) and mobile game Cell Expansion Wars. The goal is to occupy all cells, where cells form an undirected graph as in the picture above. There are owned cells, enemy cells and neutral cells, where each of those has exact mass. Each turn can each player cell transfer its mass to one neighbor cell. When mass is transferred to cell that is not controlled by the same player, mass in target cell is lowered or target cell become owned by the sender. After both players make their transfers, all cells grow, where bigger cells and cells with all neighbors controlled by same player grow faster.
 
+The game ends when a player lose all cells or when the round limit is reached.
 
+### Task
+
+Implement an agent that plays Cell Wars. You may use your minimax (or MCTS) implementation from previous section, or another approach if you prefer.
+
+Assuming you will use minimax or MCTS, you will need the following:
+- Class `WarlightGame` implementing `HeuristicGame` for minimax, or `AbstractGame` for MCTS (can be found in [minimax_templates.py](minimax_templates.py)).
+- In the `actions` method, you should return only selection from all possible actions to reduce effective branching factor.
+- If you are using minimax, you will need to invent an evaluation function.
+- If you are using MCTS, you will need a base strategy to be used for simulations, i.e. rollouts. You could use a strategy that plays randomly, or the strategy played by one of the existing agents, or could invent your own strategy for this purpose. Note that playout simulation is really expensive operation, so you will need to find some way how to deal with that or you can just use minimax.
+
+Before you start implementing you should check [documentation](cells/game/doc.md).
