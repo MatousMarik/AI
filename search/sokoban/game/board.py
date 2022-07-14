@@ -16,7 +16,7 @@ class ETile:
     Bits (LE):
     TARGET, BOX, SOKOBAN, WALL
 
-    Is methods are implemented without bitmasking,
+    Is-methods are implemented without bitmasking,
     but by checking all options, since (==, or) is much faster than &.
     """
 
