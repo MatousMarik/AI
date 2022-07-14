@@ -9,6 +9,8 @@ For installation you can use [pip](https://pypi.org/project/pip/):
 
     python3 -m pip install -U pygame --user
 
+If you need more detailed, platform-specific instructions you can visit [pygame-GettingStarted](https://www.pygame.org/wiki/GettingStarted).
+
 
 ## Assignments
 In total there will be 5 programming assignments whose solutions will be submitted via [ReCodEx](https://recodex.mff.cuni.cz/). In each of them you will write an AI agent that plays suitable games for corresponding lecture topic. Moreover there will by partial assignments, in which you will need to implement algorithms, that will allow you to implement suitable agent functions, however your agent implementation can use any approach you like.
