@@ -246,8 +246,7 @@ class Game:
     """
 
     ATTACK_MUL = 0.8
-    DEF_ATTACK_MUL = 0.8
-    SUC_DEFENSE_MUL = 0.9
+    DEF_ATTACK_MUL = 0.7
 
     def __init__(self, seed: int = None, max_rounds: int = -1) -> None:
         self.winner: int = -1
@@ -383,14 +382,13 @@ class Game:
         for i in range(len(growths)):
             self.total_masses[i] += growths[i]
 
-    @staticmethod
-    def attack(attacking: int, defending: int) -> Tuple[bool, int]:
+    @classmethod
+    def attack(cls, attacking: int, defending: int) -> Tuple[bool, int]:
         """Return whether attack is successful and new mass of attacking cell."""
-        # TODO randomize
-        attacking = attacking * Game.ATTACK_MUL
+        attacking = attacking * cls.ATTACK_MUL
         if defending >= attacking:
-            return False, ceil(defending - attacking * Game.DEF_ATTACK_MUL)
-        return True, max(1, floor(attacking - defending * Game.SUC_DEFENSE_MUL))
+            return False, ceil(defending - attacking * cls.DEF_ATTACK_MUL)
+        return True, max(1, floor(attacking * cls.ATTACK_MUL - defending))
 
     def cell_can_send_mass(
         self, mass: int, source_i: int, recipient_i: int
@@ -484,7 +482,7 @@ class Game:
                 continue
             prior_mass = self.masses[si]
             recipient = self.owners[si]
-            success, remaining_mass = Game.attack(mass, prior_mass)
+            success, remaining_mass = self.attack(mass, prior_mass)
             if success:
                 self.owners[si] = real_sender
                 total_difs[real_sender] -= mass - remaining_mass
