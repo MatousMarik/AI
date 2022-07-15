@@ -6,7 +6,7 @@ from agents.destroyer import Destroyer
 from agents.ranger import Ranger
 
 
-class AgressiveRanger(Agent):
+class AggressiveRanger(Agent):
     def __init__(self) -> None:
         self.agents: List[Agent] = [None, Destroyer(), Ranger()]
         self.random: Random = None
