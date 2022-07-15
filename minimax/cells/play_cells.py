@@ -38,16 +38,16 @@ def get_parser() -> ArgumentParser:
     parser.add_argument(
         "-d",
         "--density",
-        default=0.5,
+        default=0.75,
         type=float,
-        help="Density of cells on board. (default 0.5)",
+        help="Density of cells on board. (default 0.75)",
     )
     parser.add_argument(
         "-p",
         "--hole_probability",
         type=float,
-        default=0.6,
-        help="Probability that distant cells won't be connected. (default 0.6)",
+        default=0.75,
+        help="Probability that distant cells won't be connected. (default 0.75)",
     )
     parser.add_argument(
         "-s",
