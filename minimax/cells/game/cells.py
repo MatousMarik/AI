@@ -245,8 +245,8 @@ class Game:
     - grow_cells
     """
 
-    ATTACK_MUL = 0.8
-    DEF_ATTACK_MUL = 0.7
+    ATTACK_MUL = 0.8125
+    DEF_ATTACK_MUL = 0.875
 
     def __init__(self, seed: int = None, max_rounds: int = -1) -> None:
         self.winner: int = -1
@@ -388,7 +388,7 @@ class Game:
         attacking = attacking * cls.ATTACK_MUL
         if defending >= attacking:
             return False, ceil(defending - attacking * cls.DEF_ATTACK_MUL)
-        return True, max(1, floor(attacking * cls.ATTACK_MUL - defending))
+        return True, max(1, floor(attacking - defending))
 
     def cell_can_send_mass(
         self, mass: int, source_i: int, recipient_i: int
