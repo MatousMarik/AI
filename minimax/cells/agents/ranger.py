@@ -359,4 +359,4 @@ class Ranger(Agent):
                 self.process_border_cell(
                     cell, False, sorted(enemies_neutral, key=self.enemy_key)
                 )
-        return TransferMove.get_transfers_i(self.move)
+        return self.move.get_transfers()

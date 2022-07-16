@@ -104,4 +104,4 @@ class Destroyer(Agent):
                     )
             if mass > 0:
                 move.add_transfer(Transfer(cell, target, mass))
-        return TransferMove.get_transfers_i(move)
+        return move.get_transfers()

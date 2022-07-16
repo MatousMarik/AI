@@ -67,4 +67,4 @@ class MyAgent(Agent):
             to = self.random.choice(cell.neighbors)
             if available_mass * Game.ATTACK_MUL > to.mass:
                 move.add_transfer(Transfer(cell, to, available_mass))
-        return TransferMove.get_transfers_i(move)
+        return move.get_transfers()

@@ -197,7 +197,15 @@ class TransferMove:
                 return
         self.transfers.append(transfer)
 
-    def get_transfers(self) -> List[Transfer]:
+    def get_transfers(self, conversion: bool = True) -> List[Transfer]:
+        """
+        Return list of transfers.
+
+        If conversion=False return it as it is,
+        otherwise do cell->cell_index conversion if needed.
+        """
+        if conversion:
+            return self.get_transfers_i(self)
         return self.transfers
 
     @staticmethod
@@ -206,7 +214,7 @@ class TransferMove:
     ) -> List[Transfer]:
         """Converts transfers with cell class representations to index representations."""
         if isinstance(move, TransferMove):
-            move = move.get_transfers()
+            move = move.transfers
         return [
             Transfer(
                 t.source if isinstance(t.source, int) else t.source.index,
