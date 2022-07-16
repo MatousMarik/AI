@@ -46,8 +46,8 @@ def get_parser() -> ArgumentParser:
         "-p",
         "--hole_probability",
         type=float,
-        default=0.75,
-        help="Probability that distant cells won't be connected. (default 0.75)",
+        default=0.8,
+        help="Probability that distant cells won't be connected. (default 0.8)",
     )
     parser.add_argument(
         "-s",
