@@ -14,16 +14,19 @@ from os.path import join as path_join
 RESOURCES = path_join(dirname(__file__), "resources")
 
 WIDTH, HEIGHT = (1200, 750)
-WINDOW_POSITION = WINDOW_POSITION = (100, 75)
+
+# WINDOW_POSITION = (100, 75)
+
+# environ["SDL_VIDEO_WINDOW_POS"] = (
+#     str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
+# )
+
 FPS = 30
 TRANSPARENT = 175
 TRANSPARENT_SCORE = 130
 
 ZERO_COORDS = pg.Vector2(0, 0)
 
-environ["SDL_VIDEO_WINDOW_POS"] = (
-    str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
-)
 Colors = make_dataclass(
     "Colors",
     [

@@ -7,11 +7,11 @@ from dataclasses import make_dataclass
 from game.pacman import Game, Direction
 from game.controllers import *
 
-WINDOW_POSITION = (500, 120)
+# WINDOW_POSITION = (500, 120)
 
-os.environ["SDL_VIDEO_WINDOW_POS"] = (
-    str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
-)
+# os.environ["SDL_VIDEO_WINDOW_POS"] = (
+#     str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
+# )
 
 RES = path_join(os.path.dirname(__file__), "resources")
 IMAGES_DIR = path_join(RES, "images")

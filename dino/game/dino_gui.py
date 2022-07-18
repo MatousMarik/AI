@@ -9,11 +9,11 @@ from os.path import dirname
 from os.path import join as path_join
 from dataclasses import make_dataclass
 
-WINDOW_POSITION = (150, 120)
+# WINDOW_POSITION = (150, 120)
 
-environ["SDL_VIDEO_WINDOW_POS"] = (
-    str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
-)
+# environ["SDL_VIDEO_WINDOW_POS"] = (
+#     str(WINDOW_POSITION[0]) + "," + str(WINDOW_POSITION[1])
+# )
 
 WHITE = pg.Color("white")
 BLACK = pg.Color("black")
