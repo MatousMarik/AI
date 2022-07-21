@@ -121,3 +121,22 @@ Assuming you will use minimax or MCTS, you will need the following:
 - If you are using MCTS, you will need a base strategy to be used for simulations, i.e. rollouts. You could use a strategy that plays randomly, or the strategy played by one of the existing agents, or could invent your own strategy for this purpose. Note that playout simulation is really expensive operation, so you will need to find some way how to deal with that or you can just use minimax.
 
 Before you start implementing you should check [documentation](cells/game/doc.md).
+
+### Controls
+#### Visualization of agent games
+| Command | Purpose |
+| --- | --- |
+| *Enter*/*Spacebar*/*mouse-click* | Show next move. |
+| *F*/*+* | Turn on/speed up game animation. |
+| *S*/*-* | Turn on/slow down game animation. |
+| *P* | Turn off animation. |
+| *Escape* | Exit the visualization. |
+
+#### Game-play
+Note that since you need to make transfer from many cells, game-play of this game is not really comfortable.
+
+To create transfer you need to select two cells by *left-click*. After selecting the first one it changes color and you can modify this selection by *right-click* or cancel it by *Escape*.
+
+Once you select two cells you need to specify transferred mass by typing the number. By pressing *Enter* you confirm the transfer, *Escape* cancels it and *Backspace* erase last digit of the specified mass.
+
+Once you create transfer you can modify it by *left-click* or delete it by *right-click*. After you create all desired transfers you can end your turn by pressing *Enter*.

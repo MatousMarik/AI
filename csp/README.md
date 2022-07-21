@@ -176,3 +176,6 @@ For board 50x50 you will typically need 1-10 hints but occasionally even 20.
         seed 2: solved in 0.011 s, hints = 4
         seed 3: solved in 0.003 s, hints = 3
         seed 4: solved in 0.002 s, hints = 1
+
+### Game controls
+During visualization you can show next move by *mouse-click*. When playing you use *left-click* to uncover tile, *right-click* to flag/unflag tile and *H* for hint.

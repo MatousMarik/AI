@@ -42,3 +42,6 @@ Your agent should be able to solve the puzzles in [game/levels/Aymeric_Medium.so
 - Use DFS or BFS for dead square detection. Start at target squares and search for squares that are alive.
 - In implementation of `HeuristicProblem.result` you will need to clone the given board state, since it is supposed to leave existing state unchanged.
 - There are many additional techniques and optimizations you could optionally implement. If you are interested in that, I recommend reading this [Sokoban Solver](http://pavel.klavik.cz/projekty/solver/solver.pdf) documentation written by a former MFF student. It suggests various useful ideas (only some of which the author implemented in his own program). If those aren't enough for you, the [Solver page](http://sokobano.de/wiki/index.php?title=Solver) on the Sokoban Wiki has many more ideas that could keep you busy for a while.
+
+## Game controls
+For visualization you press any key to see next move of the agent. When you play the game yourself, you use arrows for movement, **B** for stepping one move back and **R** to restart the level.
