@@ -123,5 +123,5 @@ class GameUI(ABC):
     ) -> None:
         pass
 
-    def game_loop(Self) -> None:
+    def game_loop(self) -> None:
         pass

@@ -3,7 +3,8 @@
 
 ## Assignment 2: Uniform-cost search and Pac-Man
 
-This assignment consist of two parts — implementing uniform-cost search and agent for Pac-Man game.
+This assignment consists of two parts — implementing uniform-cost search and agent for Pac-Man game.
+
 ### 1. Uniform-cost search
 Write general-purpose implementation of uniform-cost search in [ucs.py](ucs.py). It should be able to search any problems implementing `Problem` interface, that can be found in [search_templates.py](search_templates.py). The search should return `Solution` instance if solution is found, otherwise `None`.
 
@@ -41,7 +42,7 @@ Continue to [Pac-Man info](pacman/README.md).
 
 ## Assignment 3: A* and Sokoban
 
-This assignment consist of two parts — implementing A* search and agent for Sokoban game.
+This assignment consists of two parts — implementing A* search and agent for Sokoban game.
 
 ### 1. A* search
 
@@ -50,7 +51,7 @@ Write general-purpose implementation of A* search in [astar.py](astar.py). It sh
 Search method could be used like this:
 ```python
 problem: HeuristicProblem = SomeProblem()
-solution: Solution = ucs(problem)
+solution: Solution = AStar(problem)
 ```
 
 You can test your implementation on `HeuristicProblem` instances from [problems.py](problems.py) script by running script [ucs_test.py](ucs_test.py) as it is.
