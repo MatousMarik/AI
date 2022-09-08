@@ -562,7 +562,9 @@ class CellsGUIAgent(CellsGUI, Agent):
                             continue
 
                         open_transfer = False
-                        if res:
+
+                        # transfer confirmed and value selected
+                        if res and value:
                             val = int(
                                 "".join(
                                     value[-CellsGUIAgent.TRANSFER_MAX_LEN :]
