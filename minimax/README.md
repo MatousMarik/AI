@@ -1,5 +1,5 @@
 # Assignment 4: Cell Wars
-This assignment consist of two parts — implementation of search algorithm and implementation of agent playing [Cell Wars](cells/README.md).
+This assignment consists of two parts — implementation of search algorithm and implementation of agent playing [Cell Wars](cells/README.md).
 
 ## 1. Search Algorithm
 

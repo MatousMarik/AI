@@ -8,7 +8,7 @@ You can play it just by running [play_dino.py](play_dino.py) (by executing `pyth
 
 There are two ways how to specify options for the script. You can either run script with options specified in terminal e.g.
 
-    python3 play_dino.py −a=MyAgent −−seed=0 −−vis_rect −d
+    python3 play_dino.py -a=MyAgent --seed=0 --vis_rect -d
 
 or alternatively you can specify options as a parameter of method `main` at the end of [play_dino.py](play_dino.py) and executing script (with all options from terminal taking priority):
 
