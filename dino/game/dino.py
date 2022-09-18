@@ -116,6 +116,22 @@ class Rect:
         return self.x <= -self.width
 
     @property
+    def top(self) -> int:
+        return self.y
+
+    @property
+    def left(self) -> int:
+        return self.x
+
+    @property
+    def bottom(self) -> int:
+        return self.y + self.height
+
+    @property
+    def right(self) -> int:
+        return self.x + self.width
+
+    @property
     def coords(self) -> Coords:
         return Coords(self.x, self.y)
 
