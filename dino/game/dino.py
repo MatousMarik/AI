@@ -366,6 +366,9 @@ class Game:
     Represent state of the dino game.
     """
 
+    WIDTH = WIDTH
+    HEIGHT = HEIGHT
+
     SPAWN = 0.04
     SPAWN_INC = 0.001
     PREVIOUS_OBSTACLE = WIDTH - 300
