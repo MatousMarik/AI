@@ -421,7 +421,7 @@ class Game:
                 self.obstacles.appendleft(
                     Obstacle(
                         ObstacleType.bird(self.score % 4),
-                        self.rnd.expovariate(self.speed // 2),
+                        int(self.rnd.expovariate(self.speed // 2)),
                     ),
                 )
 

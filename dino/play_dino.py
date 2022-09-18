@@ -151,12 +151,11 @@ def sim(agent: Agent, args: Namespace) -> None:
                     ticks, tick_time * 1000
                 )
             print(
-                "Seed {}{}: score {} in {:.2f}ms (in {} ticks) => {:.2f} ms/tick".format(
+                "Seed {}{}: score {} in {:.2f}ms, {:.2f} ms/tick".format(
                     seed,
                     fail_s,
                     game.score,
                     time,
-                    ticks,
                     time / ticks,
                 )
             )
