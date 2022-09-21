@@ -10,7 +10,7 @@ class Agent(ABC):
     Agent class will get verbose and debug variables
     with respect to game options.
 
-    Note that you should not use any initialization since this is simple-reflex agent.
+    Note that you should not modify any class variables since this is simple-reflex agent.
     """
 
     @abstractstaticmethod

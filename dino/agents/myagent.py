@@ -8,6 +8,10 @@ class MyAgent(Agent):
 
     @staticmethod
     def get_move(game: Game) -> DinoMove:
+        """
+        Note: Remember you are creating simple-reflex agent, that should not
+        store or access any information except provided.
+        """
         # # for visual debugging intellisense you can use
         # from game.debug_game import DebugGame
         # game: DebugGame = game
