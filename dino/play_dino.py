@@ -165,7 +165,7 @@ def sim(agent: Agent, args: Namespace) -> None:
     avg_score = score / args.sim
     print("Averages from {} games:".format(args.sim))
     print("  score: {:.1f}".format(avg_score))
-    print("  time: {:.1f} ms/tick".format(total_time / total_ticks * 1000))
+    print("  time: {:.3f} ms/tick".format(total_time / total_ticks * 1000))
 
 
 def main(args_list: list = []) -> None:
