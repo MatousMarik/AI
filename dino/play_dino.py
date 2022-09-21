@@ -103,8 +103,12 @@ def process_args(
     return agent, args, visualize
 
 
-def sim(agent: Agent, args: Namespace) -> None:
-    """Simulate dino games with with given Agent and arguments."""
+def sim(agent: Agent, args: Namespace) -> float:
+    """
+    Simulate dino games with with given Agent and arguments.
+
+    Return average score.
+    """
     seeds = (
         [randrange(0, 999999999) for _ in range(args.sim)]
         if args.seed is None
@@ -142,7 +146,7 @@ def sim(agent: Agent, args: Namespace) -> None:
         score += game.score
         total_ticks += ticks
 
-        if args.verbose:
+        if True:  # args.verbose:
             time *= 1000
             if time_fine:
                 fail_s = ""
@@ -160,9 +164,11 @@ def sim(agent: Agent, args: Namespace) -> None:
                 )
             )
 
+    avg_score = score / args.sim
     print("Averages from {} games:".format(args.sim))
-    print("  score: {:.1f}".format(score / args.sim))
+    print("  score: {:.1f}".format(avg_score))
     print("  time: {:.1f} ms/tick".format(total_time / total_ticks * 1000))
+    return avg_score
 
 
 def main(args_list: list = []) -> None:
