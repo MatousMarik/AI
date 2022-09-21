@@ -55,9 +55,9 @@ def get_parser() -> ArgumentParser:
     parser.add_argument(
         "-v",
         "--verbose",
-        default=False,
-        action="store_true",
-        help="Verbose output.",
+        default=0,
+        type=int,
+        help="Level of verbosity: 0 for nothing, 1 for level info, 2 for agent info.",
     )
     return parser
 
@@ -80,7 +80,7 @@ def process_args(
             spec.loader.exec_module(agent_module)
             # agent is a non-instantiated class
             agent = getattr(agent_module, args.agent)
-            agent.verbose = args.verbose
+            agent.verbose = args.verbose == 2
             agent.debug = args.debug
         except BaseException as e:
             parser.error(f"Invalid agent name.\n{str(e)}")
@@ -144,7 +144,7 @@ def sim(agent: Agent, args: Namespace) -> None:
         score += game.score
         total_ticks += ticks
 
-        if True:  # args.verbose:
+        if args.verbose > 0:
             time *= 1000
             if time_fine:
                 fail_s = ""
