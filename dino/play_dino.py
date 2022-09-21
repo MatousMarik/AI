@@ -210,6 +210,6 @@ def add_initial_debug_visualization(game) -> None:
 if __name__ == "__main__":
     # if you don't want to specify arguments for the script you can also
     # call main with desired arguments in list
-    # e.g. main(["-a", "Agent", "--seed", "42", "-s", "10", "-v"]),
+    # e.g. main(["-a", "Agent", "--seed", "42", "-s", "10", "-v", "1"]),
     # or shorter: main(["-a=Agent", "--se=0", "--vis", "--d"])
     main()
