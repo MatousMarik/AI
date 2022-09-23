@@ -91,7 +91,7 @@ def process_args(
         if args.agent is None:
             parser.error("You have to specify Agent with --sim.")
         if args.time_limit is not None:
-            if args.time_limit < 1:
+            if args.time_limit <= 0:
                 parser.error("Invalid time limit - has to be greater than 0.")
             else:
                 # perf_counter returns time in seconds
