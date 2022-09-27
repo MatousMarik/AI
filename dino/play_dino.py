@@ -103,7 +103,7 @@ def process_args(
     return agent, args, visualize
 
 
-def sim(agent: Agent, args: Namespace) -> None:
+def sim(agent: Agent, args: Namespace) -> float:
     """
     Simulate dino games with with given Agent and arguments.
     """
@@ -166,9 +166,10 @@ def sim(agent: Agent, args: Namespace) -> None:
     print("Averages from {} games:".format(args.sim))
     print("  score: {:.1f}".format(avg_score))
     print("  time: {:.3f} ms/tick".format(total_time / total_ticks * 1000))
+    return avg_score
 
 
-def main(args_list: list = []) -> None:
+def main(args_list: list = []) -> float:
     agent, args, visualize = process_args(args_list)
 
     gui = None
@@ -183,8 +184,9 @@ def main(args_list: list = []) -> None:
         else:
             gui = Dino_GUI(agent, Game(args.seed), args.vis_rect)
         gui.play()
+        return 1
     else:
-        sim(agent, args)
+        return sim(agent, args)
 
 
 def add_initial_debug_visualization(game) -> None:
