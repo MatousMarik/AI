@@ -43,7 +43,7 @@ class Dummy_Agent(Agent):
 
             if o.rect.x < x and o.rect.x + 105 > x:
                 if Dummy_Agent.verbose:
-                    print("jumping right")
+                    print("running right")
                 return DinoMove.RIGHT
 
         return DinoMove.NO_MOVE
