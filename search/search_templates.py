@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from abc import ABC, abstractmethod
+from typing import Union
 
 
 class Problem(ABC):
@@ -98,6 +99,15 @@ class Solution:
             and cost == self.path_cost
         )
 
+    def is_optimal(self, prob: Problem) -> Union[None, bool]:
+        """Return whether solution is optimal (None for unknown)."""
+        if isinstance(prob, Optimal):
+            if prob.optimal_cost() == self.path_cost:
+                return True
+            else:
+                return False
+        return None
+
     def report(self, prob: Problem) -> bool:
         """Report validity, cost and optimal cost if possible and return validity."""
         if not self.is_valid(prob):
@@ -106,11 +116,11 @@ class Solution:
 
         print("solution is valid")
         print(f"total cost is {self.path_cost}")
-        if isinstance(prob, Optimal):
-            if prob.optimal_cost() == self.path_cost:
-                print("solution is optimal")
-            else:
-                print("optimal cost is {}".format(prob.optimal_cost()))
-        else:
+        op = self.is_optimal(prob)
+        if op:
+            print("solution is optimal")
+        elif op is None:
             print("there is no optimal cost set for this problem")
+        else:
+            print("optimal cost is {}".format(prob.optimal_cost()))
         return True
