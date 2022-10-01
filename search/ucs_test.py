@@ -3,22 +3,39 @@ from ucs import ucs
 from search_templates import Problem
 from problems import Empty, Unsolvable, Graph, Line, Grid
 from time import perf_counter
+from typing import Tuple, Union
 
 
-def run_test(prob: Problem):
+def run_test(
+    prob: Problem, *, verbose: bool = True
+) -> Tuple[bool, float, Union[None, bool]]:
+    """
+    Run test and return validity, time and optimality (None for unknown).
+
+    Call with verbose=False to turn off prints.
+    """
     start = perf_counter()
     solution = ucs(prob)
     elapsed = (perf_counter() - start) * 1000
 
     if solution is None:
         if isinstance(prob, Unsolvable):
-            print('"solved" in {:.3f} ms'.format(elapsed))
+            if verbose:
+                print('"solved" in {:.3f} ms'.format(elapsed))
         else:
-            print("found no solution in {:.3f} ms".format(elapsed))
-        return
+            if verbose:
+                print("found no solution in {:.3f} ms".format(elapsed))
+        return True, elapsed, True
 
-    if solution.report(prob):
+    valid = None
+    if verbose and (valid := solution.report(prob)):
         print("solved in {:.3f} ms".format(elapsed))
+
+    return (
+        valid if valid is not None else solution.is_valid(),
+        elapsed,
+        solution.is_optimal(),
+    )
 
 
 if __name__ == "__main__":
