@@ -16,8 +16,10 @@ from ucs import ucs
 
 
 class MyAgent(PacManControllerBase):
-    def __init__(self, human: bool = False, seed: int = 0) -> None:
-        super().__init__(human, seed)
+    def __init__(
+        self, human: bool = False, seed: int = 0, verbose: bool = False
+    ) -> None:
+        super().__init__(human, seed, verbose)
 
         # You can initialize your own class variables here.
 
