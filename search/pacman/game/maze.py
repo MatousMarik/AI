@@ -63,7 +63,7 @@ class Maze:
     """
 
     NODE_NAMES = ["a", "b", "c", "d"]
-    DIST_NAMES = ["DA", "DB", "DC", "DD"]
+    DIST_NAMES = ["da", "db", "dc", "dd"]
 
     def __init__(self, index: int):
         self.graph: List[Node] = []
