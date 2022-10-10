@@ -22,6 +22,11 @@ class Mcts(Strategy):
         # ...
         raise NotImplementedError
 
+    def set_seed(self, seed: int) -> None:
+        super().set_seed(seed)
+        # set seed for base strategy too!
+        # self.base_strat.set_seed(seed)
+
     def action(self, state):
         """
         Return best action for given state.
