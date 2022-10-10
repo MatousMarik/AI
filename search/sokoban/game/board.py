@@ -354,7 +354,7 @@ class Board:
         ret[0:2] = self.sokoban
         i = 2
         if remove:
-            self.tiles[x][y] &= ETile.NULLIFY_ENTITY
+            self.tiles[self.sokoban.x][self.sokoban.y] &= ETile.NULLIFY_ENTITY
             self.sokoban = Pos(-1, -1)
             for x, col in enumerate(self.tiles):
                 for y, t in enumerate(col):

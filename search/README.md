@@ -54,7 +54,7 @@ problem: HeuristicProblem = SomeProblem()
 solution: Solution = AStar(problem)
 ```
 
-You can test your implementation on `HeuristicProblem` instances from [problems.py](problems.py) script by running script [ucs_test.py](ucs_test.py) as it is.
+You can test your implementation on `HeuristicProblem` instances from [problems.py](problems.py) script by running script [astar_test.py](astar_test.py) as it is.
 
 Note that it would be wise to ensure that your A* implementation returns optimal solutions to these test problems before you apply it to Sokoban. You should be able to solve second 15-puzzle instance from the test in about a minute. If it takes significantly longer, your A* implementation is not working as efficiently as it should.
 
