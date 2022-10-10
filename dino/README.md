@@ -38,3 +38,6 @@ You can find example of this usage in [agents/dummy_agent.py](agents/dummy_agent
 
 ### Hints
 Take in account that speed of all obstacles is slowly increasing and that some birds are not static along x-axis.
+
+## ReCodEx testing
+You are expected to submit a single file containing your agent class. The system will perform a simple test running 50 simulations with random seed. You will be assigned up to 10 points based on the average score achieved by your agent. To earn full 10 points, your agent needs to achieve a score of at least 5000.
