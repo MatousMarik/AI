@@ -33,6 +33,11 @@ class ConnectFourGUI(GameUI):
         self.s1: int = 1
         self.strategy1: Strategy = strategy1
         self.strategy2: Optional[Strategy] = strategy2
+        
+        self.strategy1.set_seed(seed)
+        if self.strategy2 is not None:
+            self.strategy2.set_seed(1_000_000 + seed)
+        
         self.player_in_game: bool = strategy2 is None
 
         self.screen: pg.Surface = None

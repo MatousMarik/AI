@@ -268,6 +268,7 @@ class HeuristicStrategy(Strategy):
                 for dir in state.DIRS:
                     if self._count(state, p, x, y, *dir):
                         total += self._value(p)
+        return total
 
     def action(self, state: ConnectFour) -> int:
         possible = []

@@ -34,7 +34,7 @@ def run_test(
     return (
         valid if valid is not None else solution.is_valid(),
         elapsed,
-        solution.is_optimal(),
+        solution.is_optimal(prob),
     )
 
 
