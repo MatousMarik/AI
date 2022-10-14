@@ -105,9 +105,9 @@ def process_args(
     return agent, args, visualize
 
 
-def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
+def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> float:
     """
-    Function for simulating pacman game.
+    Function for simulating pacman game, returns average score.
 
     If ui is provided simulation will be visualized.
     """
@@ -196,9 +196,10 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
                 )
             )
 
+    avg_score = score / args.sim
     print("Averages from {} games:".format(args.sim))
     print("  levels cleared: {:.1f}".format(level // args.sim))
-    print("  score: {:.1f}".format(score / args.sim))
+    print("  score: {:.1f}".format(avg_score))
     print(
         "  time: {:.1f} ms/tick, {:.2f} s/level".format(
             total_time / ticks * 1000,
@@ -206,9 +207,10 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> None:
         ),
     )
     print("Max tick {:.2f} ms".format(total_max_tick * 1000))
+    return avg_score
 
 
-def main(args_list: list = []) -> None:
+def main(args_list: list = []) -> float:
     agent, args, visualize = process_args(args_list)
 
     gui = None
@@ -217,7 +219,7 @@ def main(args_list: list = []) -> None:
 
         gui = PacView
 
-    sim(agent, args, gui)
+    return sim(agent, args, gui)
 
 
 if __name__ == "__main__":

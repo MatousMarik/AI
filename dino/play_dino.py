@@ -184,7 +184,7 @@ def main(args_list: list = []) -> float:
         else:
             gui = Dino_GUI(agent, Game(args.seed), args.vis_rect)
         gui.play()
-        return 1
+        return -1
     else:
         return sim(agent, args)
 
