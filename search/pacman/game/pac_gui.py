@@ -2,10 +2,12 @@
 import pygame as pg
 import os
 from os.path import join as path_join
-from typing import List, Tuple
+from sys import stderr
+from typing import List, Tuple, Union
 from dataclasses import make_dataclass
 from game.pacman import Game, Direction
 from game.controllers import *
+from time import perf_counter
 
 # WINDOW_POSITION = (500, 120)
 
@@ -282,10 +284,13 @@ class PacView:
         self,
         pac_controller: PacManControllerBase,
         ghosts_controller: GhostController,
+        time_limit: Union[float, None] = None,
     ) -> None:
         game: Game = self.game
         self.new_display()
         self.new_view()
+
+        no_action = PacManAction()
 
         # START THE GAME
         clock = pg.time.Clock()
@@ -309,10 +314,25 @@ class PacView:
                     elif event.key == pg.K_d:
                         self.fps = PacView.FPS
 
+            start = perf_counter()
             pac_controller.tick(game)
+            tick_time = perf_counter() - start
+
             ghosts_controller.tick(game)
 
-            pac_action: PacManAction = pac_controller.get_action()
+            if (
+                not pac_controller.hijacked
+                and time_limit
+                and tick_time > time_limit
+            ):
+                pac_action: PacManAction = no_action
+                no_action.reset()
+                print(
+                    f"slow tick {game.total_ticks} - {(tick_time * 1000):.1f} ms.",
+                    file=stderr,
+                )
+            else:
+                pac_action: PacManAction = pac_controller.get_action()
             ghosts_actions: GhostsActions = ghosts_controller.get_actions()
 
             # PAUSED?

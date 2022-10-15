@@ -39,7 +39,7 @@ def get_parser() -> ArgumentParser:
         "--time_limit",
         default=None,
         type=float,
-        help="Set strict time limit in ms for agent tick (ms).",
+        help="Set time limit in ms for agent tick (ms).",
     )
     parser.add_argument("--seed", type=int, help="Random seed.")
     parser.add_argument(
@@ -84,16 +84,17 @@ def process_args(
     else:
         agent: gc.PacManControllerBase = gc.PacManControllerBase(True)
 
+    if args.time_limit is not None:
+        if args.time_limit <= 0:
+            parser.error("Invalid time limit - has to be greater than 0.")
+        else:
+            args.time_limit /= 1000
+
     if args.sim is not None:
         if args.sim < 1:
             parser.error("Invalid number of simulations.")
         if args.agent is None:
             parser.error("You have to specify agent with --sim.")
-        if args.time_limit is not None:
-            if args.time_limit <= 0:
-                parser.error("Invalid time limit - has to be greater than 0.")
-            else:
-                args.time_limit /= 1000
         visualize = False
     else:
         visualize = True
@@ -129,13 +130,14 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> float:
     pac_controller.reset(game)
     ghosts_controller = gc.GhostController()
     ghosts_controller.reset(game)
+    no_action = gc.PacManAction()
 
     # VISUALIZED SIM
     if gui is not None:
         if args.verbose:
             ghosts_controller._debugging = gui  # class
         gui = gui(game, args.scale)
-        gui.game_loop(pac_controller, ghosts_controller)
+        gui.game_loop(pac_controller, ghosts_controller, args.time_limit)
         return
 
     score = 0
@@ -145,9 +147,10 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> float:
     total_max_tick = 0
     # SIM
     for seed in seeds:
+        if args.verbose:
+            print(f"Seed {seed}:")
         game.new_game(level=args.level, seed=seed)
         time = 0
-        time_fine = True
         max_tick = 0
         while not game.game_over:
             start = perf_counter()
@@ -156,14 +159,20 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> float:
             max_tick = max(max_tick, tick_time)
             time += tick_time
 
-            # check strict time limit
-            if args.time_limit and tick_time > args.time_limit:
-                time_fine = False
-                break
-
             ghosts_controller.tick(game)
 
-            pac_action: gc.PacManAction = pac_controller.get_action()
+            # check time limit
+            if args.time_limit and tick_time > args.time_limit:
+                # took too long
+                pac_action: gc.PacManAction = no_action
+                no_action.reset()
+                if args.verbose:
+                    print(
+                        f"   slow tick {game.total_ticks} - {(tick_time * 1000):.1f} ms."
+                    )
+            else:
+                pac_action: gc.PacManAction = pac_controller.get_action()
+
             ghosts_actions: gc.GhostsActions = ghosts_controller.get_actions()
 
             game.advance_game(
@@ -177,16 +186,9 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> float:
         ticks += game.total_ticks
 
         if args.verbose:
-            if time_fine:
-                fail_s = ""
-            else:
-                fail_s = " failed tick {} - {:.1f} ms".format(
-                    game.total_ticks, tick_time * 1000
-                )
             print(
-                "Seed {}{}: level {:d}, score {:d} in {:.2f} ms (in {:d} ticks)\n\t average {:.2f} ms/tick; max {:.2f} ms/tick".format(
+                " result: level {:d}, score {:d} in {:.2f} ms (in {:d} ticks)\n\t average {:.2f} ms/tick; max {:.2f} ms/tick".format(
                     seed,
-                    fail_s,
                     game.current_level,
                     game.score,
                     time * 1000,
