@@ -39,7 +39,7 @@ def get_parser() -> ArgumentParser:
         "--time_limit",
         default=None,
         type=float,
-        help="Set strict time limit in ms for agent tick.",
+        help="Set strict time limit in ms for agent tick (ms).",
     )
     parser.add_argument("--seed", type=int, help="Random seed.")
     parser.add_argument(
@@ -90,7 +90,7 @@ def process_args(
         if args.agent is None:
             parser.error("You have to specify agent with --sim.")
         if args.time_limit is not None:
-            if args.time_limit < 1:
+            if args.time_limit <= 0:
                 parser.error("Invalid time limit - has to be greater than 0.")
             else:
                 args.time_limit /= 1000
