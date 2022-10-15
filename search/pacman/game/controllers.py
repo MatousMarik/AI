@@ -300,22 +300,6 @@ class GhostController:
             elif gs == self.CHASE:
                 ghost_target = self.ai.target_chase(g, game)
 
-            if self._debugging and gs != self.FRIGHTENED:
-                if g == 0:
-                    color = "red"
-                elif g == 1:
-                    color = "pink"
-                elif g == 2:
-                    color = "orange"
-                else:
-                    color = "cyan"
-                self._debugging.add_lines(
-                    game,
-                    color,
-                    [game.get_xy(game._ghost_locs[g])],
-                    [ghost_target],
-                )
-
             chosen_dir = -1
             if game.ghost_requires_action(g):
                 p_dirs = game.get_possible_ghost_dirs(g)
