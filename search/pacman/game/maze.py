@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 from typing import List
 from collections import namedtuple
-from dataclasses import make_dataclass
 from os.path import dirname
 from os.path import join as path_join
 
 LEVELS_DIR = path_join(dirname(__file__), "resources", "data")
 
 Coords = namedtuple("Coords", "x y")
-Node = make_dataclass(
+Node = namedtuple(
     "Node",
     [
         "node_index",
