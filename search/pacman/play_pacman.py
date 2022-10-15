@@ -198,7 +198,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> float:
 
     avg_score = score / args.sim
     print("Averages from {} games:".format(args.sim))
-    print("  levels cleared: {:.1f}".format(level // args.sim))
+    print("  levels cleared: {:.1f}".format(level / args.sim))
     print("  score: {:.1f}".format(avg_score))
     print(
         "  time: {:.1f} ms/tick, {:.2f} s/level".format(
