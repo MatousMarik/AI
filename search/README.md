@@ -39,6 +39,12 @@ In this part of the assignment, you write an agent that plays Pac-Man.
 
 Continue to [Pac-Man info](pacman/README.md).
 
+## ReCodEx testing
+You are expected to submit two files -- ucs.py with your implementation of the Uniform-cost search algorithm and a file containing your agent class playing Pacman. There are two tests, one for each of the submitted files.
+
+For the UCS test, your implementation needs to correctly solve problems performed by `ucs_test.py` in a given time and memory limit.
+
+For the Pacman test, the system will perform 10 simulations of the game with a random seed. You will be assigned up to 10 points based on the average score achieved by your agent. To earn the full 10 points, your agent needs to achieve a score of at least 10000. The minimum score for which points can be earned is 3000.
 
 ## Assignment 3: A* and Sokoban
 
