@@ -37,6 +37,9 @@ Provides all the methods a controller may use to
 
 -  (which is slow and should not be necessary for our purpose)
 
+
+Note: maze data structures are meant to be immutable so the contents of `Game._maze` and `Game._graph` shall not change at any time.
+
 ### Utility methods
 
 #### `copy`(self) -> 'Game'
@@ -149,22 +152,18 @@ For how many tick will each ghost separately stay in lair.
 ### Getters
 
 
-#### `check_pill`(self, pill_index: int) -> bool
-
-Whether the pill is there.
-
-
-
 #### `get_reverse`(dir: int) -> int
 
 The reverse of the direction.
 
+#### `check_pill`(self, pill_index: int) -> bool
+
+Whether the pill is not eaten.
+
 
 #### `check_power_pill`(self, pill_index: int) -> bool
 
-Whether the power pill is there.
-
-
+Whether the power pill is not eaten.
 
 
 
@@ -334,8 +333,9 @@ The (x, y) coordinates of the specified node.
 
 The pill index of the node. If it is -1, the node has no pill.
 
-One can use the index to check
-whether the pill has already been eaten.
+One can use the index to check whether the pill 
+has already been eaten (via check_pill method),
+but the index itself doesn't provide this information.
 
 
 
@@ -345,8 +345,9 @@ whether the pill has already been eaten.
 
 The power pill index of the node. If it is -1, the node has no power pill.
 
-One can use the index to check
-whether the power pill has already been eaten.
+One can use the index to check whether the power pill 
+has already been eaten (via check_pill method),
+but the index itself doesn't provide this information.
 
 
 

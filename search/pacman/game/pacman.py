@@ -524,11 +524,11 @@ class Game:
         return -1
 
     def check_pill(self, pill_index: int) -> bool:
-        """Whether the pill is there."""
+        """Whether the pill is not eaten."""
         return self._pills[pill_index]
 
     def check_power_pill(self, pill_index: int) -> bool:
-        """Whether the power pill is there."""
+        """Whether the power pill is not eaten."""
         return self._power_pills[pill_index]
 
     def get_pacman_neighbors(self) -> Tuple[int, int, int, int]:
@@ -646,16 +646,18 @@ class Game:
     def get_pill_index(self, node: int) -> int:
         """
         The pill index of the node. If it is -1, the node has no pill.
-        One can use the index to check
-        whether the pill has already been eaten.
+        One can use the index to check whether the pill
+        has already been eaten (via check_pill method),
+        but the index itself doesn't provide this information.
         """
         return self._graph[node].pill_index
 
     def get_power_pill_index(self, node: int) -> int:
         """
         The power pill index of the node. If it is -1, the node has no power pill.
-        One can use the index to check
-        whether the power pill has already been eaten.
+        One can use the index to check whether the power pill
+        has already been eaten (via check_pill method),
+        but the index itself doesn't provide this information.
         """
         return self._graph[node].power_pill_index
 
