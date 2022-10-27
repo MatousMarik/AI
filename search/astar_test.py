@@ -1,17 +1,41 @@
 #!/usr/bin/env python3
-from search_templates import HeuristicProblem
-
+from search_templates import Problem
 from astar import AStar
-from problems import Cube, OptNPuzzle, PuzzleState
+from problems import Unsolvable, Cube, OptNPuzzle, PuzzleState
 from time import perf_counter
+from typing import Tuple, Union
 
 
-def run_test(prob: HeuristicProblem):
+def run_test(
+    prob: Problem, *, verbose: bool = True
+) -> Tuple[bool, float, Union[None, bool]]:
+    """
+    Run test and return validity, time and optimality (None for unknown).
+
+    Call with verbose=False to turn off prints.
+    """
     start = perf_counter()
     solution = AStar(prob)
-    elapsed = (perf_counter() - start) * 1000
-    if solution.report(prob):
-        print("solved in {:.0f} ms".format(elapsed))
+    elapsed = perf_counter() - start
+
+    if solution is None:
+        if isinstance(prob, Unsolvable):
+            if verbose:
+                print('"solved" in {:.4f} s'.format(elapsed))
+        else:
+            if verbose:
+                print("found no solution in {:.4f} s".format(elapsed))
+        return True, elapsed, True
+
+    valid = None
+    if verbose and (valid := solution.report(prob)):
+        print("solved in {:.4f} s".format(elapsed))
+
+    return (
+        valid if valid is not None else solution.is_valid(),
+        elapsed,
+        solution.is_optimal(prob),
+    )
 
 
 if __name__ == "__main__":
