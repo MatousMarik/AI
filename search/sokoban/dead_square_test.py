@@ -47,8 +47,8 @@ def print_dead(dead: List[List[bool]], board: Board):
     print()
 
 
-def print_detected():
-    file = path_join(DIR, f"{LEVEL_SET}.sok")
+def print_detected(level_set):
+    file = path_join(DIR, f"{level_set}.sok")
     if not exists(file):
         print("Can't find level file")
         return
@@ -71,7 +71,10 @@ def print_detected():
 
 
 def test(
-    expected=SOLUTION, tmp_file=TMP_FILE, remove_tmp_file=True
+    level_set=LEVEL_SET,
+    expected=SOLUTION,
+    tmp_file=TMP_FILE,
+    remove_tmp_file=True,
 ) -> Union[bool, None]:
     """
     Test dead squares detection:
@@ -95,7 +98,7 @@ def test(
         stdout_save = sys.stdout
         sys.stdout = out
 
-    print_detected()
+    print_detected(level_set)
 
     if tmp_file is not None:
         out.close()
