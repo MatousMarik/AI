@@ -35,6 +35,12 @@ def get_parser() -> ArgumentParser:
         ),
     )
     parser.add_argument(
+        "-t",
+        "--think_limit",
+        type=float,
+        help="Maximal thinking time in s for successful level solution.",
+    )
+    parser.add_argument(
         "-o",
         "--optimal",
         default=False,
@@ -42,17 +48,12 @@ def get_parser() -> ArgumentParser:
         help="Require move-optimal solution. (Omitted when player plays.)",
     )
     parser.add_argument(
-        "--max_fail",
-        default=0,
-        type=int,
-        help="Maximum level failures allowed. (Omitted when player plays.)",
-    )
-    parser.add_argument(
         "-v",
         "--verbose",
-        default=False,
-        action="store_true",
-        help="Verbose output. (Omitted when player plays.)",
+        default=0,
+        type=int,
+        help="Verbosity level [0, 1, 2]. (Omitted when player plays.)\n"
+        + "1 - without moves output",
     )
     parser.add_argument(
         "--visualize",
@@ -103,11 +104,13 @@ def process_args(
     return agent, file, args
 
 
-def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
+def sim(agent: ArtificialAgent, file: str, args: Namespace, gui) -> float:
     verbose = args.verbose
     skips: List[int] = [0]
     total_time = 0
     total_losses = 0
+    time_limit_exceeded = 0
+    non_optimal = 0
     level_count = 0
     if args.level is not None:
         if args.num_levels > 1:
@@ -171,9 +174,10 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
         if agent:
             agent.new_game()
             # let agent think before initializing GUI
-            print("Agent thinking.")
+            if verbose > 0:
+                print("Agent thinking.")
             agent.observe(board)
-            if not verbose:
+            if verbose == 1:
                 print("Thinking done.")
 
         if gui:
@@ -193,13 +197,22 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
                         print(
                             f" solved in {agent.think_time:.2f} s and {moves} moves"
                         )
+                    fine = True
                     if args.optimal and min_moves != -1 and min_moves < moves:
+                        fine = False
+                        non_optimal += 1
                         if verbose:
                             print(
                                 "Solution is not optimal: {}x{} moves".format(
                                     moves, min_moves
                                 )
                             )
+                    if args.think_limit and agent.think_time > args.think_limit:
+                        fine = False
+                        time_limit_exceeded += 1
+                        if verbose:
+                            print("Thinking took too long.")
+                    if not fine:
                         total_losses += 1
 
                 if agent:
@@ -265,16 +278,23 @@ def sim(agent: ArtificialAgent, file: str, args: Namespace, gui):
             level_count += 1
     if agent:
         print(
-            "Average thinking time in {} levels: {:.1f} s\nSolved {}/{}.".format(
+            "Average thinking time in {} levels: {:.1f} s\nSolved {}/{}{}{}.".format(
                 level_count,
                 total_time / level_count,
                 level_count - total_losses,
                 level_count,
+                f", non-optimal solutions: {non_optimal}"
+                if args.optimal
+                else "",
+                f", think limit exceeded: {time_limit_exceeded}"
+                if args.think_limit is not None
+                else "",
             )
         )
+    return (level_count - total_losses) / level_count
 
 
-def main(args_list: list = []) -> None:
+def main(args_list: list = []) -> float:
     agent, file, args = process_args(args_list)
 
     gui = None
@@ -283,7 +303,7 @@ def main(args_list: list = []) -> None:
 
         gui = SokobanGUI()
 
-    sim(agent, file, args, gui)
+    return sim(agent, file, args, gui)
     # sim = Simulator(agent, file, args, gui)
     # sim.sim()
 

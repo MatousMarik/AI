@@ -50,7 +50,7 @@ class ArtificialAgent(ABC):
         """Agent is queried what to do next."""
         if self.actions:
             action = self.actions.pop()
-            if self.verbose:
+            if self.verbose > 1:
                 print("EXECUTING: {}".format(action))
             if isinstance(action, EDirection):
                 action = Move.or_push(self.board, action)
