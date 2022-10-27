@@ -77,20 +77,31 @@ def test(
     Test dead squares detection:
 
     If expected is None just print the detections and return None.
-    Else print detections into tmp_file and compare it with expected
+
+    If tmp_file is None print detection to stdout
+    else print detections into tmp_file.
+
+    If expected is not None compare it with tmp_file
     and return True if matching.
+
     Remove created tmp_file if remove_tmp_file is True.
     """
-    if expected is not None:
+    if expected is not None and tmp_file is None:
+        tmp_file = TMP_FILE
+        remove_tmp_file = True
+
+    if tmp_file is not None:
         out = open(tmp_file, "w+")
         stdout_save = sys.stdout
         sys.stdout = out
 
     print_detected()
 
-    if expected is not None:
+    if tmp_file is not None:
         out.close()
         sys.stdout = stdout_save
+
+    if expected is not None:
         solution = path_join(dirname(__file__), expected)
         with open(tmp_file, "r") as det, open(solution, "r") as exp:
             i = 1
