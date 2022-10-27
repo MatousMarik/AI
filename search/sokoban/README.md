@@ -24,7 +24,7 @@ For example, in the following picture every square that is adjacent to a wall is
 
 Given a sokoban game state, `detect` should return a 2-dimensional structure (list of lists) of bools with the same dimension as given board. `detected[x][y]` should be `True` iff the corresponding square is dead.
 
-To help you test your detector you can run [dead_square_test.py](dead_square_test.py), that should produce [this output](dead_squares_expected.txt).
+To help you test your detector you can run [dead_square_test.py](dead_square_test.py), that should produce [this output](dead_squares_expected.txt) (or you can call `test` with suitable arguments for your need).
 
 ### A* agent
 
