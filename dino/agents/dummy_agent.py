@@ -6,6 +6,9 @@ from game.agent import Agent
 class Dummy_Agent(Agent):
     """Reflex agent static class for Dino game."""
 
+    # Storing debug text shown on screen, if any is present
+    debug_txt = []
+    
     def __init__(self) -> None:
         # AGENT WON'T BE INITIALIZED, SO THIS IS FINE
         raise RuntimeError
@@ -17,8 +20,14 @@ class Dummy_Agent(Agent):
             from game.debug_game import DebugGame
 
             game: DebugGame = game
-            t = game.add_text(Coords(10, 10), "red", "Text")
-            t.text = "Hello World"
+
+            # Debug text - first we need to flush any debug text present on previous tick
+            for txt in Dummy_Agent.debug_txt:
+                game.remove_text(txt)
+                Dummy_Agent.debug_txt.remove(txt)
+            # Debug text - now we can add new text dynamically - by default, game speed is shown, refreshed on each tick
+            Dummy_Agent.debug_txt.append(game.add_text(Coords(10, 10), "red", str(round(game.speed, 2))))
+                
             game.add_dino_rect(Coords(-10, -10), 150, 150, "yellow")
             l = game.add_dino_line(
                 Coords(0, 0), Coords(600 // game.speed, 0), "black"
