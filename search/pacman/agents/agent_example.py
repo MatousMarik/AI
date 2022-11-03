@@ -85,7 +85,7 @@ class Agent_Example(PacManControllerBase):
         #             [game.get_ghost_loc(g)],
         #         )
 
-        # # add the paths the ghost would need to followe to reach pac-man
+        # # add the paths the ghost would need to follow to reach pac-man
         # for g, c in zip(
         #     range(game.NUM_GHOSTS), ["red", "blue", "magenta", "orange"]
         # ):
