@@ -32,7 +32,7 @@ You should implement a non-trivial admissible, consistent heuristic to guide the
 
 First, create an instance of `HeuristicProblem` interface and then use A* search to find solution.
 
-You can implement your agent into prepared script [agents/myagent.py](agents/myagent.py) or you can implement it in script named "agent_class_name_lowercase.py" in [agents](agents/) directory as a class implementing extending `PacManControllerBase`. Note that your implementation should not modify existing functionality. Since your agent function implementation will be called only once a game, this method is static. You can find an example in [agents/simple_agent.py](agents/simple_agent.py).
+You can implement your agent into prepared script [agents/myagent.py](agents/myagent.py) or you can implement it in script named "agent_class_name_lowercase.py" in [agents](agents/) directory as a class implementing extending `ArtificialAgent`. Note that your implementation should not modify existing functionality. Since your agent function implementation will be called only once a game, this method is static. You can find an example in [agents/simple_agent.py](agents/simple_agent.py).
 
 Your agent should be able to solve the puzzles in [game/levels/Aymeric_Medium.sok](game/levels/Aymeric_Medium.sok) in about 10 seconds per puzzle (this can differ a lot because of Python). To test your solver you can run
 
