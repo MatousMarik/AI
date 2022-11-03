@@ -20,11 +20,18 @@ class MyAgent(ArtificialAgent):
 
     See ArtificialAgent for details.
     """
+    def __init__(self, optimal, verbose) -> None:
+        super().__init__(optimal, verbose)  # recommended
+
+    def new_game(self) -> None:
+        """Agent got into a new level."""
+        super().new_game()  # recommended
 
     @staticmethod
     def think(
         board: Board, optimal: bool, verbose: bool
     ) -> List[Union[EDirection, Action]]:
+        
         """
         Code your custom agent here.
         You should use your A* implementation.
@@ -32,8 +39,13 @@ class MyAgent(ArtificialAgent):
         You can find example implementation (without use of A*)
         in simple_agent.py.
         """
-        # Your implementation goes here.
-        raise NotImplementedError
+        
+        prob = SokobanProblem(board)
+        solution = AStar(prob)
+        if not solution:
+            return None
+
+        return [a.dir for a in solution.actions]
 
 
 class SokobanProblem(HeuristicProblem):
