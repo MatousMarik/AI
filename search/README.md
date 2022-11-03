@@ -39,7 +39,7 @@ In this part of the assignment, you write an agent that plays Pac-Man.
 
 Continue to [Pac-Man info](pacman/README.md).
 
-## ReCodEx testing
+### ReCodEx testing
 You are expected to submit two files -- ucs.py with your implementation of the Uniform-cost search algorithm and a file containing your agent class playing Pacman. There are two tests, one for each of the submitted files.
 
 For the UCS test, your implementation needs to correctly solve problems performed by `ucs_test.py` in a given time and memory limit.
@@ -74,3 +74,12 @@ Note that it would be wise to ensure that your A* implementation returns optimal
 In this part of the assignment, you write an agent that plays Sokoban.
 
 Continue to [Sokoban info](sokoban/README.md).
+
+### ReCodEx testing
+You are expected to submit three files -- astar.py with your implementation of the A* search algorithm, a file containing your agent class playing Sokoban, and dead_square_detector.py implementing your method searching for dead squares in the Sokoban map. There are three tests, one for each of the submitted files.
+
+For the A* test, your implementation needs to correctly solve problems performed by `astar_test.py` in a given time and memory limit. This test is worth 10 points.
+
+For the Sokoban test, the system will test your agent on levels in `Aymeric_Medium.sok`. You are expected to return an optimal solution to each level in the level file. Your agent is not collecting score, however, you need to pass time and memory limits. This test is worth 5 points.
+
+For the dead square test, ReCodEx runs the same test as in `dead_square_test.py`. You are expected to correctly find all of the dead squares. This test is worth 5 points.
