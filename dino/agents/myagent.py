@@ -15,8 +15,11 @@ class MyAgent(Agent):
         # # for visual debugging intellisense you can use
         # from game.debug_game import DebugGame
         # game: DebugGame = game
-        # t = game.add_text(Coords(10, 10), "red", "Text")
-        # t.text = "Hello World"
+        # if not hasattr(MyAgent, "debug_txt"):
+        #     _ = game.add_text(Coords(10, 10), "red", "Hello World.")
+        #     MyAgent.debug_txt = game.add_text(Coords(10, 30), "red", "0")
+        # else:
+        #     MyAgent.debug_txt.text = str(game.score)
         # game.add_dino_rect(Coords(-10, -10), 150, 150, "yellow")
         # l = game.add_dino_line(Coords(0, 0), Coords(100, 0), "black")
         # l.dxdy.update(50, 30)
@@ -24,4 +27,5 @@ class MyAgent(Agent):
         # game.add_moving_line(Coords(1000, 100), Coords(1000, 500), "purple")
 
         # YOUR CODE GOES HERE
+
         return DinoMove.NO_MOVE

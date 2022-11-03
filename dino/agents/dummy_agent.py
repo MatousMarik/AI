@@ -6,19 +6,26 @@ from game.agent import Agent
 class Dummy_Agent(Agent):
     """Reflex agent static class for Dino game."""
 
+    # use class variables only for debugging
+    debug_txt = None
+
     def __init__(self) -> None:
         # AGENT WON'T BE INITIALIZED, SO THIS IS FINE
         raise RuntimeError
 
     @staticmethod
     def get_move(game: Game) -> DinoMove:
-        # for visual debugging intellisense you can use
         if Dummy_Agent.debug:
             from game.debug_game import DebugGame
 
             game: DebugGame = game
-            t = game.add_text(Coords(10, 10), "red", "Text")
-            t.text = "Hello World"
+            if Dummy_Agent.debug_txt is None:
+                _ = game.add_text(Coords(10, 10), "red", "Hello World.")
+                Dummy_Agent.debug_txt = game.add_text(
+                    Coords(10, 30), "red", "0"
+                )
+            else:
+                Dummy_Agent.debug_txt.text = str(game.score)
             game.add_dino_rect(Coords(-10, -10), 150, 150, "yellow")
             l = game.add_dino_line(
                 Coords(0, 0), Coords(600 // game.speed, 0), "black"
