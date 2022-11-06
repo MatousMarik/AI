@@ -10,7 +10,7 @@ Implement CSP solver.
 
 ### Boolean constraint satisfaction problem
 
-You wil be solving constraint satisfaction problem of the following nature:
+You will be solving a constraint satisfaction problem of the following nature:
 - There is a set of variables $X = {X_0, ..., X_{n-1}}$.
 - All variables are boolean — their domains are $\lbrace True, False \rbrace$
 - There is a set of constraints, where each constraint $C_i$ consists of:
@@ -25,23 +25,23 @@ For example, here is one such problem:
   - $\lbrace X_2, X_3 \rbrace$: 1
   - $\lbrace X_0, X_2, X_3 \rbrace$: 2
 
-It is not difficult to see, this problem has an unique solution:
+It is not difficult to see that this problem has an unique solution:
 - $X_0 = True, X_1 = False, X_2 = True, X_3 = False$
 
-In this part of the assignment you will write a solver for this kind of CSP.
+In this part of the assignment, you will write a solver for this kind of CSP.
 
-Problem is implemented as class `BooleanCSP` and constraint as `Constraint`, both in [csp_templates.py](csp_templates.py).
+The problems are implemented through the `BooleanCSP` class and the constraint through `Constraint`, both in [csp_templates.py](csp_templates.py).
 
 The CSP is defined by:
-- *num_vars* — number of variables in the problem, numbered 0 to (*num_vars* - 1)
+- *num_vars* — the number of variables in the problem, numbered 0 to (*num_vars* - 1)
 - *value[v]* — is initially `None` for all variables *v*, meaning their value is unknown. Solver will assign `True` or `False` values to variables by storing them in this list.
-- *constraints* — current set of constraints. Constraints may be added over time (which will be useful in solving Minesweeper).
+- *constraints* — the current set of constraints. Constraints may be added over time (which will be useful in solving Minesweeper).
 
 You solver can also use:
-- *var_constraint* — maps variable number to a set of constraints that affect it.
-- *unchecked* — queue that contains all constraints that have not yet been **forward checked**, 	i.e. constraints from which you may be able to immediately infer variable values.
+- *var_constraint* — maps variable identifying numbers to a set of constraints that affect the respective variables.
+- *unchecked* — a queue that contains all constraints that have not yet been **forward checked**, 	i.e. constraints from which you may be able to immediately infer variable values.
 
-`BooleanCSP` also contains this methods:
+`BooleanCSP` also contains these methods:
 - *add_constraint* — add a new constraint to the problem (and to *unchecked*).
 - *set* — set a variable's value and add its constraints to *unchecked*
 
@@ -53,9 +53,9 @@ This method should infer as many variable values as possible by performing **con
 
 Specifically, this method should check the queue of constraints in csp.unchecked to see if it can infer any variable values from any single constraint. As new variable values are discovered, those variables' constraints will join the queue to be checked in turn. The constraint propagation process will complete when the queue is empty. This method should return a list of variables whose values were inferred. If it realizes that some constraint can not be satisfied, that means that a contradiction has been reached and the entire system is unsolvable. In this case, `forward_check` should **reset any variables that it has set** and return `None`.
 
-As an example of how constraint propagation might work, suppose that the queue initially contains three constraints: 1 of {0 1 2}, 1 of {2 3}, and 0 of {3}. And suppose that at the beginning no values are known, i.e. every variable's domain is {true, false}. You will first remove '1 of {0 1 2}' from the queue and examine it. You can't infer any values from this constraint alone, so you will ignore it and move on. You'll next look at '1 of {2 3}'. Again, you can't infer anything from this constraint in isolation, so it simply falls out of the queue.
+As an example of how constraint propagation might work, suppose that the queue initially contains three constraints: 1 of {0 1 2}, 1 of {2 3}, and 0 of {3}. And suppose that at the beginning, no values are known, i.e. every variable's domain is {true, false}. You will first remove '1 of {0 1 2}' from the queue and examine it. You can't infer any values from this constraint alone, so you will ignore it and move on. You'll next look at '1 of {2 3}'. Again, you can't infer anything from this constraint in isolation, so it simply falls out of the queue.
 
-Now the queue contains only '0 of {3}'. From looking at this constraint, you immediately know that 3 = false. You now re‑add '1 of {2 3}' to the queue, since it is a constraint that involves variable 3. Now the queue contains only '1 of {2 3}'. From looking at this constraint, you now know that 2 = true since exactly 1 of {2 3} is true but 3 is false. So you will now re‑add '1 of {0 1 2}' to the queue, since it is a constraint that involves variable 2 which you just inferred.
+Now the queue contains only '0 of {3}'. From looking at this constraint, you immediately know that 3 = false. You now re‑add '1 of {2 3}' to the queue, since it is a constraint that involves variable 3. Now the queue contains only '1 of {2 3}'. From looking at this constraint, you now know that 2 = true since exactly 1 of {2 3} is true, but 3 is false. So you will now re‑add '1 of {0 1 2}' to the queue, since it is a constraint that involves variable 2, which you just inferred.
 
 Now you'll examine '1 of {0 1 2}'. Since 2 is known to be true, this constraint now tells you that 0 = false and 1 = false. Now the queue is empty. You were able to infer the values of all variables through constraint propagation alone - you didn't need to perform any backtracking.
 
@@ -63,7 +63,7 @@ Now you'll examine '1 of {0 1 2}'. Since 2 is known to be true, this constraint 
 
 Should attempt to find **any** solution to the CSP by performing a **backtracking search** as described in section 6.3 "Backtracking Search for CSPs". If it finds a solution, it should set values for all variables in the solution and return a list of those variables. If it determines that the system is unsolvable, it should **reset any variables that it has set** and return `None`.
 
-For selecting the next variable to try in the backtracking search (i.e. the Select-Unasssigned-Variable() step in the pseudocode in the text), I recommend using the **degree heuristic** described in section 6.3.1 "Variable and value ordering".
+For selecting the next variable to try in the backtracking search (i.e. the Select-Unassigned-Variable() step in the pseudocode in the text), I recommend using the **degree heuristic** described in section 6.3.1 "Variable and value ordering".
 
 During the backtracking search, for efficiency you should perform forward checking as described in section 6.3.2 "Interleaving search and inference" in the text. (This is the Inference() step in the backtracking pseudocode). Specifically, you will want to use the technique that the textbook calls **maintaining arc consistency**, i.e. performing full constraint propagation after you select a variable value to try. You can do this by calling the `forward_check` method that you wrote before.
 
@@ -115,7 +115,7 @@ That should print:
     var = 2, value = True
     var = 3, value = False
 
-Alternatively we could have called `solve`, which would find the same solution. However, note an important difference between these approaches. `solve` searches for any solution to a CSP and returns it. By contrast, `forward_check` and `infer_var` infer variable values that must be true in every solution of a CSP. And so our calls to `forward_check` and `infer_var` have proven that the above solution is unique.
+Alternatively, we could have called `solve`, which would find the same solution. However, note an important difference between these approaches. `solve` searches for any solution to a CSP and returns it. By contrast, `forward_check` and `infer_var` infer variable values that must be true in every solution of a CSP. And so our calls to `forward_check` and `infer_var` have proven that the above solution is unique.
 
 #### Hint
 - Whenever you set a variable's value, call csp.set() so that the variable's constraints will be added to the unchecked queue.
@@ -128,9 +128,9 @@ Alternatively we could have called `solve`, which would find the same solution. 
 
 Write an agent that plays Minesweeper. As always in this tutorial you may use any technique you like, but probably it will be easiest to use the CSP solver you just wrote. 
 
-Before you start implementing you should check [documentation](minesweeper/game/doc.md).
+Before you start implementing, you should check [documentation](minesweeper/game/doc.md).
 
-You have to implement your agent as a subclass of `ArtificialAgent` — implement its core logic in `think_impl`. Note that you should not change any existing functionality. You can use prepared script [minesweeper/agents/agent.py](minesweeper/agents/agent.py).
+You have to implement your agent as a subclass of `ArtificialAgent` — implement its core logic in `think_impl`. Note that you should not change any existing functionality. You can use the prepared script [minesweeper/agents/agent.py](minesweeper/agents/agent.py).
 
 To evaluate your agent run [minsweeper/play_mine.py](minesweeper/play_mine.py) with selected options. Your agent should be able to solve randomly generated boards of size 50x50 with 500 mines in less than 3 seconds (can differ greatly since its Python) and asking for about 5 hints on average. You can test that by running:
 
@@ -178,4 +178,4 @@ For board 50x50 you will typically need 1-10 hints but occasionally even 20.
         seed 4: solved in 0.002 s, hints = 1
 
 ### Game controls
-During visualization you can show next move by *mouse-click*. When playing you use *left-click* to uncover tile, *right-click* to flag/unflag tile and *H* for hint.
+During visualization you can show the next move by *mouse-click*. When playing, you use *left-click* to uncover a tile, *right-click* to flag/unflag a tile and *H* for hint.
