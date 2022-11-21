@@ -185,7 +185,7 @@ def sim(
     agent1: Agent,
     agent2: Agent,
     args: Namespace,
-):
+) -> Tuple[int, int, int]:
     game = Game(args.seed, args.max_turns)
     if args.agent1 == args.agent2:
         agent_names = (None, args.agent1 + "1", args.agent2 + "2")
@@ -236,7 +236,7 @@ def sim(
                 break
             game.grow_cells()
 
-        for i in range(1, 3):
+        for i in (1, 2):
             total_rounds[i] += game.get_player_round(ais[i])
             times[i] *= 1000
             total_times[i] += times[i]
@@ -313,6 +313,7 @@ def sim(
             total_wins[0], total_wins[0] / args.sim * 100
         )
     )
+    return tuple(total_wins)
 
 
 def sim_with_gui(agent1: Agent, agent2: Agent, gui, args: Namespace) -> None:
@@ -369,7 +370,7 @@ def sim_with_gui(agent1: Agent, agent2: Agent, gui, args: Namespace) -> None:
             ais[:] = ais[::-1]
 
 
-def main(args_list: list = []) -> None:
+def main(args_list: list = []) -> Union[Tuple[int, int, int], None]:
     agent1, agent2, gui_agent, visualize, args = process_args(args_list)
 
     if visualize:
@@ -381,7 +382,7 @@ def main(args_list: list = []) -> None:
             gui = CellsGUI(args.scale)
         sim_with_gui(agent1, agent2, gui, args)
     else:
-        sim(agent1, agent2, args)
+        return sim(agent1, agent2, args)
 
 
 if __name__ == "__main__":

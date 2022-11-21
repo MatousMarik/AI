@@ -3,7 +3,7 @@ from argparse import ArgumentParser, ArgumentError
 import re
 from time import perf_counter as time_counter
 from minimax_templates import Strategy, RandomStrategy, AbstractGame, GameUI
-from typing import Optional, List
+from typing import Optional, List, Union
 from importlib.util import spec_from_file_location, module_from_spec
 from os.path import join as path_join
 from os.path import dirname
@@ -220,7 +220,7 @@ def sim(
     count: int,
     start_seed: int,
     verbose: bool,
-):
+) -> List[int]:
     wins = [0] * 3
     time = [0] * 3
     total_moves = [0] * 3
@@ -230,9 +230,9 @@ def sim(
 
     for i in range(count):
         # shows progress
-        if not verbose and (i * 10 / count) % 1 == 0:
-            c = i * 10 // count
-            print("|" + "\u25A0" * c + " " * (10 - c) + "|")
+        # if not verbose and (i * 10 / count) % 1 == 0:
+        #     c = i * 10 // count
+        #     print("|" + "\u25A0" * c + " " * (10 - c) + "|")
 
         seed = start_seed + i
         strat1.set_seed(seed)
@@ -281,10 +281,10 @@ def sim(
     return wins
 
 
-def main(args_: List[str] = []) -> None:
+def main(args_: List[str] = []) -> Union[List[int], None]:
     args, game, ui, strategy1, strategy2 = process_args(args_)
     if args.sim is not None:
-        sim(
+        return sim(
             game,
             strategy1,
             strategy2,
