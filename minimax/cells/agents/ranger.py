@@ -322,14 +322,15 @@ class Ranger(Agent):
             attack = min_attack + CellType.get_mass_over_min_size(
                 available_mass
             )
-            self.move.add_transfer(
-                Transfer(
-                    cell,
-                    ei,
-                    attack,
+            if attack > 0:
+                self.move.add_transfer(
+                    Transfer(
+                        cell,
+                        ei,
+                        attack,
+                    )
                 )
-            )
-            return
+                return
         _, needing = max(
             (
                 (self.needs[ni] - self.incoming[ni], ni)
@@ -339,7 +340,7 @@ class Ranger(Agent):
             key=self.key,
             default=(None, None),
         )
-        if can_plan:
+        if can_plan and available_mass > 0:
             if enemy or not needing:
                 self.add_plan(cell, enemies, available_mass)
             return
