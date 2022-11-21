@@ -9,7 +9,7 @@ from minimax_templates import HeuristicGame, Strategy
 class TicTacToe:
     """Game state for TicTacToe."""
 
-    MAP_VAL_TO_CHAR = {0: ".", 1: "X", 2: "O"}
+    MAP_VAL_TO_CHAR = {0: ".", 1: "O", 2: "X"}
 
     def __init__(self, board: bytearray = None):
         """Note: for given board does not check wether board is valid and does not change turns"""

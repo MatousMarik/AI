@@ -14,7 +14,7 @@ HEIGHT = 300
 FPS = 10
 
 
-def get_center_coord(col, row):
+def get_center_coord(row, col):
     return ((col + 0.5) * WIDTH / 3, (row + 0.5) * HEIGHT / 3)
 
 
