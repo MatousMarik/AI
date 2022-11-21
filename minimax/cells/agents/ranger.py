@@ -17,6 +17,26 @@ class EnemyCell:
 
 
 class Ranger(Agent):
+    def __init__(self) -> None:
+        super().__init__()
+        self.random = Random()
+        self.key = lambda e: (
+            e[0],
+            self.random.randrange(MAX_INT),
+            e[1],
+        )
+        self.enemy_key = lambda e: (
+            e.min_attack - self.e_incoming[e.index][0],
+            self.random.randrange(MAX_INT),
+            e.index,
+        )
+        self.need_key = lambda e: (
+            e[0],
+            self.needs[e[1]] - self.incoming[e[1]],
+            self.random.randrange(MAX_INT),
+            e[1],
+        )
+
     def init_random(self, seed: Union[int, None] = 0) -> None:
         self.random = Random(seed)
         self.key = lambda e: (
