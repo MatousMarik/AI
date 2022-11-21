@@ -424,7 +424,7 @@ class Game:
         self, source: int, target: int, mass: int, errors: List[str]
     ) -> None:
         print(
-            "Transfer {}:{} -> {} declined, turn {}.\nCause: {}".format(
+            "Transfer {}:{} -> {} declined, turn {}.\n  Cause: {}".format(
                 source, mass, target, self.counter, ", ".join(errors)
             ),
             file=stderr,
