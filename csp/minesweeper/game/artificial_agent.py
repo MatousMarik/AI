@@ -31,7 +31,11 @@ class ArtificialAgent:
 
         self._board: Board = None
         self._previous_board: Board = None
-        self._think_time = 0  # seconds
+        self._think_time: float = 0  # seconds
+
+    @property
+    def think_time(self) -> float:
+        return self._think_time
 
     def new_game(self) -> None:
         """Agent got into a new level."""
