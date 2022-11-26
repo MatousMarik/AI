@@ -143,7 +143,10 @@ def sim(
     sims: int,
     verbose: bool,
     gui,
-) -> None:
+) -> Tuple[float, int, int]:
+    """
+    Returns total_time, total_hints and total_wins.
+    """
     total_time = 0
     total_hints = 0
     total_wins = 0
@@ -174,14 +177,14 @@ def sim(
                 elif verbose:
                     print(
                         "seed {0}: solved in {1:.3f} s, hints = {2}".format(
-                            seed, agent._think_time, hints
+                            seed, agent.think_time, hints
                         )
                     )
                 total_hints += hints
                 total_wins += 1
 
                 if agent:
-                    total_time += agent._think_time
+                    total_time += agent.think_time
 
                 running = False
                 continue
@@ -192,13 +195,13 @@ def sim(
                 elif verbose:
                     print(
                         "seed {0}: failed in {1:.3f} s, hints = {2}".format(
-                            seed, agent._think_time, hints
+                            seed, agent.think_time, hints
                         )
                     )
                 total_hints += hints
 
                 if agent:
-                    total_time += agent._think_time
+                    total_time += agent.think_time
 
                 running = False
                 continue
@@ -255,7 +258,7 @@ def sim(
             )
 
 
-def main(args: List[str] = []) -> None:
+def main(args: List[str] = []) -> Tuple[float, int, int]:
     agent, width, height, mines, seed, sims, verbose = process_args(args)
 
     # set ui if needed
@@ -276,7 +279,7 @@ def main(args: List[str] = []) -> None:
         if width > 45 or height > 22:
             raise RuntimeError("Board is too big for UI (maximum is 45 x 22).")
 
-    sim(agent, width, height, mines, seed, sims, verbose, gui)
+    return sim(agent, width, height, mines, seed, sims, verbose, gui)
 
 
 if __name__ == "__main__":
