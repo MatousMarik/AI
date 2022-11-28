@@ -140,3 +140,16 @@ To create transfer you need to select two cells by *left-click*. After selecting
 Once you select two cells you need to specify transferred mass by typing the number. By pressing *Enter* you confirm the transfer, *Escape* cancels it and *Backspace* erase last digit of the specified mass.
 
 Once you create transfer you can modify it by *left-click* or delete it by *right-click*. After you create all desired transfers you can end your turn by pressing *Enter*.
+
+### ReCodEx testing
+You are expected to submit two files. First, minimax.py with your implementation of Minimax algorithm or mcts.py with your implementation of Monte-Carlo tree search algorithm. Second, a file containing your agent class playing Cells game.
+
+The first set of tests examines your minimax/mcts implementation by playing games trivial, tictactoe, and connect_four. In each test, your algorithm will be playing a number of games as the first player and as the second player. You are expected to beat the opponent a sufficient number of times and to pass a time limit set in recodex. The exact limits are in the following table.
+
+| game         | simulations | minimax setting | mcts setting       | opponet   | 1st min. wins | 1st max. loses | 2nd min. wins | 2nd max. loses |
+|--------------|-------------|-----------------|--------------------|-----------|---------------|----------------|---------------|----------------|
+| trivial      | 100         | minimax:0       | mcts:200/random    | random    | 60            | 0              | 60            | 0              |
+| tictactoe    | 100         | minimax:0       | mcts:200/basic     | basic     | 75            | 2              | 15            | 5              |
+| connect_four | 50          | minimax:4       | mcts:200/heuristic | heuristic | 40            | 8              | 40            | 8              |
+
+The second test plays 50 rounds of Cells game against one of the provided agents. There is a limit on the number of turns the game may last, if the limit is exceeded, the game ends in a draw. Based on the performance of your agent, you earn a score = wins - loses/2. The score determines the number of points you earn in recodex. The minimal score to earn 1 point is 9, for a score of 15 and more, you receive the full points. The parameters of the game are "-c 10 20 --swap --seed=HIDDEN -m=100 -s=50".
