@@ -164,7 +164,7 @@ class TicTacToeGUI(GameUI):
                             break
 
                         # get player move
-                        x, y = event.pos
+                        y, x = event.pos
                         col = x // (WIDTH / 3)
                         if col > 2:
                             col = None
