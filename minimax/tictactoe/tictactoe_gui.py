@@ -14,7 +14,7 @@ HEIGHT = 300
 FPS = 10
 
 
-def get_center_coord(row, col):
+def get_center_coord(col, row):
     return ((col + 0.5) * WIDTH / 3, (row + 0.5) * HEIGHT / 3)
 
 
@@ -164,7 +164,7 @@ class TicTacToeGUI(GameUI):
                             break
 
                         # get player move
-                        y, x = event.pos
+                        x, y = event.pos
                         col = x // (WIDTH / 3)
                         if col > 2:
                             col = None
