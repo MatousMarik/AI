@@ -11,8 +11,6 @@ Your algorithms will implement interface `Strategy` that can search any game imp
 
  A Strategy represents a strategy for playing a game. It is essentially a function which, given a state, decides what action the current player should take.
 
-You must implement your algorithm so that it will work even if moves do not strictly alternate. For example, in some games player 1 might move twice, then player 2 might move twice, and so on.
-
 ### Minimax
 For minimax you will need extended game interface `HeuristicGame` that brings method `evaluate`. 
 
@@ -152,4 +150,4 @@ The first set of tests examines your minimax/mcts implementation by playing game
 | tictactoe    | 100         | minimax:0       | mcts:200/basic     | basic     | 75            | 2              | 15            | 5              |
 | connect_four | 50          | minimax:4       | mcts:200/heuristic | heuristic | 40            | 8              | 40            | 8              |
 
-The second test plays 50 rounds of Cells game against one of the provided agents. There is a limit on the number of turns the game may last, if the limit is exceeded, the game ends in a draw. Based on the performance of your agent, you earn a score = wins - loses/2. The score determines the number of points you earn in recodex. The minimal score to earn 1 point is 9, for a score of 15 and more, you receive the full points. The parameters of the game are "-c 10 20 --swap --seed=HIDDEN -m=100 -s=50".
+The second test plays 50 rounds of Cells game against one of the provided agents. The timelimit is 10 minutes. There is a limit on the number of turns the game may last, if the limit is exceeded, the game ends in a draw. Based on the performance of your agent, you earn a score = wins - loses/2. The score determines the number of points you earn in recodex. The minimal score to earn 1 point is 9, for a score of 15 and more, you receive the full points. The parameters of the game are "-c 10 20 --swap --seed=HIDDEN -m=100 -s=50".
