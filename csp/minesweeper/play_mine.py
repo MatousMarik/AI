@@ -256,6 +256,7 @@ def sim(
                     total_wins / sims * 100,
                 )
             )
+    return (sims, total_time / sims, total_hints / sims)
 
 
 def main(args: List[str] = []) -> Tuple[float, int, int]:
