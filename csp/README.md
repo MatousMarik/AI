@@ -179,3 +179,11 @@ For board 50x50 you will typically need 1-10 hints but occasionally even 20.
 
 ### Game controls
 During visualization you can show the next move by *mouse-click*. When playing, you use *left-click* to uncover a tile, *right-click* to flag/unflag a tile and *H* for hint.
+
+### ReCodEx testing
+You are expected to submit two files. Your implementation of the CSP solver in solver.py and an agent playing the minesweeper game.
+
+The first set of tests examines your CSP implementation, namely all three functions you are tasked to implement. The tests are the same as the tests available in solver_test.py. 
+
+The second test plays 25 rounds of the minesweeper game on hard difficulty ("--hard"). Your implementation needs to be able to play fast enough to pass the recodex time limits and also good enough that it does not ask for too many hints. If the average number of hints from the 25 games is less or equal to 5, you receive full points. If the average number of hints from the 25 games is more than 8, you receive no points. In other cases, the number of points is scaled.
+
