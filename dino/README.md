@@ -40,4 +40,4 @@ You can find example of this usage in [agents/dummy_agent.py](agents/dummy_agent
 Take in account that speed of all obstacles is slowly increasing and that some birds are not static along x-axis.
 
 ## ReCodEx testing
-You are expected to submit a single file containing your agent class. The system will perform a simple test running 50 simulations with random seed. You will be assigned up to 10 points based on the average score achieved by your agent. To earn full 10 points, your agent needs to achieve a score of at least 3500. (Formerly was 5000, students who achieved 5000 or will achieve by the end of the deadline will receive bonus point)
+You are expected to submit a single file containing your agent class. The system will perform a simple test running 50 simulations with random seed. You will be assigned up to 10 points based on the average score achieved by your agent. To earn the full 10 points, your agent needs to achieve a score of at least 3000. The minimum score for which you can earn any points is 600. If you submit an agent that achieves a score of 5000 or more by the main deadline, you will earn bonus points.
