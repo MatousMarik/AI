@@ -59,6 +59,20 @@ def get_parser() -> ArgumentParser:
         type=int,
         help="Level of verbosity: 0 for nothing, 1 for level info, 2 for agent info.",
     )
+    parser.add_argument(
+        "-f",
+        "--fps",
+        default=30,
+        type=int,
+        help="FPS for the game.",
+    )
+    parser.add_argument(
+        "-de",
+        "--delay",
+        default=500,
+        type=int,
+        help="Time interval before restarting the game when the dino crashes.",
+    )
     return parser
 
 
@@ -180,9 +194,9 @@ def main(args_list: list = []) -> float:
         if args.debug:
             game = DebugGame(args.seed)
             add_initial_debug_visualization(game)
-            gui = Dino_GUI(agent, game, args.vis_rect, debug=True)
+            gui = Dino_GUI(agent, game, args.vis_rect, args.fps, args.delay, debug=True)
         else:
-            gui = Dino_GUI(agent, Game(args.seed), args.vis_rect)
+            gui = Dino_GUI(agent, Game(args.seed), args.vis_rect, args.fps, args.delay)
         gui.play()
         return -1
     else:
