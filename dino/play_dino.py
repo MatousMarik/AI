@@ -67,7 +67,7 @@ def get_parser() -> ArgumentParser:
         help="FPS for the game.",
     )
     parser.add_argument(
-        "-de",
+        "-dl",
         "--delay",
         default=500,
         type=int,
