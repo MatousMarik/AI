@@ -89,7 +89,6 @@ def keys_to_move(keys):
 
 
 class Dino_GUI:
-    FPS = 30
     SWAPS_PS = 3
     SIZE = (WIDTH, HEIGHT)
 
@@ -111,6 +110,8 @@ class Dino_GUI:
         agent: Union[Agent, None],
         game: Game,
         vis_rect: bool = False,
+        fps: int = 30,
+        delay: int = 500,
         *,
         debug=False
     ) -> None:
@@ -118,6 +119,8 @@ class Dino_GUI:
         self.agent: Optional[Agent] = agent
         self.vis_rect: bool = vis_rect
         self.debug: bool = debug
+        self.FPS: int = fps
+        self.delay_end: int = delay
 
         self.images: Images = load_images()
         pg.font.init()
@@ -167,7 +170,7 @@ class Dino_GUI:
                         return
                     self._new_game()
                     pg.time.delay(200)
-            clock.tick(Dino_GUI.FPS)
+            clock.tick(self.FPS)
 
     def _game_loop(self, clock: pg.time.Clock) -> bool:
         """Return quit."""
@@ -179,7 +182,7 @@ class Dino_GUI:
         track_width: int = ims.track.get_width()
         track_x, track_y = Dino_GUI.TRACK_XY
 
-        swap = Dino_GUI.FPS // Dino_GUI.SWAPS_PS
+        swap = self.FPS // Dino_GUI.SWAPS_PS
 
         t = 0
         ii = 0
@@ -203,7 +206,7 @@ class Dino_GUI:
                 else keys_to_move(pg.key.get_pressed())
             )
             game.tick(move)
-            clock.tick(Dino_GUI.FPS)
+            clock.tick(self.FPS)
 
             # DRAW GAME
             scr.fill(WHITE)
@@ -275,7 +278,7 @@ class Dino_GUI:
             pg.display.update()
             t += 1
 
-        pg.time.delay(500)
+        pg.time.delay(self.delay_end)
         return False
 
     def draw_debug_info(self, s: pg.Surface, game: DebugGame) -> None:
