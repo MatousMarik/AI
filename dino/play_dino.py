@@ -60,17 +60,17 @@ def get_parser() -> ArgumentParser:
         help="Level of verbosity: 0 for nothing, 1 for level info, 2 for agent info.",
     )
     parser.add_argument(
-        "-f",
-        "--fps",
-        default=30,
-        type=int,
-        help="FPS for the game.",
-    )
-    parser.add_argument(
         "--delay",
         default=500,
         type=int,
         help="Time interval before restarting the game when the dino crashes.",
+    )
+    parser.add_argument(
+        "-f",
+        "--fps",
+        default=30,
+        type=int,
+        help="Frames per second for game visualization",
     )
     return parser
 
