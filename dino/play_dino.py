@@ -50,7 +50,7 @@ def get_parser() -> ArgumentParser:
         "--debug",
         default=False,
         action="store_true",
-        help="Debuging visualization (only for visualization).",
+        help="Debugging visualization. (only for visualization)",
     )
     parser.add_argument(
         "-v",
@@ -70,7 +70,7 @@ def get_parser() -> ArgumentParser:
         "--fps",
         default=30,
         type=int,
-        help="Frames per second for game visualization",
+        help="Frames per second. (only for visualization)",
     )
     return parser
 
@@ -78,7 +78,7 @@ def get_parser() -> ArgumentParser:
 def process_args(
     args: List[str] = [],
 ) -> Tuple[Agent, Namespace, bool]:
-    """Parse arguments, check validity and return usefull values."""
+    """Parse arguments, check validity and return useful values."""
     parser = get_parser()
     args = parser.parse_args(args + sys.argv[1:])
 
@@ -193,9 +193,11 @@ def main(args_list: list = []) -> float:
         if args.debug:
             game = DebugGame(args.seed)
             add_initial_debug_visualization(game)
-            gui = Dino_GUI(agent, game, args.vis_rect, args.fps, args.delay, debug=True)
+            gui = Dino_GUI(agent, game, args.vis_rect,
+                           args.fps, args.delay, debug=True)
         else:
-            gui = Dino_GUI(agent, Game(args.seed), args.vis_rect, args.fps, args.delay)
+            gui = Dino_GUI(agent, Game(args.seed),
+                           args.vis_rect, args.fps, args.delay)
         gui.play()
         return -1
     else:
