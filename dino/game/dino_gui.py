@@ -89,6 +89,7 @@ def keys_to_move(keys):
 
 
 class Dino_GUI:
+    FPS_ORIGINAL = 30
     SWAPS_PS = 3
     SIZE = (WIDTH, HEIGHT)
 
