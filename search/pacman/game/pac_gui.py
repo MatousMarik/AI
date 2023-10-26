@@ -114,9 +114,9 @@ class PacView:
 
         self.pac_man_dir: int = 0
         pg.font.init()
-        self.font = pg.font.Font(path_join(RES, "verdana.ttf"), 11, bold=True)
+        self.font = pg.font.Font(path_join(RES, "verdana.ttf"), 11)#, bold=True)
         self.small_font = pg.font.Font(
-            path_join(RES, "verdana.ttf"), 8, bold=True
+            path_join(RES, "verdana.ttf"), 8#, bold=True
         )
 
         self.surf: pg.Surface = None
