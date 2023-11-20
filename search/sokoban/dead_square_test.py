@@ -12,7 +12,7 @@ LEVEL_SET = "Aymeric_du_Peloux_1_Minicosmos"
 LIMIT = 10
 
 DIR = path_join(dirname(__file__), "game", "levels")
-SOLUTION = None  # "dead_squares_expected.txt"
+SOLUTION = "dead_squares_expected.txt" # None
 
 TMP_FILE = "tmp_dead.txt"
 
