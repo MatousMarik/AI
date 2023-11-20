@@ -450,7 +450,7 @@ class Board:
         :return: Board, minimal_moves (if specified in file), last line of level
 
         """
-        with open(file_name, "r") as file:
+        with open(file_name, "r", encoding='cp1252') as file:
             line_number = skip
             if skip:
                 for _ in range(skip):
