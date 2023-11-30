@@ -21,25 +21,25 @@ class CellsGame(HeuristicGame):
     def initial_state(self, seed: Optional[int] = 0) -> object:
         raise NotImplementedError
 
-    def clone(self, state) -> object:
+    def clone(self, state: Game) -> object:
         raise NotImplementedError
 
-    def player(self, state) -> int:
+    def player(self, state: Game) -> int:
         raise NotImplementedError
 
-    def actions(self, state) -> list:
+    def actions(self, state: Game) -> list:
         raise NotImplementedError
 
-    def apply(self, state, action) -> None:
+    def apply(self, state: Game, action) -> None:
         raise NotImplementedError
 
-    def is_done(self, state) -> bool:
+    def is_done(self, state: Game) -> bool:
         raise NotImplementedError
 
-    def outcome(self, state) -> float:
+    def outcome(self, state: Game) -> float:
         raise NotImplementedError
 
-    def evaluate(self, state) -> float:
+    def evaluate(self, state: Game) -> float:
         raise NotImplementedError
 
 
