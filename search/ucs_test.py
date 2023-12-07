@@ -22,10 +22,11 @@ def run_test(
         if isinstance(prob, Unsolvable):
             if verbose:
                 print('"solved" in {:.3f} ms'.format(elapsed))
+            return True, elapsed, True
         else:
             if verbose:
                 print("found no solution in {:.3f} ms".format(elapsed))
-        return True, elapsed, True
+            return False, elapsed, False
 
     valid = None
     if verbose and (valid := solution.report(prob)):
