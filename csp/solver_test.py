@@ -262,13 +262,12 @@ def test_infer(problems, solver: Solver) -> bool:
             b = None
             for c in csp.var_constraints[var]:
                 if c.count == 0:
-                    b = False
                     break
 
             if b is None:
                 if var in expected:
                     b = expected[var]
-                    break
+
             if b is None and val is not None:
                 error = f"should not have inferred value for var {var}"
                 break
