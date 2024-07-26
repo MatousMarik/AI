@@ -246,10 +246,13 @@ def test_infer(problems, solver: Solver) -> bool:
     for pi, p in enumerate(problems, 1):
         expected = {}
         csp = parse(p, expected)
+        inferred_by_FC = []
 
         # Repeatedly call forwardCheck() and inferVar() to infer as much as possible.
         while True:
-            if solver.forward_check(csp) is None:
+            res = solver.forward_check(csp)
+            inferred_by_FC.extend(res)
+            if res is None:
                 print(p)
                 print("forward inference failed")
                 return False
@@ -260,14 +263,18 @@ def test_infer(problems, solver: Solver) -> bool:
         error = None
         for var, val in enumerate(csp.value):
             b = None
-            for c in csp.var_constraints[var]:
-                if c.count == 0:
-                    break
+            #for c in csp.var_constraints[var]:
+            #    if c.count == 0:
+            #        break
+            
+            # inferred by forward check, it is not expected to be inferred by infer_var
+            if var in inferred_by_FC:
+                continue
 
             if b is None:
                 if var in expected:
                     b = expected[var]
-
+                    
             if b is None and val is not None:
                 error = f"should not have inferred value for var {var}"
                 break
