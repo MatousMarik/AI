@@ -107,19 +107,38 @@ def test(
     if expected is not None:
         solution = path_join(dirname(__file__), expected)
         with open(tmp_file, "r") as det, open(solution, "r") as exp:
-            i = 1
             dl, el = det.readline(), exp.readline()
-            while dl == el and dl != "":
+            det_lns = []
+            exp_lns = []
+            store = False
+            result = True
+            while dl != "":
+                if (dl.startswith("=")):    # name of level
+                    print(dl, end="")
+                    det_lns = []
+                    exp_lns = []
+                    store = False
+                if (store):     # storing solution
+                    det_lns.append(dl)
+                    exp_lns.append(el)
+                if (dl.startswith("dead squares:")):    # start storing solution
+                    store = True
+                if (store and dl == "\n"):  # end of solution, check it
+                    store = False
+                    check = True
+                    for i in range(len(det_lns)):
+                        if (det_lns[i] != exp_lns[i]):
+                            check = False
+                            result = False
+                    if (not check):
+                        print("Wrong solution!")
+                        print("Expected:" + "\t" + "Detected:")
+                        for i in range(len(det_lns)):
+                            print(exp_lns[i].rstrip() + "\t",end="")
+                            print(det_lns[i],end="")
+                    else:
+                        print("OK")
                 dl, el = det.readline(), exp.readline()
-                i += 1
-            if dl == el:
-                result = True
-                print("OK")
-            else:
-                result = False
-                print(
-                    f"Mismatch on line {i}:\nExpected:\n{el}\nDetected:\n{dl}"
-                )
         if remove_tmp_file:
             remove(tmp_file)
         else:
