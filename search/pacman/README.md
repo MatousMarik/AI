@@ -4,7 +4,7 @@
 
 In this part of the assignment, you write an agent that plays Pac-Man. Your uniform-cost search from the [previous part](../README.md#1-uniform-cost-search) of the assignment might be helpful.
 
-To play the game you need to run [play_pacman.py](play_pacman.py). If you run it with no commands you can control Pac-Man by yourself with keyboard arrows. Otherwise you can run the script with option `-h` to see all available options. Particularly you should be interested in option `-a Agent` which allows you to specify agent to control Pac-Man.
+To play the game you need to run [play_pacman.py](play_pacman.py). If you run it with no commands you can control Pac-Man by yourself with keyboard arrows. Otherwise, you can run the script with option `-h` to see all available options. Particularly you should be interested in option `-a Agent` which allows you to specify agent to control Pac-Man.
 
 ## Game controls
 | Command | Purpose |
@@ -39,7 +39,7 @@ You can also call `self.pacman.up()` instead of setting action to `0`.
 
 Assuming you want to use your UCS implementation, I recommend the following approach. In your agent script create an instance of `Problem` interface and call `ucs(problem)` on every game tick.
 
-Perform the search over the **physical maze graph**, not the abstract tree of game states. You can think of the physical graf as a simplified state space in which each state contains only Pac-Man's position, not additional game state such as the ghost positions. 
+Perform the search over the **physical maze graph**, not the abstract tree of game states. You can think of the physical graph as a simplified state space in which each state contains only Pac-Man's position, not additional game state such as the ghost positions. 
 
 In the API, each position in the maze is a node in the maze graph. The initial node should be Pac-Man's current position. Goals can be nodes with edible entities such as ghosts, pills and fruits.
 
@@ -50,6 +50,6 @@ The main issue should be assigning cost to graph edges to avoid going undesirabl
 Keep in mind that your agent has to answer in given time.
 
 ### Visual debugging
-For easier debugging you can use class methods of `PacView` that allows your to visualize paths, lines and texts. You can find these at the bottom of [game/pac_gui.py](game/pac_gui.py) under *VISUAL AIDS FOR DEBUGGING*. 
+For easier debugging you can use class methods of `PacView` that allows you to visualize paths, lines and texts. You can find these at the bottom of [game/pac_gui.py](game/pac_gui.py) under *VISUAL AIDS FOR DEBUGGING*. 
 
 You can find example of this usage commented in [agents/agent_example.py](agents/agent_example.py).
