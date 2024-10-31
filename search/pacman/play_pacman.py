@@ -188,7 +188,7 @@ def sim(agent: gc.PacManControllerBase, args: Namespace, gui) -> float:
         if args.verbose:
             print(
                 " result: level {:d}, score {:d} in {:.2f} ms (in {:d} ticks)\n\t average {:.2f} ms/tick; max {:.2f} ms/tick".format(
-                    seed,
+                    #seed,
                     game.current_level,
                     game.score,
                     time * 1000,
