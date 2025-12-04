@@ -183,7 +183,7 @@ During visualization you can show the next move by *mouse-click*. When playing, 
 ### ReCodEx testing
 You are expected to submit two files. Your implementation of the CSP solver in solver.py and an agent playing the minesweeper game.
 
-The first set of tests examines your CSP implementation, namely all three functions you are tasked to implement. The tests are the same as the tests available in solver_test.py. 
+The first set of tests examines your CSP implementation, specifically the three functions you are tasked with implementing: forward_check, solve, and infer_var, each worth 7, 5, and 3 points, respectively. The tests are the same as the tests available in solver_test.py. 
 
-The second test plays 25 rounds of the minesweeper game on hard difficulty ("--hard"). Your implementation needs to be able to play fast enough to pass the recodex time limits and also good enough that it does not ask for too many hints. If the average number of hints from the 25 games is less or equal to 5, you receive full points. If the average number of hints from the 25 games is more than 8, you receive no points. In other cases, the number of points is scaled.
+The second test plays 25 rounds of the minesweeper game on hard difficulty ("--hard"). Your implementation needs to be able to play fast enough to pass the recodex time limits and also good enough that it does not ask for too many hints. If the average number of hints from the 25 games is less or equal to 5, you receive full 10 points. If the average number of hints from the 25 games is more than 8, you receive no points. In other cases, the number of points is scaled.
 
